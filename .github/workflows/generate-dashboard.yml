@@ -8,32 +8,26 @@ on:
     - cron: '0 3 * * *'
   push:
     branches: [main]
+    paths-ignore:
+      - 'data.json'
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
+  contents: write
 
 jobs:
   generate:
     name: Generate Dashboard
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Fetch data & build data.json
+      - name: Fetch data & commit data.json to main
         env:
           GH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
         run: |
           set -euo pipefail
-          mkdir -p dist
 
           REPOS=(
             "open-ent/mod-zip|fr.wseduc|mod-zip"
@@ -90,21 +84,13 @@ jobs:
           jq -n \
             --argjson modules "$MODULES_ARR" \
             --arg generated_at "$GENERATED_AT" \
-            '{modules: $modules, generated_at: $generated_at}' > dist/data.json
+            '{modules: $modules, generated_at: $generated_at}' > data.json
 
-          echo "data.json: $(jq '.modules | length' dist/data.json) modules"
+          echo "data.json: $(jq '.modules | length' data.json) modules"
 
-      - name: Assemble dist/
-        run: |
-          mkdir -p dist
-          cp index.html dist/index.html
-          ls -lh dist/
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v4
+          git config user.name "passtech"
+          git config user.email "passtech@passtech.fr"
+          git add data.json
+          git diff --cached --quiet && echo "No changes" || \
+            git commit -m "chore: update data.json [skip ci]" && \
+            git push origin main
