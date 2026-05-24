@@ -62,7 +62,16 @@
       "releases_url": "https://github.com/open-ent/mod-postgresql/releases",
       "repo_url": "https://github.com/open-ent/mod-postgresql",
       "releases": []
+    },
+    {
+      "name": "entcore",
+      "group_id": "org.entcore",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/entcore-v2/actions",
+      "releases_url": "https://github.com/open-ent/entcore-v2/tags",
+      "repo_url": "https://github.com/open-ent/entcore-v2",
+      "releases": []
     }
   ],
-  "generated_at": "24/05/2026 à 21:22 UTC"
+  "generated_at": "24/05/2026 à 21:49 UTC"
 }
