@@ -10,12 +10,21 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   generate:
     name: Generate Dashboard
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -24,6 +33,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
         run: |
           set -euo pipefail
+          mkdir -p dist
 
           REPOS=(
             "open-ent/mod-zip|fr.wseduc|mod-zip"
@@ -61,12 +71,12 @@ jobs:
             ' 2>/dev/null || echo "[]")
 
             MODULE_OBJ=$(jq -n \
-              --arg name        "$NAME" \
-              --arg group_id    "$GROUP" \
-              --arg ci_status   "$CI_STATUS" \
-              --arg ci_url      "https://github.com/$REPO/actions" \
+              --arg name         "$NAME" \
+              --arg group_id     "$GROUP" \
+              --arg ci_status    "$CI_STATUS" \
+              --arg ci_url       "https://github.com/$REPO/actions" \
               --arg releases_url "https://github.com/$REPO/releases" \
-              --arg repo_url    "https://github.com/$REPO" \
+              --arg repo_url     "https://github.com/$REPO" \
               --argjson releases "$RELEASES_CLEAN" \
               '{name:$name,group_id:$group_id,ci_status:$ci_status,
                 ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
@@ -80,24 +90,21 @@ jobs:
           jq -n \
             --argjson modules "$MODULES_ARR" \
             --arg generated_at "$GENERATED_AT" \
-            '{modules: $modules, generated_at: $generated_at}' > /tmp/data.json
+            '{modules: $modules, generated_at: $generated_at}' > dist/data.json
 
-          echo "data.json ready: $(jq '.modules | length' /tmp/data.json) modules"
+          echo "data.json: $(jq '.modules | length' dist/data.json) modules"
 
       - name: Assemble dist/
         run: |
           mkdir -p dist
           cp index.html dist/index.html
-          cp /tmp/data.json dist/data.json
-          echo "dist/ contents:"
           ls -lh dist/
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
-          user_name: 'passtech'
-          user_email: 'passtech@passtech.fr'
-          commit_message: 'chore: update dashboard'
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
