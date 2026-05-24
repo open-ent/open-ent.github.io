@@ -1,0 +1,68 @@
+{
+  "modules": [
+    {
+      "name": "mod-zip",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-zip/actions",
+      "releases_url": "https://github.com/open-ent/mod-zip/releases",
+      "repo_url": "https://github.com/open-ent/mod-zip",
+      "releases": []
+    },
+    {
+      "name": "http-proxy",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/http-proxy/actions",
+      "releases_url": "https://github.com/open-ent/http-proxy/releases",
+      "repo_url": "https://github.com/open-ent/http-proxy",
+      "releases": []
+    },
+    {
+      "name": "mod-image-resizer",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-image-resizer/actions",
+      "releases_url": "https://github.com/open-ent/mod-image-resizer/releases",
+      "repo_url": "https://github.com/open-ent/mod-image-resizer",
+      "releases": []
+    },
+    {
+      "name": "mod-json-schema-validator",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-json-schema-validator/actions",
+      "releases_url": "https://github.com/open-ent/mod-json-schema-validator/releases",
+      "repo_url": "https://github.com/open-ent/mod-json-schema-validator",
+      "releases": []
+    },
+    {
+      "name": "mod-mongo-persistor",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-mongo-persistor/actions",
+      "releases_url": "https://github.com/open-ent/mod-mongo-persistor/releases",
+      "repo_url": "https://github.com/open-ent/mod-mongo-persistor",
+      "releases": []
+    },
+    {
+      "name": "mod-pdf-generator",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-pdf-generator/actions",
+      "releases_url": "https://github.com/open-ent/mod-pdf-generator/releases",
+      "repo_url": "https://github.com/open-ent/mod-pdf-generator",
+      "releases": []
+    },
+    {
+      "name": "mod-postgresql",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-postgresql/actions",
+      "releases_url": "https://github.com/open-ent/mod-postgresql/releases",
+      "repo_url": "https://github.com/open-ent/mod-postgresql",
+      "releases": []
+    }
+  ],
+  "generated_at": "24/05/2026 à 21:22 UTC"
+}
