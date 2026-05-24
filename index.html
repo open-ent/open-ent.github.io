@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open-ENT — Artifacts Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3354;
+      --accent: #4f8ef7;
+      --accent2: #7c5cfc;
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #f59e0b;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1229 50%, #1a1020 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(79,142,247,0.08) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 50%, rgba(124,92,252,0.08) 0%, transparent 60%);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .logo {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; font-weight: 800; color: white;
+      flex-shrink: 0;
+    }
+    h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
+    .header-meta {
+      display: flex; gap: 1.5rem; margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .meta-chip {
+      display: flex; align-items: center; gap: 0.4rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.78rem; color: var(--muted);
+    }
+    .meta-chip svg { width: 13px; height: 13px; }
+
+    /* MAIN */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* SECTION TITLE */
+    .section-header {
+      display: flex; align-items: center; gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .section-header h2 {
+      font-size: 1rem; font-weight: 600; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .section-line { flex: 1; height: 1px; background: var(--border); }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    /* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.15s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover { border-color: rgba(79,142,247,0.4); transform: translateY(-1px); }
+    .card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .card:hover::before { opacity: 1; }
+
+    .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+    .card-title { font-size: 1rem; font-weight: 600; }
+    .card-group { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; font-family: 'SF Mono', 'Fira Code', monospace; }
+
+    /* STATUS BADGE */
+    .badge {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      padding: 0.2rem 0.6rem; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 600;
+      flex-shrink: 0;
+    }
+    .badge-success { background: rgba(34,197,94,0.12); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+    .badge-failure { background: rgba(239,68,68,0.12); color: var(--red); border: 1px solid rgba(239,68,68,0.25); }
+    .badge-unknown { background: rgba(136,146,170,0.12); color: var(--muted); border: 1px solid rgba(136,146,170,0.25); }
+    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+    /* VERSION ROW */
+    .versions { margin: 0.75rem 0; }
+    .version-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.6rem 0.75rem;
+      background: var(--surface2);
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .version-tag {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--accent);
+    }
+    .version-date { font-size: 0.72rem; color: var(--muted); }
+
+    /* ACTIONS */
+    .card-actions { display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.45rem 0.9rem; border-radius: 8px;
+      font-size: 0.78rem; font-weight: 500;
+      text-decoration: none;
+      transition: opacity 0.15s, transform 0.1s;
+      border: none; cursor: pointer;
+    }
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: white; }
+    .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+    .btn svg { width: 14px; height: 14px; }
+
+    /* CHANGELOG */
+    .changelog {
+      background: var(--surface2);
+      border-radius: 8px;
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+    .changelog::-webkit-scrollbar { width: 4px; }
+    .changelog::-webkit-scrollbar-track { background: transparent; }
+    .changelog::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .changelog h3 { font-size: 0.78rem; color: var(--text); margin-bottom: 0.4rem; }
+    .changelog ul { padding-left: 1rem; }
+    .changelog li { margin-bottom: 0.15rem; }
+
+    /* EMPTY STATE */
+    .empty { color: var(--muted); font-size: 0.82rem; text-align: center; padding: 1rem; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* UPDATED AT */
+    #updated-at { font-size: 0.75rem; color: var(--muted); text-align: right; margin-bottom: 1.5rem; }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 1.25rem 0 1rem; }
+      h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <div class="logo">OE</div>
+      <div>
+        <h1><span>Open-ENT</span> Artifacts</h1>
+        <div class="subtitle">Dashboard des modules publiés sur GitHub Packages</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="meta-chip">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        open-ent
+      </span>
+      <span class="meta-chip">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zm8 0A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm-8 8A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm8 0A1.5 1.5 0 0110.5 9h3A1.5 1.5 0 0115 10.5v3A1.5 1.5 0 0113.5 15h-3A1.5 1.5 0 019 13.5v-3z"/></svg>
+        7 modules
+      </span>
+      <span class="meta-chip" id="last-updated-chip">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 3.5a.5.5 0 00-1 0V9a.5.5 0 00.252.434l3.5 2a.5.5 0 00.496-.868L8 8.71V3.5z"/><path d="M8 16A8 8 0 108 0a8 8 0 000 16zm7-8A7 7 0 111 8a7 7 0 0114 0z"/></svg>
+        <span id="last-updated-text">Chargement...</span>
+      </span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="updated-at"></div>
+
+  <div class="section-header">
+    <h2>Modules</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="grid" id="modules-grid">
+    <div class="empty">Chargement des artefacts…</div>
+  </div>
+</main>
+
+<footer>
+  Généré automatiquement via GitHub Actions —
+  <a href="https://github.com/open-ent" target="_blank">open-ent</a> ·
+  <a href="https://github.com/open-ent/open-ent.github.io/actions" target="_blank">Voir les workflows</a>
+</footer>
+
+<script>
+  // DATA injected by CI workflow
+  const MODULES = __MODULES_DATA__;
+  const GENERATED_AT = "__GENERATED_AT__";
+
+  // Display generated date
+  document.getElementById('last-updated-text').textContent = GENERATED_AT;
+  document.getElementById('updated-at').textContent = 'Mis à jour le ' + GENERATED_AT;
+
+  const icons = {
+    download: `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 01.5.5v2.5a1 1 0 001 1h12a1 1 0 001-1v-2.5a.5.5 0 011 0v2.5a2 2 0 01-2 2H2a2 2 0 01-2-2v-2.5a.5.5 0 01.5-.5z"/><path d="M7.646 11.854a.5.5 0 00.708 0l3-3a.5.5 0 00-.708-.708L8.5 10.293V1.5a.5.5 0 00-1 0v8.793L5.354 8.146a.5.5 0 10-.708.708l3 3z"/></svg>`,
+    releases: `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 1a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h12a1 1 0 000-2H2z"/></svg>`,
+    ci: `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.507 2.727a1 1 0 00-1.414 0l-8 8a1 1 0 001.414 1.414l8-8a1 1 0 000-1.414zM2 6a4 4 0 118 0A4 4 0 012 6zm0 2a6 6 0 0010.473 4.02l2.253 2.254a1 1 0 001.414-1.414l-2.253-2.254A6 6 0 002 8z"/></svg>`,
+    external: `<svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 101.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>`,
+  };
+
+  function statusBadge(status) {
+    if (status === 'success') return `<span class="badge badge-success"><span class="badge-dot"></span>passing</span>`;
+    if (status === 'failure') return `<span class="badge badge-failure"><span class="badge-dot"></span>failing</span>`;
+    return `<span class="badge badge-unknown"><span class="badge-dot"></span>unknown</span>`;
+  }
+
+  function renderCard(mod) {
+    const latestRelease = mod.releases && mod.releases[0];
+    const versions = (mod.releases || []).slice(0, 3);
+
+    const versionRows = versions.map(r => `
+      <div class="version-item">
+        <span class="version-tag">${r.tag}</span>
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <span class="version-date">${r.published_at || ''}</span>
+          ${r.jar_url ? `<a href="${r.jar_url}" class="btn btn-primary" style="padding:0.25rem 0.6rem;font-size:0.7rem;">${icons.download} .jar</a>` : ''}
+        </div>
+      </div>
+    `).join('');
+
+    const changelogContent = latestRelease && latestRelease.body
+      ? `<div class="changelog"><h3>Release notes — ${latestRelease.tag}</h3><div>${marked(latestRelease.body)}</div></div>`
+      : '';
+
+    return `
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">${mod.name}</div>
+            <div class="card-group">${mod.group_id || ''}</div>
+          </div>
+          ${statusBadge(mod.ci_status)}
+        </div>
+
+        ${versions.length > 0 ? `<div class="versions">${versionRows}</div>` : `<div class="empty">Aucune version publiée</div>`}
+
+        ${changelogContent}
+
+        <div class="card-actions">
+          <a href="${mod.releases_url}" class="btn btn-secondary" target="_blank">
+            ${icons.releases} Releases
+          </a>
+          <a href="${mod.ci_url}" class="btn btn-secondary" target="_blank">
+            ${icons.ci} CI
+          </a>
+          <a href="${mod.repo_url}" class="btn btn-secondary" target="_blank">
+            ${icons.external} Repo
+          </a>
+        </div>
+      </div>
+    `;
+  }
+
+  // Simple markdown parser for release notes (bold, lists)
+  function marked(text) {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/^### (.+)/gm, '<strong>$1</strong>')
+      .replace(/^## (.+)/gm, '<strong>$1</strong>')
+      .replace(/^- (.+)/gm, '<li>$1</li>')
+      .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+      .replace(/\n/g, '<br>');
+  }
+
+  const grid = document.getElementById('modules-grid');
+  if (MODULES && MODULES.length > 0) {
+    grid.innerHTML = MODULES.map(renderCard).join('');
+  } else {
+    grid.innerHTML = '<div class="empty">Aucun module trouvé</div>';
+  }
+</script>
+</body>
+</html>

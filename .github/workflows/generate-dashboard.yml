@@ -1,0 +1,104 @@
+name: Generate & Deploy Dashboard
+
+on:
+  repository_dispatch:
+    types: [artifact-published]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    name: Generate Dashboard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch data & generate HTML
+        env:
+          GH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          REPOS=(
+            "open-ent/mod-zip|fr.wseduc|mod-zip"
+            "open-ent/http-proxy|fr.wseduc|http-proxy"
+            "open-ent/mod-image-resizer|fr.wseduc|mod-image-resizer"
+            "open-ent/mod-json-schema-validator|fr.wseduc|mod-json-schema-validator"
+            "open-ent/mod-mongo-persistor|fr.wseduc|mod-mongo-persistor"
+            "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
+            "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
+          )
+
+          echo "[" > /tmp/modules_raw.json
+          FIRST=true
+
+          for entry in "${REPOS[@]}"; do
+            IFS='|' read -r REPO GROUP NAME <<< "$entry"
+            echo "  → $REPO"
+
+            CI_STATUS=$(gh run list --repo "$REPO" --limit 5 --json headBranch,conclusion \
+              --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' 2>/dev/null || echo "unknown")
+
+            RELEASES=$(gh release list --repo "$REPO" --limit 5 \
+              --json tagName,publishedAt,body,assets 2>/dev/null || echo "[]")
+
+            RELEASES_CLEAN=$(echo "$RELEASES" | jq --arg repo_url "https://github.com/$REPO/releases" '
+              [.[] | {
+                tag: .tagName,
+                published_at: (.publishedAt // "" | split("T")[0]),
+                body: (.body // ""),
+                jar_url: (
+                  [.assets[] | select(.name | test("-fat\\.jar$")) | .url] | .[0]
+                  // $repo_url
+                )
+              }]
+            ' 2>/dev/null || echo "[]")
+
+            [ "$FIRST" = "true" ] && FIRST=false || echo "," >> /tmp/modules_raw.json
+
+            jq -n \
+              --arg name     "$NAME" \
+              --arg group_id "$GROUP" \
+              --arg ci_status "$CI_STATUS" \
+              --arg ci_url    "https://github.com/$REPO/actions" \
+              --arg releases_url "https://github.com/$REPO/releases" \
+              --arg repo_url  "https://github.com/$REPO" \
+              --argjson releases "$RELEASES_CLEAN" \
+              '{name:$name,group_id:$group_id,ci_status:$ci_status,
+                ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
+                releases:$releases}' >> /tmp/modules_raw.json
+          done
+
+          echo "]" >> /tmp/modules_raw.json
+          echo "Data fetched: $(jq length /tmp/modules_raw.json) modules"
+
+          GENERATED_AT=$(date -u '+%d/%m/%Y à %H:%M UTC')
+
+          node -e "
+            const fs = require('fs');
+            const modules = JSON.parse(fs.readFileSync('/tmp/modules_raw.json','utf8'));
+            let html = fs.readFileSync('index.html','utf8');
+            html = html.replace('__MODULES_DATA__', JSON.stringify(modules));
+            html = html.replace('__GENERATED_AT__', '$GENERATED_AT');
+            fs.mkdirSync('dist',{recursive:true});
+            fs.writeFileSync('dist/index.html', html);
+            console.log('dist/index.html: ' + html.length + ' bytes');
+          "
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
+          user_name: 'passtech'
+          user_email: 'passtech@passtech.fr'
+          commit_message: 'chore: update dashboard'
