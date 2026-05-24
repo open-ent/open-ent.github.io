@@ -261,13 +261,24 @@
 </footer>
 
 <script>
-  // DATA injected by CI workflow
-  const MODULES = __MODULES_DATA__;
-  const GENERATED_AT = "__GENERATED_AT__";
+  let MODULES = [];
+  let GENERATED_AT = '…';
 
-  // Display generated date
-  document.getElementById('last-updated-text').textContent = GENERATED_AT;
-  document.getElementById('updated-at').textContent = 'Mis à jour le ' + GENERATED_AT;
+  fetch('./data.json')
+    .then(r => r.json())
+    .then(data => {
+      MODULES = data.modules || [];
+      GENERATED_AT = data.generated_at || '';
+      document.getElementById('last-updated-text').textContent = GENERATED_AT;
+      document.getElementById('updated-at').textContent = 'Mis à jour le ' + GENERATED_AT;
+      renderAll();
+    })
+    .catch(err => {
+      document.getElementById('modules-grid').innerHTML =
+        '<div class="empty">Erreur de chargement des données : ' + err.message + '</div>';
+    });
+
+  function renderAll() {
 
   const icons = {
     download: `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 01.5.5v2.5a1 1 0 001 1h12a1 1 0 001-1v-2.5a.5.5 0 011 0v2.5a2 2 0 01-2 2H2a2 2 0 01-2-2v-2.5a.5.5 0 01.5-.5z"/><path d="M7.646 11.854a.5.5 0 00.708 0l3-3a.5.5 0 00-.708-.708L8.5 10.293V1.5a.5.5 0 00-1 0v8.793L5.354 8.146a.5.5 0 10-.708.708l3 3z"/></svg>`,
@@ -340,11 +351,12 @@
       .replace(/\n/g, '<br>');
   }
 
-  const grid = document.getElementById('modules-grid');
-  if (MODULES && MODULES.length > 0) {
-    grid.innerHTML = MODULES.map(renderCard).join('');
-  } else {
-    grid.innerHTML = '<div class="empty">Aucun module trouvé</div>';
+    const grid = document.getElementById('modules-grid');
+    if (MODULES && MODULES.length > 0) {
+      grid.innerHTML = MODULES.map(renderCard).join('');
+    } else {
+      grid.innerHTML = '<div class="empty">Aucun module trouvé</div>';
+    }
   }
 </script>
 </body>
