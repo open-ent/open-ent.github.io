@@ -29,6 +29,7 @@ jobs:
         run: |
           set -euo pipefail
 
+          # Standard modules (use GitHub Releases)
           REPOS=(
             "open-ent/mod-zip|fr.wseduc|mod-zip"
             "open-ent/http-proxy|fr.wseduc|http-proxy"
@@ -37,6 +38,11 @@ jobs:
             "open-ent/mod-mongo-persistor|fr.wseduc|mod-mongo-persistor"
             "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
             "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
+          )
+
+          # Repos that publish to GitHub Packages but don't use GitHub Releases (use tags instead)
+          REPOS_TAGS_ONLY=(
+            "open-ent/entcore-v2|org.entcore|entcore"
           )
 
           MODULES_ARR="[]"
@@ -70,6 +76,44 @@ jobs:
               --arg ci_status    "$CI_STATUS" \
               --arg ci_url       "https://github.com/$REPO/actions" \
               --arg releases_url "https://github.com/$REPO/releases" \
+              --arg repo_url     "https://github.com/$REPO" \
+              --argjson releases "$RELEASES_CLEAN" \
+              '{name:$name,group_id:$group_id,ci_status:$ci_status,
+                ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
+                releases:$releases}')
+
+            MODULES_ARR=$(echo "$MODULES_ARR" | jq --argjson mod "$MODULE_OBJ" '. + [$mod]')
+          done
+
+          for entry in "${REPOS_TAGS_ONLY[@]}"; do
+            IFS='|' read -r REPO GROUP NAME <<< "$entry"
+            echo "→ $REPO (tags mode)"
+
+            CI_STATUS=$(gh run list --repo "$REPO" --limit 5 --json conclusion \
+              --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
+              2>/dev/null || echo "unknown")
+
+            # Use tags sorted by version (newest first), keep patched ones first
+            TAGS_RAW=$(gh api "repos/$REPO/tags" --jq '[.[] | .name]' 2>/dev/null || echo "[]")
+
+            RELEASES_CLEAN=$(echo "$TAGS_RAW" | jq \
+              --arg packages_url "https://github.com/$REPO/packages" \
+              --arg repo_url "https://github.com/$REPO" '
+              [ .[] | select(test("patched|[0-9]+\\.[0-9]+\\.[0-9]+")) ] | .[0:5] |
+              [.[] | {
+                tag:          .,
+                published_at: "",
+                body:         "",
+                jar_url:      $packages_url
+              }]
+            ' 2>/dev/null || echo "[]")
+
+            MODULE_OBJ=$(jq -n \
+              --arg name         "$NAME" \
+              --arg group_id     "$GROUP" \
+              --arg ci_status    "$CI_STATUS" \
+              --arg ci_url       "https://github.com/$REPO/actions" \
+              --arg releases_url "https://github.com/$REPO/tags" \
               --arg repo_url     "https://github.com/$REPO" \
               --argjson releases "$RELEASES_CLEAN" \
               '{name:$name,group_id:$group_id,ci_status:$ci_status,
