@@ -7,7 +7,14 @@
       "ci_url": "https://github.com/open-ent/mod-zip/actions",
       "releases_url": "https://github.com/open-ent/mod-zip/releases",
       "repo_url": "https://github.com/open-ent/mod-zip",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-zip/releases/download/3.1.0-patched/mod-zip-3.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "http-proxy",
@@ -16,7 +23,14 @@
       "ci_url": "https://github.com/open-ent/http-proxy/actions",
       "releases_url": "https://github.com/open-ent/http-proxy/releases",
       "repo_url": "https://github.com/open-ent/http-proxy",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/http-proxy/releases/download/3.1.0-patched/http-proxy-3.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-image-resizer",
@@ -25,7 +39,14 @@
       "ci_url": "https://github.com/open-ent/mod-image-resizer/actions",
       "releases_url": "https://github.com/open-ent/mod-image-resizer/releases",
       "repo_url": "https://github.com/open-ent/mod-image-resizer",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.1.0-patched/mod-image-resizer-3.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-json-schema-validator",
@@ -34,7 +55,14 @@
       "ci_url": "https://github.com/open-ent/mod-json-schema-validator/actions",
       "releases_url": "https://github.com/open-ent/mod-json-schema-validator/releases",
       "repo_url": "https://github.com/open-ent/mod-json-schema-validator",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-json-schema-validator/releases/download/3.1.0-patched/mod-json-schema-validator-2.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-mongo-persistor",
@@ -43,7 +71,14 @@
       "ci_url": "https://github.com/open-ent/mod-mongo-persistor/actions",
       "releases_url": "https://github.com/open-ent/mod-mongo-persistor/releases",
       "repo_url": "https://github.com/open-ent/mod-mongo-persistor",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-mongo-persistor/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-mongo-persistor/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-mongo-persistor/releases/download/3.1.0-patched/mod-mongo-persistor-4.0.1-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-pdf-generator",
@@ -52,7 +87,14 @@
       "ci_url": "https://github.com/open-ent/mod-pdf-generator/actions",
       "releases_url": "https://github.com/open-ent/mod-pdf-generator/releases",
       "repo_url": "https://github.com/open-ent/mod-pdf-generator",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-pdf-generator/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-pdf-generator/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-pdf-generator/releases/download/3.1.0-patched/mod-pdf-generator-2.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-postgresql",
@@ -61,7 +103,14 @@
       "ci_url": "https://github.com/open-ent/mod-postgresql/actions",
       "releases_url": "https://github.com/open-ent/mod-postgresql/releases",
       "repo_url": "https://github.com/open-ent/mod-postgresql",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-postgresql/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-postgresql/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/mod-postgresql/releases/download/3.1.0-patched/mod-postgresql-2.0.0-fat.jar"
+        }
+      ]
     },
     {
       "name": "actualites",
@@ -253,5 +302,5 @@
       "releases": []
     }
   ],
-  "generated_at": "25/05/2026 à 08:28 UTC"
+  "generated_at": "25/05/2026 à 12:53 UTC"
 }
