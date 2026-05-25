@@ -75,8 +75,9 @@ jobs:
               --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
               2>/dev/null || echo "unknown")
 
-            RELEASES=$(gh release list --repo "$REPO" --limit 5 \
-              --json tagName,publishedAt,body,assets 2>/dev/null || echo "[]")
+            RELEASES=$(gh api "repos/$REPO/releases?per_page=5" \
+              --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
+              2>/dev/null || echo "[]")
 
             RELEASES_CLEAN=$(echo "$RELEASES" | jq --arg fallback "https://github.com/$REPO/releases" '
               [.[] | {
