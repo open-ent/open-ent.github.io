@@ -29,15 +29,106 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Standard modules (use GitHub Releases)
-          REPOS=(
-            "open-ent/mod-zip|fr.wseduc|mod-zip"
-            "open-ent/http-proxy|fr.wseduc|http-proxy"
-            "open-ent/mod-image-resizer|fr.wseduc|mod-image-resizer"
-            "open-ent/mod-json-schema-validator|fr.wseduc|mod-json-schema-validator"
-            "open-ent/mod-mongo-persistor|fr.wseduc|mod-mongo-persistor"
-            "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
-            "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
+          MODULES_ARR="[]"
+
+          # ── Helper: fetch CI status filtered on build-and-publish.yml ──────
+          ci_status() {
+            local REPO="$1"
+            gh run list --repo "$REPO" --workflow "build-and-publish.yml" --limit 3 \
+              --json conclusion \
+              --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
+              2>/dev/null || echo "unknown"
+          }
+
+          # ── Helper: fetch releases via REST API ────────────────────────────
+          fetch_releases() {
+            local REPO="$1"
+            local RAW
+            RAW=$(gh api "repos/$REPO/releases?per_page=5" \
+              --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
+              2>/dev/null || echo "[]")
+            echo "$RAW" | jq --arg fallback "https://github.com/$REPO/releases" '
+              [.[] | {
+                tag:          .tagName,
+                published_at: (.publishedAt // "" | split("T")[0]),
+                body:         (.body // ""),
+                jar_url: (
+                  ([.assets[]? | select(.name | test("-fat\\.jar$")) | .browser_download_url][0])
+                  // $fallback
+                )
+              }]
+            ' 2>/dev/null || echo "[]"
+          }
+
+          add_module() {
+            local NAME="$1" GROUP="$2" SECTION="$3" CI_STATUS="$4" \
+                  CI_URL="$5" RELEASES_URL="$6" REPO_URL="$7" RELEASES="$8"
+            local OBJ
+            OBJ=$(jq -n \
+              --arg name         "$NAME" \
+              --arg group_id     "$GROUP" \
+              --arg section      "$SECTION" \
+              --arg ci_status    "$CI_STATUS" \
+              --arg ci_url       "$CI_URL" \
+              --arg releases_url "$RELEASES_URL" \
+              --arg repo_url     "$REPO_URL" \
+              --argjson releases "$RELEASES" \
+              '{name:$name,group_id:$group_id,section:$section,ci_status:$ci_status,
+                ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
+                releases:$releases}')
+            MODULES_ARR=$(echo "$MODULES_ARR" | jq --argjson mod "$OBJ" '. + [$mod]')
+          }
+
+          # ══════════════════════════════════════════════════════════════════
+          # SECTION 1 — ENTCORE (socle commun, fetch CI + tags une seule fois)
+          # ══════════════════════════════════════════════════════════════════
+          ENTCORE_REPO="open-ent/entcore-v2"
+          echo "→ $ENTCORE_REPO (entcore modules)"
+
+          ENTCORE_CI=$(gh run list --repo "$ENTCORE_REPO" --limit 5 --json conclusion \
+            --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
+            2>/dev/null || echo "unknown")
+
+          ENTCORE_TAGS=$(gh api "repos/$ENTCORE_REPO/tags" --jq '[.[] | .name]' 2>/dev/null || echo "[]")
+          ENTCORE_RELEASES=$(echo "$ENTCORE_TAGS" | jq \
+            --arg packages_url "https://github.com/$ENTCORE_REPO/packages" '
+            [ .[] | select(test("patched|[0-9]+\\.[0-9]+\\.[0-9]+")) ] | .[0:5] |
+            [.[] | {tag: ., published_at: "", body: "", jar_url: $packages_url}]
+          ' 2>/dev/null || echo "[]")
+
+          ENTCORE_CI_URL="https://github.com/$ENTCORE_REPO/actions"
+          ENTCORE_PKG_URL="https://github.com/$ENTCORE_REPO/packages"
+          ENTCORE_REPO_URL="https://github.com/$ENTCORE_REPO"
+
+          # Modules clés d'entcore
+          ENTCORE_MODULES=(
+            "auth|org.entcore|Authentification & SSO"
+            "common|org.entcore|Bibliothèque commune"
+            "directory|org.entcore|Annuaire & Groupes"
+            "workspace|org.entcore|Espace documentaire"
+            "conversation|org.entcore|Messagerie"
+            "timeline|org.entcore|Fil d'actualité"
+            "portal|org.entcore|Portail & Navigation"
+            "session|org.entcore|Sessions utilisateur"
+            "communication|org.entcore|Infrastructure communication"
+            "feeder|org.entcore|Alimentation des données"
+            "admin|org.entcore|Administration"
+            "infra|org.entcore|Infrastructure verticale"
+            "archive|org.entcore|Archivage"
+            "audience|org.entcore|Statistiques audience"
+            "cas|org.entcore|CAS / SSO fédéré"
+          )
+
+          for entry in "${ENTCORE_MODULES[@]}"; do
+            IFS='|' read -r NAME GROUP _DESC <<< "$entry"
+            add_module "$NAME" "$GROUP" "entcore" "$ENTCORE_CI" \
+              "$ENTCORE_CI_URL" "$ENTCORE_PKG_URL" "$ENTCORE_REPO_URL" "$ENTCORE_RELEASES"
+          done
+
+          # ══════════════════════════════════════════════════════════════════
+          # SECTION 2 — APPLICATIONS (GitHub Releases, fat JAR)
+          # ══════════════════════════════════════════════════════════════════
+          REPOS_APPS=(
             "open-ent/actualites|net.atos|actualites"
             "open-ent/appointments|fr.openent|appointments"
             "open-ent/blog|org.entcore|blog"
@@ -49,7 +140,6 @@ jobs:
             "open-ent/explorer|com.opendigitaleducation|explorer"
             "open-ent/forum|net.atos|forum"
             "open-ent/mindmap|net.atos|mindmap"
-            "open-ent/mod-sftp|fr.cgi|mod-sftp"
             "open-ent/pages|fr.wseduc|pages"
             "open-ent/poll|net.atos|poll"
             "open-ent/rack|fr.wseduc|rack"
@@ -60,88 +150,42 @@ jobs:
             "open-ent/wiki|net.atos|wiki"
           )
 
-          # Repos that publish to GitHub Packages but don't use GitHub Releases (use tags instead)
-          REPOS_TAGS_ONLY=(
-            "open-ent/entcore-v2|org.entcore|entcore"
-          )
-
-          MODULES_ARR="[]"
-
-          for entry in "${REPOS[@]}"; do
+          for entry in "${REPOS_APPS[@]}"; do
             IFS='|' read -r REPO GROUP NAME <<< "$entry"
             echo "→ $REPO"
-
-            CI_STATUS=$(gh run list --repo "$REPO" --limit 5 --json conclusion \
-              --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
-              2>/dev/null || echo "unknown")
-
-            RELEASES=$(gh api "repos/$REPO/releases?per_page=5" \
-              --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
-              2>/dev/null || echo "[]")
-
-            RELEASES_CLEAN=$(echo "$RELEASES" | jq --arg fallback "https://github.com/$REPO/releases" '
-              [.[] | {
-                tag:          .tagName,
-                published_at: (.publishedAt // "" | split("T")[0]),
-                body:         (.body // ""),
-                jar_url: (
-                  ([.assets[]? | select(.name | test("-fat\\.jar$")) | .browser_download_url][0])
-                  // $fallback
-                )
-              }]
-            ' 2>/dev/null || echo "[]")
-
-            MODULE_OBJ=$(jq -n \
-              --arg name         "$NAME" \
-              --arg group_id     "$GROUP" \
-              --arg ci_status    "$CI_STATUS" \
-              --arg ci_url       "https://github.com/$REPO/actions" \
-              --arg releases_url "https://github.com/$REPO/releases" \
-              --arg repo_url     "https://github.com/$REPO" \
-              --argjson releases "$RELEASES_CLEAN" \
-              '{name:$name,group_id:$group_id,ci_status:$ci_status,
-                ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
-                releases:$releases}')
-
-            MODULES_ARR=$(echo "$MODULES_ARR" | jq --argjson mod "$MODULE_OBJ" '. + [$mod]')
+            CI=$(ci_status "$REPO")
+            RELEASES=$(fetch_releases "$REPO")
+            add_module "$NAME" "$GROUP" "apps" "$CI" \
+              "https://github.com/$REPO/actions" \
+              "https://github.com/$REPO/releases" \
+              "https://github.com/$REPO" \
+              "$RELEASES"
           done
 
-          for entry in "${REPOS_TAGS_ONLY[@]}"; do
+          # ══════════════════════════════════════════════════════════════════
+          # SECTION 3 — INFRASTRUCTURE (modules techniques)
+          # ══════════════════════════════════════════════════════════════════
+          REPOS_INFRA=(
+            "open-ent/mod-zip|fr.wseduc|mod-zip"
+            "open-ent/http-proxy|fr.wseduc|http-proxy"
+            "open-ent/mod-image-resizer|fr.wseduc|mod-image-resizer"
+            "open-ent/mod-json-schema-validator|fr.wseduc|mod-json-schema-validator"
+            "open-ent/mod-mongo-persistor|fr.wseduc|mod-mongo-persistor"
+            "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
+            "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
+            "open-ent/mod-sftp|fr.cgi|mod-sftp"
+          )
+
+          for entry in "${REPOS_INFRA[@]}"; do
             IFS='|' read -r REPO GROUP NAME <<< "$entry"
-            echo "→ $REPO (tags mode)"
-
-            CI_STATUS=$(gh run list --repo "$REPO" --limit 5 --json conclusion \
-              --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
-              2>/dev/null || echo "unknown")
-
-            # Use tags sorted by version (newest first), keep patched ones first
-            TAGS_RAW=$(gh api "repos/$REPO/tags" --jq '[.[] | .name]' 2>/dev/null || echo "[]")
-
-            RELEASES_CLEAN=$(echo "$TAGS_RAW" | jq \
-              --arg packages_url "https://github.com/$REPO/packages" \
-              --arg repo_url "https://github.com/$REPO" '
-              [ .[] | select(test("patched|[0-9]+\\.[0-9]+\\.[0-9]+")) ] | .[0:5] |
-              [.[] | {
-                tag:          .,
-                published_at: "",
-                body:         "",
-                jar_url:      $packages_url
-              }]
-            ' 2>/dev/null || echo "[]")
-
-            MODULE_OBJ=$(jq -n \
-              --arg name         "$NAME" \
-              --arg group_id     "$GROUP" \
-              --arg ci_status    "$CI_STATUS" \
-              --arg ci_url       "https://github.com/$REPO/actions" \
-              --arg releases_url "https://github.com/$REPO/tags" \
-              --arg repo_url     "https://github.com/$REPO" \
-              --argjson releases "$RELEASES_CLEAN" \
-              '{name:$name,group_id:$group_id,ci_status:$ci_status,
-                ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
-                releases:$releases}')
-
-            MODULES_ARR=$(echo "$MODULES_ARR" | jq --argjson mod "$MODULE_OBJ" '. + [$mod]')
+            echo "→ $REPO"
+            CI=$(ci_status "$REPO")
+            RELEASES=$(fetch_releases "$REPO")
+            add_module "$NAME" "$GROUP" "infra" "$CI" \
+              "https://github.com/$REPO/actions" \
+              "https://github.com/$REPO/releases" \
+              "https://github.com/$REPO" \
+              "$RELEASES"
           done
 
           GENERATED_AT=$(date -u '+%d/%m/%Y à %H:%M UTC')
