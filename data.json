@@ -64,6 +64,186 @@
       "releases": []
     },
     {
+      "name": "actualites",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/actualites/actions",
+      "releases_url": "https://github.com/open-ent/actualites/releases",
+      "repo_url": "https://github.com/open-ent/actualites",
+      "releases": []
+    },
+    {
+      "name": "appointments",
+      "group_id": "fr.openent",
+      "ci_status": "failure",
+      "ci_url": "https://github.com/open-ent/appointments/actions",
+      "releases_url": "https://github.com/open-ent/appointments/releases",
+      "repo_url": "https://github.com/open-ent/appointments",
+      "releases": []
+    },
+    {
+      "name": "blog",
+      "group_id": "org.entcore",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/blog/actions",
+      "releases_url": "https://github.com/open-ent/blog/releases",
+      "repo_url": "https://github.com/open-ent/blog",
+      "releases": []
+    },
+    {
+      "name": "diary",
+      "group_id": "fr.openent",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
+      "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
+      "repo_url": "https://github.com/open-ent/cahier-de-textes",
+      "releases": []
+    },
+    {
+      "name": "calendar",
+      "group_id": "net.atos",
+      "ci_status": "failure",
+      "ci_url": "https://github.com/open-ent/calendar/actions",
+      "releases_url": "https://github.com/open-ent/calendar/releases",
+      "repo_url": "https://github.com/open-ent/calendar",
+      "releases": []
+    },
+    {
+      "name": "collaborative-editor",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/collaborative-editor/actions",
+      "releases_url": "https://github.com/open-ent/collaborative-editor/releases",
+      "repo_url": "https://github.com/open-ent/collaborative-editor",
+      "releases": []
+    },
+    {
+      "name": "collaborativewall",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
+      "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
+      "repo_url": "https://github.com/open-ent/collaborative-wall",
+      "releases": []
+    },
+    {
+      "name": "exercizer",
+      "group_id": "fr.openent",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/exercizer/actions",
+      "releases_url": "https://github.com/open-ent/exercizer/releases",
+      "repo_url": "https://github.com/open-ent/exercizer",
+      "releases": []
+    },
+    {
+      "name": "explorer",
+      "group_id": "com.opendigitaleducation",
+      "ci_status": "failure",
+      "ci_url": "https://github.com/open-ent/explorer/actions",
+      "releases_url": "https://github.com/open-ent/explorer/releases",
+      "repo_url": "https://github.com/open-ent/explorer",
+      "releases": []
+    },
+    {
+      "name": "forum",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/forum/actions",
+      "releases_url": "https://github.com/open-ent/forum/releases",
+      "repo_url": "https://github.com/open-ent/forum",
+      "releases": []
+    },
+    {
+      "name": "mindmap",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mindmap/actions",
+      "releases_url": "https://github.com/open-ent/mindmap/releases",
+      "repo_url": "https://github.com/open-ent/mindmap",
+      "releases": []
+    },
+    {
+      "name": "mod-sftp",
+      "group_id": "fr.cgi",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/mod-sftp/actions",
+      "releases_url": "https://github.com/open-ent/mod-sftp/releases",
+      "repo_url": "https://github.com/open-ent/mod-sftp",
+      "releases": []
+    },
+    {
+      "name": "pages",
+      "group_id": "fr.wseduc",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/pages/actions",
+      "releases_url": "https://github.com/open-ent/pages/releases",
+      "repo_url": "https://github.com/open-ent/pages",
+      "releases": []
+    },
+    {
+      "name": "poll",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/poll/actions",
+      "releases_url": "https://github.com/open-ent/poll/releases",
+      "repo_url": "https://github.com/open-ent/poll",
+      "releases": []
+    },
+    {
+      "name": "rack",
+      "group_id": "fr.wseduc",
+      "ci_status": "failure",
+      "ci_url": "https://github.com/open-ent/rack/actions",
+      "releases_url": "https://github.com/open-ent/rack/releases",
+      "repo_url": "https://github.com/open-ent/rack",
+      "releases": []
+    },
+    {
+      "name": "rss",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/rss/actions",
+      "releases_url": "https://github.com/open-ent/rss/releases",
+      "repo_url": "https://github.com/open-ent/rss",
+      "releases": []
+    },
+    {
+      "name": "search-engine",
+      "group_id": "fr.openent",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/search-engine/actions",
+      "releases_url": "https://github.com/open-ent/search-engine/releases",
+      "repo_url": "https://github.com/open-ent/search-engine",
+      "releases": []
+    },
+    {
+      "name": "support",
+      "group_id": "net.atos",
+      "ci_status": "failure",
+      "ci_url": "https://github.com/open-ent/support/actions",
+      "releases_url": "https://github.com/open-ent/support/releases",
+      "repo_url": "https://github.com/open-ent/support",
+      "releases": []
+    },
+    {
+      "name": "timelinegenerator",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/timeline-generator/actions",
+      "releases_url": "https://github.com/open-ent/timeline-generator/releases",
+      "repo_url": "https://github.com/open-ent/timeline-generator",
+      "releases": []
+    },
+    {
+      "name": "wiki",
+      "group_id": "net.atos",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/wiki/actions",
+      "releases_url": "https://github.com/open-ent/wiki/releases",
+      "repo_url": "https://github.com/open-ent/wiki",
+      "releases": []
+    },
+    {
       "name": "entcore",
       "group_id": "org.entcore",
       "ci_status": "success",
@@ -73,5 +253,5 @@
       "releases": []
     }
   ],
-  "generated_at": "25/05/2026 à 07:21 UTC"
+  "generated_at": "25/05/2026 à 08:28 UTC"
 }
