@@ -8,7 +8,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "common",
@@ -18,7 +49,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "directory",
@@ -28,7 +90,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "workspace",
@@ -38,7 +131,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "conversation",
@@ -48,7 +172,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "timeline",
@@ -58,7 +213,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "portal",
@@ -68,7 +254,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "session",
@@ -78,7 +295,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "communication",
@@ -88,7 +336,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "feeder",
@@ -98,7 +377,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "admin",
@@ -108,7 +418,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "infra",
@@ -118,7 +459,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "archive",
@@ -128,7 +500,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "audience",
@@ -138,7 +541,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "cas",
@@ -148,7 +582,38 @@
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": []
+      "releases": [
+        {
+          "tag": "v0.9",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.8",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.7",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.6",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "v0.5",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
     },
     {
       "name": "actualites",
@@ -596,5 +1061,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/05/2026 à 13:46 UTC"
+  "generated_at": "26/05/2026 à 15:28 UTC"
 }
