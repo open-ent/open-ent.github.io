@@ -154,41 +154,69 @@
       "name": "actualites",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/actualites/actions",
       "releases_url": "https://github.com/open-ent/actualites/releases",
       "repo_url": "https://github.com/open-ent/actualites",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.5-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched",
+          "jar_url": "https://github.com/open-ent/actualites/releases/download/3.1.5-patched/net.atos.actualites.3.1.5-fat.jar"
+        }
+      ]
     },
     {
       "name": "appointments",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/appointments/actions",
       "releases_url": "https://github.com/open-ent/appointments/releases",
       "repo_url": "https://github.com/open-ent/appointments",
-      "releases": []
+      "releases": [
+        {
+          "tag": "1.3.7-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.7-patched",
+          "jar_url": "https://github.com/open-ent/appointments/releases/download/1.3.7-patched/fr.openent.appointments.1.3-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "blog",
       "group_id": "org.entcore",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/blog/actions",
       "releases_url": "https://github.com/open-ent/blog/releases",
       "repo_url": "https://github.com/open-ent/blog",
-      "releases": []
+      "releases": [
+        {
+          "tag": "5.4.10-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.10-patched",
+          "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.10-patched/org.entcore.blog.5.4-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "diary",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
       "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
-      "releases": []
+      "releases": [
+        {
+          "tag": "4.1.6-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.6-patched",
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.6-patched/fr.openent.diary.4.1-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "calendar",
@@ -204,141 +232,239 @@
       "name": "collaborative-editor",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-editor/actions",
       "releases_url": "https://github.com/open-ent/collaborative-editor/releases",
       "repo_url": "https://github.com/open-ent/collaborative-editor",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.3.6-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.6-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.6-patched/net.atos.collaborative-editor.3.3.6-fat.jar"
+        }
+      ]
     },
     {
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.4.8-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.8-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.8-patched/net.atos.collaborativewall.3.4-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "exercizer",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/exercizer/actions",
       "releases_url": "https://github.com/open-ent/exercizer/releases",
       "repo_url": "https://github.com/open-ent/exercizer",
-      "releases": []
+      "releases": [
+        {
+          "tag": "4.3.6-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
+          "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar"
+        }
+      ]
     },
     {
       "name": "explorer",
       "group_id": "com.opendigitaleducation",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/explorer/actions",
       "releases_url": "https://github.com/open-ent/explorer/releases",
       "repo_url": "https://github.com/open-ent/explorer",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.5.8-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.8-patched",
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.8-patched/com.opendigitaleducation.explorer.2.5.9-fat.jar"
+        }
+      ]
     },
     {
       "name": "forum",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/forum/actions",
       "releases_url": "https://github.com/open-ent/forum/releases",
       "repo_url": "https://github.com/open-ent/forum",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.4-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.4-patched",
+          "jar_url": "https://github.com/open-ent/forum/releases/download/2.1.4-patched/net.atos.forum.2.1-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.4.9-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
+          "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "pages",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/pages/actions",
       "releases_url": "https://github.com/open-ent/pages/releases",
       "repo_url": "https://github.com/open-ent/pages",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.5-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched",
+          "jar_url": "https://github.com/open-ent/pages/releases/download/2.1.5-patched/fr.wseduc.pages.2.1.5-fat.jar"
+        }
+      ]
     },
     {
       "name": "poll",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/poll/actions",
       "releases_url": "https://github.com/open-ent/poll/releases",
       "repo_url": "https://github.com/open-ent/poll",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.5-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.5-patched",
+          "jar_url": "https://github.com/open-ent/poll/releases/download/2.1.5-patched/net.atos.poll.2.1.5-fat.jar"
+        }
+      ]
     },
     {
       "name": "rack",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/rack/actions",
       "releases_url": "https://github.com/open-ent/rack/releases",
       "repo_url": "https://github.com/open-ent/rack",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.1.7-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
+          "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-fat.jar"
+        }
+      ]
     },
     {
       "name": "rss",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/rss/actions",
       "releases_url": "https://github.com/open-ent/rss/releases",
       "repo_url": "https://github.com/open-ent/rss",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.4-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched",
+          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar"
+        }
+      ]
     },
     {
       "name": "search-engine",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/search-engine/actions",
       "releases_url": "https://github.com/open-ent/search-engine/releases",
       "repo_url": "https://github.com/open-ent/search-engine",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.5-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched",
+          "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.1.5-patched/fr.openent.search-engine.2.1.4-fat.jar"
+        }
+      ]
     },
     {
       "name": "support",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/support/actions",
       "releases_url": "https://github.com/open-ent/support/releases",
       "repo_url": "https://github.com/open-ent/support",
-      "releases": []
+      "releases": [
+        {
+          "tag": "4.0.2-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.2-patched",
+          "jar_url": "https://github.com/open-ent/support/releases/download/4.0.2-patched/net.atos.support.4.0-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "timelinegenerator",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/timeline-generator/actions",
       "releases_url": "https://github.com/open-ent/timeline-generator/releases",
       "repo_url": "https://github.com/open-ent/timeline-generator",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.3.7-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched",
+          "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.3.7-patched/net.atos.timelinegenerator.3.3.7-fat.jar"
+        }
+      ]
     },
     {
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.5.12-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.12-patched",
+          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.12-patched/net.atos.wiki.3.5-SNAPSHOT-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-zip",
@@ -470,5 +596,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/05/2026 à 06:54 UTC"
+  "generated_at": "26/05/2026 à 13:46 UTC"
 }
