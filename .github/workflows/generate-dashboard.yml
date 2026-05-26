@@ -89,12 +89,27 @@ jobs:
             --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
             2>/dev/null || echo "unknown")
 
-          ENTCORE_TAGS=$(gh api "repos/$ENTCORE_REPO/tags" --jq '[.[] | .name]' 2>/dev/null || echo "[]")
-          ENTCORE_RELEASES=$(echo "$ENTCORE_TAGS" | jq \
-            --arg packages_url "https://github.com/$ENTCORE_REPO/packages" '
-            [ .[] | select(test("patched|^v[0-9]|[0-9]+\\.[0-9]+")) ] | .[0:5] |
-            [.[] | {tag: ., published_at: "", body: "", jar_url: $packages_url}]
-          ' 2>/dev/null || echo "[]")
+          # Fetch real Maven versions from GitHub Packages metadata
+          ENTCORE_META=$(curl -s \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://maven.pkg.github.com/open-ent/entcore-v2/org/entcore/common/maven-metadata.xml" \
+            2>/dev/null || echo "")
+          ENTCORE_RELEASES="[]"
+          if [ -n "$ENTCORE_META" ]; then
+            LAST_UPDATED=$(echo "$ENTCORE_META" | grep -oP '(?<=<lastUpdated>)[^<]+' | head -1)
+            PUBLISH_DATE=""
+            [ ${#LAST_UPDATED} -ge 8 ] && PUBLISH_DATE="${LAST_UPDATED:0:4}-${LAST_UPDATED:4:2}-${LAST_UPDATED:6:2}"
+            ENTCORE_RELEASES=$(echo "$ENTCORE_META" \
+              | grep -oP '(?<=<version>)[^<]+' \
+              | grep -v '\-dev$' \
+              | head -5 \
+              | jq -R -s \
+                --arg packages_url "https://github.com/$ENTCORE_REPO/packages" \
+                --arg published_at "$PUBLISH_DATE" \
+                'split("\n") | map(select(length > 0)) | .[0:5]
+                 | map({tag: ., published_at: $published_at, body: "", jar_url: $packages_url})' \
+              2>/dev/null || echo "[]")
+          fi
 
           ENTCORE_CI_URL="https://github.com/$ENTCORE_REPO/actions"
           ENTCORE_PKG_URL="https://github.com/$ENTCORE_REPO/packages"
