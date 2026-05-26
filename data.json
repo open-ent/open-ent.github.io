@@ -354,7 +354,7 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
@@ -701,5 +701,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/05/2026 à 21:15 UTC"
+  "generated_at": "26/05/2026 à 21:30 UTC"
 }
