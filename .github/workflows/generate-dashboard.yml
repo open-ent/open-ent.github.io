@@ -92,7 +92,7 @@ jobs:
           ENTCORE_TAGS=$(gh api "repos/$ENTCORE_REPO/tags" --jq '[.[] | .name]' 2>/dev/null || echo "[]")
           ENTCORE_RELEASES=$(echo "$ENTCORE_TAGS" | jq \
             --arg packages_url "https://github.com/$ENTCORE_REPO/packages" '
-            [ .[] | select(test("patched|[0-9]+\\.[0-9]+\\.[0-9]+")) ] | .[0:5] |
+            [ .[] | select(test("patched|^v[0-9]|[0-9]+\\.[0-9]+")) ] | .[0:5] |
             [.[] | {tag: ., published_at: "", body: "", jar_url: $packages_url}]
           ' 2>/dev/null || echo "[]")
 
