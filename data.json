@@ -699,7 +699,34 @@
       "releases_url": "https://github.com/open-ent/mod-sftp/releases",
       "repo_url": "https://github.com/open-ent/mod-sftp",
       "releases": []
+    },
+    {
+      "name": "gar-connector",
+      "group_id": "fr.openent",
+      "section": "connectors",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/gar-connector/actions",
+      "releases_url": "https://github.com/open-ent/gar-connector/releases",
+      "repo_url": "https://github.com/open-ent/gar-connector",
+      "releases": []
+    },
+    {
+      "name": "moodle-connector",
+      "group_id": "fr.openent",
+      "section": "connectors",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/moodle-connector/actions",
+      "releases_url": "https://github.com/open-ent/moodle-connector/releases",
+      "repo_url": "https://github.com/open-ent/moodle-connector",
+      "releases": [
+        {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-05-27",
+          "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/commits/2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.2.5-patched/fr.openent.moodle-connector.2.2-SNAPSHOT-fat.jar"
+        }
+      ]
     }
   ],
-  "generated_at": "27/05/2026 à 07:11 UTC"
+  "generated_at": "27/05/2026 à 13:32 UTC"
 }
