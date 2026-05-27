@@ -247,6 +247,12 @@
       flex: 1; border: none; border-top: 1px solid var(--border);
     }
 
+    html { scroll-behavior: smooth; }
+    .card:target {
+      border-color: rgba(79,142,247,0.7);
+      box-shadow: 0 0 0 3px rgba(79,142,247,0.15);
+    }
+
     @media (max-width: 600px) {
       .grid { grid-template-columns: 1fr; }
       header { padding: 1.25rem 0 1rem; }
@@ -340,8 +346,8 @@
         const cx = x0 + PAD + col * (CW + CGAP);
         const cy = y0 + PAD + LABEL_H + row * (CH + CGAP);
         const name = m.name.length > 16 ? m.name.slice(0, 15) + '…' : m.name;
-        svg += `<a class="arch-chip" href="${m.repo_url}" target="_blank">
-          <title>${m.group_id} / ${m.name}</title>
+        svg += `<a class="arch-chip" href="#module-${m.name}">
+          <title>${m.group_id} / ${m.name} — voir le détail</title>
           <rect x="${cx}" y="${cy}" width="${CW}" height="${CH}" rx="5"
                 fill="#0d0f18" stroke="#2e3354" stroke-width="1"/>
           <circle cx="${cx+10}" cy="${cy+13}" r="3.5" fill="${dotColor(m.ci_status)}"/>
@@ -461,7 +467,7 @@
       : '';
 
     return `
-      <div class="card${cardClass ? ' card-' + cardClass : ''}">
+      <div id="module-${mod.name}" class="card${cardClass ? ' card-' + cardClass : ''}">
         <div class="card-header">
           <div>
             <div class="card-title">${mod.name}</div>
