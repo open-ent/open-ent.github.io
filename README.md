@@ -21,6 +21,7 @@ Les modules sont organisés en trois sections :
 |---|---|
 | **Entcore — Socle commun** | Modules du framework entcore (auth, common, directory, workspace…) |
 | **Applications** | Modules applicatifs (blog, calendar, wiki, exercizer…) |
+| **Connecteurs** | Connecteurs d'intégration tierce (GAR, Moodle…) |
 | **Infrastructure** | Modules techniques (mod-zip, mod-mongo-persistor, mod-pdf-generator…) |
 
 ---
@@ -68,6 +69,9 @@ Le workflow `generate-dashboard.yml` utilise le token `GH_PACKAGES_TOKEN` (secre
 
 ### Applications
 `actualites` · `appointments` · `blog` · `cahier-de-textes` · `calendar` · `collaborative-editor` · `collaborative-wall` · `exercizer` · `explorer` · `forum` · `mindmap` · `pages` · `poll` · `rack` · `rss` · `search-engine` · `support` · `timeline-generator` · `wiki`
+
+### Connecteurs
+`gar-connector` · `moodle-connector`
 
 ### Infrastructure
 `mod-zip` · `http-proxy` · `mod-image-resizer` · `mod-json-schema-validator` · `mod-mongo-persistor` · `mod-pdf-generator` · `mod-postgresql` · `mod-sftp`

@@ -107,6 +107,10 @@
     }
     .card-entcore::before { background: linear-gradient(90deg, #f59e0b, #f97316); }
     .card-entcore:hover { border-color: rgba(245,158,11,0.4); }
+    .section-header-connectors h2 { color: #818cf8; }
+    .section-header-connectors .section-line { background: rgba(129,140,248,0.25); }
+    .card-connectors::before { background: linear-gradient(90deg, #818cf8, #a78bfa); }
+    .card-connectors:hover { border-color: rgba(129,140,248,0.4); }
 
     /* GRID */
     .grid {
@@ -357,21 +361,23 @@
     }
 
     const SECTIONS = [
-      { key: 'entcore', label: 'Entcore — Socle commun',  accent: true  },
-      { key: 'apps',    label: 'Applications',             accent: false },
-      { key: 'infra',   label: 'Infrastructure',           accent: false },
+      { key: 'entcore',    label: 'Entcore — Socle commun',  cardClass: 'entcore'    },
+      { key: 'apps',       label: 'Applications',             cardClass: ''           },
+      { key: 'connectors', label: 'Connecteurs',              cardClass: 'connectors' },
+      { key: 'infra',      label: 'Infrastructure',           cardClass: ''           },
     ];
 
-    document.getElementById('dashboard').innerHTML = SECTIONS.map(({ key, label, accent }) => {
+    document.getElementById('dashboard').innerHTML = SECTIONS.map(({ key, label, cardClass }) => {
       const mods = grouped[key] || [];
       if (!mods.length) return '';
+      const headerClass = cardClass ? ` section-header-${cardClass}` : '';
       return `
-        <div class="section-header${accent ? ' section-header-accent' : ''}">
+        <div class="section-header${headerClass}">
           <h2>${label}</h2>
           <span class="section-count">${mods.length}</span>
           <div class="section-line"></div>
         </div>
-        <div class="grid">${mods.map(m => renderCard(m, accent ? 'entcore' : '')).join('')}</div>
+        <div class="grid">${mods.map(m => renderCard(m, cardClass)).join('')}</div>
       `;
     }).join('');
   }

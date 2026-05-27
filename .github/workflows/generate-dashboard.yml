@@ -203,6 +203,26 @@ jobs:
               "$RELEASES"
           done
 
+          # ══════════════════════════════════════════════════════════════════
+          # SECTION 4 — CONNECTEURS (intégrations tierces)
+          # ══════════════════════════════════════════════════════════════════
+          REPOS_CONNECTORS=(
+            "open-ent/gar-connector|fr.openent|gar-connector"
+            "open-ent/moodle-connector|fr.openent|moodle-connector"
+          )
+
+          for entry in "${REPOS_CONNECTORS[@]}"; do
+            IFS='|' read -r REPO GROUP NAME <<< "$entry"
+            echo "→ $REPO"
+            CI=$(ci_status "$REPO")
+            RELEASES=$(fetch_releases "$REPO")
+            add_module "$NAME" "$GROUP" "connectors" "$CI" \
+              "https://github.com/$REPO/actions" \
+              "https://github.com/$REPO/releases" \
+              "https://github.com/$REPO" \
+              "$RELEASES"
+          done
+
           GENERATED_AT=$(date -u '+%d/%m/%Y à %H:%M UTC')
 
           jq -n \
