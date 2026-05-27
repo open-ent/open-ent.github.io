@@ -222,6 +222,31 @@
     /* UPDATED AT */
     #updated-at { font-size: 0.75rem; color: var(--muted); text-align: right; margin-bottom: 1.5rem; }
 
+    /* ARCHITECTURE DIAGRAM */
+    #arch-container { margin-bottom: 3rem; }
+    #arch-container h2 {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--muted); margin-bottom: 1rem;
+    }
+    #arch-svg { width: 100%; overflow: hidden; border-radius: 14px; display: block; }
+    .arch-chip { cursor: pointer; }
+    .arch-chip:hover { opacity: 0.82; }
+    .arch-chip rect { transition: stroke 0.15s; }
+    .arch-chip:hover rect { stroke: rgba(79,142,247,0.55) !important; }
+
+    /* SECTION DIVIDER */
+    .section-divider {
+      display: flex; align-items: center; gap: 0.75rem;
+      margin: 0 0 2rem;
+    }
+    .section-divider span {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.12em; color: var(--muted); white-space: nowrap;
+    }
+    .section-divider hr {
+      flex: 1; border: none; border-top: 1px solid var(--border);
+    }
+
     @media (max-width: 600px) {
       .grid { grid-template-columns: 1fr; }
       header { padding: 1.25rem 0 1rem; }
@@ -259,6 +284,11 @@
 
 <main>
   <div id="updated-at"></div>
+  <div id="arch-container">
+    <h2>Architecture de la plateforme</h2>
+    <div id="arch-svg"></div>
+  </div>
+  <div class="section-divider"><hr><span>Détail des modules</span><hr></div>
   <div id="dashboard"><div class="empty">Chargement des artefacts…</div></div>
 </main>
 
@@ -279,12 +309,115 @@
       document.getElementById('last-updated-text').textContent = gen;
       document.getElementById('updated-at').textContent = 'Mis à jour le ' + gen;
       document.getElementById('modules-count').textContent = MODULES.length + ' modules';
+      renderArchitecture(MODULES);
       renderAll();
     })
     .catch(err => {
       document.getElementById('dashboard').innerHTML =
         '<div class="empty">Erreur de chargement des données : ' + err.message + '</div>';
     });
+
+  // ── Architecture SVG ──────────────────────────────────────────────
+  function renderArchitecture(modules) {
+    const g = {};
+    for (const m of modules) { const s = m.section || 'apps'; (g[s] = g[s] || []).push(m); }
+
+    const W = 1160, PAD = 14, LABEL_H = 22, CW = 140, CH = 26, CGAP = 8;
+    const CONN_W = 180, INFRA_W = 320, SEC_GAP = 16;
+    const ENTCORE_X = CONN_W + SEC_GAP;
+    const ENTCORE_W = W - CONN_W - INFRA_W - 2 * SEC_GAP;
+    const INFRA_X = ENTCORE_X + ENTCORE_W + SEC_GAP;
+    const ARROW_H = 42;
+
+    const dotColor = s => s === 'success' ? '#22c55e' : s === 'failure' ? '#ef4444' : '#6b7280';
+
+    function layoutChips(mods, x0, y0, w) {
+      const innerW = w - PAD * 2;
+      const perRow = Math.max(1, Math.floor((innerW + CGAP) / (CW + CGAP)));
+      let svg = '';
+      mods.forEach((m, i) => {
+        const row = Math.floor(i / perRow), col = i % perRow;
+        const cx = x0 + PAD + col * (CW + CGAP);
+        const cy = y0 + PAD + LABEL_H + row * (CH + CGAP);
+        const name = m.name.length > 16 ? m.name.slice(0, 15) + '…' : m.name;
+        svg += `<a class="arch-chip" href="${m.repo_url}" target="_blank">
+          <title>${m.group_id} / ${m.name}</title>
+          <rect x="${cx}" y="${cy}" width="${CW}" height="${CH}" rx="5"
+                fill="#0d0f18" stroke="#2e3354" stroke-width="1"/>
+          <circle cx="${cx+10}" cy="${cy+13}" r="3.5" fill="${dotColor(m.ci_status)}"/>
+          <text x="${cx+20}" y="${cy+17}" font-size="10.5" fill="#c4cde0"
+                font-family="ui-monospace,SFMono-Regular,'SF Mono','Fira Code',monospace">${name}</text>
+        </a>`;
+      });
+      const rows = Math.ceil(mods.length / perRow) || 1;
+      return { svg, h: PAD + LABEL_H + rows * (CH + CGAP) - CGAP + PAD };
+    }
+
+    function secBox(x, y, w, h, stroke, label) {
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10"
+                    fill="${stroke}" fill-opacity="0.05" stroke="${stroke}"
+                    stroke-opacity="0.35" stroke-width="1.5"/>
+              <text x="${x+PAD}" y="${y+PAD+13}" font-size="9.5" font-weight="700" fill="${stroke}"
+                    font-family="Inter,system-ui,sans-serif" letter-spacing="0.11em">${label}</text>`;
+    }
+
+    const appsC    = layoutChips(g.apps        || [], 0,          0,     W);
+    const APPS_H   = appsC.h;
+    const MID_Y    = APPS_H + ARROW_H;
+    const connC    = layoutChips(g.connectors   || [], 0,          MID_Y, CONN_W);
+    const entcoreC = layoutChips(g.entcore      || [], ENTCORE_X,  MID_Y, ENTCORE_W);
+    const infraC   = layoutChips(g.infra        || [], INFRA_X,    MID_Y, INFRA_W);
+    const MID_H    = Math.max(connC.h, entcoreC.h, infraC.h);
+    const TOTAL_H  = APPS_H + ARROW_H + MID_H;
+
+    // Curved dependency arrow: Apps → Entcore
+    const ax = W / 2, ay = APPS_H + 5;
+    const bx = ENTCORE_X + ENTCORE_W / 2, by = MID_Y - 5;
+    const my = (ay + by) / 2;
+
+    // Faint connector lines: Entcore ↔ Connectors and Entcore ↔ Infra
+    const connMidX = CONN_W / 2, entcoreMidY = MID_Y + MID_H / 2;
+    const infraMidX = INFRA_X + INFRA_W / 2;
+    const entcoreLeftX = ENTCORE_X, entcoreRightX = ENTCORE_X + ENTCORE_W;
+
+    document.getElementById('arch-svg').innerHTML = `
+<svg viewBox="0 0 ${W} ${TOTAL_H + 6}" xmlns="http://www.w3.org/2000/svg"
+     style="width:100%;display:block;background:#0b0d14;border-radius:14px;padding:16px;box-sizing:border-box">
+  <defs>
+    <marker id="ah" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0,7 2.5,0 5" fill="#3d4875"/>
+    </marker>
+  </defs>
+
+  <!-- Dependency arrow: Apps → Entcore -->
+  <path d="M ${ax} ${ay} C ${ax} ${my}, ${bx} ${my}, ${bx} ${by}"
+        fill="none" stroke="#3d4875" stroke-width="1.5" stroke-dasharray="5,3"
+        marker-end="url(#ah)"/>
+
+  <!-- Side connectors: Entcore ↔ Connectors & Infra -->
+  <line x1="${connMidX}" y1="${entcoreMidY}" x2="${entcoreLeftX}" y2="${entcoreMidY}"
+        stroke="#3d4875" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="${entcoreRightX}" y1="${entcoreMidY}" x2="${infraMidX}" y2="${entcoreMidY}"
+        stroke="#3d4875" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Applications -->
+  ${secBox(0, 0, W, APPS_H, '#4f8ef7', 'APPLICATIONS')}
+  ${appsC.svg}
+
+  <!-- Connectors -->
+  ${secBox(0, MID_Y, CONN_W, MID_H, '#818cf8', 'CONNECTEURS')}
+  ${connC.svg}
+
+  <!-- Entcore -->
+  ${secBox(ENTCORE_X, MID_Y, ENTCORE_W, MID_H, '#f59e0b', 'ENTCORE — SOCLE COMMUN')}
+  ${entcoreC.svg}
+
+  <!-- Infrastructure -->
+  ${secBox(INFRA_X, MID_Y, INFRA_W, MID_H, '#64748b', 'INFRASTRUCTURE')}
+  ${infraC.svg}
+</svg>`;
+  }
+  // ── End Architecture SVG ───────────────────────────────────────────
 
   const icons = {
     download: `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 01.5.5v2.5a1 1 0 001 1h12a1 1 0 001-1v-2.5a.5.5 0 011 0v2.5a2 2 0 01-2 2H2a2 2 0 01-2-2v-2.5a.5.5 0 01.5-.5z"/><path d="M7.646 11.854a.5.5 0 00.708 0l3-3a.5.5 0 00-.708-.708L8.5 10.293V1.5a.5.5 0 00-1 0v8.793L5.354 8.146a.5.5 0 10-.708.708l3 3z"/></svg>`,
