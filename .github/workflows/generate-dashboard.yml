@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
       - name: Fetch data & commit data.json to main
         env:
@@ -234,6 +234,7 @@ jobs:
 
           git config user.name "passtech"
           git config user.email "passtech@passtech.fr"
+          git remote set-url origin "https://x-access-token:${GH_PACKAGES_TOKEN}@github.com/open-ent/open-ent.github.io.git"
           git add data.json
           git diff --cached --quiet && echo "No changes" || \
             git commit -m "chore: update data.json [skip ci]" && \
