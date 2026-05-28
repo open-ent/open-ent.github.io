@@ -41,6 +41,23 @@ jobs:
               2>/dev/null || echo "unknown"
           }
 
+          # ── Helper: fetch entcore version from pom.xml at a given tag ─────
+          fetch_entcore_version() {
+            local REPO="$1" TAG="$2"
+            for pom in "backend/pom.xml" "pom.xml"; do
+              local content
+              content=$(gh api "repos/$REPO/contents/$pom?ref=$TAG" \
+                --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+              if [ -n "$content" ]; then
+                local ver
+                ver=$(echo "$content" | grep -oP '(?<=<entCoreVersion>)[^<]+' | head -1)
+                [ -z "$ver" ] && ver=$(echo "$content" | grep -oP '(?<=<entcore\.version>)[^<]+' | head -1)
+                [ -n "$ver" ] && echo "$ver" && return
+              fi
+            done
+            echo ""
+          }
+
           # ── Helper: fetch releases via REST API ────────────────────────────
           fetch_releases() {
             local REPO="$1"
@@ -48,7 +65,8 @@ jobs:
             RAW=$(gh api "repos/$REPO/releases?per_page=5" \
               --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
               2>/dev/null || echo "[]")
-            echo "$RAW" | jq --arg fallback "https://github.com/$REPO/releases" '
+            local RELEASES
+            RELEASES=$(echo "$RAW" | jq --arg fallback "https://github.com/$REPO/releases" '
               [.[] | {
                 tag:          .tagName,
                 published_at: (.publishedAt // "" | split("T")[0]),
@@ -58,7 +76,19 @@ jobs:
                   // $fallback
                 )
               }]
-            ' 2>/dev/null || echo "[]"
+            ' 2>/dev/null || echo "[]")
+            # Enrich latest release with entcore_version
+            local LATEST_TAG
+            LATEST_TAG=$(echo "$RELEASES" | jq -r '.[0].tag // empty' 2>/dev/null)
+            if [ -n "$LATEST_TAG" ]; then
+              local EC_VER
+              EC_VER=$(fetch_entcore_version "$REPO" "$LATEST_TAG")
+              if [ -n "$EC_VER" ]; then
+                RELEASES=$(echo "$RELEASES" | jq --arg ec "$EC_VER" \
+                  '[.[0] + {entcore_version: $ec}] + .[1:]')
+              fi
+            fi
+            echo "$RELEASES"
           }
 
           add_module() {
