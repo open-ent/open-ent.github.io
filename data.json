@@ -310,7 +310,7 @@
       "name": "diary",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
       "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
@@ -354,11 +354,17 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
       "releases": [
+        {
+          "tag": "3.4.9-patched",
+          "published_at": "2026-05-28",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.9-patched/net.atos.collaborativewall.3.4.9-patched-fat.jar"
+        },
         {
           "tag": "3.4.8-patched",
           "published_at": "2026-05-26",
@@ -388,11 +394,17 @@
       "name": "explorer",
       "group_id": "com.opendigitaleducation",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/explorer/actions",
       "releases_url": "https://github.com/open-ent/explorer/releases",
       "repo_url": "https://github.com/open-ent/explorer",
       "releases": [
+        {
+          "tag": "2.5.9-patched",
+          "published_at": "2026-05-28",
+          "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.9-patched",
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.9-patched/com.opendigitaleducation.explorer.2.5.9-patched-fat.jar"
+        },
         {
           "tag": "2.5.8-patched",
           "published_at": "2026-05-26",
@@ -405,7 +417,7 @@
       "name": "forum",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/forum/actions",
       "releases_url": "https://github.com/open-ent/forum/releases",
       "repo_url": "https://github.com/open-ent/forum",
@@ -439,7 +451,7 @@
       "name": "pages",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/pages/actions",
       "releases_url": "https://github.com/open-ent/pages/releases",
       "repo_url": "https://github.com/open-ent/pages",
@@ -462,6 +474,12 @@
       "repo_url": "https://github.com/open-ent/poll",
       "releases": [
         {
+          "tag": "2.1.6-patched",
+          "published_at": "2026-05-28",
+          "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.6-patched",
+          "jar_url": "https://github.com/open-ent/poll/releases/download/2.1.6-patched/net.atos.poll.2.1.6-patched-fat.jar"
+        },
+        {
           "tag": "2.1.5-patched",
           "published_at": "2026-05-26",
           "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.5-patched",
@@ -473,7 +491,7 @@
       "name": "rack",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/rack/actions",
       "releases_url": "https://github.com/open-ent/rack/releases",
       "repo_url": "https://github.com/open-ent/rack",
@@ -558,7 +576,7 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
@@ -728,5 +746,5 @@
       ]
     }
   ],
-  "generated_at": "28/05/2026 à 12:08 UTC"
+  "generated_at": "28/05/2026 à 21:08 UTC"
 }
