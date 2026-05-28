@@ -11,7 +11,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -28,7 +28,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -45,7 +45,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -62,7 +62,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -79,7 +79,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -96,7 +96,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -113,7 +113,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -130,7 +130,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -147,7 +147,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -164,7 +164,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -181,7 +181,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -198,7 +198,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -215,7 +215,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -232,7 +232,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -249,7 +249,7 @@
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-05-22",
+          "published_at": "2026-05-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -354,7 +354,7 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
@@ -728,5 +728,5 @@
       ]
     }
   ],
-  "generated_at": "28/05/2026 à 07:15 UTC"
+  "generated_at": "28/05/2026 à 12:08 UTC"
 }
