@@ -175,6 +175,28 @@
       white-space: nowrap;
     }
 
+    /* DESCRIPTION */
+    .card-description {
+      font-size: 0.78rem; color: var(--muted); line-height: 1.5;
+      margin: 0.6rem 0 0;
+    }
+
+    /* TECH BADGES */
+    .tech-badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
+    .tech-badge {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.18rem 0.55rem; border-radius: 12px;
+      font-size: 0.68rem; font-weight: 600;
+    }
+    .tech-badge-fe {
+      background: rgba(37,99,235,0.15); color: #60a5fa;
+      border: 1px solid rgba(37,99,235,0.35);
+    }
+    .tech-badge-be {
+      background: rgba(22,163,74,0.15); color: #4ade80;
+      border: 1px solid rgba(22,163,74,0.35);
+    }
+
     /* ACTIONS */
     .card-actions { display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
     .btn {
@@ -474,6 +496,20 @@
       ? `<div class="changelog"><h3>Release notes — ${latestRelease.tag}</h3><div>${marked(latestRelease.body)}</div></div>`
       : '';
 
+    const descHtml = mod.description
+      ? `<p class="card-description">${mod.description}</p>`
+      : '';
+
+    const feBadges = (mod.frontend || [])
+      .map(t => `<span class="tech-badge tech-badge-fe">${t}</span>`)
+      .join('');
+    const beBadges = (mod.backend || [])
+      .map(t => `<span class="tech-badge tech-badge-be">${t}</span>`)
+      .join('');
+    const techHtml = (feBadges || beBadges)
+      ? `<div class="tech-badges">${feBadges}${beBadges}</div>`
+      : '';
+
     return `
       <div id="module-${mod.name}" class="card${cardClass ? ' card-' + cardClass : ''}">
         <div class="card-header">
@@ -483,6 +519,8 @@
           </div>
           ${statusBadge(mod.ci_status)}
         </div>
+        ${descHtml}
+        ${techHtml}
         ${versions.length > 0 ? `<div class="versions">${versionRows}</div>` : `<div class="empty">Aucune version publiée</div>`}
         ${changelogContent}
         <div class="card-actions">
