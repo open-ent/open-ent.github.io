@@ -15,6 +15,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -32,6 +37,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -49,6 +59,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -66,6 +81,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -83,6 +103,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -100,6 +125,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -117,6 +147,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -134,6 +169,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -151,6 +191,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -168,6 +213,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -185,6 +235,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -202,6 +257,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -219,6 +279,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -236,6 +301,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -253,6 +323,11 @@
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
+      ],
+      "description": "Socle technique d'Open ENT. Ce socle est composé de plusieurs modules : console d'administration, authentification, gestion de l'annuaire, tableau de bord, partage de documents, communication.",
+      "frontend": [
+        "AngularJS",
+        "Angular 2"
       ]
     },
     {
@@ -271,6 +346,10 @@
           "jar_url": "https://github.com/open-ent/actualites/releases/download/3.1.5-patched/net.atos.actualites.3.1.5-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de gestion et diffusion d'actualités organisées en fils d'actualités",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -289,6 +368,10 @@
           "jar_url": "https://github.com/open-ent/appointments/releases/download/1.3.7-patched/fr.openent.appointments.1.3-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application permettant de prendre des rendez-vous en fonction de grilles de disponibilité",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -307,6 +390,10 @@
           "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.10-patched/org.entcore.blog.5.4-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de blog",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -331,6 +418,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.6-patched",
           "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.6-patched/fr.openent.diary.4.1-SNAPSHOT-fat.jar"
         }
+      ],
+      "description": "Application de gestion du cahier de textes",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -341,7 +432,11 @@
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
-      "releases": []
+      "releases": [],
+      "description": "Application de gestion d'agenda personnel et partagés",
+      "frontend": [
+        "AngularJS"
+      ]
     },
     {
       "name": "collaborative-editor",
@@ -359,6 +454,10 @@
           "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.6-patched/net.atos.collaborative-editor.3.3.6-fat.jar",
           "entcore_version": "6.14.15"
         }
+      ],
+      "description": "Application d'édition de texte collaboratif synchrone (Pad)",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -383,6 +482,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.8-patched",
           "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.8-patched/net.atos.collaborativewall.3.4-SNAPSHOT-fat.jar"
         }
+      ],
+      "description": "Mur collaboratif : Application de partage de ressources multimédia (images, vidéos, sons, documents) et de commentaires",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -401,7 +504,8 @@
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar",
           "entcore_version": "6.14.15"
         }
-      ]
+      ],
+      "description": "Exercices et Evaluations : Application d'édition, de conception, de partage et d'administration d'exercices interactifs"
     },
     {
       "name": "explorer",
@@ -425,6 +529,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.8-patched",
           "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.8-patched/com.opendigitaleducation.explorer.2.5.9-fat.jar"
         }
+      ],
+      "description": "Application explorateur des fichiers stockés sur le serveur",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -449,6 +557,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.4-patched",
           "jar_url": "https://github.com/open-ent/forum/releases/download/2.1.4-patched/net.atos.forum.2.1-SNAPSHOT-fat.jar"
         }
+      ],
+      "description": "Application de gestion de forums de discussion pour OPEN ENT NG",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -467,6 +579,10 @@
           "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de conception de carte mentale (heuristique)",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -491,6 +607,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/pages/releases/download/2.1.5-patched/fr.wseduc.pages.2.1.5-fat.jar"
         }
+      ],
+      "description": "Application de gestion de contenur CMS (Content Management system) simpliste",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -515,6 +635,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/poll/releases/download/2.1.5-patched/net.atos.poll.2.1.5-fat.jar"
         }
+      ],
+      "description": "Application d'administration et de diffusion de sondages",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -533,6 +657,10 @@
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de tiroir numérique.",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -551,6 +679,10 @@
           "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar",
           "entcore_version": "6.14.9"
         }
+      ],
+      "description": "Widget de gestion et d'affichage de flux RSS pour OPEN ENT NG",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -569,6 +701,10 @@
           "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.1.5-patched/fr.openent.search-engine.2.1.4-fat.jar",
           "entcore_version": "6.14.9"
         }
+      ],
+      "description": "Application de recherche transverse",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -587,6 +723,10 @@
           "jar_url": "https://github.com/open-ent/support/releases/download/4.0.2-patched/net.atos.support.4.0-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de gestion de tickets de support",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -605,6 +745,10 @@
           "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.3.7-patched/net.atos.timelinegenerator.3.3.7-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
+      ],
+      "description": "Application de conception de frise chronologique multimédia (partageable dans l'ENT) qui s'appuie sur la librairie http://timeline.knightlab.com/",
+      "frontend": [
+        "AngularJS"
       ]
     },
     {
@@ -629,6 +773,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.12-patched",
           "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.12-patched/net.atos.wiki.3.5-SNAPSHOT-fat.jar"
         }
+      ],
+      "description": "Application d'édition, de publication et partage de wikis",
+      "frontend": [
+        "REACT"
       ]
     },
     {
@@ -646,6 +794,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched",
           "jar_url": "https://github.com/open-ent/mod-zip/releases/download/3.1.0-patched/mod-zip-3.0.0-fat.jar"
         }
+      ],
+      "description": "Module permettant de compresser un répertoire ou un ficiher au format zip",
+      "backend": [
+        "Vert.x"
       ]
     },
     {
@@ -663,6 +815,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched",
           "jar_url": "https://github.com/open-ent/http-proxy/releases/download/3.1.0-patched/http-proxy-3.0.0-fat.jar"
         }
+      ],
+      "description": "Module permettant en développement de proposer un proxy pour les différents services Vert.x d'Open ENT NG",
+      "backend": [
+        "Vert.x"
       ]
     },
     {
@@ -697,6 +853,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched",
           "jar_url": "https://github.com/open-ent/mod-json-schema-validator/releases/download/3.1.0-patched/mod-json-schema-validator-2.0.0-fat.jar"
         }
+      ],
+      "description": "Module permettant de verifier les entrées JSON des différents modules suivant un schéma JSON",
+      "backend": [
+        "Vert.x"
       ]
     },
     {
@@ -731,6 +891,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/mod-pdf-generator/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-pdf-generator/commits/3.1.0-patched",
           "jar_url": "https://github.com/open-ent/mod-pdf-generator/releases/download/3.1.0-patched/mod-pdf-generator-2.0.0-fat.jar"
         }
+      ],
+      "description": "Module permettant de générer des PDF",
+      "backend": [
+        "Vert.x"
       ]
     },
     {
@@ -748,6 +912,10 @@
           "body": "**Full Changelog**: https://github.com/open-ent/mod-postgresql/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-postgresql/commits/3.1.0-patched",
           "jar_url": "https://github.com/open-ent/mod-postgresql/releases/download/3.1.0-patched/mod-postgresql-2.0.0-fat.jar"
         }
+      ],
+      "description": "Module permettant de gérer les accès à la base de données PostgreSQL",
+      "backend": [
+        "Vert.x"
       ]
     },
     {
@@ -768,7 +936,11 @@
       "ci_url": "https://github.com/open-ent/gar-connector/actions",
       "releases_url": "https://github.com/open-ent/gar-connector/releases",
       "repo_url": "https://github.com/open-ent/gar-connector",
-      "releases": []
+      "releases": [],
+      "description": "Module permettant de se connecter au GAR du Ministère et de réaliser les exports des utilisateurs de la plateforme voulue",
+      "frontend": [
+        "AngularJS"
+      ]
     },
     {
       "name": "moodle-connector",
@@ -786,7 +958,8 @@
           "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.2.5-patched/fr.openent.moodle-connector.2.2-SNAPSHOT-fat.jar",
           "entcore_version": "6.14-SNAPSHOT"
         }
-      ]
+      ],
+      "description": "Moodle permet de diffuser des documents (textes, audio, vidéo, etc.) et d’interagir avec les étudiants, à l'aide d'une variété d'outils de communication et de gestion."
     }
   ],
   "generated_at": "29/05/2026 à 07:00 UTC"
