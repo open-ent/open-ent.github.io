@@ -2,11 +2,11 @@
 
 > Généré par `scripts/patched-changelog.sh` le 2026-05-31 08:53.
 > Pour chaque dépôt : commits ajoutés par le fork **par-dessus la dernière release upstream**
-> (tag non `-patched` ancêtre du HEAD pinné). Ce sont les commits à re-baser lors d'une montée de version.
+> (tag non `-patched` ancêtre du HEAD référencé). Ce sont les commits à re-baser lors d'une montée de version.
 
 ## `connectors/gar-connector`
 
-- **branche pinnée** : `3.1.4-patched-dev` @ `fac1ffa`
+- **branche référencée** : `3.1.4-patched-dev` @ `fac1ffa`
 - **base upstream** : `3.1.4`  →  delta = `3.1.4..HEAD` (**3 commit(s)**)
 - **tags patched** : 3.1.4-patched 
 
@@ -18,7 +18,7 @@ fac1ffa fix(gar): handle String value for pagination-limit config
 
 ## `connectors/moodle-connector`
 
-- **branche pinnée** : `(detached)` @ `21ce8ee`
+- **branche référencée** : `(detached)` @ `21ce8ee`
 - **base upstream** : `2.2.4`  →  delta = `2.2.4..HEAD` (**1 commit(s)**)
 
 ```
@@ -27,7 +27,7 @@ fac1ffa fix(gar): handle String value for pagination-limit config
 
 ## `libs/entcore`
 
-- **branche pinnée** : `6.14.9-patched-dev` @ `a234bc41a`
+- **branche référencée** : `6.14.9-patched-dev` @ `a234bc41a`
 - **base upstream** : `6.14.9`  →  delta = `6.14.9..HEAD` (**23 commit(s)**)
 - **tags patched** : 6.14.9-patched 6.14.9-patched-SNAPSHOT 
 
@@ -59,7 +59,7 @@ f746b7a26 fix(workspace): patch version 6.14.9-patched
 
 ## `libs/entcore-css-lib`
 
-- **branche pinnée** : `(detached)` @ `7063b7d`
+- **branche référencée** : `(detached)` @ `7063b7d`
 - **base upstream** : `4.3.10`  →  delta = `4.3.10..HEAD` (**2 commit(s)**)
 
 ```
@@ -69,7 +69,7 @@ f746b7a26 fix(workspace): patch version 6.14.9-patched
 
 ## `libs/generic-icons`
 
-- **branche pinnée** : `(detached)` @ `960f4af`
+- **branche référencée** : `(detached)` @ `960f4af`
 - **base upstream** : `2.2.9`  →  delta = `2.2.9..HEAD` (**13 commit(s)**)
 
 ```
@@ -90,7 +90,7 @@ d216927 chore:  INTEG-801 add nabook icon
 
 ## `libs/infra-front`
 
-- **branche pinnée** : `4.8.17-patched-dev` @ `6812702`
+- **branche référencée** : `4.8.17-patched-dev` @ `6812702`
 - **base upstream** : `4.8.17`  →  delta = `4.8.17..HEAD` (**3 commit(s)**)
 - **tags patched** : 4.8.17-patched 
 
@@ -102,7 +102,7 @@ a756687 chore: prepare next development iteration
 
 ## `libs/mongodb-helper`
 
-- **branche pinnée** : `3.1.1-patched-dev` @ `60e36ca`
+- **branche référencée** : `3.1.1-patched-dev` @ `60e36ca`
 - **base upstream** : `3.1.1`  →  delta = `3.1.1..HEAD` (**3 commit(s)**)
 - **tags patched** : 3.1.1-patched 
 
@@ -114,7 +114,7 @@ f3a3037 fix(mongodb-helper): patch version 3.1.1-patched
 
 ## `libs/ode-bootstrap`
 
-- **branche pinnée** : `develop` @ `f6d2e8a`
+- **branche référencée** : `develop` @ `f6d2e8a`
 - **base upstream** : `1.5.3`  →  delta = `1.5.3..HEAD` (**2 commit(s)**)
 
 ```
@@ -124,7 +124,7 @@ f6d2e8a chore(icon): Livret Sco, add app icon
 
 ## `libs/openent-frontend-framework`
 
-- **branche pinnée** : `main` @ `e2598ff`
+- **branche référencée** : `main` @ `e2598ff`
 - **base upstream** : `v2.5.21`  →  delta = `v2.5.21..HEAD` (**3 commit(s)**)
 
 ```
@@ -135,7 +135,7 @@ e2598ff ci: rename @edifice.io->@open-ent dans TOUS les package.json (apps inclu
 
 ## `libs/theme-open-ent`
 
-- **branche pinnée** : `develop` @ `8973522`
+- **branche référencée** : `develop` @ `8973522`
 - **base upstream** : `3.4.10`  →  delta = `3.4.10..HEAD` (**11 commit(s)**)
 
 ```
@@ -154,7 +154,7 @@ e474f80 add theme openent3
 
 ## `libs/vertx-cron-timer`
 
-- **branche pinnée** : `3.0.0-patched-dev` @ `a3b142a`
+- **branche référencée** : `3.0.0-patched-dev` @ `a3b142a`
 - **base upstream** : `3.0.0`  →  delta = `3.0.0..HEAD` (**4 commit(s)**)
 - **tags patched** : 3.0.0-patched 
 
@@ -167,7 +167,7 @@ a3b142a Docker not in root
 
 ## `libs/web-utils`
 
-- **branche pinnée** : `3.3.2-patched-dev` @ `35fdd31`
+- **branche référencée** : `3.3.2-patched-dev` @ `35fdd31`
 - **base upstream** : `3.3.2`  →  delta = `3.3.2..HEAD` (**1 commit(s)**)
 - **tags patched** : 3.3.2-patched 
 
@@ -177,7 +177,7 @@ a3b142a Docker not in root
 
 ## `modules/actualites`
 
-- **branche pinnée** : `3.1.4-patched-dev` @ `7d07e3b2`
+- **branche référencée** : `3.1.4-patched-dev` @ `7d07e3b2`
 - **base upstream** : `3.1.4`  →  delta = `3.1.4..HEAD` (**5 commit(s)**)
 - **tags patched** : 3.1.4-patched 3.1.5-patched 
 
@@ -191,7 +191,7 @@ aee9f68e fix pnpm
 
 ## `modules/appointments`
 
-- **branche pinnée** : `1.3.6-patched-dev` @ `a0ecfac`
+- **branche référencée** : `1.3.6-patched-dev` @ `a0ecfac`
 - **base upstream** : `1.3.6`  →  delta = `1.3.6..HEAD` (**3 commit(s)**)
 - **tags patched** : 1.3.6-patched 
 
@@ -203,7 +203,7 @@ e26b4a7 MAnage PostgreSQ types
 
 ## `modules/blog`
 
-- **branche pinnée** : `5.4.7-patched-dev` @ `8373d0c`
+- **branche référencée** : `5.4.7-patched-dev` @ `8373d0c`
 - **base upstream** : `5.4.7`  →  delta = `5.4.7..HEAD` (**9 commit(s)**)
 - **tags patched** : 5.4.10-patched 5.4.7-patched 
 
@@ -221,7 +221,7 @@ fe4150b ci: definir NPM_TOKEN/TIPTAP_PRO_TOKEN a l'install (parse .npmrc -> rout
 
 ## `modules/cahier-de-textes`
 
-- **branche pinnée** : `4.1.5-patched-dev` @ `b45a7427`
+- **branche référencée** : `4.1.5-patched-dev` @ `b45a7427`
 - **base upstream** : `4.1.5`  →  delta = `4.1.5..HEAD` (**3 commit(s)**)
 - **tags patched** : 4.1.5-patched 
 
@@ -233,7 +233,7 @@ ce93535d fix(sql): cast date parameters to ::date to fix PostgreSQL type mismatc
 
 ## `modules/calendar`
 
-- **branche pinnée** : `dev` @ `36f32be`
+- **branche référencée** : `dev` @ `36f32be`
 - **base upstream** : `4.2.9`  →  delta = `4.2.9..HEAD` (**6 commit(s)**)
 
 ```
@@ -247,7 +247,7 @@ ce93535d fix(sql): cast date parameters to ::date to fix PostgreSQL type mismatc
 
 ## `modules/collaborative-editor`
 
-- **branche pinnée** : `3.3.5-patched-dev` @ `b1e75fe`
+- **branche référencée** : `3.3.5-patched-dev` @ `b1e75fe`
 - **base upstream** : `3.3.5`  →  delta = `3.3.5..HEAD` (**8 commit(s)**)
 - **tags patched** : 3.3.5-patched 
 
@@ -264,7 +264,7 @@ bf07fd4 ci: add build-and-publish workflow for GitHub Packages
 
 ## `modules/collaborative-wall`
 
-- **branche pinnée** : `3.4.7-patched-dev` @ `854fe5a`
+- **branche référencée** : `3.4.7-patched-dev` @ `854fe5a`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 3.4.7-patched 3.4.8-patched 3.4.9-patched 
 
@@ -272,7 +272,7 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/competences`
 
-- **branche pinnée** : `2.1.12-patched-dev` @ `6da21b10`
+- **branche référencée** : `2.1.12-patched-dev` @ `6da21b10`
 - **base upstream** : `2.1.12`  →  delta = `2.1.12..HEAD` (**6 commit(s)**)
 - **tags patched** : 2.1.12-patched 
 
@@ -287,7 +287,7 @@ d4f3f471 chore: prepare next development iteration
 
 ## `modules/edt`
 
-- **branche pinnée** : `master` @ `1b0aceb`
+- **branche référencée** : `master` @ `1b0aceb`
 - **base upstream** : `3.1.4`  →  delta = `3.1.4..HEAD` (**11 commit(s)**)
 
 ```
@@ -306,7 +306,7 @@ e8200f2 fix(ci): use Java 8 to fix javax.xml.bind compilation errors on JDK 11
 
 ## `modules/exercizer`
 
-- **branche pinnée** : `4.3.6-patched-dev` @ `e8da1e91`
+- **branche référencée** : `4.3.6-patched-dev` @ `e8da1e91`
 - **base upstream** : `4.3.6`  →  delta = `4.3.6..HEAD` (**3 commit(s)**)
 - **tags patched** : 4.2.5-patched 
 
@@ -318,7 +318,7 @@ e98a3dee fix(exercizer): patch version 4.3.6-patched
 
 ## `modules/explorer`
 
-- **branche pinnée** : `2.5.7-patched-dev` @ `1a4f9ca`
+- **branche référencée** : `2.5.7-patched-dev` @ `1a4f9ca`
 - **base upstream** : `lib-v2.5.23`  →  delta = `lib-v2.5.23..HEAD` (**0 commit(s)**)
 - **tags patched** : 2.5.7-patched 
 
@@ -326,7 +326,7 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/forum`
 
-- **branche pinnée** : `dev` @ `4b077e8`
+- **branche référencée** : `dev` @ `4b077e8`
 - **base upstream** : `2.1.3`  →  delta = `2.1.3..HEAD` (**4 commit(s)**)
 
 ```
@@ -338,7 +338,7 @@ d7a4e88 chore: prepare next development iteration
 
 ## `modules/http-proxy`
 
-- **branche pinnée** : `3.0.0-patched-dev` @ `48bf837`
+- **branche référencée** : `3.0.0-patched-dev` @ `48bf837`
 - **base upstream** : `3.0.0`  →  delta = `3.0.0..HEAD` (**3 commit(s)**)
 - **tags patched** : 3.0.0-patched 
 
@@ -350,7 +350,7 @@ d7a4e88 chore: prepare next development iteration
 
 ## `modules/mindmap`
 
-- **branche pinnée** : `develop` @ `a6cd76f`
+- **branche référencée** : `develop` @ `a6cd76f`
 - **base upstream** : `3.4.9`  →  delta = `3.4.9..HEAD` (**6 commit(s)**)
 - **tags patched** : 3.4.7-patched 3.4.9-patched 
 
@@ -365,7 +365,7 @@ a6cd76f mindmap: migration @edifice.io -> @open-ent (+ ode-explorer -> @open-ent
 
 ## `modules/mod-image-resizer`
 
-- **branche pinnée** : `3.2.3-patched-dev` @ `19aaab6`
+- **branche référencée** : `3.2.3-patched-dev` @ `19aaab6`
 - **base upstream** : `3.2.3`  →  delta = `3.2.3..HEAD` (**1 commit(s)**)
 - **tags patched** : 3.2.3-patched 
 
@@ -375,7 +375,7 @@ a6cd76f mindmap: migration @edifice.io -> @open-ent (+ ode-explorer -> @open-ent
 
 ## `modules/mod-json-schema-validator`
 
-- **branche pinnée** : `3.0.0-patched-dev` @ `6ce1f54`
+- **branche référencée** : `3.0.0-patched-dev` @ `6ce1f54`
 - **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**7 commit(s)**)
 - **tags patched** : 3.0.0-patched 
 
@@ -391,7 +391,7 @@ acb977f fix: support JDK 21 and pattern
 
 ## `modules/mod-mongo-persistor`
 
-- **branche pinnée** : `4.1.1-patched-dev` @ `638727b`
+- **branche référencée** : `4.1.1-patched-dev` @ `638727b`
 - **base upstream** : `4.1.1`  →  delta = `4.1.1..HEAD` (**1 commit(s)**)
 - **tags patched** : 4.1.1-patched 
 
@@ -401,7 +401,7 @@ acb977f fix: support JDK 21 and pattern
 
 ## `modules/mod-pdf-generator`
 
-- **branche pinnée** : `2.1.1-patched-dev` @ `15a8d76`
+- **branche référencée** : `2.1.1-patched-dev` @ `15a8d76`
 - **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**1 commit(s)**)
 - **tags patched** : 2.1.1-patched 
 
@@ -411,7 +411,7 @@ acb977f fix: support JDK 21 and pattern
 
 ## `modules/mod-postgresql`
 
-- **branche pinnée** : `2.1.1-patched-dev` @ `352df44`
+- **branche référencée** : `2.1.1-patched-dev` @ `352df44`
 - **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**2 commit(s)**)
 - **tags patched** : 2.1.1-patched 3.1.0-patched 
 
@@ -422,7 +422,7 @@ acb977f fix: support JDK 21 and pattern
 
 ## `modules/mod-sftp`
 
-- **branche pinnée** : `2.1.3-patched-dev` @ `b00088f`
+- **branche référencée** : `2.1.3-patched-dev` @ `b00088f`
 - **base upstream** : `2.1.3`  →  delta = `2.1.3..HEAD` (**2 commit(s)**)
 - **tags patched** : 2.1.3-patched 
 
@@ -433,7 +433,7 @@ b00088f ci: add build-and-publish workflow
 
 ## `modules/mod-zip`
 
-- **branche pinnée** : `3.1.1-patched-dev` @ `3134bc0`
+- **branche référencée** : `3.1.1-patched-dev` @ `3134bc0`
 - **base upstream** : `3.2.1`  →  delta = `3.2.1..HEAD` (**2 commit(s)**)
 - **tags patched** : 3.1.1-patched 
 
@@ -444,7 +444,7 @@ b00088f ci: add build-and-publish workflow
 
 ## `modules/pages`
 
-- **branche pinnée** : `master` @ `7f70532`
+- **branche référencée** : `master` @ `7f70532`
 - **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**1 commit(s)**)
 
 ```
@@ -453,7 +453,7 @@ b00088f ci: add build-and-publish workflow
 
 ## `modules/poll`
 
-- **branche pinnée** : `master` @ `b170ec7`
+- **branche référencée** : `master` @ `b170ec7`
 - **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**1 commit(s)**)
 
 ```
@@ -462,7 +462,7 @@ b170ec7 ci: add build-and-publish workflow for GitHub Packages
 
 ## `modules/presences`
 
-- **branche pinnée** : `2.1.9-patched-dev` @ `9abd0bad`
+- **branche référencée** : `2.1.9-patched-dev` @ `9abd0bad`
 - **base upstream** : `2.1.9`  →  delta = `2.1.9..HEAD` (**14 commit(s)**)
 - **tags patched** : 2.1.9-patched 
 
@@ -485,7 +485,7 @@ ca81a2a8 fix: change revision to 2.1.9-patched
 
 ## `modules/rack`
 
-- **branche pinnée** : `master` @ `4e38596`
+- **branche référencée** : `master` @ `4e38596`
 - **base upstream** : `3.1.7`  →  delta = `3.1.7..HEAD` (**3 commit(s)**)
 - **tags patched** : 3.1.6-patched 
 
@@ -497,7 +497,7 @@ ca81a2a8 fix: change revision to 2.1.9-patched
 
 ## `modules/rbs`
 
-- **branche pinnée** : `2.1.7-patched-dev` @ `e648468`
+- **branche référencée** : `2.1.7-patched-dev` @ `e648468`
 - **base upstream** : `2.1.7`  →  delta = `2.1.7..HEAD` (**6 commit(s)**)
 - **tags patched** : 2.1.7-patched 
 
@@ -512,7 +512,7 @@ e314dfc chore: prepare next development iteration
 
 ## `modules/ressource-aggregator`
 
-- **branche pinnée** : `5.2.4-patched-dev` @ `29ba83a`
+- **branche référencée** : `5.2.4-patched-dev` @ `29ba83a`
 - **base upstream** : `2.3.1`  →  delta = `2.3.1..HEAD` (**446 commit(s)**)
 - **tags patched** : 5.2.4-patched 
 
@@ -602,7 +602,7 @@ f32959c feat(): [#MED-359] add i18n for mobile notif (#160)
 
 ## `modules/rss`
 
-- **branche pinnée** : `master` @ `085e3ac`
+- **branche référencée** : `master` @ `085e3ac`
 - **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**1 commit(s)**)
 
 ```
@@ -611,7 +611,7 @@ f32959c feat(): [#MED-359] add i18n for mobile notif (#160)
 
 ## `modules/search-engine`
 
-- **branche pinnée** : `master` @ `f98af21`
+- **branche référencée** : `master` @ `f98af21`
 - **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**1 commit(s)**)
 
 ```
@@ -620,7 +620,7 @@ f98af21 ci: add build-and-publish workflow for GitHub Packages
 
 ## `modules/support`
 
-- **branche pinnée** : `4.0.1-patched-dev` @ `0956234`
+- **branche référencée** : `4.0.1-patched-dev` @ `0956234`
 - **base upstream** : `4.0.1`  →  delta = `4.0.1..HEAD` (**9 commit(s)**)
 - **tags patched** : 3.1.5-patched 4.0.1-patched 4.0.2-patched 
 
@@ -638,7 +638,7 @@ e25aff9 fix(support): patch version 4.0.1-patched
 
 ## `modules/timeline-generator`
 
-- **branche pinnée** : `master` @ `9249723`
+- **branche référencée** : `master` @ `9249723`
 - **base upstream** : `3.3.7`  →  delta = `3.3.7..HEAD` (**2 commit(s)**)
 
 ```
@@ -648,7 +648,7 @@ d890173 ci: add build-and-publish workflow for GitHub Packages
 
 ## `modules/vie-scolaire`
 
-- **branche pinnée** : `dev` @ `c2afaf47`
+- **branche référencée** : `dev` @ `c2afaf47`
 - **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**3 commit(s)**)
 
 ```
@@ -659,7 +659,7 @@ dcbe6e84 chore: prepare next development iteration
 
 ## `modules/wiki`
 
-- **branche pinnée** : `3.5.9-patched-dev` @ `6aac625`
+- **branche référencée** : `3.5.9-patched-dev` @ `6aac625`
 - **base upstream** : `3.5.9`  →  delta = `3.5.9..HEAD` (**6 commit(s)**)
 - **tags patched** : 3.5.12-patched 3.5.13-patched 3.5.9-patched 
 
@@ -674,7 +674,7 @@ dcbe6e84 chore: prepare next development iteration
 
 ## `static/application-help-1d`
 
-- **branche pinnée** : `dev` @ `1eac8aa`
+- **branche référencée** : `dev` @ `1eac8aa`
 - **base upstream** : `4.12.4`  →  delta = `4.12.4..HEAD` (**2 commit(s)**)
 
 ```
