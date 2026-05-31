@@ -1,6 +1,6 @@
 # Changelog consolidé des forks "-patched"
 
-> Généré par `scripts/patched-changelog.sh` le 2026-05-31 11:53.
+> Généré par `scripts/patched-changelog.sh` le 2026-05-31 12:07.
 > Pour chaque dépôt : commits ajoutés par le fork **par-dessus la dernière release upstream**
 > (tag non `-patched` ancêtre du HEAD référencé). Ce sont les commits à re-baser lors d'une montée de version.
 
