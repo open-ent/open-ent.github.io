@@ -1,6 +1,6 @@
 # Changelog consolidé des forks "-patched"
 
-> Généré par `scripts/patched-changelog.sh` le 2026-05-31 08:53.
+> Généré par `scripts/patched-changelog.sh` le 2026-05-31 11:53.
 > Pour chaque dépôt : commits ajoutés par le fork **par-dessus la dernière release upstream**
 > (tag non `-patched` ancêtre du HEAD référencé). Ce sont les commits à re-baser lors d'une montée de version.
 
@@ -411,11 +411,13 @@ acb977f fix: support JDK 21 and pattern
 
 ## `modules/mod-postgresql`
 
-- **branche référencée** : `2.1.1-patched-dev` @ `352df44`
-- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**2 commit(s)**)
-- **tags patched** : 2.1.1-patched 3.1.0-patched 
+- **branche référencée** : `2.1.1-patched-dev` @ `d642192`
+- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**4 commit(s)**)
+- **tags patched** : 2.1.1-patched 
 
 ```
+d642192 fix(sql): résilience démarrage + montée HikariCP 5.1.0 / JDK 21
+d00ac64 ci: add build-and-publish workflow
 352df44 manage other type for PostgreSQL > 14
 17c1cb4 fix(sql): handle Boolean and Long types in SqlPersistor.prepared()
 ```
@@ -512,92 +514,24 @@ e314dfc chore: prepare next development iteration
 
 ## `modules/ressource-aggregator`
 
-- **branche référencée** : `5.2.4-patched-dev` @ `29ba83a`
-- **base upstream** : `2.3.1`  →  delta = `2.3.1..HEAD` (**446 commit(s)**)
+- **branche référencée** : `5.2.4-patched-dev` @ `24c9f40`
+- **base upstream** : `5.2.4`  →  delta = `5.2.4..HEAD` (**13 commit(s)**)
 - **tags patched** : 5.2.4-patched 
 
 ```
-29ba83a chore(common): bump entCoreVersion 6.14.9 → 6.14.9-patched
-40207cf ci: add build-and-publish workflow for GitHub Packages
-43f4ee5 add JML modif
-6efb24c fix(mediacentre): patch version 5.2.4-patched
-89a867c fix: remove fake ressources in ressources.json
-33b27f1 feat: remove duplicate in ressources.json
-dd80220 fix: change version in pom.xml
-26e1029 feat: add more ressources mock
-9311c11 fix: image for gar ressources
-53c8bff fix: mock ressources GAR
-d961441 fix: elsatic version for request with or without _doc
-6da779c chore: prepare next development iteration
-7067c1e release: 5.2.4
-efc8c22 chore: #SRE-4685 use Jenkins credentials instead of env variables
-bac1d8b chore: prepare next development iteration
-cc112de release: 5.2.3
-1ff58fa chore: update edifice-parent in pom
-445528b chore: prepare next development iteration
-015c75a release: 5.2.2
-8e39639 chore: prepare next development iteration
-41e89c7 release: 5.2.1
-3f15285 chore: prepare next development iteration
-47fd1ec release: 5.2.0
-eb870a1 chore: set next development version
-ea1b71f ci: add missing init function
-bd31efb ci: set docker env var before running
-eebc12b chore: update dependencies
-0896534 chore: update dependencies
-378a567 feat: #RBACK-117, zookeeper migration
-2f94a9a feat(conf): #RBACK-188 add template.j2
-bc54e2d chore: update dependencies
-b6cea40 chore: update dependencies
-f5ad101 chore: update dependencies
-dc8dc6a chore: prepare next development iteration
-f0764e6 release: 5.1.9
-04e6152 chore: prepare next development iteration
-3f6a23f release: 5.1.8
-566b696 fix(gar-resources): #MED-383 retrieve GAR resources depending on structure (#171)
-060fef3 chore: prepare next development iteration
-55d04d3 release: 5.1.7
-f3a7f6f fix: remove old libs from pakage.json
-a69614b fix: DATA-429 add event when access gar resource
-5f0da84 chore: update dependencies
-0b0eb7c fix(notif): [#MED-371] fix push notif text on mobile device
-545a99c chore: prepare next development iteration
-4a5ebe8 release: 5.1.6
-27d7106 feat(sql) : added default levels for new platforms
-13cd284 chore: update dependencies
-71f70e8 fix: fix conf template
-9fe86b2 chore: prepare next development iteration
-c7c0f9c release: 5.1.5
-2faad40 chore: update edifice-parent in pom
-ee6ee17 chore: update edifice-parent in pom
-b89260c fix(pins): #MED-378 fix display of hightlight pins (#170)
-6970ddd fix(moodle): fix moodle search
-a04557b feat(pins): #MED-378 add conf param for highlight text (#169)
-e1a83e2 fix: #MED-291 change color and use edifice button
-f1fb07c feat(error-page): #MED-291 Implement error page for 404 or code errors (#168)
-b914104 fix(signet): #MED-375 update favorites when signet is updated (#167)
-88b60cc feat(notif): #MED-373 restrict Moodle resources access to teachers and personnels only (#166)
-2fc6c32 fix(notif): #MED-371 mobile notif for new pin (#165)
-aad3c8d feat(moodle): #MED-356 add duplication for moodle resources (#164)
-694a4d7 fix(notif): #MED-354 restrict new pin notifs to users with MediaCentre access (#163)
-1ef5266 chore: prepare next development iteration
-e3f9c82 release: 5.1.4
-d32a241 chore: prepare next development iteration
-693ff68 release: 5.1.3
-7d4a224 chore: prepare next development iteration
-0ca81cf release: 5.1.2
-b231af6 fix: INTEG-750 filter searchSources with enabled sources only
-380e5e2 chore: prepare for next development iteration
-5a6de18 release: 5.1.1
-b8c1562 fix: fix JenkinsFile
-1b61efb update deps
-392553e fix: infinite loader when error
-722d6ea fix: style of favorite home container
-fde58b0 fix(perf): #RDV-363 fix refetch (images + routes) (#161)
-f32959c feat(): [#MED-359] add i18n for mobile notif (#160)
-4cbfde9 chore: prepare next development iteration
-807b3cd release: 5.1.0
-... (366 commits supplémentaires tronqués)
+24c9f40 mediacentre: migration @edifice.io -> @open-ent (2.1.2 -> 2.5.22) + alignement peers (react-query 5, react-i18next 14, react 18.3.1) + dedupe vite
+1a0d87a chore(common): bump entCoreVersion 6.14.9 → 6.14.9-patched
+9dad9d0 ci: add build-and-publish workflow for GitHub Packages
+5424f07 add JML modif
+bbad719 fix(mediacentre): patch version 5.2.4-patched
+0da4acf fix: remove fake ressources in ressources.json
+c2826ab feat: remove duplicate in ressources.json
+c662928 fix: change version in pom.xml
+c61c8b0 feat: add more ressources mock
+bb4b07f fix: image for gar ressources
+37803d1 fix: mock ressources GAR
+712e505 fix: elsatic version for request with or without _doc
+b7358d4 chore: prepare next development iteration
 ```
 
 ## `modules/rss`
@@ -688,5 +622,5 @@ dcbe6e84 chore: prepare next development iteration
 
 ### Comment relire / régénérer
 - Mettre à jour les tags upstream : `git submodule foreach 'git fetch --tags origin || true'`
-- Régénérer : `./scripts/patched-changelog.sh`
+- Régénérer : `./scripts/patched-changelog.sh` (copie aussi la page publique open-ent.github.io)
 - Lors d'une montée de version d'un module : re-baser/cherry-pick les commits listés ci-dessus sur la nouvelle release upstream avant de re-tagger `X-patched`.
