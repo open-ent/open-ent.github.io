@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open-ENT — Changelog des patchs</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3354;
+      --accent: #4f8ef7;
+      --accent2: #7c5cfc;
+      --yellow: #f59e0b;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Fira Code', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+    html { scroll-behavior: smooth; }
+
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1229 50%, #1a1020 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .header-inner { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+    .header-top { display: flex; align-items: center; gap: 1rem; }
+    .header-logo { height: 44px; object-fit: contain; }
+    h1.page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1.page-title span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .back {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      margin-top: 0.75rem; font-size: 0.82rem; color: var(--accent); text-decoration: none;
+    }
+    .back:hover { text-decoration: underline; }
+
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    #content { font-size: 0.9rem; line-height: 1.6; }
+    #content h1 { font-size: 1.4rem; margin: 1.5rem 0 0.75rem; }
+    #content h2 {
+      font-size: 1rem; margin: 2rem 0 0.5rem; padding-top: 0.75rem;
+      border-top: 1px solid var(--border); color: var(--accent);
+      font-family: var(--mono);
+    }
+    #content h3 { font-size: 0.92rem; margin: 1rem 0 0.4rem; color: var(--yellow); }
+    #content p { margin: 0.5rem 0; color: var(--text); }
+    #content blockquote {
+      border-left: 3px solid var(--border); padding: 0.25rem 0 0.25rem 1rem;
+      margin: 0.4rem 0; color: var(--muted); font-size: 0.85rem;
+    }
+    #content ul { padding-left: 1.4rem; margin: 0.4rem 0; }
+    #content li { margin: 0.2rem 0; }
+    #content a { color: var(--accent); text-decoration: none; }
+    #content a:hover { text-decoration: underline; }
+    #content code {
+      font-family: var(--mono); font-size: 0.85em;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 5px; padding: 0.08rem 0.35rem; color: #c4cde0;
+    }
+    #content h2 code { background: none; border: none; padding: 0; color: inherit; }
+    #content pre {
+      background: #0b0d14; border: 1px solid var(--border); border-radius: 10px;
+      padding: 1rem; margin: 0.6rem 0; overflow-x: auto;
+    }
+    #content pre code {
+      background: none; border: none; padding: 0; color: #9fb0d0;
+      font-size: 0.78rem; line-height: 1.5; white-space: pre;
+    }
+    #content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .empty { color: var(--muted); text-align: center; padding: 2rem; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 1.5rem 2rem;
+      text-align: center; font-size: 0.78rem; color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <img src="logo-text.png" alt="Open-ENT" class="header-logo">
+      <h1 class="page-title"><span>Changelog</span> des patchs</h1>
+    </div>
+    <a class="back" href="./index.html">← Retour au dashboard</a>
+  </div>
+</header>
+
+<main>
+  <div id="content"><div class="empty">Chargement du changelog…</div></div>
+</main>
+
+<footer>
+  Synthèse des commits ajoutés par les forks « -patched » par-dessus l'upstream ·
+  <a href="https://github.com/open-ent" target="_blank">open-ent</a>
+</footer>
+
+<script>
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function inline(s) {
+    return escapeHtml(s)
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  }
+  function renderMarkdown(md) {
+    const lines = md.split('\n');
+    let html = '', inCode = false, inList = false, code = '';
+    const closeList = () => { if (inList) { html += '</ul>'; inList = false; } };
+    for (const raw of lines) {
+      if (raw.startsWith('```')) {
+        if (!inCode) { inCode = true; code = ''; }
+        else { inCode = false; closeList(); html += '<pre><code>' + escapeHtml(code.replace(/\n$/, '')) + '</code></pre>'; }
+        continue;
+      }
+      if (inCode) { code += raw + '\n'; continue; }
+      const line = raw.replace(/\s+$/, '');
+      if (line === '') { closeList(); continue; }
+      if (line === '---') { closeList(); html += '<hr>'; continue; }
+      let m;
+      if ((m = line.match(/^### (.+)/))) { closeList(); html += '<h3>' + inline(m[1]) + '</h3>'; continue; }
+      if ((m = line.match(/^## (.+)/)))  { closeList(); html += '<h2>' + inline(m[1]) + '</h2>'; continue; }
+      if ((m = line.match(/^# (.+)/)))   { closeList(); html += '<h1>' + inline(m[1]) + '</h1>'; continue; }
+      if ((m = line.match(/^> ?(.*)/)))  { closeList(); html += '<blockquote>' + inline(m[1]) + '</blockquote>'; continue; }
+      if ((m = line.match(/^[-*] (.+)/))){ if (!inList) { html += '<ul>'; inList = true; } html += '<li>' + inline(m[1]) + '</li>'; continue; }
+      closeList(); html += '<p>' + inline(line) + '</p>';
+    }
+    closeList();
+    if (inCode) html += '<pre><code>' + escapeHtml(code.replace(/\n$/, '')) + '</code></pre>';
+    return html;
+  }
+
+  fetch('./patched-changelog.md', { cache: 'no-cache' })
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+    .then(md => { document.getElementById('content').innerHTML = renderMarkdown(md); })
+    .catch(err => {
+      document.getElementById('content').innerHTML =
+        '<div class="empty">Impossible de charger le changelog : ' + err.message + '</div>';
+    });
+</script>
+</body>
+</html>

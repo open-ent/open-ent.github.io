@@ -70,6 +70,8 @@
       font-size: 0.78rem; color: var(--muted);
     }
     .meta-chip svg { width: 13px; height: 13px; }
+    a.meta-chip { text-decoration: none; transition: border-color 0.15s, color 0.15s; }
+    a.meta-chip:hover { border-color: var(--accent); color: var(--text); }
 
     /* MAIN */
     main {
@@ -311,6 +313,10 @@
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 3.5a.5.5 0 00-1 0V9a.5.5 0 00.252.434l3.5 2a.5.5 0 00.496-.868L8 8.71V3.5z"/><path d="M8 16A8 8 0 108 0a8 8 0 000 16zm7-8A7 7 0 111 8a7 7 0 0114 0z"/></svg>
         <span id="last-updated-text">Chargement...</span>
       </span>
+      <a class="meta-chip" href="./changelog.html" title="Synthèse des modifications apportées par les forks « -patched »">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 0h7l3 3v11.5A1.5 1.5 0 0111.5 16h-9A1.5 1.5 0 011 14.5v-13A1.5 1.5 0 012.5 0H3zm6 1.5V4h2.5L9 1.5zM4 7h6v1H4V7zm0 3h6v1H4v-1z"/></svg>
+        Changelog des patchs
+      </a>
     </div>
   </div>
 </header>
@@ -328,7 +334,8 @@
 <footer>
   Généré automatiquement via GitHub Actions —
   <a href="https://github.com/open-ent" target="_blank">open-ent</a> ·
-  <a href="https://github.com/open-ent/open-ent.github.io/actions" target="_blank">Voir les workflows</a>
+  <a href="https://github.com/open-ent/open-ent.github.io/actions" target="_blank">Voir les workflows</a> ·
+  <a href="./changelog.html">Changelog des patchs</a>
 </footer>
 
 <script>
