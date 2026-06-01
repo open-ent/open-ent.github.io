@@ -407,7 +407,7 @@
       "name": "explorer",
       "group_id": "com.opendigitaleducation",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/explorer/actions",
       "releases_url": "https://github.com/open-ent/explorer/releases",
       "repo_url": "https://github.com/open-ent/explorer",
@@ -635,7 +635,7 @@
       "name": "mod-zip",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mod-zip/actions",
       "releases_url": "https://github.com/open-ent/mod-zip/releases",
       "repo_url": "https://github.com/open-ent/mod-zip",
@@ -669,7 +669,7 @@
       "name": "mod-image-resizer",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mod-image-resizer/actions",
       "releases_url": "https://github.com/open-ent/mod-image-resizer/releases",
       "repo_url": "https://github.com/open-ent/mod-image-resizer",
@@ -703,7 +703,7 @@
       "name": "mod-mongo-persistor",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mod-mongo-persistor/actions",
       "releases_url": "https://github.com/open-ent/mod-mongo-persistor/releases",
       "repo_url": "https://github.com/open-ent/mod-mongo-persistor",
@@ -720,7 +720,7 @@
       "name": "mod-pdf-generator",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mod-pdf-generator/actions",
       "releases_url": "https://github.com/open-ent/mod-pdf-generator/releases",
       "repo_url": "https://github.com/open-ent/mod-pdf-generator",
@@ -741,13 +741,20 @@
       "ci_url": "https://github.com/open-ent/mod-postgresql/actions",
       "releases_url": "https://github.com/open-ent/mod-postgresql/releases",
       "repo_url": "https://github.com/open-ent/mod-postgresql",
-      "releases": []
+      "releases": [
+        {
+          "tag": "2.1.1-patched-dev",
+          "published_at": "2026-06-01",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-postgresql/commits/2.1.1-patched-dev",
+          "jar_url": "https://github.com/open-ent/mod-postgresql/releases/download/2.1.1-patched-dev/fr.wseduc.mod-postgresql.2.1.1-patched-fat.jar"
+        }
+      ]
     },
     {
       "name": "mod-sftp",
       "group_id": "fr.cgi",
       "section": "infra",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mod-sftp/actions",
       "releases_url": "https://github.com/open-ent/mod-sftp/releases",
       "repo_url": "https://github.com/open-ent/mod-sftp",
@@ -755,7 +762,7 @@
         {
           "tag": "2.1.3-patched",
           "published_at": "2026-05-31",
-          "body": "**Full Changelog**: https://github.com/open-ent/mod-sftp/commits/2.1.3-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-sftp/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-sftp/commits/2.1.3-patched",
           "jar_url": "https://github.com/open-ent/mod-sftp/releases/download/2.1.3-patched/fr.cgi.mod-sftp.2.1.3-patched-fat.jar"
         }
       ]
@@ -789,5 +796,5 @@
       ]
     }
   ],
-  "generated_at": "01/06/2026 à 08:42 UTC"
+  "generated_at": "01/06/2026 à 20:13 UTC"
 }
