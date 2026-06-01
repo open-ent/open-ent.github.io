@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open ENT - Status</title>
+  <meta name="description" content="Status page Open ENT: disponibilite et performance de www.ent-scolaire.fr" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <main class="wrap">
+    <header class="hero glass">
+      <div>
+        <p class="eyebrow">Open ENT Monitoring</p>
+        <h1>Status de www.ent-scolaire.fr</h1>
+        <p class="subtitle">Disponibilite en temps reel, incidents recents et tendance de performance.</p>
+      </div>
+      <div class="status-pulse" id="statusPulse" aria-live="polite">
+        <span class="dot"></span>
+        <span id="statusText">Chargement...</span>
+      </div>
+    </header>
+
+    <section class="metrics">
+      <article class="metric glass">
+        <h2>Dispo 24h</h2>
+        <p id="uptime24h">-</p>
+      </article>
+      <article class="metric glass">
+        <h2>Dispo 7 jours</h2>
+        <p id="uptime7d">-</p>
+      </article>
+      <article class="metric glass">
+        <h2>Dispo 30 jours</h2>
+        <p id="uptime30d">-</p>
+      </article>
+      <article class="metric glass">
+        <h2>Latence moyenne</h2>
+        <p id="latencyAvg">-</p>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel glass">
+        <div class="panel-head">
+          <h3>Latence (derniers checks)</h3>
+          <span id="generatedAt" class="muted"></span>
+        </div>
+        <canvas id="latencyChart" width="980" height="260" aria-label="Courbe de latence"></canvas>
+      </article>
+
+      <article class="panel glass">
+        <div class="panel-head">
+          <h3>Disponibilite 24h</h3>
+          <span class="muted">1 bloc = 5 min</span>
+        </div>
+        <div id="uptimeBar" class="uptime-bar" aria-label="Barre de disponibilite"></div>
+      </article>
+
+      <article class="panel glass incidents-panel">
+        <div class="panel-head">
+          <h3>Incidents recents</h3>
+          <span id="incidentCount" class="muted">0 incident</span>
+        </div>
+        <ul id="incidentsList" class="incidents-list"></ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-05-25T12:21:34.659Z",
+    "isUp": false,
+    "httpStatus": null,
+    "responseTimeMs": 673,
+    "error": "fetch failed"
+  },
+  {
+    "timestamp": "2026-06-01T22:38:46.165Z",
+    "isUp": true,
+    "httpStatus": 404,
+    "responseTimeMs": 660,
+    "error": null
+  }
+]

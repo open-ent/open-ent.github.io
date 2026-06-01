@@ -1,0 +1,239 @@
+:root {
+  --bg: #08111f;
+  --bg2: #0f2240;
+  --panel: rgba(255, 255, 255, 0.08);
+  --panel-border: rgba(255, 255, 255, 0.2);
+  --text: #eef4ff;
+  --muted: #bfd0ef;
+  --up: #27d07d;
+  --down: #ff4d6d;
+  --warn: #ffb800;
+  --accent: #3ea6ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Space Grotesk", "Segoe UI", Tahoma, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #2455a3 0%, transparent 65%),
+    radial-gradient(900px 400px at 90% 0%, #20487f 0%, transparent 70%),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+}
+
+.bg-shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.bg-shape-1 {
+  width: 300px;
+  height: 300px;
+  background: #3ea6ff;
+  top: 10%;
+  left: -80px;
+}
+
+.bg-shape-2 {
+  width: 380px;
+  height: 380px;
+  background: #4f8df5;
+  right: -110px;
+  top: 45%;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 16px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.glass {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  animation: rise 420ms ease;
+}
+
+.eyebrow {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  margin: 0 0 6px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 10px 0 0;
+}
+
+.status-pulse {
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--warn);
+  box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.6);
+  animation: pulse 1.7s infinite;
+}
+
+.metrics {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  padding: 16px;
+  animation: rise 500ms ease;
+}
+
+.metric h2 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.metric p {
+  margin: 8px 0 0;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+}
+
+.panel-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.panel {
+  padding: 16px;
+  animation: rise 580ms ease;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.panel h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+#latencyChart {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: rgba(8, 17, 31, 0.5);
+}
+
+.uptime-bar {
+  display: grid;
+  grid-template-columns: repeat(48, 1fr);
+  gap: 2px;
+}
+
+.uptime-cell {
+  height: 12px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.uptime-cell.up { background: var(--up); }
+.uptime-cell.down { background: var(--down); }
+
+.incidents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.incident {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 17, 31, 0.5);
+}
+
+.incident-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.incident-meta {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(255, 184, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1000px) {
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .metrics { grid-template-columns: 1fr; }
+  .uptime-bar { grid-template-columns: repeat(24, 1fr); }
+}
