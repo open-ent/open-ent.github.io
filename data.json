@@ -344,6 +344,16 @@
       "releases": []
     },
     {
+      "name": "chat-nats",
+      "group_id": "fr.openent",
+      "section": "apps",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/chat-nats/actions",
+      "releases_url": "https://github.com/open-ent/chat-nats/releases",
+      "repo_url": "https://github.com/open-ent/chat-nats",
+      "releases": []
+    },
+    {
       "name": "collaborative-editor",
       "group_id": "net.atos",
       "section": "apps",
@@ -552,6 +562,16 @@
           "entcore_version": "6.14.9"
         }
       ]
+    },
+    {
+      "name": "school-planner",
+      "group_id": "fr.tech.openent",
+      "section": "apps",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/school-planner/actions",
+      "releases_url": "https://github.com/open-ent/school-planner/releases",
+      "repo_url": "https://github.com/open-ent/school-planner",
+      "releases": []
     },
     {
       "name": "search-engine",
@@ -794,7 +814,17 @@
           "entcore_version": "6.14-SNAPSHOT"
         }
       ]
+    },
+    {
+      "name": "wordpress-connector",
+      "group_id": "fr.openent",
+      "section": "connectors",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/wordpress-connector/actions",
+      "releases_url": "https://github.com/open-ent/wordpress-connector/releases",
+      "repo_url": "https://github.com/open-ent/wordpress-connector",
+      "releases": []
     }
   ],
-  "generated_at": "02/06/2026 à 17:21 UTC"
+  "generated_at": "02/06/2026 à 17:24 UTC"
 }
