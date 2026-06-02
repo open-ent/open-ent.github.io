@@ -180,6 +180,7 @@ jobs:
             "open-ent/blog|org.entcore|blog"
             "open-ent/cahier-de-textes|fr.openent|diary"
             "open-ent/calendar|net.atos|calendar"
+            "open-ent/chat-nats|fr.openent|chat-nats"
             "open-ent/collaborative-editor|net.atos|collaborative-editor"
             "open-ent/collaborative-wall|net.atos|collaborativewall"
             "open-ent/exercizer|fr.openent|exercizer"
@@ -190,6 +191,7 @@ jobs:
             "open-ent/poll|net.atos|poll"
             "open-ent/rack|fr.wseduc|rack"
             "open-ent/rss|net.atos|rss"
+            "open-ent/school-planner|fr.tech.openent|school-planner"
             "open-ent/search-engine|fr.openent|search-engine"
             "open-ent/support|net.atos|support"
             "open-ent/timeline-generator|net.atos|timelinegenerator"
@@ -240,6 +242,7 @@ jobs:
           REPOS_CONNECTORS=(
             "open-ent/gar-connector|fr.openent|gar-connector"
             "open-ent/moodle-connector|fr.openent|moodle-connector"
+            "open-ent/wordpress-connector|fr.openent|wordpress-connector"
           )
 
           for entry in "${REPOS_CONNECTORS[@]}"; do
