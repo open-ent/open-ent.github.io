@@ -259,7 +259,7 @@
       "name": "actualites",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/actualites/actions",
       "releases_url": "https://github.com/open-ent/actualites/releases",
       "repo_url": "https://github.com/open-ent/actualites",
@@ -337,7 +337,7 @@
       "name": "calendar",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
@@ -375,7 +375,7 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
@@ -531,7 +531,7 @@
       "name": "rack",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/rack/actions",
       "releases_url": "https://github.com/open-ent/rack/releases",
       "repo_url": "https://github.com/open-ent/rack",
@@ -595,7 +595,7 @@
       "name": "support",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/support/actions",
       "releases_url": "https://github.com/open-ent/support/releases",
       "repo_url": "https://github.com/open-ent/support",
@@ -631,7 +631,7 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
@@ -826,5 +826,5 @@
       "releases": []
     }
   ],
-  "generated_at": "02/06/2026 à 20:24 UTC"
+  "generated_at": "02/06/2026 à 22:34 UTC"
 }
