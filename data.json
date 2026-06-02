@@ -295,7 +295,7 @@
       "name": "blog",
       "group_id": "org.entcore",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/blog/actions",
       "releases_url": "https://github.com/open-ent/blog/releases",
       "repo_url": "https://github.com/open-ent/blog",
@@ -796,5 +796,5 @@
       ]
     }
   ],
-  "generated_at": "02/06/2026 à 08:02 UTC"
+  "generated_at": "02/06/2026 à 09:10 UTC"
 }
