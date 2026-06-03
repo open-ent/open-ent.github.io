@@ -295,7 +295,7 @@
       "name": "blog",
       "group_id": "org.entcore",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/blog/actions",
       "releases_url": "https://github.com/open-ent/blog/releases",
       "repo_url": "https://github.com/open-ent/blog",
@@ -347,7 +347,7 @@
       "name": "chat-nats",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/chat-nats/actions",
       "releases_url": "https://github.com/open-ent/chat-nats/releases",
       "repo_url": "https://github.com/open-ent/chat-nats",
@@ -357,7 +357,7 @@
       "name": "collaborative-editor",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-editor/actions",
       "releases_url": "https://github.com/open-ent/collaborative-editor/releases",
       "repo_url": "https://github.com/open-ent/collaborative-editor",
@@ -826,5 +826,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/06/2026 à 04:18 UTC"
+  "generated_at": "03/06/2026 à 05:19 UTC"
 }
