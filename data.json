@@ -706,7 +706,7 @@
       "releases": [
         {
           "tag": "2.1.5-patched",
-          "published_at": "2026-05-26",
+          "published_at": "2026-06-19",
           "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.1.5-patched/fr.openent.search-engine.2.1.4-fat.jar",
           "entcore_version": "6.14.9"
@@ -974,5 +974,5 @@
       "releases": []
     }
   ],
-  "generated_at": "19/06/2026 à 21:21 UTC"
+  "generated_at": "19/06/2026 à 22:11 UTC"
 }
