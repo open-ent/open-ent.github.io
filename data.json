@@ -540,6 +540,16 @@
       ]
     },
     {
+      "name": "form",
+      "group_id": "fr.openent",
+      "section": "apps",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/form/actions",
+      "releases_url": "https://github.com/open-ent/form/releases",
+      "repo_url": "https://github.com/open-ent/form",
+      "releases": []
+    },
+    {
       "name": "forum",
       "group_id": "net.atos",
       "section": "apps",
@@ -676,6 +686,16 @@
       "releases": []
     },
     {
+      "name": "schoolbook",
+      "group_id": "fr.tech.openent",
+      "section": "apps",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/schoolbook/actions",
+      "releases_url": "https://github.com/open-ent/schoolbook/releases",
+      "repo_url": "https://github.com/open-ent/schoolbook",
+      "releases": []
+    },
+    {
       "name": "search-engine",
       "group_id": "fr.openent",
       "section": "apps",
@@ -736,6 +756,16 @@
       ]
     },
     {
+      "name": "vote",
+      "group_id": "fr.openent",
+      "section": "apps",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/vote/actions",
+      "releases_url": "https://github.com/open-ent/vote/releases",
+      "repo_url": "https://github.com/open-ent/vote",
+      "releases": []
+    },
+    {
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
@@ -758,6 +788,16 @@
           "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.12-patched/net.atos.wiki.3.5-SNAPSHOT-fat.jar"
         }
       ]
+    },
+    {
+      "name": "workflowhub",
+      "group_id": "fr.openent",
+      "section": "apps",
+      "ci_status": "unknown",
+      "ci_url": "https://github.com/open-ent/workflowhub/actions",
+      "releases_url": "https://github.com/open-ent/workflowhub/releases",
+      "repo_url": "https://github.com/open-ent/workflowhub",
+      "releases": []
     },
     {
       "name": "mod-zip",

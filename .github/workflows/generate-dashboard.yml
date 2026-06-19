@@ -185,6 +185,7 @@ jobs:
             "open-ent/collaborative-wall|net.atos|collaborativewall"
             "open-ent/exercizer|fr.openent|exercizer"
             "open-ent/explorer|com.opendigitaleducation|explorer"
+            "open-ent/form|fr.openent|form"
             "open-ent/forum|net.atos|forum"
             "open-ent/mindmap|net.atos|mindmap"
             "open-ent/pages|fr.wseduc|pages"
@@ -192,10 +193,13 @@ jobs:
             "open-ent/rack|fr.wseduc|rack"
             "open-ent/rss|net.atos|rss"
             "open-ent/school-planner|fr.tech.openent|school-planner"
+            "open-ent/schoolbook|fr.tech.openent|schoolbook"
             "open-ent/search-engine|fr.openent|search-engine"
             "open-ent/support|net.atos|support"
             "open-ent/timeline-generator|net.atos|timelinegenerator"
+            "open-ent/vote|fr.openent|vote"
             "open-ent/wiki|net.atos|wiki"
+            "open-ent/workflowhub|fr.openent|workflowhub"
           )
 
           for entry in "${REPOS_APPS[@]}"; do
