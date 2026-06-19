@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Generated at 2026-06-19T18:14:17.464Z
+# Generated at 2026-06-19T20:06:30.190Z
