@@ -415,7 +415,7 @@
       "name": "diary",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
       "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
@@ -465,11 +465,17 @@
       "repo_url": "https://github.com/open-ent/collaborative-editor",
       "releases": [
         {
+          "tag": "3.3.5-patched",
+          "published_at": "2026-06-20",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.5-patched/net.atos.collaborative-editor.3.3.5-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "3.3.6-patched",
           "published_at": "2026-05-26",
           "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.6-patched",
-          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.6-patched/net.atos.collaborative-editor.3.3.6-fat.jar",
-          "entcore_version": "6.14.15"
+          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.6-patched/net.atos.collaborative-editor.3.3.6-fat.jar"
         }
       ]
     },
@@ -577,7 +583,7 @@
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
@@ -809,6 +815,12 @@
       "repo_url": "https://github.com/open-ent/mod-zip",
       "releases": [
         {
+          "tag": "3.1.1-patched",
+          "published_at": "2026-06-20",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.1-patched",
+          "jar_url": "https://github.com/open-ent/mod-zip/releases/download/3.1.1-patched/fr.wseduc.mod-zip.3.1.1-patched-fat.jar"
+        },
+        {
           "tag": "3.1.0-patched",
           "published_at": "2026-05-24",
           "body": "**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-zip/commits/3.1.0-patched",
@@ -820,7 +832,7 @@
       "name": "http-proxy",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/http-proxy/actions",
       "releases_url": "https://github.com/open-ent/http-proxy/releases",
       "repo_url": "https://github.com/open-ent/http-proxy",
@@ -843,6 +855,13 @@
       "repo_url": "https://github.com/open-ent/mod-image-resizer",
       "releases": [
         {
+          "tag": "3.2.3-patched",
+          "published_at": "2026-06-20",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.2.3-patched",
+          "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.2.3-patched/fr.wseduc.mod-image-resizer.3.2.3-patched-fat.jar",
+          "entcore_version": "6.14.9"
+        },
+        {
           "tag": "3.1.0-patched",
           "published_at": "2026-05-24",
           "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.1.0-patched",
@@ -854,7 +873,7 @@
       "name": "mod-json-schema-validator",
       "group_id": "fr.wseduc",
       "section": "infra",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/mod-json-schema-validator/actions",
       "releases_url": "https://github.com/open-ent/mod-json-schema-validator/releases",
       "repo_url": "https://github.com/open-ent/mod-json-schema-validator",
@@ -893,6 +912,12 @@
       "releases_url": "https://github.com/open-ent/mod-pdf-generator/releases",
       "repo_url": "https://github.com/open-ent/mod-pdf-generator",
       "releases": [
+        {
+          "tag": "2.1.1-patched",
+          "published_at": "2026-06-20",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-pdf-generator/commits/2.1.1-patched",
+          "jar_url": "https://github.com/open-ent/mod-pdf-generator/releases/download/2.1.1-patched/fr.wseduc.mod-pdf-generator.2.1.1-patched-fat.jar"
+        },
         {
           "tag": "3.1.0-patched",
           "published_at": "2026-05-24",
@@ -974,5 +999,5 @@
       "releases": []
     }
   ],
-  "generated_at": "20/06/2026 à 11:47 UTC"
+  "generated_at": "20/06/2026 à 13:17 UTC"
 }
