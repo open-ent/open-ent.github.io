@@ -424,13 +424,12 @@
           "tag": "4.1.5-patched",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched",
-          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.5-patched/fr.openent.diary.4.1.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/untagged-10938f79ff30e70af302/fr.openent.diary.4.1.7-patched-fat.jar"
         },
         {
           "tag": "4.1.7-patched",
           "published_at": "2026-05-28",
-          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched",
           "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar"
         },
         {
@@ -1011,5 +1010,5 @@
       "releases": []
     }
   ],
-  "generated_at": "21/06/2026 à 08:49 UTC"
+  "generated_at": "21/06/2026 à 11:37 UTC"
 }
