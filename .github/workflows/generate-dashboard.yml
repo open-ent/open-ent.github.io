@@ -201,8 +201,6 @@ jobs:
             "open-ent/wiki|net.atos|wiki"
             "open-ent/workflowhub|fr.openent|workflowhub"
             "open-ent/community|net.atos|community"
-            "open-ent/mod-sms-sender|fr.wseduc|mod-sms-proxy"
-            "open-ent/moodle-connector|fr.openent|moodle-connector"
             "open-ent/ressource-aggregator|fr.openent|mediacentre"
             "open-ent/vie-scolaire|fr.openent|viescolaire"
             "open-ent/edt|fr.cgi|edt"
@@ -233,6 +231,7 @@ jobs:
             "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
             "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
             "open-ent/mod-sftp|fr.cgi|mod-sftp"
+            "open-ent/mod-sms-sender|fr.wseduc|mod-sms-proxy"
           )
 
           for entry in "${REPOS_INFRA[@]}"; do
