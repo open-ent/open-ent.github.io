@@ -421,11 +421,17 @@
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
       "releases": [
         {
+          "tag": "4.1.5-patched",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched",
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.5-patched/fr.openent.diary.4.1.7-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "4.1.7-patched",
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched",
-          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar"
         },
         {
           "tag": "4.1.6-patched",
@@ -515,9 +521,9 @@
         {
           "tag": "4.3.6-patched",
           "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar",
-          "entcore_version": "6.14.15"
+          "entcore_version": "6.14.9-patched"
         }
       ]
     },
@@ -531,11 +537,17 @@
       "repo_url": "https://github.com/open-ent/explorer",
       "releases": [
         {
+          "tag": "2.5.7-patched",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/explorer/compare/2.5.9-patched...2.5.7-patched",
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.7-patched/com.opendigitaleducation.explorer.2.5.7-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "2.5.9-patched",
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.9-patched",
-          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.9-patched/com.opendigitaleducation.explorer.2.5.9-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.5.9-patched/com.opendigitaleducation.explorer.2.5.9-patched-fat.jar"
         },
         {
           "tag": "2.5.8-patched",
@@ -731,7 +743,7 @@
         {
           "tag": "4.0.1-patched",
           "published_at": "2026-06-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched",
           "jar_url": "https://github.com/open-ent/support/releases/download/4.0.1-patched/net.atos.support.4.0.1-patched-fat.jar",
           "entcore_version": "6.14.15"
         },
@@ -999,5 +1011,5 @@
       "releases": []
     }
   ],
-  "generated_at": "21/06/2026 à 08:07 UTC"
+  "generated_at": "21/06/2026 à 08:49 UTC"
 }
