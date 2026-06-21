@@ -200,6 +200,13 @@ jobs:
             "open-ent/vote|fr.openent|vote"
             "open-ent/wiki|net.atos|wiki"
             "open-ent/workflowhub|fr.openent|workflowhub"
+            "open-ent/community|net.atos|community"
+            "open-ent/mod-sms-sender|fr.wseduc|mod-sms-proxy"
+            "open-ent/moodle-connector|fr.openent|moodle-connector"
+            "open-ent/ressource-aggregator|fr.openent|mediacentre"
+            "open-ent/vie-scolaire|fr.openent|viescolaire"
+            "open-ent/edt|fr.cgi|edt"
+            "open-ent/presences|fr.openent|presences"
           )
 
           for entry in "${REPOS_APPS[@]}"; do
