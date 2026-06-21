@@ -479,6 +479,12 @@
           "body": "**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.0.0-patched/fr.openent.chat-nats.1.0.0-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
+        },
+        {
+          "tag": "1.0.0",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/chat-nats/compare/1.0.0-patched...1.0.0",
+          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.0.0/fr.openent.chat-nats.1.0.0-fat.jar"
         }
       ]
     },
@@ -763,6 +769,12 @@
           "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/commits/1.0.0-SNAPSHOT",
           "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.13"
+        },
+        {
+          "tag": "1.0.0",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0/fr.tech.openent.schoolbook.1.0.0-fat.jar"
         }
       ]
     },
@@ -878,11 +890,17 @@
       "repo_url": "https://github.com/open-ent/workflowhub",
       "releases": [
         {
+          "tag": "1.0.0",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0",
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.0.0/fr.openent.workflowhub.1.0.0-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "0.1.0-SNAPSHOT",
           "published_at": "2026-06-21",
           "body": "## What's Changed\n* Démarches : flux public, rendu schema-driven et concepteur (premières tranches) by @passtech in https://github.com/open-ent/workflowhub/pull/1\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/workflowhub/pull/1\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/commits/0.1.0-SNAPSHOT",
-          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/0.1.0-SNAPSHOT/fr.openent.workflowhub.0.1.0-SNAPSHOT-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/0.1.0-SNAPSHOT/fr.openent.workflowhub.0.1.0-SNAPSHOT-fat.jar"
         }
       ]
     },
@@ -898,9 +916,9 @@
         {
           "tag": "2.2.1",
           "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1",
           "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1/net.atos.community.2.2.1-fat.jar",
-          "entcore_version": "6.15.4"
+          "entcore_version": "6.14.9-patched"
         }
       ]
     },
@@ -1217,5 +1235,5 @@
       "releases": []
     }
   ],
-  "generated_at": "21/06/2026 à 17:32 UTC"
+  "generated_at": "21/06/2026 à 18:50 UTC"
 }
