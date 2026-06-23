@@ -721,9 +721,9 @@
       "releases": [
         {
           "tag": "3.1.7-patched",
-          "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
-          "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-fat.jar",
+          "published_at": "2026-06-23",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
+          "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
       ]
@@ -741,8 +741,7 @@
           "tag": "2.1.4",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.3...2.1.4\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.3...2.1.4",
-          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4/net.atos.rss.2.1.4-fat.jar",
-          "entcore_version": "6.14.9"
+          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4/net.atos.rss.2.1.4-fat.jar"
         },
         {
           "tag": "2.1.4-patched",
@@ -920,15 +919,7 @@
       "ci_url": "https://github.com/open-ent/community/actions",
       "releases_url": "https://github.com/open-ent/community/releases",
       "repo_url": "https://github.com/open-ent/community",
-      "releases": [
-        {
-          "tag": "2.2.1",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1",
-          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1/net.atos.community.2.2.1-fat.jar",
-          "entcore_version": "6.14.9-patched"
-        }
-      ]
+      "releases": []
     },
     {
       "name": "mediacentre",
@@ -1243,5 +1234,5 @@
       "releases": []
     }
   ],
-  "generated_at": "23/06/2026 à 06:57 UTC"
+  "generated_at": "23/06/2026 à 08:51 UTC"
 }
