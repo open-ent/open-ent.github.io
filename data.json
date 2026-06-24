@@ -772,11 +772,17 @@
       "repo_url": "https://github.com/open-ent/schoolbook",
       "releases": [
         {
+          "tag": "1.1.0",
+          "published_at": "2026-06-24",
+          "body": "## What's Changed\n* feat(schoolbook): renvoi automatique des mots non consultés + relance ciblée by @passtech in https://github.com/open-ent/schoolbook/pull/1\n* fix(schoolbook): Java 8 — remplace isBlank() par trim().isEmpty() by @passtech in https://github.com/open-ent/schoolbook/pull/2\n* chore(release): schoolbook 1.1.0 by @passtech in https://github.com/open-ent/schoolbook/pull/3\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/schoolbook/pull/1\n\n**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0...1.1.0",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.1.0/fr.tech.openent.schoolbook.1.1.0-fat.jar",
+          "entcore_version": "6.14.13"
+        },
+        {
           "tag": "1.0.0-SNAPSHOT",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/commits/1.0.0-SNAPSHOT",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar",
-          "entcore_version": "6.14.13"
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar"
         },
         {
           "tag": "1.0.0",
@@ -1243,5 +1249,5 @@
       "releases": []
     }
   ],
-  "generated_at": "24/06/2026 à 11:34 UTC"
+  "generated_at": "24/06/2026 à 13:52 UTC"
 }
