@@ -558,7 +558,7 @@
       "name": "explorer",
       "group_id": "com.opendigitaleducation",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/explorer/actions",
       "releases_url": "https://github.com/open-ent/explorer/releases",
       "repo_url": "https://github.com/open-ent/explorer",
@@ -721,7 +721,7 @@
       "releases": [
         {
           "tag": "3.1.7-patched",
-          "published_at": "2026-06-23",
+          "published_at": "2026-06-24",
           "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
@@ -1249,5 +1249,5 @@
       "releases": []
     }
   ],
-  "generated_at": "24/06/2026 à 16:11 UTC"
+  "generated_at": "24/06/2026 à 18:10 UTC"
 }
