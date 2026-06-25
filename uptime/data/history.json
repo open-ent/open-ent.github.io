@@ -1475,5 +1475,12 @@
     "httpStatus": 404,
     "responseTimeMs": 509,
     "error": null
+  },
+  {
+    "timestamp": "2026-06-25T08:03:27.160Z",
+    "isUp": true,
+    "httpStatus": 404,
+    "responseTimeMs": 887,
+    "error": null
   }
 ]
