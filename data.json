@@ -874,17 +874,23 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
       "releases": [
         {
+          "tag": "3.5.9-patched",
+          "published_at": "2026-06-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.9-patched",
+          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.9-patched/net.atos.wiki.3.5.9-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "3.5.13-patched",
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.13-patched\n\n**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.13-patched",
-          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.13-patched/net.atos.wiki.3.5.13-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.5.13-patched/net.atos.wiki.3.5.13-patched-fat.jar"
         },
         {
           "tag": "3.5.12-patched",
@@ -1255,5 +1261,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/06/2026 à 20:21 UTC"
+  "generated_at": "26/06/2026 à 21:46 UTC"
 }
