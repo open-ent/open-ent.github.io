@@ -874,7 +874,7 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
@@ -928,11 +928,17 @@
       "repo_url": "https://github.com/open-ent/community",
       "releases": [
         {
+          "tag": "2.2.1-patched",
+          "published_at": "2026-06-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
+          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1-patched/net.atos.community.2.2.1-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
+        },
+        {
           "tag": "2.2.1",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.0...2.2.1",
-          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1/net.atos.community.2.2.1-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1/net.atos.community.2.2.1-fat.jar"
         }
       ]
     },
@@ -1249,5 +1255,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/06/2026 à 18:28 UTC"
+  "generated_at": "26/06/2026 à 20:21 UTC"
 }
