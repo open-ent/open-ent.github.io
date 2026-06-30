@@ -357,7 +357,7 @@
         {
           "tag": "3.1.5-patched",
           "published_at": "2026-06-30",
-          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched",
           "jar_url": "https://github.com/open-ent/actualites/releases/download/3.1.5-patched/net.atos.actualites.3.1.5-fat.jar",
           "entcore_version": "6.14.9-patched"
         },
@@ -428,9 +428,10 @@
       "releases": [
         {
           "tag": "4.1.5-patched",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched",
-          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/untagged-10938f79ff30e70af302/fr.openent.diary.4.1.7-patched-fat.jar"
+          "published_at": "2026-06-30",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.7-patched...4.1.5-patched",
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.5-patched/fr.openent.diary.4.1.5-patched-fat.jar",
+          "entcore_version": "6.14.9-patched"
         },
         {
           "tag": "4.1.7-patched",
@@ -722,7 +723,7 @@
         {
           "tag": "3.1.7-patched",
           "published_at": "2026-06-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -822,7 +823,7 @@
         {
           "tag": "4.0.1-patched",
           "published_at": "2026-06-30",
-          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched",
           "jar_url": "https://github.com/open-ent/support/releases/download/4.0.1-patched/net.atos.support.4.0.1-patched-fat.jar",
           "entcore_version": "6.14.15"
         },
@@ -1261,5 +1262,5 @@
       "releases": []
     }
   ],
-  "generated_at": "30/06/2026 à 15:07 UTC"
+  "generated_at": "30/06/2026 à 17:16 UTC"
 }
