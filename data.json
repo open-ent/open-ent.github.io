@@ -805,9 +805,15 @@
         {
           "tag": "2.1.5-patched",
           "published_at": "2026-06-19",
-          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.1.5-patched/fr.openent.search-engine.2.1.4-fat.jar",
           "entcore_version": "6.14.9"
+        },
+        {
+          "tag": "2.1.4-patched",
+          "published_at": "2026-07-01",
+          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.4-patched",
+          "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.1.4-patched/fr.openent.search-engine.2.1.4-patched-fat.jar"
         }
       ]
     },
@@ -1262,5 +1268,5 @@
       "releases": []
     }
   ],
-  "generated_at": "01/07/2026 à 10:35 UTC"
+  "generated_at": "01/07/2026 à 13:22 UTC"
 }
