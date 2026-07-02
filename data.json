@@ -1026,7 +1026,7 @@
         {
           "tag": "2.1.9-patched",
           "published_at": "2026-06-20",
-          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
           "jar_url": "https://github.com/open-ent/presences/releases/download/2.1.9-patched/fr.openent.incidents.2.1.9-patched-fat.jar",
           "entcore_version": "6.14.9"
         }
@@ -1273,5 +1273,5 @@
       "releases": []
     }
   ],
-  "generated_at": "02/07/2026 à 18:44 UTC"
+  "generated_at": "02/07/2026 à 20:11 UTC"
 }
