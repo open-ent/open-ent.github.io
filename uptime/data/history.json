@@ -2014,5 +2014,12 @@
     "httpStatus": 404,
     "responseTimeMs": 800,
     "error": null
+  },
+  {
+    "timestamp": "2026-07-02T10:46:00.377Z",
+    "isUp": true,
+    "httpStatus": 404,
+    "responseTimeMs": 737,
+    "error": null
   }
 ]
