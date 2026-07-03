@@ -679,7 +679,7 @@
         {
           "tag": "2.1.5-patched",
           "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched",
           "jar_url": "https://github.com/open-ent/pages/releases/download/2.1.5-patched/fr.wseduc.pages.2.1.5-fat.jar"
         },
         {
@@ -861,7 +861,7 @@
         {
           "tag": "3.3.7-patched",
           "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched",
           "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.3.7-patched/net.atos.timelinegenerator.3.3.7-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -1276,5 +1276,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/07/2026 à 13:15 UTC"
+  "generated_at": "03/07/2026 à 15:29 UTC"
 }
