@@ -2126,5 +2126,12 @@
     "httpStatus": 404,
     "responseTimeMs": 553,
     "error": null
+  },
+  {
+    "timestamp": "2026-07-03T18:19:03.600Z",
+    "isUp": true,
+    "httpStatus": 404,
+    "responseTimeMs": 767,
+    "error": null
   }
 ]
