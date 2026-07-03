@@ -461,15 +461,7 @@
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
-      "releases": [
-        {
-          "tag": "4.2.7",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.10...4.2.7",
-          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7/net.atos.calendar.4.2.7-fat.jar",
-          "entcore_version": "6.14.9-patched"
-        }
-      ]
+      "releases": []
     },
     {
       "name": "chat-nats",
@@ -1273,5 +1265,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/07/2026 à 05:11 UTC"
+  "generated_at": "03/07/2026 à 06:38 UTC"
 }
