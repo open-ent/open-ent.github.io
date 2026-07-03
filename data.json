@@ -457,7 +457,7 @@
       "name": "calendar",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
@@ -1276,5 +1276,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/07/2026 à 11:13 UTC"
+  "generated_at": "03/07/2026 à 13:15 UTC"
 }
