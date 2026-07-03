@@ -457,7 +457,7 @@
       "name": "calendar",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
@@ -465,8 +465,8 @@
         {
           "tag": "4.2.7-patched",
           "published_at": "2026-07-03",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/calendar/releases",
+          "body": "**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched",
+          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7-patched/net.atos.calendar.4.2.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
       ]
@@ -612,7 +612,7 @@
       "name": "forum",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/forum/actions",
       "releases_url": "https://github.com/open-ent/forum/releases",
       "repo_url": "https://github.com/open-ent/forum",
@@ -632,7 +632,7 @@
         {
           "tag": "2.1.3-patched",
           "published_at": "2026-07-03",
-          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched",
           "jar_url": "https://github.com/open-ent/forum/releases/download/2.1.3-patched/net.atos.forum.2.1.3-patched-fat.jar"
         },
         {
@@ -1276,5 +1276,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/07/2026 à 16:58 UTC"
+  "generated_at": "03/07/2026 à 18:20 UTC"
 }
