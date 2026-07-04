@@ -1021,7 +1021,7 @@
       "name": "presences",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/presences/actions",
       "releases_url": "https://github.com/open-ent/presences/releases",
       "repo_url": "https://github.com/open-ent/presences",
@@ -1276,5 +1276,5 @@
       "releases": []
     }
   ],
-  "generated_at": "04/07/2026 à 06:26 UTC"
+  "generated_at": "04/07/2026 à 07:45 UTC"
 }
