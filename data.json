@@ -951,7 +951,7 @@
         {
           "tag": "2.2.1-patched",
           "published_at": "2026-06-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
           "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1-patched/net.atos.community.2.2.1-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         },
@@ -1029,7 +1029,7 @@
         {
           "tag": "2.1.9-patched",
           "published_at": "2026-06-20",
-          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
           "jar_url": "https://github.com/open-ent/presences/releases/download/2.1.9-patched/fr.openent.incidents.2.1.9-patched-fat.jar",
           "entcore_version": "6.14.9"
         }
@@ -1276,5 +1276,5 @@
       "releases": []
     }
   ],
-  "generated_at": "04/07/2026 à 01:12 UTC"
+  "generated_at": "04/07/2026 à 04:54 UTC"
 }
