@@ -456,7 +456,7 @@
       "name": "calendar",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/calendar/actions",
       "releases_url": "https://github.com/open-ent/calendar/releases",
       "repo_url": "https://github.com/open-ent/calendar",
@@ -994,7 +994,7 @@
       "name": "viescolaire",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/vie-scolaire/actions",
       "releases_url": "https://github.com/open-ent/vie-scolaire/releases",
       "repo_url": "https://github.com/open-ent/vie-scolaire",
@@ -1284,5 +1284,5 @@
       "releases": []
     }
   ],
-  "generated_at": "23/07/2026 à 06:07 UTC"
+  "generated_at": "24/07/2026 à 05:55 UTC"
 }
