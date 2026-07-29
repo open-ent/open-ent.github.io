@@ -1077,16 +1077,16 @@
       "repo_url": "https://github.com/open-ent/http-proxy",
       "releases": [
         {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-05-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/http-proxy/releases/download/untagged-28d860f1bf93da82063c/http-proxy-3.0.0-fat.jar"
+        },
+        {
           "tag": "3.0.0-patched",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.0.0-patched",
           "jar_url": "https://github.com/open-ent/http-proxy/releases/download/3.0.0-patched/fr.wseduc.http-proxy.3.0.0-patched-fat.jar"
-        },
-        {
-          "tag": "3.1.0-patched",
-          "published_at": "2026-05-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched",
-          "jar_url": "https://github.com/open-ent/http-proxy/releases/download/3.1.0-patched/http-proxy-3.0.0-fat.jar"
         }
       ]
     },
@@ -1266,6 +1266,12 @@
           "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/untagged-361da4673920684c19f6/fr.openent.moodle-connector.2.2-SNAPSHOT-fat.jar"
         },
         {
+          "tag": "2.2.4-patched",
+          "published_at": "2026-07-28",
+          "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/commits/2.2.4-patched",
+          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.2.4-patched/fr.openent.moodle-connector.2.2.4-patched-fat.jar"
+        },
+        {
           "tag": "2.2.4",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.3...2.2.4\n\n**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.3...2.2.4",
@@ -1284,5 +1290,5 @@
       "releases": []
     }
   ],
-  "generated_at": "28/07/2026 à 05:54 UTC"
+  "generated_at": "29/07/2026 à 06:04 UTC"
 }
