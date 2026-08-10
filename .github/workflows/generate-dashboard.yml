@@ -183,18 +183,22 @@ jobs:
             "open-ent/chat-nats|fr.openent|chat-nats"
             "open-ent/collaborative-editor|net.atos|collaborative-editor"
             "open-ent/collaborative-wall|net.atos|collaborativewall"
+            "open-ent/competences|fr.openent|competences"
             "open-ent/exercizer|fr.openent|exercizer"
             "open-ent/explorer|com.opendigitaleducation|explorer"
             "open-ent/form|fr.openent|form"
             "open-ent/forum|net.atos|forum"
+            "open-ent/magneto|fr.cgi|magneto"
             "open-ent/mindmap|net.atos|mindmap"
             "open-ent/pages|fr.wseduc|pages"
             "open-ent/poll|net.atos|poll"
             "open-ent/rack|fr.wseduc|rack"
+            "open-ent/rbs|net.atos|rbs"
             "open-ent/rss|net.atos|rss"
             "open-ent/school-planner|fr.tech.openent|school-planner"
             "open-ent/schoolbook|fr.tech.openent|schoolbook"
             "open-ent/search-engine|fr.openent|search-engine"
+            "open-ent/statistics|fr.wseduc|stats"
             "open-ent/support|net.atos|support"
             "open-ent/timeline-generator|net.atos|timelinegenerator"
             "open-ent/vote|fr.openent|vote"
@@ -251,7 +255,9 @@ jobs:
           # ══════════════════════════════════════════════════════════════════
           REPOS_CONNECTORS=(
             "open-ent/gar-connector|fr.openent|gar-connector"
+            "open-ent/lool-connector|fr.openent|lool"
             "open-ent/moodle-connector|fr.openent|moodle-connector"
+            "open-ent/nextcloud|fr.openent|nextcloud"
             "open-ent/wordpress-connector|fr.openent|wordpress-connector"
           )
 
