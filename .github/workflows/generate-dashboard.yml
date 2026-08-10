@@ -159,9 +159,11 @@ jobs:
             "communication|org.entcore|Infrastructure communication"
             "feeder|org.entcore|Alimentation des données"
             "admin|org.entcore|Administration"
+            "app-registry|org.entcore|Registre des applications, rôles & widgets"
             "infra|org.entcore|Infrastructure verticale"
             "archive|org.entcore|Archivage"
             "audience|org.entcore|Statistiques audience"
+            "broker|org.entcore|Bus de messages hors event bus Vert.x"
             "cas|org.entcore|CAS / SSO fédéré"
           )
 
