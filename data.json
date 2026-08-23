@@ -533,7 +533,7 @@
         },
         {
           "tag": "1.2.0-dev",
-          "published_at": "2026-08-21",
+          "published_at": "2026-08-22",
           "body": "",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
@@ -1016,7 +1016,7 @@
       "releases": [
         {
           "tag": "1.1.0-dev",
-          "published_at": "2026-08-21",
+          "published_at": "2026-08-22",
           "body": "",
           "jar_url": "https://github.com/open-ent/vote/releases/download/1.1.0-dev/fr.openent.vote.1.1.0-dev-fat.jar",
           "entcore_version": "6.14.9-patched"
@@ -1477,5 +1477,5 @@
       "releases": []
     }
   ],
-  "generated_at": "22/08/2026 à 03:48 UTC"
+  "generated_at": "23/08/2026 à 03:56 UTC"
 }
