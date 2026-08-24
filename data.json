@@ -533,7 +533,7 @@
         },
         {
           "tag": "1.2.0-dev",
-          "published_at": "2026-08-22",
+          "published_at": "2026-08-23",
           "body": "",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
@@ -1477,5 +1477,5 @@
       "releases": []
     }
   ],
-  "generated_at": "23/08/2026 à 03:56 UTC"
+  "generated_at": "24/08/2026 à 04:00 UTC"
 }
