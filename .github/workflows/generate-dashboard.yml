@@ -242,6 +242,8 @@ jobs:
             "open-ent/wiki|net.atos|wiki"
             "open-ent/workflowhub|fr.openent|workflowhub"
             "open-ent/community|net.atos|community"
+            "open-ent/communities|fr.tech.openent|communities"
+            "open-ent/video|fr.tech.openent|video"
             "open-ent/ressource-aggregator|fr.openent|mediacentre"
             "open-ent/vie-scolaire|fr.openent|viescolaire"
             "open-ent/edt|fr.cgi|edt"
