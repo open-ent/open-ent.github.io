@@ -805,7 +805,7 @@
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
@@ -813,7 +813,7 @@
         {
           "tag": "3.4.9-patched",
           "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
           "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -1684,5 +1684,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/08/2026 à 13:06 UTC"
+  "generated_at": "26/08/2026 à 13:08 UTC"
 }
