@@ -573,7 +573,7 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
@@ -733,7 +733,7 @@
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
@@ -1405,16 +1405,16 @@
       "name": "lool",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/lool-connector/actions",
       "releases_url": "https://github.com/open-ent/lool-connector/releases",
       "repo_url": "https://github.com/open-ent/lool-connector",
       "releases": [
         {
           "tag": "2.2.5-patched",
-          "published_at": "2026-08-10",
+          "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/lool-connector/releases/download/untagged-58b21075632e1fe2fdf1/fr.openent.lool.2.2.5-patched-fat.jar",
+          "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.5-patched/fr.openent.lool.2.2.5-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
       ]
@@ -1477,5 +1477,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/08/2026 à 09:38 UTC"
+  "generated_at": "26/08/2026 à 11:24 UTC"
 }
