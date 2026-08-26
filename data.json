@@ -782,7 +782,7 @@
       "name": "magneto",
       "group_id": "fr.cgi",
       "section": "apps",
-      "ci_status": "",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/magneto/actions",
       "releases_url": "https://github.com/open-ent/magneto/releases",
       "repo_url": "https://github.com/open-ent/magneto",
@@ -1666,5 +1666,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/08/2026 à 12:38 UTC"
+  "generated_at": "26/08/2026 à 12:40 UTC"
 }
