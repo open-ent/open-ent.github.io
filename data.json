@@ -1274,6 +1274,26 @@
       ]
     },
     {
+      "name": "communities",
+      "group_id": "fr.tech.openent",
+      "section": "apps",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/communities/actions",
+      "releases_url": "https://github.com/open-ent/communities/releases",
+      "repo_url": "https://github.com/open-ent/communities",
+      "releases": []
+    },
+    {
+      "name": "video",
+      "group_id": "fr.tech.openent",
+      "section": "apps",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/video/actions",
+      "releases_url": "https://github.com/open-ent/video/releases",
+      "repo_url": "https://github.com/open-ent/video",
+      "releases": []
+    },
+    {
       "name": "mediacentre",
       "group_id": "fr.openent",
       "section": "apps",
@@ -1664,5 +1684,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/08/2026 à 13:03 UTC"
+  "generated_at": "26/08/2026 à 13:06 UTC"
 }
