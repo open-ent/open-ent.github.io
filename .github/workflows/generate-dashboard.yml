@@ -89,7 +89,7 @@ jobs:
 
           # ── Helper: fetch releases via REST API ────────────────────────────
           fetch_releases() {
-            local REPO="$1" FRONTEND_PATH_HINT="$2"
+            local REPO="$1" FRONTEND_PATH_HINT="${2:-}"
             local RAW
             RAW=$(gh api "repos/$REPO/releases?per_page=5" \
               --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
