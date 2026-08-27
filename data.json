@@ -562,16 +562,26 @@
       "repo_url": "https://github.com/open-ent/chat-nats",
       "releases": [
         {
+          "tag": "1.2.0-dev",
+          "published_at": "2026-08-26",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/untagged-ce77ab7347f60f571538/fr.openent.chat-nats.1.2.0-dev-fat.jar",
+          "entcore_version": "6.14.9-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
+        },
+        {
           "tag": "1.0.0-patched",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/untagged-59ea39881b42f385812e/fr.openent.chat-nats.1.0.0-patched-fat.jar"
-        },
-        {
-          "tag": "1.2.0-dev",
-          "published_at": "2026-08-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
         {
           "tag": "1.0.0",
@@ -677,7 +687,7 @@
         {
           "tag": "4.3.6-patched",
           "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -1304,8 +1314,8 @@
       "releases": [
         {
           "tag": "5.2.4-patched",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
+          "published_at": "2026-08-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
           "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.2.4-patched/fr.openent.mediacentre.5.2.4-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -1683,5 +1693,5 @@
       "releases": []
     }
   ],
-  "generated_at": "26/08/2026 à 13:26 UTC"
+  "generated_at": "27/08/2026 à 14:04 UTC"
 }
