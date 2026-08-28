@@ -4,20 +4,20 @@
       "name": "auth",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -27,20 +27,20 @@
       "name": "common",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -50,20 +50,20 @@
       "name": "directory",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -73,20 +73,20 @@
       "name": "workspace",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -96,20 +96,20 @@
       "name": "conversation",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -119,20 +119,20 @@
       "name": "timeline",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -142,20 +142,20 @@
       "name": "portal",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -165,20 +165,20 @@
       "name": "session",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -188,20 +188,20 @@
       "name": "communication",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -211,20 +211,20 @@
       "name": "feeder",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -234,20 +234,20 @@
       "name": "admin",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -257,20 +257,20 @@
       "name": "app-registry",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -280,20 +280,20 @@
       "name": "infra",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -303,20 +303,20 @@
       "name": "archive",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -326,20 +326,20 @@
       "name": "audience",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -349,20 +349,20 @@
       "name": "broker",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -372,20 +372,20 @@
       "name": "cas",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         },
         {
           "tag": "6.14.9-patched-SNAPSHOT",
-          "published_at": "2026-08-26",
+          "published_at": "2026-08-28",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -464,8 +464,8 @@
       "releases": [
         {
           "tag": "5.4.7-patched",
-          "published_at": "2026-06-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
+          "published_at": "2026-08-28",
+          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
           "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.7-patched/org.entcore.blog.5.4.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -562,26 +562,16 @@
       "repo_url": "https://github.com/open-ent/chat-nats",
       "releases": [
         {
-          "tag": "1.2.0-dev",
-          "published_at": "2026-08-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/untagged-ce77ab7347f60f571538/fr.openent.chat-nats.1.2.0-dev-fat.jar",
-          "entcore_version": "6.14.9-patched",
-          "openent_frontend": {
-            "react": "2.5.30-patched",
-            "bootstrap": "2.5.30-patched",
-            "client": "2.5.30-patched",
-            "utilities": "2.5.30-patched",
-            "versions": [
-              "2.5.30-patched"
-            ]
-          }
-        },
-        {
           "tag": "1.0.0-patched",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/untagged-59ea39881b42f385812e/fr.openent.chat-nats.1.0.0-patched-fat.jar"
+        },
+        {
+          "tag": "1.2.0-dev",
+          "published_at": "2026-08-28",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
         {
           "tag": "1.0.0",
@@ -687,7 +677,7 @@
         {
           "tag": "4.3.6-patched",
           "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -842,7 +832,7 @@
       "name": "pages",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/pages/actions",
       "releases_url": "https://github.com/open-ent/pages/releases",
       "repo_url": "https://github.com/open-ent/pages",
@@ -1254,7 +1244,7 @@
       "name": "community",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/community/actions",
       "releases_url": "https://github.com/open-ent/community/releases",
       "repo_url": "https://github.com/open-ent/community",
@@ -1693,5 +1683,5 @@
       "releases": []
     }
   ],
-  "generated_at": "27/08/2026 à 14:04 UTC"
+  "generated_at": "28/08/2026 à 15:15 UTC"
 }
