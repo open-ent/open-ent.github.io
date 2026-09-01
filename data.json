@@ -490,7 +490,7 @@
       "name": "diary",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
       "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
@@ -502,12 +502,12 @@
           "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
-            "react": "^2.5.30",
-            "bootstrap": "^2.5.30",
-            "client": "^2.5.30",
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
             "utilities": null,
             "versions": [
-              "^2.5.30"
+              "2.5.30-patched"
             ]
           }
         },
@@ -1332,7 +1332,7 @@
         {
           "tag": "2.1.5-patched",
           "published_at": "2026-08-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.1.5-patched/fr.openent.viescolaire.2.1.5-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -1683,5 +1683,5 @@
       "releases": []
     }
   ],
-  "generated_at": "31/08/2026 à 09:37 UTC"
+  "generated_at": "01/09/2026 à 08:33 UTC"
 }
