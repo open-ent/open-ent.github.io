@@ -58,9 +58,38 @@ jobs:
             echo ""
           }
 
+          # ── Helper: fetch @open-ent/* frontend versions from package.json ──
+          # Lit dependencies.@open-ent/{react,bootstrap,client,utilities} du
+          # package.json du frontend, à un tag donné. Retourne un objet JSON
+          # {react,bootstrap,client,utilities,versions:[...]} ou "" si aucune
+          # dépendance @open-ent trouvée (module non migré / pas de frontend).
+          # `versions` = liste dédupliquée des versions trouvées : si elle
+          # contient plus d'une entrée, les 4 libs divergent au sein du MÊME
+          # module (irrégularité à corriger).
+          fetch_openent_version() {
+            local REPO="$1" TAG="$2" PATH_HINT="$3"
+            [ -z "$PATH_HINT" ] && PATH_HINT="frontend/package.json"
+            local content
+            content=$(gh api "repos/$REPO/contents/$PATH_HINT?ref=$TAG" \
+              --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+            [ -z "$content" ] && { echo ""; return; }
+            echo "$content" | jq -c '
+              (.dependencies // {}) as $d
+              | [$d["@open-ent/react"], $d["@open-ent/bootstrap"], $d["@open-ent/client"], $d["@open-ent/utilities"]] as $all
+              | ($all | map(select(. != null))) as $present
+              | if ($present | length) == 0 then empty
+                else {
+                    react: $d["@open-ent/react"], bootstrap: $d["@open-ent/bootstrap"],
+                    client: $d["@open-ent/client"], utilities: $d["@open-ent/utilities"],
+                    versions: ($present | unique)
+                  }
+                end
+            ' 2>/dev/null || echo ""
+          }
+
           # ── Helper: fetch releases via REST API ────────────────────────────
           fetch_releases() {
-            local REPO="$1"
+            local REPO="$1" FRONTEND_PATH_HINT="${2:-}"
             local RAW
             RAW=$(gh api "repos/$REPO/releases?per_page=5" \
               --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
@@ -86,6 +115,12 @@ jobs:
               if [ -n "$EC_VER" ]; then
                 RELEASES=$(echo "$RELEASES" | jq --arg ec "$EC_VER" \
                   '[.[0] + {entcore_version: $ec}] + .[1:]')
+              fi
+              local FE_JSON
+              FE_JSON=$(fetch_openent_version "$REPO" "$LATEST_TAG" "$FRONTEND_PATH_HINT")
+              if [ -n "$FE_JSON" ]; then
+                RELEASES=$(echo "$RELEASES" | jq --argjson fe "$FE_JSON" \
+                  '[.[0] + {openent_frontend: $fe}] + .[1:]')
               fi
             fi
             echo "$RELEASES"
@@ -159,9 +194,11 @@ jobs:
             "communication|org.entcore|Infrastructure communication"
             "feeder|org.entcore|Alimentation des données"
             "admin|org.entcore|Administration"
+            "app-registry|org.entcore|Registre des applications, rôles & widgets"
             "infra|org.entcore|Infrastructure verticale"
             "archive|org.entcore|Archivage"
             "audience|org.entcore|Statistiques audience"
+            "broker|org.entcore|Bus de messages hors event bus Vert.x"
             "cas|org.entcore|CAS / SSO fédéré"
           )
 
@@ -183,26 +220,45 @@ jobs:
             "open-ent/chat-nats|fr.openent|chat-nats"
             "open-ent/collaborative-editor|net.atos|collaborative-editor"
             "open-ent/collaborative-wall|net.atos|collaborativewall"
+            "open-ent/competences|fr.openent|competences"
             "open-ent/exercizer|fr.openent|exercizer"
             "open-ent/explorer|com.opendigitaleducation|explorer"
+            "open-ent/form|fr.openent|form|formulaire/frontend/package.json"
             "open-ent/forum|net.atos|forum"
+            "open-ent/magneto|fr.cgi|magneto"
             "open-ent/mindmap|net.atos|mindmap"
             "open-ent/pages|fr.wseduc|pages"
             "open-ent/poll|net.atos|poll"
             "open-ent/rack|fr.wseduc|rack"
+            "open-ent/rbs|net.atos|rbs"
             "open-ent/rss|net.atos|rss"
             "open-ent/school-planner|fr.tech.openent|school-planner"
+            "open-ent/schoolbook|fr.tech.openent|schoolbook"
             "open-ent/search-engine|fr.openent|search-engine"
+            "open-ent/statistics|fr.wseduc|stats"
             "open-ent/support|net.atos|support"
             "open-ent/timeline-generator|net.atos|timelinegenerator"
+            "open-ent/vote|fr.openent|vote"
             "open-ent/wiki|net.atos|wiki"
+            "open-ent/workflowhub|fr.openent|workflowhub"
+            "open-ent/community|net.atos|community"
+            "open-ent/communities|fr.tech.openent|communities"
+            "open-ent/video|fr.tech.openent|video"
+            "open-ent/ressource-aggregator|fr.openent|mediacentre"
+            "open-ent/vie-scolaire|fr.openent|viescolaire"
+            "open-ent/edt|fr.cgi|edt"
+            "open-ent/presences|fr.openent|presences|presences/frontend/package.json"
           )
 
+          # 4e champ optionnel = chemin du package.json frontend à lire pour
+          # les versions @open-ent/* (défaut "frontend/package.json" si omis ;
+          # cf fetch_openent_version). form et presences dérogent au défaut
+          # (pas de frontend/ à la racine du repo).
           for entry in "${REPOS_APPS[@]}"; do
-            IFS='|' read -r REPO GROUP NAME <<< "$entry"
+            IFS='|' read -r REPO GROUP NAME FRONTEND_PATH <<< "$entry"
             echo "→ $REPO"
             CI=$(ci_status "$REPO")
-            RELEASES=$(fetch_releases "$REPO")
+            RELEASES=$(fetch_releases "$REPO" "$FRONTEND_PATH")
             add_module "$NAME" "$GROUP" "apps" "$CI" \
               "https://github.com/$REPO/actions" \
               "https://github.com/$REPO/releases" \
@@ -222,6 +278,7 @@ jobs:
             "open-ent/mod-pdf-generator|fr.wseduc|mod-pdf-generator"
             "open-ent/mod-postgresql|fr.wseduc|mod-postgresql"
             "open-ent/mod-sftp|fr.cgi|mod-sftp"
+            "open-ent/mod-sms-sender|fr.wseduc|mod-sms-proxy"
           )
 
           for entry in "${REPOS_INFRA[@]}"; do
@@ -241,7 +298,9 @@ jobs:
           # ══════════════════════════════════════════════════════════════════
           REPOS_CONNECTORS=(
             "open-ent/gar-connector|fr.openent|gar-connector"
+            "open-ent/lool-connector|fr.openent|lool"
             "open-ent/moodle-connector|fr.openent|moodle-connector"
+            "open-ent/nextcloud|fr.openent|nextcloud"
             "open-ent/wordpress-connector|fr.openent|wordpress-connector"
           )
 

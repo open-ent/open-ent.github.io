@@ -110,7 +110,7 @@
     /* GRID */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
       gap: 1.25rem;
       margin-bottom: 3rem;
     }
@@ -175,6 +175,22 @@
       border-radius: 10px;
       padding: 0.1rem 0.45rem;
       white-space: nowrap;
+    }
+    .frontend-chip {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.68rem;
+      background: rgba(79,142,247,0.12);
+      color: var(--accent);
+      border: 1px solid rgba(79,142,247,0.3);
+      border-radius: 10px;
+      padding: 0.1rem 0.45rem;
+      white-space: nowrap;
+      cursor: help;
+    }
+    .frontend-chip-warn {
+      background: rgba(239,68,68,0.12);
+      color: var(--red);
+      border-color: rgba(239,68,68,0.3);
     }
 
     /* DESCRIPTION */
@@ -476,6 +492,16 @@
     external: `<svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 101.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>`,
   };
 
+  function frontendChip(fe) {
+    if (!fe || !fe.versions || fe.versions.length === 0) return '';
+    const mismatch = fe.versions.length > 1;
+    const label = fe.versions.join(' / ');
+    const detail = `react=${fe.react || '—'}  bootstrap=${fe.bootstrap || '—'}  client=${fe.client || '—'}  utilities=${fe.utilities || '—'}`;
+    const cls = mismatch ? 'frontend-chip frontend-chip-warn' : 'frontend-chip';
+    const icon = mismatch ? '⚠ ' : '';
+    return `<span class="${cls}" title="${detail}">${icon}@open-ent ${label}</span>`;
+  }
+
   function statusBadge(status) {
     if (status === 'success') return `<span class="badge badge-success"><span class="badge-dot"></span>passing</span>`;
     if (status === 'failure') return `<span class="badge badge-failure"><span class="badge-dot"></span>failing</span>`;
@@ -503,6 +529,7 @@
         <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
           <span class="version-tag">${r.tag}</span>
           ${r.entcore_version ? `<span class="entcore-chip">entcore ${r.entcore_version}</span>` : ''}
+          ${frontendChip(r.openent_frontend)}
         </div>
         <div style="display:flex;align-items:center;gap:0.75rem;">
           <span class="version-date">${r.published_at || ''}</span>

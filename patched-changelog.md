@@ -837,7 +837,108 @@ eba664e chore: prepare next development iteration
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 3.4.7-patched 3.4.8-patched 3.4.9-patched 
 
-_Aucun commit au-dessus de la base (ou base introuvable)._
+```
+a2c5863 [51C-inlayout] feat(collaborative-wall): entree de montage in-layout (mode embed + MemoryRouter)
+1a9bf98 chore(deps): pin @open-ent/bootstrap 2.5.30-patched (RGAA 51H contraste)
+8b38d3d ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
+f82b10d fix(i18n): compléter/corriger les traductions anglaises des notifications timeline
+e3dd7df build: parent io.edifice:app-parent -> fr.openent:app-parent (Implementation-Version au MANIFEST)
+e84f107 ci: injecte buildNumber/scmBranch (commit + branche) dans le MANIFEST
+221be61 feat: capture Sentry/GlitchTip (projet /7) via @open-ent/* 2.5.29 + rebuild frontend
+6daf2cf ci: pnpm install --no-frozen-lockfile (résout @open-ent/* 2.5.26 publiés sur GitHub Packages)
+730c98e feat(collaborativewall): tracking Matomo (@open-ent 2.5.26, proxy dashboard) + vert préservé — v3.4.9
+3458792 migration @open-ent for new 1d data product
+5452485 ci: passer OPENENT_PACKAGES_TOKEN/NPM_TOKEN/TIPTAP_PRO_TOKEN au pnpm install (fix auth @open-ent cross-repo)
+3ff1bf1 collaborativewall: retirer Module Federation, revenir au build standalone
+4cca9f1 release: 3.4.9-patched
+1001ec0 ci: update workflows — fix triggers, Java 8, GitHub Packages resolver
+5b269bb i18n: sync and translate en.json to English
+2ba328a feat(frontend): Module Federation — expose mount function for dashboard embedding
+2358fdd chore(common): bump entCoreVersion 6.14.9 → 6.14.9-patched
+4608ed6 add img
+1dbac76 ci: add build-and-publish workflow for GitHub Packages
+61d083f fix: change version to -patched
+3dd0274 release: 3.4.7
+05814df chore: prepare next development iteration
+d59037a release: 3.4.6
+a165e3c chore: prepare next development iteration
+7980485 release: 3.4.5
+7d75592 chore: prepare next development iteration
+059ff46 release: 3.4.4
+f5c908c chore: prepare next development iteration
+1fd1efc release: 3.4.3
+c4ba8b7 chore: set snapshot version after merge
+a2c0bb1 chore: prepare next development iteration
+0c8d6b3 chore: prepare next development iteration
+0d748f9 chore: #SRE-4685 use Jenkins credentials instead of env variables
+03283c7 chore: prepare next development iteration
+51f92de release: 3.4.2
+6ce08b8 chore: prepare next development iteration
+9995c7a release: 3.4.1
+15b9bf0 chore: #ENABLING-610 remove charet from package.json
+72f225a chore: prepare next development iteration
+ba208e7 release: 3.4.0
+3424845 chore: update edifice-parent in pom
+fb06496 fix: export resource result handler
+25ae4c4 chore: prepare next development iteration
+7fe2f09 chore: update dependencies
+07767f8 chore: update dependencies
+2948b3a feat: #RBACK-127 #RBACK-155 #RBACK-117, kubernetes compatibility
+82ebc5b chore: prepare next development iteration
+72e01c1 release: 3.3.6
+20e51fe chore: set snapshot version after merge
+d098888 chore: prepare next development iteration
+468d998 feat(conf): #RBACK-188 add template.j2
+f48ebf8 chore: prepare next development iteration
+58eef00 release: 3.3.5
+85bb7ce chore: update version
+fe5fe32 chore: prepare next development iteration
+e5ae5e1 fix: use iso string format for note date fields, fix notes zIndex
+8b1e31c chore: prepare next development iteration
+d3e3260 chore: prepare next development iteration
+0eae4e1 release: 3.3.4
+0170d92 chore: prepare next development iteration
+68e5910 release: 3.3.3
+9bc8364 chore: prepare next development iteration
+13a67e6 release: 3.3.2
+1799f04 chore: prepare next development iteration
+8fe55f5 release: 3.3.1
+6055e33 chore: prepare next development iteration
+a6e59c8 release: 3.3.0
+5d862d1 chore: set snapshot version after merge
+b5f580f fix: #PEDAGO-3389, add white space for description modal
+842e504 chore: upgrade entcore
+168a73b fix: #PEDAGO-3306, use scan instead of keys
+692f54e fix: #PEDAGO-3144, fix zindex notes with index map
+435341b Revert "fix: #PEDAGO-3144, add zIndex with websocket"
+a85fd2c fix: #PEDAGO-3144, add zIndex with websocket
+74fecf3 chore: prepare next development iteration
+e73d84b fix: #PEDAGO-3144, fix zIndex note with backend
+55f6e0d chore: prepare next development iteration
+6016625 chore: prepare next development iteration
+ebeeb32 release: 3.2.2
+fed1fea chore: prepare next development iteration
+... (687 commits supplémentaires tronqués)
+```
+
+## `modules/community`
+
+- **branche référencée** : `2.2.1-patched-dev` @ `1996873`
+- **base upstream** : `2.2.1`  →  delta = `2.2.1..HEAD` (**10 commit(s)**)
+- **tags patched** : 2.2.1-patched 
+
+```
+1996873 ci: builder le bundle React (sous-projet frontend/ Vite) dans le fat-mod [B]
+dba8b72 fix(51C comparatif): btn-link lisible (thème) — actions Détail/Renommer visibles
+9056ccb feat(51C-migration): community — invitation/retrait de membres (Détail, React)
+c25b968 feat(51C-migration): community — écran Détail d'une communauté (React)
+f87a00c [51C-migration] feat(community): recherche/filtre des communautés (parité)
+967bb4e [51C-migration] feat(community): incrément 3 — édition (renommage) PUT /community/:id
+0651e34 [51C-migration] feat(community): incrément 2 — création/suppression de communauté
+f6506f4 [51C-migration] feat(community): migration React incrément 1 — mes communautés + annuaire
+5cd9da8 fix(community): #5 garde null sur types dans setRights (TypeError null.indexOf)
+8e19d24 fix: change version to 2.2.1-patched
+```
 
 ## `modules/community`
 
@@ -1032,6 +1133,26 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ```
 9823749 fix(deps): migre @edifice.io/{client,react,tiptap-extensions,utilities} vers @open-ent@2.5.30-patched
+2c2478e ci: dev-check-repository fonctionnel (frontend pnpm/Vite + backend Maven, remplace legacy)
+ad2eada chore(deps): pin @open-ent/bootstrap 2.5.30-patched (RGAA 51H contraste)
+9d71aa0 ci(publish): coordonnées du fat-mod parsées depuis le nom tilde (évite mvn help:evaluate qui échouait en CI sur la résolution du parent)
+c69a622 fix(frontend): référence @cgi-learning-hub à 1.13.0 (tag develop cassé : 1.13.0-dev incompatible mui 5.15 / 1.2.0 sans RadioGroup)
+73a438b ci(build): chaîne build→publish fat-mod (frontend pnpm/Vite + backend Maven, GH Packages + rct-nexus)
+a0322d3 fix(i18n): compléter les traductions anglaises manquantes du fichier principal
+eeb18b5 fix(i18n): compléter/corriger les traductions anglaises des notifications timeline
+4a39dcb build: parent io.edifice:app-parent -> fr.openent:app-parent (Implementation-Version au MANIFEST)
+2e2083a build(2.10.0-patched): entcore open-ent 6.14.9-patched (fix crash async map cluster) + thème openent runtime (bandeau 1d) + fix menu vue board
+d940857 Version 6.14.9-patched
+400fb2f chore: prepare next development iteration
+```
+
+## `modules/magneto`
+
+- **branche référencée** : `(detached)` @ `2c2478e`
+- **base upstream** : `2.10.0`  →  delta = `2.10.0..HEAD` (**11 commit(s)**)
+- **tags patched** : 2.10.0-patched 
+
+```
 2c2478e ci: dev-check-repository fonctionnel (frontend pnpm/Vite + backend Maven, remplace legacy)
 ad2eada chore(deps): pin @open-ent/bootstrap 2.5.30-patched (RGAA 51H contraste)
 9d71aa0 ci(publish): coordonnées du fat-mod parsées depuis le nom tilde (évite mvn help:evaluate qui échouait en CI sur la résolution du parent)
@@ -1269,6 +1390,14 @@ fa5fb7c ci: deploy-file nexus depuis /tmp (évite la résolution du parent)
 3134bc0 fix: fix version typo
 660d995 fix: change version to -patched
 ```
+
+## `modules/moodle-connector`
+
+- **branche référencée** : `(detached)` @ `61b32fa`
+- **base upstream** : `2.2.4`  →  delta = `2.2.4..HEAD` (**0 commit(s)**)
+- **tags patched** : 2.2.4-patched 
+
+_Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/pages`
 
