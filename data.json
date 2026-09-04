@@ -832,32 +832,22 @@
       "name": "pages",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/pages/actions",
       "releases_url": "https://github.com/open-ent/pages/releases",
       "repo_url": "https://github.com/open-ent/pages",
       "releases": [
         {
-          "tag": "2.1.5-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched",
-          "jar_url": "https://github.com/open-ent/pages/releases/download/untagged-e889bdce15053ea9af73/fr.wseduc.pages.2.1.5-fat.jar",
-          "entcore_version": "6.14.9-patched",
-          "openent_frontend": {
-            "react": "2.5.30-patched",
-            "bootstrap": "2.5.30-patched",
-            "client": "2.5.30-patched",
-            "utilities": null,
-            "versions": [
-              "2.5.30-patched"
-            ]
-          }
-        },
-        {
           "tag": "2.1.6-patched",
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5-patched...2.1.6-patched",
           "jar_url": "https://github.com/open-ent/pages/releases/download/untagged-0e49c0703941e3912ad5/fr.wseduc.pages.2.1.6-patched-fat.jar"
+        },
+        {
+          "tag": "2.1.5-patched",
+          "published_at": "2026-09-03",
+          "body": "**Full Changelog**: https://github.com/open-ent/pages/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.1.5-patched",
+          "jar_url": "https://github.com/open-ent/pages/releases/download/2.1.5-patched/fr.wseduc.pages.2.1.5-fat.jar"
         },
         {
           "tag": "2.1.5",
@@ -1254,7 +1244,7 @@
       "name": "community",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/community/actions",
       "releases_url": "https://github.com/open-ent/community/releases",
       "repo_url": "https://github.com/open-ent/community",
@@ -1262,16 +1252,16 @@
         {
           "tag": "2.2.1-patched",
           "published_at": "2026-07-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
           "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1-patched/net.atos.community.2.2.1-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
-            "react": "^2.5.30",
-            "bootstrap": "^2.5.30",
-            "client": "^2.5.30",
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
             "utilities": null,
             "versions": [
-              "^2.5.30"
+              "2.5.30-patched"
             ]
           }
         },
@@ -1342,7 +1332,7 @@
         {
           "tag": "2.1.5-patched",
           "published_at": "2026-08-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched",
           "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.1.5-patched/fr.openent.viescolaire.2.1.5-patched-fat.jar",
           "entcore_version": "6.14.9-patched"
         }
@@ -1693,5 +1683,5 @@
       "releases": []
     }
   ],
-  "generated_at": "03/09/2026 à 08:20 UTC"
+  "generated_at": "04/09/2026 à 07:54 UTC"
 }
