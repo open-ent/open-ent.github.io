@@ -1,0 +1,18 @@
+{
+  "updatedAt": "2026-09-09T10:34:12.011Z",
+  "windows": [
+    {
+      "id": "2026-09-09-1033-reboot",
+      "title": "Redémarrage pour maintenance",
+      "description": "Montée de version des modules.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-09T10:33:27.413Z",
+      "endsAt": "2026-09-09T10:34:12.011Z",
+      "status": "completed",
+      "createdAt": "2026-09-09T10:33:27.413Z"
+    }
+  ]
+}

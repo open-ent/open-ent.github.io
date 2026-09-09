@@ -22,6 +22,16 @@ function setCurrentStatus(summary) {
   const dot = statusPulse.querySelector('.dot');
 
   const isUp = summary?.current?.isUp;
+
+  // Une indisponibilite couverte par une fenetre declaree est une maintenance,
+  // pas un incident : le message doit le dire, sinon la page alarme pour rien.
+  if (isUp === false && summary?.current?.maintenance) {
+    statusText.textContent = 'Maintenance en cours';
+    dot.style.background = 'var(--maint)';
+    dot.style.boxShadow = '0 0 0 0 rgba(62, 166, 255, 0.75)';
+    return;
+  }
+
   if (isUp === true) {
     statusText.textContent = `Operationnel (${summary.current.httpStatus})`;
     dot.style.background = 'var(--up)';
@@ -41,6 +51,13 @@ function setMetrics(summary) {
   document.getElementById('uptime30d').textContent = fmtPct(summary.availability.last30d);
   document.getElementById('latencyAvg').textContent = fmtMs(summary.latencyMs.avg);
   document.getElementById('generatedAt').textContent = `Mis a jour: ${fmtDate(summary.generatedAt)}`;
+  const note = document.getElementById('availabilityNote');
+  if (note) {
+    const excluded = summary.totals?.maintenance || 0;
+    note.textContent = excluded
+      ? `Hors maintenances annoncees (${excluded} mesures exclues)`
+      : 'Hors maintenances annoncees';
+  }
 }
 
 function drawLatencyChart(history) {
@@ -95,8 +112,10 @@ function renderUptimeBar(history) {
   bar.innerHTML = '';
   for (const p of last24h) {
     const cell = document.createElement('span');
-    cell.className = `uptime-cell ${p.isUp ? 'up' : 'down'}`;
-    cell.title = `${fmtDate(p.timestamp)} - ${p.isUp ? 'UP' : 'DOWN'}${p.httpStatus ? ` (${p.httpStatus})` : ''}`;
+    const state = p.maintenance ? 'maint' : (p.isUp ? 'up' : 'down');
+    cell.className = `uptime-cell ${state}`;
+    const label = p.maintenance ? `MAINTENANCE (${p.maintenance})` : (p.isUp ? 'UP' : 'DOWN');
+    cell.title = `${fmtDate(p.timestamp)} - ${label}${p.httpStatus ? ` (${p.httpStatus})` : ''}`;
     bar.appendChild(cell);
   }
 }
@@ -132,6 +151,112 @@ function renderIncidents(summary) {
   }
 }
 
+const MAINT_KINDS = {
+  reboot: 'Redemarrage',
+  deploy: 'Mise a jour',
+  migration: 'Migration de donnees',
+  infrastructure: 'Infrastructure',
+  other: 'Maintenance',
+};
+
+function windowState(win, now) {
+  if (win.status === 'cancelled') return 'cancelled';
+  if (now < Date.parse(win.startsAt)) return 'upcoming';
+  if (now <= Date.parse(win.endsAt)) return 'active';
+  return 'past';
+}
+
+// Les creneaux de maintenance se lisent a la minute : les secondes de fmtDate
+// n'apportent rien et alourdissent la ligne.
+function fmtMinute(iso) {
+  if (!iso) return '-';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '-';
+  return `${d.toLocaleDateString('fr-FR')} ${d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
+}
+
+function fmtRange(win) {
+  return `${fmtMinute(win.startsAt)} -> ${fmtMinute(win.endsAt)} (${durationLabel(Date.parse(win.endsAt) - Date.parse(win.startsAt))})`;
+}
+
+// Bandeau haut de page : ne s'affiche que s'il y a quelque chose a annoncer,
+// pour ne pas ajouter de bruit permanent quand tout va bien.
+function renderMaintenanceBanner(summary) {
+  const banner = document.getElementById('maintBanner');
+  const maint = summary.maintenance || {};
+  const win = maint.active || (maint.upcoming || [])[0] || null;
+
+  if (!win) {
+    banner.hidden = true;
+    return;
+  }
+
+  const now = Date.now();
+  const state = windowState(win, now);
+  banner.hidden = false;
+  banner.classList.toggle('is-active', state === 'active');
+
+  document.getElementById('maintKicker').textContent = state === 'active'
+    ? 'Maintenance en cours'
+    : 'Maintenance planifiee';
+  document.getElementById('maintTitle').textContent = win.title || MAINT_KINDS[win.kind] || 'Maintenance';
+  document.getElementById('maintDesc').textContent = win.description || win.reason || '';
+
+  const impact = win.impact === 'partial'
+    ? 'Service partiellement disponible'
+    : 'Plateforme indisponible pendant l\'operation';
+  const when = state === 'active'
+    ? `Retour estime ${fmtMinute(win.endsAt)} - ${impact}`
+    : `${fmtRange(win)} - ${impact}`;
+  document.getElementById('maintWhen').textContent = when;
+}
+
+function renderMaintenanceList(summary) {
+  const list = document.getElementById('maintList');
+  const count = document.getElementById('maintCount');
+  const maint = summary.maintenance || {};
+  const now = Date.now();
+
+  const items = []
+    .concat(maint.active ? [maint.active] : [])
+    .concat(maint.upcoming || [])
+    .concat(maint.recent || []);
+
+  // Distinguer « en cours » et « a venir » : annoncer une operation en cours
+  // comme etant a venir induit l'utilisateur en erreur.
+  const upcomingCount = (maint.upcoming || []).length;
+  const parts = [];
+  if (maint.active) parts.push('1 en cours');
+  if (upcomingCount) parts.push(`${upcomingCount} a venir`);
+  count.textContent = parts.length ? parts.join(', ') : 'aucune a venir';
+  list.innerHTML = '';
+
+  if (!items.length) {
+    const li = document.createElement('li');
+    li.className = 'incident';
+    li.innerHTML = '<p class="incident-title">Aucune maintenance planifiee</p><p class="incident-meta">Les interventions programmees seront annoncees ici avant leur debut.</p>';
+    list.appendChild(li);
+    return;
+  }
+
+  const STATE_LABEL = { active: 'En cours', upcoming: 'A venir', past: 'Terminee', cancelled: 'Annulee' };
+
+  for (const win of items) {
+    const state = windowState(win, now);
+    const li = document.createElement('li');
+    li.className = `incident maint-item is-${state}`;
+    li.innerHTML = `
+      <p class="incident-title">
+        <span class="tag tag-${state}">${STATE_LABEL[state]}</span>
+        ${win.title || MAINT_KINDS[win.kind] || 'Maintenance'}
+      </p>
+      <p class="incident-meta">${fmtRange(win)}</p>
+      ${win.description ? `<p class="incident-meta">${win.description}</p>` : ''}
+    `;
+    list.appendChild(li);
+  }
+}
+
 async function loadStatus() {
   const [summaryRes, historyRes] = await Promise.all([
     fetch('./data/latest.json', { cache: 'no-store' }),
@@ -143,6 +268,8 @@ async function loadStatus() {
 
   setCurrentStatus(summary);
   setMetrics(summary);
+  renderMaintenanceBanner(summary);
+  renderMaintenanceList(summary);
   drawLatencyChart(history);
   renderUptimeBar(history);
   renderIncidents(summary);

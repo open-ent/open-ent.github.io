@@ -12,11 +12,25 @@
   <div class="bg-shape bg-shape-2"></div>
 
   <main class="wrap">
+    <section class="maint-banner" id="maintBanner" hidden>
+      <div class="maint-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+        </svg>
+      </div>
+      <div class="maint-body">
+        <p class="maint-kicker" id="maintKicker">Maintenance planifiee</p>
+        <h2 id="maintTitle">-</h2>
+        <p class="maint-desc" id="maintDesc"></p>
+        <p class="maint-when" id="maintWhen"></p>
+      </div>
+    </section>
+
     <header class="hero glass">
       <div>
         <p class="eyebrow">Open ENT Monitoring</p>
         <h1>Status de www.ent-scolaire.fr</h1>
-        <p class="subtitle">Disponibilite en temps reel, incidents recents et tendance de performance.</p>
+        <p class="subtitle">Disponibilite en temps reel, incidents recents, maintenances planifiees et tendance de performance.</p>
       </div>
       <div class="status-pulse" id="statusPulse" aria-live="polite">
         <span class="dot"></span>
@@ -42,6 +56,7 @@
         <p id="latencyAvg">-</p>
       </article>
     </section>
+    <p class="avail-note muted" id="availabilityNote">Hors maintenances annoncees</p>
 
     <section class="panel-grid">
       <article class="panel glass">
@@ -55,9 +70,17 @@
       <article class="panel glass">
         <div class="panel-head">
           <h3>Disponibilite 24h</h3>
-          <span class="muted">1 bloc = 5 min</span>
+          <span class="muted"><i class="legend up"></i> operationnel <i class="legend down"></i> incident <i class="legend maint"></i> maintenance</span>
         </div>
         <div id="uptimeBar" class="uptime-bar" aria-label="Barre de disponibilite"></div>
+      </article>
+
+      <article class="panel glass">
+        <div class="panel-head">
+          <h3>Maintenances planifiees</h3>
+          <span id="maintCount" class="muted">0 operation</span>
+        </div>
+        <ul id="maintList" class="incidents-list"></ul>
       </article>
 
       <article class="panel glass incidents-panel">
