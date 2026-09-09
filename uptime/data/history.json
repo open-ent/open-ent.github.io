@@ -2379,5 +2379,12 @@
     "responseTimeMs": 1530,
     "error": null,
     "maintenance": "2026-09-09-1100-reboot"
+  },
+  {
+    "timestamp": "2026-09-09T11:02:55.240Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1371,
+    "error": null
   }
 ]
