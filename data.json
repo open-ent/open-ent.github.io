@@ -1302,7 +1302,7 @@
           "tag": "0.1.1-dev",
           "published_at": "2026-09-09",
           "body": "## What's Changed\n* refactor: rename Java package com.opendigitaleducation.video -> fr.te… by @passtech in https://github.com/open-ent/video/pull/1\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/video/pull/1\n\n**Full Changelog**: https://github.com/open-ent/video/commits/0.1.1-dev",
-          "jar_url": "https://github.com/open-ent/video/releases/download/0.1.1-dev/fr.tech.openent.video.0.1.1-dev-fat.jar",
+          "jar_url": "https://github.com/open-ent/video/releases/download/untagged-3333ec19ade24d10f84c/fr.tech.openent.video.0.1.1-dev-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
@@ -1706,5 +1706,5 @@
       "releases": []
     }
   ],
-  "generated_at": "09/09/2026 à 11:04 UTC"
+  "generated_at": "09/09/2026 à 14:50 UTC"
 }
