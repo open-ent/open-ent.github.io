@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-09-09T10:52:57.581Z",
+  "generatedAt": "2026-09-09T11:00:45.770Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-09-09T10:52:57.580Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 968,
-    "error": null
+    "timestamp": "2026-09-09T11:00:45.769Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1530,
+    "error": null,
+    "maintenance": "2026-09-09-1100-reboot"
   },
   "totals": {
-    "checks": 339,
+    "checks": 340,
     "up": 338,
     "down": 1,
-    "maintenance": 0
+    "maintenance": 1
   },
   "availability": {
     "all": 99.705,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 968,
+    "latest": 1530,
     "avg": 705,
     "p95": 1006,
     "p99": 1467
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-09-09-1100-reboot",
+      "title": "Redémarrage pour maintenance",
+      "description": "Montée de version des modules.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-09T11:00:27.718Z",
+      "endsAt": "2026-09-09T11:03:27.718Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-09T11:00:27.718Z"
+    },
     "upcoming": [],
     "recent": [
       {
