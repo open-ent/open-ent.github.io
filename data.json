@@ -1222,7 +1222,7 @@
         },
         {
           "tag": "1.3.0-dev",
-          "published_at": "2026-09-10",
+          "published_at": "2026-09-11",
           "body": "",
           "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.3.0-dev/fr.openent.workflowhub.1.3.0-dev-fat.jar"
         },
@@ -1706,5 +1706,5 @@
       "releases": []
     }
   ],
-  "generated_at": "11/09/2026 à 07:58 UTC"
+  "generated_at": "11/09/2026 à 09:42 UTC"
 }
