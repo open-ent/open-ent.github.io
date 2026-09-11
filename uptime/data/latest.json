@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-09-11T19:56:07.347Z",
+  "generatedAt": "2026-09-11T20:37:36.452Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-09-11T19:56:07.345Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 1328,
-    "error": null
+    "timestamp": "2026-09-11T20:37:36.450Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1205,
+    "error": null,
+    "maintenance": "2026-09-11-2037-reboot"
   },
   "totals": {
-    "checks": 362,
+    "checks": 363,
     "up": 358,
     "down": 1,
-    "maintenance": 4
+    "maintenance": 5
   },
   "availability": {
     "all": 99.721,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 1328,
+    "latest": 1205,
     "avg": 729,
     "p95": 1121,
     "p99": 1622
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-09-11-2037-reboot",
+      "title": "Ouverture de l'ENT Occitanie",
+      "description": "Ajout du nouvel ENT mon-ent-occitanie.ent-scolaire.fr et de son thème.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-11T20:37:15.484Z",
+      "endsAt": "2026-09-11T20:52:15.484Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-11T20:37:15.486Z"
+    },
     "upcoming": [],
     "recent": [
       {

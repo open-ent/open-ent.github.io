@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T16:23:51.477Z",
+  "updatedAt": "2026-09-11T20:37:15.486Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -65,6 +65,19 @@
       "endsAt": "2026-09-11T16:26:51.477Z",
       "status": "scheduled",
       "createdAt": "2026-09-11T16:23:51.477Z"
+    },
+    {
+      "id": "2026-09-11-2037-reboot",
+      "title": "Ouverture de l'ENT Occitanie",
+      "description": "Ajout du nouvel ENT mon-ent-occitanie.ent-scolaire.fr et de son thème.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-11T20:37:15.484Z",
+      "endsAt": "2026-09-11T20:52:15.484Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-11T20:37:15.486Z"
     }
   ]
 }
