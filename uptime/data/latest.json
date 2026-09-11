@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-09-11T13:50:42.571Z",
+  "generatedAt": "2026-09-11T15:00:00.400Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-09-11T13:50:42.570Z",
+    "timestamp": "2026-09-11T15:00:00.399Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 883,
-    "error": null
+    "responseTimeMs": 1506,
+    "error": null,
+    "maintenance": "2026-09-11-1459-reboot"
   },
   "totals": {
-    "checks": 358,
-    "up": 355,
+    "checks": 359,
+    "up": 356,
     "down": 1,
-    "maintenance": 2
+    "maintenance": 3
   },
   "availability": {
     "all": 99.719,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 883,
+    "latest": 1506,
     "avg": 726,
     "p95": 1095,
     "p99": 1622
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-09-11-1459-reboot",
+      "title": "Redémarrage pour maintenance",
+      "description": "Gestion du thème dynamiquement.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-11T14:59:41.215Z",
+      "endsAt": "2026-09-11T15:02:41.215Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-11T14:59:41.215Z"
+    },
     "upcoming": [],
     "recent": [
       {

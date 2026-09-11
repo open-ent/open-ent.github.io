@@ -2506,5 +2506,13 @@
     "httpStatus": 200,
     "responseTimeMs": 883,
     "error": null
+  },
+  {
+    "timestamp": "2026-09-11T15:00:00.399Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1506,
+    "error": null,
+    "maintenance": "2026-09-11-1459-reboot"
   }
 ]

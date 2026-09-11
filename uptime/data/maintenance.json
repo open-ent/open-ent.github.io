@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T17:58:28.703Z",
+  "updatedAt": "2026-09-11T14:59:41.216Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -39,6 +39,19 @@
       "endsAt": "2026-09-09T17:58:28.703Z",
       "status": "completed",
       "createdAt": "2026-09-09T17:57:36.952Z"
+    },
+    {
+      "id": "2026-09-11-1459-reboot",
+      "title": "Redémarrage pour maintenance",
+      "description": "Gestion du thème dynamiquement.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-09-11T14:59:41.215Z",
+      "endsAt": "2026-09-11T15:02:41.215Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-11T14:59:41.215Z"
     }
   ]
 }
