@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T20:37:15.486Z",
+  "updatedAt": "2026-09-11T20:39:04.969Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -75,8 +75,8 @@
       "impact": "full",
       "components": [],
       "startsAt": "2026-09-11T20:37:15.484Z",
-      "endsAt": "2026-09-11T20:52:15.484Z",
-      "status": "scheduled",
+      "endsAt": "2026-09-11T20:39:04.968Z",
+      "status": "completed",
       "createdAt": "2026-09-11T20:37:15.486Z"
     }
   ]
