@@ -465,7 +465,7 @@
         {
           "tag": "5.4.7-patched",
           "published_at": "2026-09-01",
-          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
           "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.7-patched/org.entcore.blog.5.4.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -1706,5 +1706,5 @@
       "releases": []
     }
   ],
-  "generated_at": "12/09/2026 à 09:01 UTC"
+  "generated_at": "12/09/2026 à 12:50 UTC"
 }
