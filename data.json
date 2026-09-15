@@ -569,7 +569,7 @@
         },
         {
           "tag": "1.2.0-dev",
-          "published_at": "2026-09-09",
+          "published_at": "2026-09-15",
           "body": "",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
@@ -997,9 +997,9 @@
       "releases": [
         {
           "tag": "1.3.0-dev",
-          "published_at": "2026-08-26",
+          "published_at": "2026-09-15",
           "body": "",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/untagged-a3beb26a3f17b1d24a98/fr.tech.openent.schoolbook.1.3.0-dev-fat.jar",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.3.0-dev/fr.tech.openent.schoolbook.1.3.0-dev-fat.jar",
           "entcore_version": "6.14.13",
           "openent_frontend": {
             "react": "2.5.30-patched",
@@ -1010,12 +1010,6 @@
               "2.5.30-patched"
             ]
           }
-        },
-        {
-          "tag": "1.3.0-dev",
-          "published_at": "2026-09-05",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases"
         },
         {
           "tag": "1.1.0",
@@ -1706,5 +1700,5 @@
       "releases": []
     }
   ],
-  "generated_at": "15/09/2026 à 15:16 UTC"
+  "generated_at": "15/09/2026 à 19:06 UTC"
 }
