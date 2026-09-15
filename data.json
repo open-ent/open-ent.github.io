@@ -609,7 +609,7 @@
       "name": "collaborativewall",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/collaborative-wall/actions",
       "releases_url": "https://github.com/open-ent/collaborative-wall/releases",
       "repo_url": "https://github.com/open-ent/collaborative-wall",
@@ -617,7 +617,7 @@
         {
           "tag": "3.4.9-patched",
           "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched",
           "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.9-patched/net.atos.collaborativewall.3.4.9-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -805,7 +805,7 @@
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
@@ -813,7 +813,7 @@
         {
           "tag": "3.4.9-patched",
           "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
           "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -896,7 +896,7 @@
       "name": "rack",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/rack/actions",
       "releases_url": "https://github.com/open-ent/rack/releases",
       "repo_url": "https://github.com/open-ent/rack",
@@ -904,7 +904,7 @@
         {
           "tag": "3.1.7-patched",
           "published_at": "2026-06-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -1328,7 +1328,7 @@
         {
           "tag": "5.2.4-patched",
           "published_at": "2026-08-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
           "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.2.4-patched/fr.openent.mediacentre.5.2.4-patched-fat.jar",
           "entcore_version": "6.14.9-patched",
           "openent_frontend": {
@@ -1706,5 +1706,5 @@
       "releases": []
     }
   ],
-  "generated_at": "15/09/2026 à 08:35 UTC"
+  "generated_at": "15/09/2026 à 10:31 UTC"
 }
