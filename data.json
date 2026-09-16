@@ -569,7 +569,7 @@
         },
         {
           "tag": "1.2.0-dev",
-          "published_at": "2026-09-15",
+          "published_at": "2026-09-16",
           "body": "",
           "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
         },
@@ -990,14 +990,14 @@
       "name": "schoolbook",
       "group_id": "fr.tech.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/schoolbook/actions",
       "releases_url": "https://github.com/open-ent/schoolbook/releases",
       "repo_url": "https://github.com/open-ent/schoolbook",
       "releases": [
         {
           "tag": "1.3.0-dev",
-          "published_at": "2026-09-15",
+          "published_at": "2026-09-16",
           "body": "",
           "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.3.0-dev/fr.tech.openent.schoolbook.1.3.0-dev-fat.jar",
           "entcore_version": "6.14.13",
@@ -1629,7 +1629,6 @@
           "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched",
           "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.5-patched/fr.openent.lool.2.2.5-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1700,5 +1699,5 @@
       "releases": []
     }
   ],
-  "generated_at": "16/09/2026 à 14:35 UTC"
+  "generated_at": "16/09/2026 à 18:26 UTC"
 }
