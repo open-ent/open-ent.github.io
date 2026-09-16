@@ -990,7 +990,7 @@
       "name": "schoolbook",
       "group_id": "fr.tech.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/schoolbook/actions",
       "releases_url": "https://github.com/open-ent/schoolbook/releases",
       "repo_url": "https://github.com/open-ent/schoolbook",
@@ -1700,5 +1700,5 @@
       "releases": []
     }
   ],
-  "generated_at": "16/09/2026 à 08:30 UTC"
+  "generated_at": "16/09/2026 à 09:55 UTC"
 }
