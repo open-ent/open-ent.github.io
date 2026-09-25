@@ -454,7 +454,7 @@
       "name": "chat-nats",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/chat-nats/actions",
       "releases_url": "https://github.com/open-ent/chat-nats/releases",
       "repo_url": "https://github.com/open-ent/chat-nats",
@@ -1598,5 +1598,5 @@
       "releases": []
     }
   ],
-  "generated_at": "24/09/2026 à 08:21 UTC"
+  "generated_at": "25/09/2026 à 08:44 UTC"
 }
