@@ -528,7 +528,7 @@
       <div class="version-item">
         <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
           <span class="version-tag">${r.tag}</span>
-          ${r.entcore_version ? `<span class="entcore-chip">entcore ${r.entcore_version}</span>` : ''}
+          ${r.entcore_version ? `<span class="entcore-chip">entcore ${r.entcore_version}${r.entcore_libs_version ? ` · libs ${r.entcore_libs_version}` : ''}</span>` : ''}
           ${frontendChip(r.openent_frontend)}
         </div>
         <div style="display:flex;align-items:center;gap:0.75rem;">

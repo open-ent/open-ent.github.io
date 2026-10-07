@@ -19,7 +19,7 @@ jobs:
     name: Generate Dashboard
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_PACKAGES_TOKEN }}
 
@@ -52,7 +52,9 @@ jobs:
                 local ver
                 ver=$(echo "$content" | grep -oP '(?<=<entCoreVersion>)[^<]+' | head -1)
                 [ -z "$ver" ] && ver=$(echo "$content" | grep -oP '(?<=<entcore\.version>)[^<]+' | head -1)
-                [ -n "$ver" ] && echo "$ver" && return
+                local libs
+                libs=$(echo "$content" | grep -oP '(?<=<entCoreLibsVersion>)[^<]+' | head -1)
+                [ -n "$ver" ] && echo "$ver|$libs" && return
               fi
             done
             echo ""
@@ -113,8 +115,8 @@ jobs:
               local EC_VER
               EC_VER=$(fetch_entcore_version "$REPO" "$LATEST_TAG")
               if [ -n "$EC_VER" ]; then
-                RELEASES=$(echo "$RELEASES" | jq --arg ec "$EC_VER" \
-                  '[.[0] + {entcore_version: $ec}] + .[1:]')
+                RELEASES=$(echo "$RELEASES" | jq --arg ec "${EC_VER%%|*}" --arg libs "${EC_VER#*|}" \
+                  '[.[0] + {entcore_version: $ec} + (if $libs != "" then {entcore_libs_version: $libs} else {} end)] + .[1:]')
               fi
               local FE_JSON
               FE_JSON=$(fetch_openent_version "$REPO" "$LATEST_TAG" "$FRONTEND_PATH_HINT")
@@ -155,10 +157,12 @@ jobs:
             --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
             2>/dev/null || echo "unknown")
 
-          # Fetch real Maven versions from GitHub Packages metadata
+          # Versions Maven réelles depuis les métadonnées GitHub Packages. Depuis la 6.16,
+          # org.entcore:common n'est plus publié par entcore-v2 (il vit dans
+          # edifice-entcore-libs) : on lit donc celles d'un module entcore (auth).
           ENTCORE_META=$(curl -s \
             -H "Authorization: Bearer $GH_TOKEN" \
-            "https://maven.pkg.github.com/open-ent/entcore-v2/org/entcore/common/maven-metadata.xml" \
+            "https://maven.pkg.github.com/open-ent/entcore-v2/org/entcore/auth/maven-metadata.xml" \
             2>/dev/null || echo "")
           ENTCORE_RELEASES="[]"
           if [ -n "$ENTCORE_META" ]; then
@@ -168,6 +172,7 @@ jobs:
             ENTCORE_RELEASES=$(echo "$ENTCORE_META" \
               | grep -oP '(?<=<version>)[^<]+' \
               | grep -v '\-dev$' \
+              | sort -rV \
               | head -5 \
               | jq -R -s \
                 --arg packages_url "https://github.com/$ENTCORE_REPO/packages" \
@@ -184,13 +189,11 @@ jobs:
           # Modules clés d'entcore
           ENTCORE_MODULES=(
             "auth|org.entcore|Authentification & SSO"
-            "common|org.entcore|Bibliothèque commune"
             "directory|org.entcore|Annuaire & Groupes"
             "workspace|org.entcore|Espace documentaire"
             "conversation|org.entcore|Messagerie"
             "timeline|org.entcore|Fil d'actualité"
             "portal|org.entcore|Portail & Navigation"
-            "session|org.entcore|Sessions utilisateur"
             "communication|org.entcore|Infrastructure communication"
             "feeder|org.entcore|Alimentation des données"
             "admin|org.entcore|Administration"
@@ -198,7 +201,6 @@ jobs:
             "infra|org.entcore|Infrastructure verticale"
             "archive|org.entcore|Archivage"
             "audience|org.entcore|Statistiques audience"
-            "broker|org.entcore|Bus de messages hors event bus Vert.x"
             "cas|org.entcore|CAS / SSO fédéré"
           )
 
@@ -206,6 +208,24 @@ jobs:
             IFS='|' read -r NAME GROUP _DESC <<< "$entry"
             add_module "$NAME" "$GROUP" "entcore" "$ENTCORE_CI" \
               "$ENTCORE_CI_URL" "$ENTCORE_PKG_URL" "$ENTCORE_REPO_URL" "$ENTCORE_RELEASES"
+          done
+
+          # Libs extraites d'entcore en 6.16 (open-ent/edifice-entcore-libs, publiées sur
+          # rct-nexus) : versions = tags « -patched » du dépôt, du plus récent au plus ancien.
+          LIBS_REPO="open-ent/edifice-entcore-libs"
+          LIBS_CI=$(gh run list --repo "$LIBS_REPO" --limit 5 --json conclusion \
+            --jq '[.[] | select(.conclusion != null)] | .[0].conclusion // "unknown"' \
+            2>/dev/null || echo "unknown")
+          LIBS_RELEASES=$(gh api "repos/$LIBS_REPO/tags?per_page=100" --jq '.[].name' 2>/dev/null \
+            | grep -E '^[0-9.]+-patched$' | sort -rV | head -5 \
+            | jq -R -s --arg url "https://github.com/$LIBS_REPO/tags" \
+              'split("\n") | map(select(length > 0)) | map({tag: ., published_at: "", body: "", jar_url: $url})' \
+            2>/dev/null || echo "[]")
+          for entry in "common|org.entcore" "session|org.entcore" "broker|org.entcore"; do
+            IFS='|' read -r NAME GROUP <<< "$entry"
+            add_module "$NAME" "$GROUP" "entcore" "$LIBS_CI" \
+              "https://github.com/$LIBS_REPO/actions" "https://github.com/$LIBS_REPO/tags" \
+              "https://github.com/$LIBS_REPO" "$LIBS_RELEASES"
           done
 
           # ══════════════════════════════════════════════════════════════════
