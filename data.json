@@ -724,7 +724,7 @@
       "name": "competences",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/competences/actions",
       "releases_url": "https://github.com/open-ent/competences/releases",
       "repo_url": "https://github.com/open-ent/competences",
@@ -732,7 +732,7 @@
         {
           "tag": "2.2.4-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
           "jar_url": "https://github.com/open-ent/competences/releases/download/2.2.4-patched/fr.openent.competences.2.2.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -2018,5 +2018,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 17:50 UTC"
+  "generated_at": "07/10/2026 à 22:19 UTC"
 }
