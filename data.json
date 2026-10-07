@@ -1916,6 +1916,31 @@
       ]
     },
     {
+      "name": "pmb-connector",
+      "group_id": "fr.openent",
+      "section": "connectors",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/pmb-connector/actions",
+      "releases_url": "https://github.com/open-ent/pmb-connector/releases",
+      "repo_url": "https://github.com/open-ent/pmb-connector",
+      "releases": [
+        {
+          "tag": "2.2.3-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.3-patched",
+          "jar_url": "https://github.com/open-ent/pmb-connector/releases/download/2.2.3-patched/fr.openent.pmb-connector.2.2.3-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
+        },
+        {
+          "tag": "2.2.2-patched",
+          "published_at": "2026-08-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched\n\n**Full Changelog**: https://github.com/open-ent/pmb-connector/commits/2.2.2-patched",
+          "jar_url": "https://github.com/open-ent/pmb-connector/releases/download/2.2.2-patched/fr.openent.pmb-connector.2.2.2-patched-fat.jar"
+        }
+      ]
+    },
+    {
       "name": "wordpress-connector",
       "group_id": "fr.openent",
       "section": "connectors",
@@ -1926,5 +1951,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 11:08 UTC"
+  "generated_at": "07/10/2026 à 11:51 UTC"
 }
