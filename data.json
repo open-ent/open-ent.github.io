@@ -1823,7 +1823,16 @@
       "ci_url": "https://github.com/open-ent/gar-connector/actions",
       "releases_url": "https://github.com/open-ent/gar-connector/releases",
       "repo_url": "https://github.com/open-ent/gar-connector",
-      "releases": []
+      "releases": [
+        {
+          "tag": "3.2.6-patched",
+          "published_at": "2026-10-07",
+          "body": "entcore 6.16.14-patched / libs 6.16.8-patched",
+          "jar_url": "https://github.com/open-ent/gar-connector/releases",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
+        }
+      ]
     },
     {
       "name": "lool",
@@ -1951,5 +1960,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 11:51 UTC"
+  "generated_at": "07/10/2026 à 12:15 UTC"
 }
