@@ -93,8 +93,10 @@ jobs:
           fetch_releases() {
             local REPO="$1" FRONTEND_PATH_HINT="${2:-}"
             local RAW
-            RAW=$(gh api "repos/$REPO/releases?per_page=5" \
-              --jq '[.[] | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}]' \
+            # L'API ne renvoie pas les releases par date (forum : 2.1.5-patched de mai avant
+            # 2.2.5-patched d'octobre) : on en prend davantage et on trie par publication.
+            RAW=$(gh api "repos/$REPO/releases?per_page=50" \
+              --jq '[.[] | select(.draft | not) | {tagName: .tag_name, publishedAt: .published_at, body: .body, assets: [.assets[] | {name: .name, browser_download_url: .browser_download_url}]}] | sort_by(.publishedAt // "") | reverse | .[0:5]' \
               2>/dev/null || echo "[]")
             local RELEASES
             RELEASES=$(echo "$RAW" | jq --arg fallback "https://github.com/$REPO/releases" '
