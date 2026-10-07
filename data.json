@@ -10,25 +10,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
-          "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        }
-      ]
-    },
-    {
-      "name": "common",
-      "group_id": "org.entcore",
-      "section": "entcore",
-      "ci_status": "success",
-      "ci_url": "https://github.com/open-ent/entcore-v2/actions",
-      "releases_url": "https://github.com/open-ent/entcore-v2/packages",
-      "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": [
+        },
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -44,8 +33,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -61,8 +56,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -78,8 +79,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -95,8 +102,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -112,25 +125,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
-          "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        }
-      ]
-    },
-    {
-      "name": "session",
-      "group_id": "org.entcore",
-      "section": "entcore",
-      "ci_status": "success",
-      "ci_url": "https://github.com/open-ent/entcore-v2/actions",
-      "releases_url": "https://github.com/open-ent/entcore-v2/packages",
-      "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": [
+        },
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -146,8 +148,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -163,8 +171,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -180,8 +194,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -197,8 +217,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -214,8 +240,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -231,8 +263,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -248,25 +286,14 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
-          "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        }
-      ]
-    },
-    {
-      "name": "broker",
-      "group_id": "org.entcore",
-      "section": "entcore",
-      "ci_status": "success",
-      "ci_url": "https://github.com/open-ent/entcore-v2/actions",
-      "releases_url": "https://github.com/open-ent/entcore-v2/packages",
-      "repo_url": "https://github.com/open-ent/entcore-v2",
-      "releases": [
+        },
         {
           "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
         }
@@ -282,10 +309,103 @@
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
         {
-          "tag": "6.14.9-patched",
-          "published_at": "2026-10-06",
+          "tag": "6.16.14-patched",
+          "published_at": "2026-10-07",
           "body": "",
           "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        },
+        {
+          "tag": "6.14.9-patched",
+          "published_at": "2026-10-07",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
+        }
+      ]
+    },
+    {
+      "name": "common",
+      "group_id": "org.entcore",
+      "section": "entcore",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/edifice-entcore-libs/actions",
+      "releases_url": "https://github.com/open-ent/edifice-entcore-libs/tags",
+      "repo_url": "https://github.com/open-ent/edifice-entcore-libs",
+      "releases": [
+        {
+          "tag": "6.16.8-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.7-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.3-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        }
+      ]
+    },
+    {
+      "name": "session",
+      "group_id": "org.entcore",
+      "section": "entcore",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/edifice-entcore-libs/actions",
+      "releases_url": "https://github.com/open-ent/edifice-entcore-libs/tags",
+      "repo_url": "https://github.com/open-ent/edifice-entcore-libs",
+      "releases": [
+        {
+          "tag": "6.16.8-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.7-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.3-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        }
+      ]
+    },
+    {
+      "name": "broker",
+      "group_id": "org.entcore",
+      "section": "entcore",
+      "ci_status": "success",
+      "ci_url": "https://github.com/open-ent/edifice-entcore-libs/actions",
+      "releases_url": "https://github.com/open-ent/edifice-entcore-libs/tags",
+      "repo_url": "https://github.com/open-ent/edifice-entcore-libs",
+      "releases": [
+        {
+          "tag": "6.16.8-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.7-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
+        },
+        {
+          "tag": "6.16.3-patched",
+          "published_at": "",
+          "body": "",
+          "jar_url": "https://github.com/open-ent/edifice-entcore-libs/tags"
         }
       ]
     },
@@ -304,6 +424,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.2.10-patched",
           "jar_url": "https://github.com/open-ent/actualites/releases/download/3.2.10-patched/net.atos.actualites.3.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -378,6 +499,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.5.12-patched",
           "jar_url": "https://github.com/open-ent/blog/releases/download/5.5.12-patched/org.entcore.blog.5.5.12-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -417,6 +539,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.2.4-patched",
           "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.2.4-patched/fr.openent.diary.4.2.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -462,6 +585,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched",
           "jar_url": "https://github.com/open-ent/calendar/releases/download/4.3.6-patched/net.atos.calendar.4.3.6-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -523,7 +647,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.4.7-patched",
           "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.4.7-patched/net.atos.collaborative-editor.3.4.7-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "3.3.5-patched",
@@ -554,6 +679,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.5.12-patched",
           "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.5.12-patched/net.atos.collaborativewall.3.5.12-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -593,6 +719,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
           "jar_url": "https://github.com/open-ent/competences/releases/download/2.2.4-patched/fr.openent.competences.2.2.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -625,7 +752,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.4.7-patched/fr.openent.exercizer.4.4.7-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "4.3.6-patched",
@@ -685,6 +813,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/form/commits/3.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.9-patched",
           "jar_url": "https://github.com/open-ent/form/releases/download/3.1.9-patched/fr.openent.formulaire-public.3.1.9-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -759,6 +888,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched",
           "jar_url": "https://github.com/open-ent/magneto/releases/download/2.10.7-patched/fr.cgi.magneto.2.10.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -792,6 +922,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.5.12-patched",
           "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.5.12-patched/net.atos.mindmap.3.5.12-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -901,6 +1032,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched",
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.2.10-patched/fr.wseduc.rack.3.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -966,7 +1098,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.2.3-patched",
           "jar_url": "https://github.com/open-ent/rss/releases/download/2.2.3-patched/net.atos.rss.2.2.3-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "2.1.4-patched",
@@ -1081,6 +1214,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/statistics/compare/2.6.0-patched...2.6.4-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/compare/2.6.0-patched...2.6.4-patched",
           "jar_url": "https://github.com/open-ent/statistics/releases/download/2.6.4-patched/fr.wseduc.stats.2.6.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1143,6 +1277,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched",
           "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.4.8-patched/net.atos.timelinegenerator.3.4.8-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1291,6 +1426,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1-patched...2.2.5-patched",
           "jar_url": "https://github.com/open-ent/community/releases/download/2.2.5-patched/net.atos.community.2.2.5-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1367,6 +1503,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.3.8-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.3.8-patched",
           "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.3.8-patched/fr.openent.mediacentre.5.3.8-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1399,7 +1536,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.2.4-patched",
           "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.2.4-patched/fr.openent.viescolaire.2.2.4-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "2.1.5-patched",
@@ -1451,6 +1589,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
           "jar_url": "https://github.com/open-ent/presences/releases/download/2.2.10-patched/fr.openent.incidents.2.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1529,7 +1668,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/compare/3.2.3-patched...3.3.1-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/compare/3.2.3-patched...3.3.1-patched",
           "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.3.1-patched/fr.wseduc.mod-image-resizer.3.3.1-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "3.2.3-patched",
@@ -1696,6 +1836,7 @@
           "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/compare/2.2.5-patched...2.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/compare/2.2.5-patched...2.2.7-patched",
           "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.7-patched/fr.openent.lool.2.2.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1763,7 +1904,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/nextcloud/compare/2.4.2-patched...2.4.3-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/compare/2.4.2-patched...2.4.3-patched",
           "jar_url": "https://github.com/open-ent/nextcloud/releases/download/2.4.3-patched/fr.openent.nextcloud.2.4.3-patched-fat.jar",
-          "entcore_version": "6.16.14-patched"
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "2.4.2-patched",
@@ -1784,5 +1926,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 10:08 UTC"
+  "generated_at": "07/10/2026 à 10:35 UTC"
 }
