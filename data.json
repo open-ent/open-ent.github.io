@@ -299,11 +299,11 @@
       "repo_url": "https://github.com/open-ent/actualites",
       "releases": [
         {
-          "tag": "3.1.5-patched",
-          "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched",
-          "jar_url": "https://github.com/open-ent/actualites/releases/download/3.1.5-patched/net.atos.actualites.3.1.5-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.2.10-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.2.10-patched",
+          "jar_url": "https://github.com/open-ent/actualites/releases/download/3.2.10-patched/net.atos.actualites.3.2.10-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -313,6 +313,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.1.5-patched",
+          "published_at": "2026-08-13",
+          "body": "**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/actualites/commits/3.1.5-patched",
+          "jar_url": "https://github.com/open-ent/actualites/releases/download/3.1.5-patched/net.atos.actualites.3.1.5-fat.jar"
         },
         {
           "tag": "3.1.4-patched",
@@ -338,6 +344,12 @@
           "jar_url": "https://github.com/open-ent/appointments/releases/download/untagged-34ce9577e4e09d99eed8/fr.openent.appointments.1.3.6-patched-fat.jar"
         },
         {
+          "tag": "1.6.7-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/appointments/compare/1.3.6-patched...1.6.7-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/compare/1.3.6-patched...1.6.7-patched",
+          "jar_url": "https://github.com/open-ent/appointments/releases/download/1.6.7-patched/fr.openent.appointments.1.6.7-patched-fat.jar"
+        },
+        {
           "tag": "1.3.6-patched",
           "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched",
@@ -361,11 +373,11 @@
       "repo_url": "https://github.com/open-ent/blog",
       "releases": [
         {
-          "tag": "5.4.7-patched",
-          "published_at": "2026-09-01",
-          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
-          "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.7-patched/org.entcore.blog.5.4.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "5.5.12-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.5.12-patched",
+          "jar_url": "https://github.com/open-ent/blog/releases/download/5.5.12-patched/org.entcore.blog.5.5.12-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -375,6 +387,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "5.4.7-patched",
+          "published_at": "2026-09-01",
+          "body": "**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/blog/commits/5.4.7-patched",
+          "jar_url": "https://github.com/open-ent/blog/releases/download/5.4.7-patched/org.entcore.blog.5.4.7-patched-fat.jar"
         },
         {
           "tag": "5.4.10-patched",
@@ -394,11 +412,11 @@
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
       "releases": [
         {
-          "tag": "4.1.7-patched",
-          "published_at": "2026-08-17",
-          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched",
-          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "4.2.4-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.2.4-patched",
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.2.4-patched/fr.openent.diary.4.2.4-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -408,6 +426,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "4.1.7-patched",
+          "published_at": "2026-08-17",
+          "body": "**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/commits/4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/cahier-de-textes/compare/4.1.5-patched...4.1.7-patched",
+          "jar_url": "https://github.com/open-ent/cahier-de-textes/releases/download/4.1.7-patched/fr.openent.diary.4.1.7-patched-fat.jar"
         },
         {
           "tag": "4.1.5-patched",
@@ -433,11 +457,11 @@
       "repo_url": "https://github.com/open-ent/calendar",
       "releases": [
         {
-          "tag": "4.2.7-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched",
-          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7-patched/net.atos.calendar.4.2.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "4.3.6-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched",
+          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.3.6-patched/net.atos.calendar.4.3.6-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -447,6 +471,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "4.2.7-patched",
+          "published_at": "2026-08-12",
+          "body": "**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched",
+          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7-patched/net.atos.calendar.4.2.7-patched-fat.jar"
         }
       ]
     },
@@ -489,11 +519,17 @@
       "repo_url": "https://github.com/open-ent/collaborative-editor",
       "releases": [
         {
+          "tag": "3.4.7-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.4.7-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.4.7-patched/net.atos.collaborative-editor.3.4.7-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "3.3.5-patched",
           "published_at": "2026-06-20",
           "body": "**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-editor/commits/3.3.5-patched",
-          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.5-patched/net.atos.collaborative-editor.3.3.5-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/collaborative-editor/releases/download/3.3.5-patched/net.atos.collaborative-editor.3.3.5-patched-fat.jar"
         },
         {
           "tag": "3.3.6-patched",
@@ -513,11 +549,11 @@
       "repo_url": "https://github.com/open-ent/collaborative-wall",
       "releases": [
         {
-          "tag": "3.4.9-patched",
-          "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched",
-          "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.9-patched/net.atos.collaborativewall.3.4.9-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.5.12-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.5.12-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.5.12-patched/net.atos.collaborativewall.3.5.12-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -527,6 +563,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.4.9-patched",
+          "published_at": "2026-08-13",
+          "body": "**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/collaborative-wall/commits/3.4.9-patched",
+          "jar_url": "https://github.com/open-ent/collaborative-wall/releases/download/3.4.9-patched/net.atos.collaborativewall.3.4.9-patched-fat.jar"
         },
         {
           "tag": "3.4.8-patched",
@@ -546,11 +588,11 @@
       "repo_url": "https://github.com/open-ent/competences",
       "releases": [
         {
-          "tag": "2.1.12-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched",
-          "jar_url": "https://github.com/open-ent/competences/releases/download/2.1.12-patched/fr.openent.competences.2.1.12-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "2.2.4-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
+          "jar_url": "https://github.com/open-ent/competences/releases/download/2.2.4-patched/fr.openent.competences.2.2.4-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -560,6 +602,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.1.12-patched",
+          "published_at": "2026-08-12",
+          "body": "**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/commits/2.1.12-patched",
+          "jar_url": "https://github.com/open-ent/competences/releases/download/2.1.12-patched/fr.openent.competences.2.1.12-patched-fat.jar"
         }
       ]
     },
@@ -573,11 +621,17 @@
       "repo_url": "https://github.com/open-ent/exercizer",
       "releases": [
         {
+          "tag": "4.4.7-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
+          "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.4.7-patched/fr.openent.exercizer.4.4.7-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "4.3.6-patched",
           "published_at": "2026-08-12",
           "body": "**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/commits/4.3.6-patched",
-          "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.3.6-patched/fr.openent.exercizer.4.3.6-fat.jar"
         }
       ]
     },
@@ -595,6 +649,12 @@
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.9-patched",
           "jar_url": "https://github.com/open-ent/explorer/releases/download/untagged-1c2e6f576837d722abe4/com.opendigitaleducation.explorer.2.5.9-patched-fat.jar"
+        },
+        {
+          "tag": "2.6.13-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.6.13-patched\n\n**Full Changelog**: https://github.com/open-ent/explorer/commits/2.6.13-patched",
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.6.13-patched/com.opendigitaleducation.explorer.2.6.13-patched-fat.jar"
         },
         {
           "tag": "2.5.7-patched",
@@ -620,11 +680,11 @@
       "repo_url": "https://github.com/open-ent/form",
       "releases": [
         {
-          "tag": "3.1.0-patched",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched",
-          "jar_url": "https://github.com/open-ent/form/releases/download/3.1.0-patched/fr.openent.formulaire-public.3.1.0-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.1.9-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/form/commits/3.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.9-patched",
+          "jar_url": "https://github.com/open-ent/form/releases/download/3.1.9-patched/fr.openent.formulaire-public.3.1.9-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -634,6 +694,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.1.0-patched",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/form/commits/3.1.0-patched",
+          "jar_url": "https://github.com/open-ent/form/releases/download/3.1.0-patched/fr.openent.formulaire-public.3.1.0-patched-fat.jar"
         }
       ]
     },
@@ -659,6 +725,12 @@
           "jar_url": "https://github.com/open-ent/forum/releases/download/untagged-40f7f15deb04adf3db1f/net.atos.forum.2.1-SNAPSHOT-fat.jar"
         },
         {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/forum/releases/download/2.2.5-patched/net.atos.forum.2.2.5-patched-fat.jar"
+        },
+        {
           "tag": "2.1.3-patched",
           "published_at": "2026-08-12",
           "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.3-patched",
@@ -682,11 +754,11 @@
       "repo_url": "https://github.com/open-ent/magneto",
       "releases": [
         {
-          "tag": "2.10.0-patched",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched",
-          "jar_url": "https://github.com/open-ent/magneto/releases/download/2.10.0-patched/fr.cgi.magneto.2.10.0-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "2.10.7-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched",
+          "jar_url": "https://github.com/open-ent/magneto/releases/download/2.10.7-patched/fr.cgi.magneto.2.10.7-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -696,6 +768,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.10.0-patched",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/commits/2.10.0-patched",
+          "jar_url": "https://github.com/open-ent/magneto/releases/download/2.10.0-patched/fr.cgi.magneto.2.10.0-patched-fat.jar"
         }
       ]
     },
@@ -709,11 +787,11 @@
       "repo_url": "https://github.com/open-ent/mindmap",
       "releases": [
         {
-          "tag": "3.4.9-patched",
-          "published_at": "2026-08-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
-          "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.5.12-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.5.12-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.5.12-patched",
+          "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.5.12-patched/net.atos.mindmap.3.5.12-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -723,6 +801,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.4.9-patched",
+          "published_at": "2026-08-13",
+          "body": "**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched\n\n**Full Changelog**: https://github.com/open-ent/mindmap/commits/3.4.9-patched",
+          "jar_url": "https://github.com/open-ent/mindmap/releases/download/3.4.9-patched/net.atos.mindmap.3.4-SNAPSHOT-fat.jar"
         }
       ]
     },
@@ -740,6 +824,12 @@
           "published_at": "2026-05-28",
           "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5-patched...2.1.6-patched",
           "jar_url": "https://github.com/open-ent/pages/releases/download/untagged-0e49c0703941e3912ad5/fr.wseduc.pages.2.1.6-patched-fat.jar"
+        },
+        {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/pages/releases/download/2.2.5-patched/fr.wseduc.pages.2.2.5-patched-fat.jar"
         },
         {
           "tag": "2.1.5-patched",
@@ -777,6 +867,12 @@
           "jar_url": "https://github.com/open-ent/poll/releases/download/untagged-7fb2fc35c3c2df7e2ddc/net.atos.poll.2.1.5-fat.jar"
         },
         {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.4-patched...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.4-patched...2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/poll/releases/download/2.2.5-patched/net.atos.poll.2.2.5-patched-fat.jar"
+        },
+        {
           "tag": "2.1.4-patched",
           "published_at": "2026-07-19",
           "body": "**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.6-patched...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.5...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.5...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.5...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.5...2.1.4-patched",
@@ -800,11 +896,11 @@
       "repo_url": "https://github.com/open-ent/rack",
       "releases": [
         {
-          "tag": "3.1.7-patched",
-          "published_at": "2026-06-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
-          "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.2.10-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched",
+          "jar_url": "https://github.com/open-ent/rack/releases/download/3.2.10-patched/fr.wseduc.rack.3.2.10-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -814,6 +910,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.1.7-patched",
+          "published_at": "2026-06-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/commits/3.1.7-patched",
+          "jar_url": "https://github.com/open-ent/rack/releases/download/3.1.7-patched/fr.wseduc.rack.3.1.7-patched-fat.jar"
         }
       ]
     },
@@ -860,11 +962,17 @@
       "repo_url": "https://github.com/open-ent/rss",
       "releases": [
         {
+          "tag": "2.2.3-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.2.3-patched",
+          "jar_url": "https://github.com/open-ent/rss/releases/download/2.2.3-patched/net.atos.rss.2.2.3-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "2.1.4-patched",
           "published_at": "2026-05-26",
           "body": "**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched",
-          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar",
-          "entcore_version": "6.14.9"
+          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar"
         },
         {
           "tag": "2.1.4",
@@ -945,6 +1053,12 @@
           "jar_url": "https://github.com/open-ent/search-engine/releases/download/untagged-0101ba789ba5b38d5272/fr.openent.search-engine.2.1.4-patched-fat.jar"
         },
         {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/compare/2.1.5-patched...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/compare/2.1.5-patched...2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.2.5-patched/fr.openent.search-engine.2.2.5-patched-fat.jar"
+        },
+        {
           "tag": "2.1.5-patched",
           "published_at": "2026-08-13",
           "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.5-patched",
@@ -962,11 +1076,11 @@
       "repo_url": "https://github.com/open-ent/statistics",
       "releases": [
         {
-          "tag": "2.6.0-patched",
-          "published_at": "2026-09-03",
-          "body": "**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched",
-          "jar_url": "https://github.com/open-ent/statistics/releases/download/2.6.0-patched/fr.wseduc.stats.2.6.0-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "2.6.4-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/statistics/compare/2.6.0-patched...2.6.4-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/compare/2.6.0-patched...2.6.4-patched",
+          "jar_url": "https://github.com/open-ent/statistics/releases/download/2.6.4-patched/fr.wseduc.stats.2.6.4-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -976,6 +1090,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.6.0-patched",
+          "published_at": "2026-09-03",
+          "body": "**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched\n\n**Full Changelog**: https://github.com/open-ent/statistics/commits/2.6.0-patched",
+          "jar_url": "https://github.com/open-ent/statistics/releases/download/2.6.0-patched/fr.wseduc.stats.2.6.0-patched-fat.jar"
         }
       ]
     },
@@ -995,6 +1115,12 @@
           "jar_url": "https://github.com/open-ent/support/releases/download/untagged-f935ffddb8cd3ff27fa6/net.atos.support.4.0-SNAPSHOT-fat.jar"
         },
         {
+          "tag": "4.1.9-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched",
+          "jar_url": "https://github.com/open-ent/support/releases/download/4.1.9-patched/net.atos.support.4.1.9-patched-fat.jar"
+        },
+        {
           "tag": "4.0.1-patched",
           "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.0.1-patched",
@@ -1012,11 +1138,11 @@
       "repo_url": "https://github.com/open-ent/timeline-generator",
       "releases": [
         {
-          "tag": "3.3.7-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched",
-          "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.3.7-patched/net.atos.timelinegenerator.3.3.7-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "3.4.8-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched",
+          "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.4.8-patched/net.atos.timelinegenerator.3.4.8-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1026,6 +1152,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "3.3.7-patched",
+          "published_at": "2026-08-12",
+          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/commits/3.3.7-patched",
+          "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.3.7-patched/net.atos.timelinegenerator.3.3.7-fat.jar"
         },
         {
           "tag": "3.3.6-patched",
@@ -1082,6 +1214,12 @@
           "published_at": "2026-06-26",
           "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.9-patched",
           "jar_url": "https://github.com/open-ent/wiki/releases/download/untagged-2864562d07551a1deaef/net.atos.wiki.3.5.9-patched-fat.jar"
+        },
+        {
+          "tag": "3.6.16-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.6.16-patched\n\n**Full Changelog**: https://github.com/open-ent/wiki/commits/3.6.16-patched",
+          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.6.16-patched/net.atos.wiki.3.6.16-patched-fat.jar"
         },
         {
           "tag": "3.5.13-patched",
@@ -1148,11 +1286,11 @@
       "repo_url": "https://github.com/open-ent/community",
       "releases": [
         {
-          "tag": "2.2.1-patched",
-          "published_at": "2026-07-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
-          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1-patched/net.atos.community.2.2.1-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "2.2.5-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1-patched...2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.5-patched/net.atos.community.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1162,6 +1300,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.2.1-patched",
+          "published_at": "2026-07-24",
+          "body": "**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched\n\n**Full Changelog**: https://github.com/open-ent/community/compare/2.2.1...2.2.1-patched",
+          "jar_url": "https://github.com/open-ent/community/releases/download/2.2.1-patched/net.atos.community.2.2.1-patched-fat.jar"
         },
         {
           "tag": "2.2.1",
@@ -1218,11 +1362,11 @@
       "repo_url": "https://github.com/open-ent/ressource-aggregator",
       "releases": [
         {
-          "tag": "5.2.4-patched",
-          "published_at": "2026-08-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
-          "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.2.4-patched/fr.openent.mediacentre.5.2.4-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "5.3.8-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.3.8-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.3.8-patched",
+          "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.3.8-patched/fr.openent.mediacentre.5.3.8-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1232,6 +1376,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "5.2.4-patched",
+          "published_at": "2026-08-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/ressource-aggregator/commits/5.2.4-patched",
+          "jar_url": "https://github.com/open-ent/ressource-aggregator/releases/download/5.2.4-patched/fr.openent.mediacentre.5.2.4-patched-fat.jar"
         }
       ]
     },
@@ -1245,11 +1395,17 @@
       "repo_url": "https://github.com/open-ent/vie-scolaire",
       "releases": [
         {
+          "tag": "2.2.4-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.2.4-patched",
+          "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.2.4-patched/fr.openent.viescolaire.2.2.4-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "2.1.5-patched",
           "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched\n\n**Full Changelog**: https://github.com/open-ent/vie-scolaire/commits/2.1.5-patched",
-          "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.1.5-patched/fr.openent.viescolaire.2.1.5-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/vie-scolaire/releases/download/2.1.5-patched/fr.openent.viescolaire.2.1.5-patched-fat.jar"
         }
       ]
     },
@@ -1290,11 +1446,11 @@
       "repo_url": "https://github.com/open-ent/presences",
       "releases": [
         {
-          "tag": "2.1.9-patched",
-          "published_at": "2026-06-20",
-          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
-          "jar_url": "https://github.com/open-ent/presences/releases/download/2.1.9-patched/fr.openent.incidents.2.1.9-patched-fat.jar",
-          "entcore_version": "6.14.9",
+          "tag": "2.2.10-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
+          "jar_url": "https://github.com/open-ent/presences/releases/download/2.2.10-patched/fr.openent.incidents.2.2.10-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1304,6 +1460,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.1.9-patched",
+          "published_at": "2026-06-20",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.1.9-patched",
+          "jar_url": "https://github.com/open-ent/presences/releases/download/2.1.9-patched/fr.openent.incidents.2.1.9-patched-fat.jar"
         }
       ]
     },
@@ -1363,11 +1525,17 @@
       "repo_url": "https://github.com/open-ent/mod-image-resizer",
       "releases": [
         {
+          "tag": "3.3.1-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/compare/3.2.3-patched...3.3.1-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/compare/3.2.3-patched...3.3.1-patched",
+          "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.3.1-patched/fr.wseduc.mod-image-resizer.3.3.1-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "3.2.3-patched",
           "published_at": "2026-08-13",
           "body": "**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.2.3-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-image-resizer/commits/3.2.3-patched",
-          "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.2.3-patched/fr.wseduc.mod-image-resizer.3.2.3-patched-fat.jar",
-          "entcore_version": "6.14.9"
+          "jar_url": "https://github.com/open-ent/mod-image-resizer/releases/download/3.2.3-patched/fr.wseduc.mod-image-resizer.3.2.3-patched-fat.jar"
         },
         {
           "tag": "3.1.0-patched",
@@ -1523,11 +1691,11 @@
       "repo_url": "https://github.com/open-ent/lool-connector",
       "releases": [
         {
-          "tag": "2.2.5-patched",
-          "published_at": "2026-08-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.5-patched/fr.openent.lool.2.2.5-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "2.2.7-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/compare/2.2.5-patched...2.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/compare/2.2.5-patched...2.2.7-patched",
+          "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.7-patched/fr.openent.lool.2.2.7-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -1537,6 +1705,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.2.5-patched",
+          "published_at": "2026-08-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/lool-connector/commits/2.2.5-patched",
+          "jar_url": "https://github.com/open-ent/lool-connector/releases/download/2.2.5-patched/fr.openent.lool.2.2.5-patched-fat.jar"
         }
       ]
     },
@@ -1554,6 +1728,12 @@
           "published_at": "2026-05-27",
           "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/commits/2.2.5-patched",
           "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/untagged-361da4673920684c19f6/fr.openent.moodle-connector.2.2-SNAPSHOT-fat.jar"
+        },
+        {
+          "tag": "2.3.4-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.4...2.3.4-patched\n\n**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.4...2.3.4-patched",
+          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.3.4-patched/fr.openent.moodle-connector.2.3.4-patched-fat.jar"
         },
         {
           "tag": "2.2.4-patched",
@@ -1579,11 +1759,17 @@
       "repo_url": "https://github.com/open-ent/nextcloud",
       "releases": [
         {
+          "tag": "2.4.3-patched",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/nextcloud/compare/2.4.2-patched...2.4.3-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/compare/2.4.2-patched...2.4.3-patched",
+          "jar_url": "https://github.com/open-ent/nextcloud/releases/download/2.4.3-patched/fr.openent.nextcloud.2.4.3-patched-fat.jar",
+          "entcore_version": "6.16.14-patched"
+        },
+        {
           "tag": "2.4.2-patched",
           "published_at": "2026-08-26",
           "body": "**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched\n\n**Full Changelog**: https://github.com/open-ent/nextcloud/commits/2.4.2-patched",
-          "jar_url": "https://github.com/open-ent/nextcloud/releases/download/2.4.2-patched/fr.openent.nextcloud.2.4.2-patched-fat.jar",
-          "entcore_version": "6.14.9-patched"
+          "jar_url": "https://github.com/open-ent/nextcloud/releases/download/2.4.2-patched/fr.openent.nextcloud.2.4.2-patched-fat.jar"
         }
       ]
     },
@@ -1598,5 +1784,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 04:12 UTC"
+  "generated_at": "07/10/2026 à 10:08 UTC"
 }
