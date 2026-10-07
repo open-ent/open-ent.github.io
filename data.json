@@ -1602,7 +1602,7 @@
         {
           "tag": "2.2.10-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
           "jar_url": "https://github.com/open-ent/presences/releases/download/2.2.10-patched/fr.openent.incidents.2.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1926,5 +1926,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 10:38 UTC"
+  "generated_at": "07/10/2026 à 11:08 UTC"
 }
