@@ -323,6 +323,7 @@ jobs:
             "open-ent/lool-connector|fr.openent|lool"
             "open-ent/moodle-connector|fr.openent|moodle-connector"
             "open-ent/nextcloud|fr.openent|nextcloud"
+            "open-ent/pmb-connector|fr.openent|pmb-connector"
             "open-ent/wordpress-connector|fr.openent|wordpress-connector"
           )
 
