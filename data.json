@@ -459,16 +459,21 @@
       "repo_url": "https://github.com/open-ent/appointments",
       "releases": [
         {
-          "tag": "1.3.6-patched-ci",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/appointments/commits/1.3.6-patched-ci",
-          "jar_url": "https://github.com/open-ent/appointments/releases/download/untagged-34ce9577e4e09d99eed8/fr.openent.appointments.1.3.6-patched-fat.jar"
-        },
-        {
           "tag": "1.6.7-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/appointments/compare/1.3.6-patched...1.6.7-patched\n\n**Full Changelog**: https://github.com/open-ent/appointments/compare/1.3.6-patched...1.6.7-patched",
-          "jar_url": "https://github.com/open-ent/appointments/releases/download/1.6.7-patched/fr.openent.appointments.1.6.7-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/appointments/releases/download/1.6.7-patched/fr.openent.appointments.1.6.7-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "1.3.6-patched",
@@ -614,16 +619,20 @@
       "repo_url": "https://github.com/open-ent/chat-nats",
       "releases": [
         {
-          "tag": "1.0.0-patched",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/chat-nats/commits/1.0.0-patched",
-          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/untagged-59ea39881b42f385812e/fr.openent.chat-nats.1.0.0-patched-fat.jar"
-        },
-        {
           "tag": "1.2.0-dev",
           "published_at": "2026-09-16",
           "body": "",
-          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar"
+          "jar_url": "https://github.com/open-ent/chat-nats/releases/download/1.2.0-dev/fr.openent.chat-nats.1.2.0-dev-fat.jar",
+          "entcore_version": "6.14.9-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "1.0.0",
@@ -773,16 +782,21 @@
       "repo_url": "https://github.com/open-ent/explorer",
       "releases": [
         {
-          "tag": "2.5.9-patched",
-          "published_at": "2026-05-28",
-          "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.5.9-patched",
-          "jar_url": "https://github.com/open-ent/explorer/releases/download/untagged-1c2e6f576837d722abe4/com.opendigitaleducation.explorer.2.5.9-patched-fat.jar"
-        },
-        {
           "tag": "2.6.13-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/explorer/commits/2.6.13-patched\n\n**Full Changelog**: https://github.com/open-ent/explorer/commits/2.6.13-patched",
-          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.6.13-patched/com.opendigitaleducation.explorer.2.6.13-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/explorer/releases/download/2.6.13-patched/com.opendigitaleducation.explorer.2.6.13-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "2.5.7-patched",
@@ -842,22 +856,21 @@
       "repo_url": "https://github.com/open-ent/forum",
       "releases": [
         {
-          "tag": "2.1.5-patched",
-          "published_at": "2026-05-28",
-          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.5-patched",
-          "jar_url": "https://github.com/open-ent/forum/releases/download/untagged-3fd0b28d53ef0a39ada9/net.atos.forum.2.1.5-patched-fat.jar"
-        },
-        {
-          "tag": "2.1.4-patched",
-          "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.1.4-patched",
-          "jar_url": "https://github.com/open-ent/forum/releases/download/untagged-40f7f15deb04adf3db1f/net.atos.forum.2.1-SNAPSHOT-fat.jar"
-        },
-        {
           "tag": "2.2.5-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/forum/releases/download/2.2.5-patched/net.atos.forum.2.2.5-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/forum/releases/download/2.2.5-patched/net.atos.forum.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "2.1.3-patched",
@@ -951,16 +964,21 @@
       "repo_url": "https://github.com/open-ent/pages",
       "releases": [
         {
-          "tag": "2.1.6-patched",
-          "published_at": "2026-05-28",
-          "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5-patched...2.1.6-patched",
-          "jar_url": "https://github.com/open-ent/pages/releases/download/untagged-0e49c0703941e3912ad5/fr.wseduc.pages.2.1.6-patched-fat.jar"
-        },
-        {
           "tag": "2.2.5-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/pages/releases/download/2.2.5-patched/fr.wseduc.pages.2.2.5-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/pages/releases/download/2.2.5-patched/fr.wseduc.pages.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "2.1.5-patched",
@@ -986,22 +1004,12 @@
       "repo_url": "https://github.com/open-ent/poll",
       "releases": [
         {
-          "tag": "2.1.6-patched",
-          "published_at": "2026-05-28",
-          "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.6-patched",
-          "jar_url": "https://github.com/open-ent/poll/releases/download/untagged-7a7861be4afbffbb2160/net.atos.poll.2.1.6-patched-fat.jar"
-        },
-        {
-          "tag": "2.1.5-patched",
-          "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/poll/commits/2.1.5-patched",
-          "jar_url": "https://github.com/open-ent/poll/releases/download/untagged-7fb2fc35c3c2df7e2ddc/net.atos.poll.2.1.5-fat.jar"
-        },
-        {
           "tag": "2.2.5-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.4-patched...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/poll/compare/2.1.4-patched...2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/poll/releases/download/2.2.5-patched/net.atos.poll.2.2.5-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/poll/releases/download/2.2.5-patched/net.atos.poll.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "2.1.4-patched",
@@ -1102,16 +1110,16 @@
           "entcore_libs_version": "6.16.8-patched"
         },
         {
-          "tag": "2.1.4-patched",
-          "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched",
-          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar"
-        },
-        {
           "tag": "2.1.4",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.3...2.1.4\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.3...2.1.4",
           "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4/net.atos.rss.2.1.4-fat.jar"
+        },
+        {
+          "tag": "2.1.4-patched",
+          "published_at": "2026-05-26",
+          "body": "**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/commits/2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched\n\n**Full Changelog**: https://github.com/open-ent/rss/compare/2.1.4...2.1.4-patched",
+          "jar_url": "https://github.com/open-ent/rss/releases/download/2.1.4-patched/net.atos.rss.2.1.4-fat.jar"
         }
       ]
     },
@@ -1157,16 +1165,16 @@
           "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.1.0/fr.tech.openent.schoolbook.1.1.0-fat.jar"
         },
         {
-          "tag": "1.0.0-SNAPSHOT",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/commits/1.0.0-SNAPSHOT",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar"
-        },
-        {
           "tag": "1.0.0",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0",
           "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0/fr.tech.openent.schoolbook.1.0.0-fat.jar"
+        },
+        {
+          "tag": "1.0.0-SNAPSHOT",
+          "published_at": "2026-06-21",
+          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/commits/1.0.0-SNAPSHOT",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar"
         }
       ]
     },
@@ -1180,16 +1188,21 @@
       "repo_url": "https://github.com/open-ent/search-engine",
       "releases": [
         {
-          "tag": "2.1.4-patched",
-          "published_at": "2026-07-01",
-          "body": "**Full Changelog**: https://github.com/open-ent/search-engine/commits/2.1.4-patched",
-          "jar_url": "https://github.com/open-ent/search-engine/releases/download/untagged-0101ba789ba5b38d5272/fr.openent.search-engine.2.1.4-patched-fat.jar"
-        },
-        {
           "tag": "2.2.5-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/search-engine/compare/2.1.5-patched...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/search-engine/compare/2.1.5-patched...2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.2.5-patched/fr.openent.search-engine.2.2.5-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/search-engine/releases/download/2.2.5-patched/fr.openent.search-engine.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "2.1.5-patched",
@@ -1243,16 +1256,21 @@
       "repo_url": "https://github.com/open-ent/support",
       "releases": [
         {
-          "tag": "4.0.2-patched",
-          "published_at": "2026-05-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.0.2-patched",
-          "jar_url": "https://github.com/open-ent/support/releases/download/untagged-f935ffddb8cd3ff27fa6/net.atos.support.4.0-SNAPSHOT-fat.jar"
-        },
-        {
           "tag": "4.1.9-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched",
-          "jar_url": "https://github.com/open-ent/support/releases/download/4.1.9-patched/net.atos.support.4.1.9-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/support/releases/download/4.1.9-patched/net.atos.support.4.1.9-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "4.0.1-patched",
@@ -1345,16 +1363,21 @@
       "repo_url": "https://github.com/open-ent/wiki",
       "releases": [
         {
-          "tag": "3.5.9-patched",
-          "published_at": "2026-06-26",
-          "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.5.9-patched",
-          "jar_url": "https://github.com/open-ent/wiki/releases/download/untagged-2864562d07551a1deaef/net.atos.wiki.3.5.9-patched-fat.jar"
-        },
-        {
           "tag": "3.6.16-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/wiki/commits/3.6.16-patched\n\n**Full Changelog**: https://github.com/open-ent/wiki/commits/3.6.16-patched",
-          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.6.16-patched/net.atos.wiki.3.6.16-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/wiki/releases/download/3.6.16-patched/net.atos.wiki.3.6.16-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": null,
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "3.5.13-patched",
@@ -1380,16 +1403,20 @@
       "repo_url": "https://github.com/open-ent/workflowhub",
       "releases": [
         {
-          "tag": "v1.2.0",
-          "published_at": "2026-08-20",
-          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.1.0...v1.2.0",
-          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/untagged-5e1cb2edb916efd1ffd0/fr.openent.workflowhub.1.2.0-fat.jar"
-        },
-        {
           "tag": "1.3.0-dev",
           "published_at": "2026-09-15",
           "body": "",
-          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.3.0-dev/fr.openent.workflowhub.1.3.0-dev-fat.jar"
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.3.0-dev/fr.openent.workflowhub.1.3.0-dev-fat.jar",
+          "entcore_version": "6.14.9-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "1.2.0",
@@ -1408,6 +1435,12 @@
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0",
           "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.0.0/fr.openent.workflowhub.1.0.0-fat.jar"
+        },
+        {
+          "tag": "0.1.0-SNAPSHOT",
+          "published_at": "2026-06-21",
+          "body": "## What's Changed\n* Démarches : flux public, rendu schema-driven et concepteur (premières tranches) by @passtech in https://github.com/open-ent/workflowhub/pull/1\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/workflowhub/pull/1\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/commits/0.1.0-SNAPSHOT",
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/0.1.0-SNAPSHOT/fr.openent.workflowhub.0.1.0-SNAPSHOT-fat.jar"
         }
       ]
     },
@@ -1469,24 +1502,7 @@
       "ci_url": "https://github.com/open-ent/video/actions",
       "releases_url": "https://github.com/open-ent/video/releases",
       "repo_url": "https://github.com/open-ent/video",
-      "releases": [
-        {
-          "tag": "0.1.1-dev",
-          "published_at": "2026-09-09",
-          "body": "## What's Changed\n* refactor: rename Java package com.opendigitaleducation.video -> fr.te… by @passtech in https://github.com/open-ent/video/pull/1\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/video/pull/1\n\n**Full Changelog**: https://github.com/open-ent/video/commits/0.1.1-dev",
-          "jar_url": "https://github.com/open-ent/video/releases/download/untagged-3333ec19ade24d10f84c/fr.tech.openent.video.0.1.1-dev-fat.jar",
-          "entcore_version": "6.14.9-patched",
-          "openent_frontend": {
-            "react": "2.5.30-patched",
-            "bootstrap": "2.5.30-patched",
-            "client": "2.5.30-patched",
-            "utilities": "2.5.30-patched",
-            "versions": [
-              "2.5.30-patched"
-            ]
-          }
-        }
-      ]
+      "releases": []
     },
     {
       "name": "mediacentre",
@@ -1641,12 +1657,6 @@
       "repo_url": "https://github.com/open-ent/http-proxy",
       "releases": [
         {
-          "tag": "3.1.0-patched",
-          "published_at": "2026-05-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.1.0-patched",
-          "jar_url": "https://github.com/open-ent/http-proxy/releases/download/untagged-28d860f1bf93da82063c/http-proxy-3.0.0-fat.jar"
-        },
-        {
           "tag": "3.0.0-patched",
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.0.0-patched\n\n**Full Changelog**: https://github.com/open-ent/http-proxy/commits/3.0.0-patched",
@@ -1694,12 +1704,6 @@
       "releases_url": "https://github.com/open-ent/mod-json-schema-validator/releases",
       "repo_url": "https://github.com/open-ent/mod-json-schema-validator",
       "releases": [
-        {
-          "tag": "3.1.0-patched",
-          "published_at": "2026-05-24",
-          "body": "**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched\n\n**Full Changelog**: https://github.com/open-ent/mod-json-schema-validator/commits/3.1.0-patched",
-          "jar_url": "https://github.com/open-ent/mod-json-schema-validator/releases/download/untagged-c52e03d2ceea91f35240/mod-json-schema-validator-2.0.0-fat.jar"
-        },
         {
           "tag": "3.0.0-patched",
           "published_at": "2026-06-21",
@@ -1865,16 +1869,12 @@
       "repo_url": "https://github.com/open-ent/moodle-connector",
       "releases": [
         {
-          "tag": "2.2.5-patched",
-          "published_at": "2026-05-27",
-          "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/commits/2.2.5-patched",
-          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/untagged-361da4673920684c19f6/fr.openent.moodle-connector.2.2-SNAPSHOT-fat.jar"
-        },
-        {
           "tag": "2.3.4-patched",
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.4...2.3.4-patched\n\n**Full Changelog**: https://github.com/open-ent/moodle-connector/compare/2.2.4...2.3.4-patched",
-          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.3.4-patched/fr.openent.moodle-connector.2.3.4-patched-fat.jar"
+          "jar_url": "https://github.com/open-ent/moodle-connector/releases/download/2.3.4-patched/fr.openent.moodle-connector.2.3.4-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched"
         },
         {
           "tag": "2.2.4-patched",
@@ -1926,5 +1926,5 @@
       "releases": []
     }
   ],
-  "generated_at": "07/10/2026 à 10:35 UTC"
+  "generated_at": "07/10/2026 à 10:38 UTC"
 }
