@@ -1521,7 +1521,16 @@
           "body": "**Full Changelog**: https://github.com/open-ent/communities/commits/0.2.0",
           "jar_url": "https://github.com/open-ent/communities/releases/download/0.2.0/fr.tech.openent.communities.0.2.0-fat.jar",
           "entcore_version": "6.16.14-patched",
-          "entcore_libs_version": "6.16.8-patched"
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         }
       ]
     },
@@ -2009,5 +2018,5 @@
       "releases": []
     }
   ],
-  "generated_at": "08/10/2026 à 02:07 UTC"
+  "generated_at": "08/10/2026 à 03:06 UTC"
 }
