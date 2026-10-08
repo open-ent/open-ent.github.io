@@ -1150,10 +1150,10 @@
       "repo_url": "https://github.com/open-ent/schoolbook",
       "releases": [
         {
-          "tag": "1.4.0",
-          "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.1.0...1.4.0",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.4.0/fr.tech.openent.schoolbook.1.4.0-fat.jar",
+          "tag": "1.4.1",
+          "published_at": "2026-10-08",
+          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.4.0...1.4.1",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.4.1/fr.tech.openent.schoolbook.1.4.1-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
@@ -1165,6 +1165,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "1.4.0",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.1.0...1.4.0",
+          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.4.0/fr.tech.openent.schoolbook.1.4.0-fat.jar"
         },
         {
           "tag": "1.3.0-dev",
@@ -1183,12 +1189,6 @@
           "published_at": "2026-06-21",
           "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/schoolbook/compare/1.0.0-SNAPSHOT...1.0.0",
           "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0/fr.tech.openent.schoolbook.1.0.0-fat.jar"
-        },
-        {
-          "tag": "1.0.0-SNAPSHOT",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/schoolbook/commits/1.0.0-SNAPSHOT",
-          "jar_url": "https://github.com/open-ent/schoolbook/releases/download/1.0.0-SNAPSHOT/fr.tech.openent.schoolbook.1.0.0-SNAPSHOT-fat.jar"
         }
       ]
     },
@@ -1424,10 +1424,10 @@
       "repo_url": "https://github.com/open-ent/workflowhub",
       "releases": [
         {
-          "tag": "1.4.0",
-          "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.2.0...1.4.0",
-          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.4.0/fr.openent.workflowhub.1.4.0-fat.jar",
+          "tag": "1.4.1",
+          "published_at": "2026-10-08",
+          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.4.0...1.4.1",
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.4.1/fr.openent.workflowhub.1.4.1-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
@@ -1439,6 +1439,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "1.4.0",
+          "published_at": "2026-10-07",
+          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.2.0...1.4.0",
+          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.4.0/fr.openent.workflowhub.1.4.0-fat.jar"
         },
         {
           "tag": "1.3.0-dev",
@@ -1457,12 +1463,6 @@
           "published_at": "2026-08-20",
           "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.0.0...1.1.0",
           "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.1.0/fr.openent.workflowhub.1.1.0-fat.jar"
-        },
-        {
-          "tag": "1.0.0",
-          "published_at": "2026-06-21",
-          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/compare/0.1.0-SNAPSHOT...1.0.0",
-          "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.0.0/fr.openent.workflowhub.1.0.0-fat.jar"
         }
       ]
     },
@@ -2018,5 +2018,5 @@
       "releases": []
     }
   ],
-  "generated_at": "08/10/2026 à 03:06 UTC"
+  "generated_at": "08/10/2026 à 08:55 UTC"
 }
