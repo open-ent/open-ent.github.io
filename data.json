@@ -732,7 +732,7 @@
         {
           "tag": "2.2.4-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
           "jar_url": "https://github.com/open-ent/competences/releases/download/2.2.4-patched/fr.openent.competences.2.2.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -876,6 +876,8 @@
           "published_at": "2026-10-07",
           "body": "**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/forum/commits/2.2.5-patched",
           "jar_url": "https://github.com/open-ent/forum/releases/download/2.2.5-patched/net.atos.forum.2.2.5-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -915,7 +917,16 @@
           "body": "**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched\n\n**Full Changelog**: https://github.com/open-ent/magneto/compare/2.10.0-patched...2.10.7-patched",
           "jar_url": "https://github.com/open-ent/magneto/releases/download/2.10.7-patched/fr.cgi.magneto.2.10.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
-          "entcore_libs_version": "6.16.8-patched"
+          "entcore_libs_version": "6.16.8-patched",
+          "openent_frontend": {
+            "react": "2.5.30-patched",
+            "bootstrap": "2.5.30-patched",
+            "client": "2.5.30-patched",
+            "utilities": "2.5.30-patched",
+            "versions": [
+              "2.5.30-patched"
+            ]
+          }
         },
         {
           "tag": "2.10.0-patched",
@@ -1068,7 +1079,7 @@
       "name": "rbs",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/rbs/actions",
       "releases_url": "https://github.com/open-ent/rbs/releases",
       "repo_url": "https://github.com/open-ent/rbs",
@@ -1424,7 +1435,7 @@
         {
           "tag": "1.4.1",
           "published_at": "2026-10-08",
-          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.4.0...1.4.1",
+          "body": "**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.4.0...1.4.1\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.4.0...1.4.1\n\n**Full Changelog**: https://github.com/open-ent/workflowhub/compare/1.4.0...1.4.1",
           "jar_url": "https://github.com/open-ent/workflowhub/releases/download/1.4.1/fr.openent.workflowhub.1.4.1-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -2016,5 +2027,5 @@
       "releases": []
     }
   ],
-  "generated_at": "09/10/2026 à 14:38 UTC"
+  "generated_at": "09/10/2026 à 19:46 UTC"
 }
