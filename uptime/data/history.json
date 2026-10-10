@@ -3104,5 +3104,82 @@
     "httpStatus": 200,
     "responseTimeMs": 1215,
     "error": null
+  },
+  {
+    "timestamp": "2026-10-08T08:53:28.252Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1379,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-08T16:06:49.868Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1380,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-08T21:17:26.596Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1161,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09T01:16:41.629Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1283,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09T07:29:20.248Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1296,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09T14:36:04.671Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1463,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09T19:45:02.170Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 973,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09T23:35:30.105Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1581,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-10T02:44:28.869Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1382,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-10T09:06:08.207Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1534,
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-10T15:20:15.988Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 1070,
+    "error": null
   }
 ]
