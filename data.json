@@ -724,7 +724,7 @@
       "name": "competences",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/competences/actions",
       "releases_url": "https://github.com/open-ent/competences/releases",
       "repo_url": "https://github.com/open-ent/competences",
@@ -732,7 +732,7 @@
         {
           "tag": "2.2.4-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched\n\n**Full Changelog**: https://github.com/open-ent/competences/compare/2.1.12-patched...2.2.4-patched",
           "jar_url": "https://github.com/open-ent/competences/releases/download/2.2.4-patched/fr.openent.competences.2.2.4-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1316,7 +1316,7 @@
         {
           "tag": "3.4.8-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched\n\n**Full Changelog**: https://github.com/open-ent/timeline-generator/compare/3.3.7-patched...3.4.8-patched",
           "jar_url": "https://github.com/open-ent/timeline-generator/releases/download/3.4.8-patched/net.atos.timelinegenerator.3.4.8-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1643,7 +1643,7 @@
         {
           "tag": "3.2.7-patched",
           "published_at": "2026-10-10",
-          "body": "**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/edt/compare/3.1.4-patched...3.2.7-patched",
           "jar_url": "https://github.com/open-ent/edt/releases/download/3.2.7-patched/fr.cgi.edt.3.2.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1669,7 +1669,7 @@
       "name": "presences",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/presences/actions",
       "releases_url": "https://github.com/open-ent/presences/releases",
       "repo_url": "https://github.com/open-ent/presences",
@@ -1978,7 +1978,7 @@
       "name": "nextcloud",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/nextcloud/actions",
       "releases_url": "https://github.com/open-ent/nextcloud/releases",
       "repo_url": "https://github.com/open-ent/nextcloud",
@@ -2035,5 +2035,5 @@
       "releases": []
     }
   ],
-  "generated_at": "10/10/2026 à 09:42 UTC"
+  "generated_at": "10/10/2026 à 15:21 UTC"
 }
