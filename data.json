@@ -1978,7 +1978,7 @@
       "name": "nextcloud",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "success",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/nextcloud/actions",
       "releases_url": "https://github.com/open-ent/nextcloud/releases",
       "repo_url": "https://github.com/open-ent/nextcloud",
@@ -2035,5 +2035,5 @@
       "releases": []
     }
   ],
-  "generated_at": "10/10/2026 à 09:07 UTC"
+  "generated_at": "10/10/2026 à 09:42 UTC"
 }
