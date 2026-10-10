@@ -149,6 +149,12 @@
     .badge-success { background: rgba(34,197,94,0.12); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
     .badge-failure { background: rgba(239,68,68,0.12); color: var(--red); border: 1px solid rgba(239,68,68,0.25); }
     .badge-unknown { background: rgba(136,146,170,0.12); color: var(--muted); border: 1px solid rgba(136,146,170,0.25); }
+    .badge-cve { text-decoration: none; background: rgba(136,146,170,0.12); color: var(--muted); border: 1px solid rgba(136,146,170,0.3); }
+    .badge-cve.cve-critical { background: rgba(244,63,94,0.12); color: #f43f5e; border-color: rgba(244,63,94,0.35); }
+    .badge-cve.cve-high { background: rgba(249,115,22,0.12); color: #f97316; border-color: rgba(249,115,22,0.35); }
+    .badge-cve.cve-ok { background: rgba(34,197,94,0.12); color: var(--green); border-color: rgba(34,197,94,0.3); }
+    .badge-cve:hover { filter: brightness(1.2); }
+    .card-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
     .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 
     /* VERSION ROW */
@@ -339,6 +345,14 @@
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3 0h7l3 3v11.5A1.5 1.5 0 0111.5 16h-9A1.5 1.5 0 011 14.5v-13A1.5 1.5 0 012.5 0H3zm6 1.5V4h2.5L9 1.5zM4 7h6v1H4V7zm0 3h6v1H4v-1z"/></svg>
         Changelog des patchs
       </a>
+      <a class="meta-chip" href="./updates.html" title="Les dernières versions publiées, semaine après semaine">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 1h5.6l7 7-6.6 6.6-7-7V1.1L2 1zm2.5 2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>
+        Nouveautés
+      </a>
+      <a class="meta-chip" href="./security.html" title="Dépendances et vulnérabilités connues (CVE) des modules">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l6 2.5v4.6c0 3.9-2.6 7.4-6 8.9-3.4-1.5-6-5-6-8.9V2.5L8 0zm0 1.6L3.5 3.5v3.6c0 3 1.9 5.8 4.5 7.1 2.6-1.3 4.5-4.1 4.5-7.1V3.5L8 1.6z"/></svg>
+        <span id="cve-chip-text">Librairies &amp; CVE</span>
+      </a>
     </div>
   </div>
 </header>
@@ -361,11 +375,25 @@
   Généré automatiquement via GitHub Actions —
   <a href="https://github.com/open-ent" target="_blank">open-ent</a> ·
   <a href="https://github.com/open-ent/open-ent.github.io/actions" target="_blank">Voir les workflows</a> ·
-  <a href="./changelog.html">Changelog des patchs</a>
+  <a href="./changelog.html">Changelog des patchs</a> ·
+  <a href="./updates.html">Nouveautés</a> ·
+  <a href="./security.html">Librairies &amp; CVE</a>
 </footer>
 
 <script>
   let MODULES = [];
+  // Scan de sécurité (security-scan.yml d'open-ent-mods), indexé par dépôt.
+  let SECURITY = {};
+  const securityLoaded = fetch('./data/security.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : null)
+    .then(sec => {
+      if (!sec) return;
+      for (const m of sec.modules || []) if (m.scanned) SECURITY[m.repo] = m;
+      const t = sec.totals || {};
+      document.getElementById('cve-chip-text').textContent =
+        `CVE : ${t.critical || 0} critiques · ${t.high || 0} hautes`;
+    })
+    .catch(() => {});
 
   fetch('./data.json')
     .then(r => r.json())
@@ -377,6 +405,7 @@
       document.getElementById('modules-count').textContent = MODULES.length + ' modules';
       renderArchitecture(MODULES);
       renderAll();
+      securityLoaded.then(() => { if (Object.keys(SECURITY).length) renderAll(); });
     })
     .catch(err => {
       document.getElementById('dashboard').innerHTML =
@@ -508,6 +537,16 @@
     return `<span class="badge badge-unknown"><span class="badge-dot"></span>unknown</span>`;
   }
 
+  function cveBadge(mod) {
+    const sec = SECURITY[(mod.repo_url || '').replace('https://github.com/', '')];
+    if (!sec) return '';
+    const c = sec.counts, hot = c.critical + c.high;
+    const cls = c.critical ? 'cve-critical' : c.high ? 'cve-high' : 'cve-ok';
+    const label = hot ? `${hot} CVE` : 'CVE ok';
+    const title = `${c.critical} critiques, ${c.high} hautes, ${c.medium} moyennes, ${c.low} basses`;
+    return `<a class="badge badge-cve ${cls}" href="./security.html#${encodeURIComponent(sec.name)}" title="${title}">${label}</a>`;
+  }
+
   function marked(text) {
     return text
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -563,7 +602,7 @@
             <div class="card-title">${mod.name}</div>
             <div class="card-group">${mod.group_id || ''}</div>
           </div>
-          ${statusBadge(mod.ci_status)}
+          <div class="card-badges">${cveBadge(mod)}${statusBadge(mod.ci_status)}</div>
         </div>
         ${descHtml}
         ${techHtml}

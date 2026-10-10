@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open-ENT — Librairies &amp; CVE</title>
+  <meta name="description" content="Synthèse des dépendances et des vulnérabilités connues (CVE) des modules Open ENT." />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3354;
+      --accent: #4f8ef7;
+      --accent2: #7c5cfc;
+      --green: #22c55e;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --critical: #f43f5e;
+      --high: #f97316;
+      --medium: #eab308;
+      --low: #64748b;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Fira Code', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+    html { scroll-behavior: smooth; }
+
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1229 50%, #1a1020 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .header-top { display: flex; align-items: center; gap: 1rem; }
+    .header-logo { height: 44px; object-fit: contain; }
+    h1.page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1.page-title span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+    .nav { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .nav a { font-size: 0.82rem; color: var(--accent); text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+    /* Tuiles de synthèse */
+    .tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.75rem; margin-bottom: 0.75rem; }
+    .tile {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.9rem 1rem; position: relative; overflow: hidden;
+    }
+    .tile::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--sev, var(--border)); }
+    .tile-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .tile-value { font-size: 1.6rem; font-weight: 700; margin-top: 0.2rem; font-variant-numeric: tabular-nums; }
+    .tile-sub { font-size: 0.72rem; color: var(--muted); margin-top: 0.1rem; }
+    .meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .meta a { color: var(--accent); text-decoration: none; }
+
+    /* Onglets + barre d'outils */
+    .tabs { display: flex; gap: 0.25rem; border-bottom: 1px solid var(--border); margin-bottom: 1rem; }
+    .tab {
+      background: none; border: none; color: var(--muted); font: inherit; font-size: 0.88rem; font-weight: 600;
+      padding: 0.6rem 0.9rem; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+    }
+    .tab:hover { color: var(--text); }
+    .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
+    .toolbar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+    .toolbar input, .toolbar select {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      border-radius: 8px; padding: 0.45rem 0.7rem; font: inherit; font-size: 0.82rem;
+    }
+    .toolbar input { flex: 1; min-width: 200px; }
+    .toolbar input:focus, .toolbar select:focus { outline: none; border-color: var(--accent); }
+    .count { font-size: 0.78rem; color: var(--muted); margin-left: auto; }
+
+    /* Lignes modules */
+    .rows { display: flex; flex-direction: column; gap: 0.5rem; }
+    .rows-head {
+      display: grid; grid-template-columns: minmax(180px, 1.4fr) 1.6fr 90px 110px 24px; gap: 1rem;
+      padding: 0 1rem 0.2rem; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
+    }
+    details.row { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+    details.row[open] { border-color: rgba(79,142,247,0.45); }
+    details.row:target { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,142,247,0.2); }
+    summary.row-head {
+      list-style: none; cursor: pointer;
+      display: grid; grid-template-columns: minmax(180px, 1.4fr) 1.6fr 90px 110px 24px; gap: 1rem; align-items: center;
+      padding: 0.8rem 1rem;
+    }
+    summary.row-head::-webkit-details-marker { display: none; }
+    .mod-name { font-weight: 600; font-size: 0.92rem; display: flex; align-items: center; gap: 0.4rem; }
+    .mod-path { font-size: 0.72rem; color: var(--muted); font-family: var(--mono); margin-top: 0.1rem; }
+    .lock { font-size: 0.65rem; color: var(--muted); border: 1px solid var(--border); border-radius: 5px; padding: 0 0.3rem; font-weight: 500; }
+    .sevs { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+    .sev {
+      font-size: 0.72rem; font-weight: 700; font-variant-numeric: tabular-nums;
+      border-radius: 6px; padding: 0.12rem 0.45rem; border: 1px solid transparent;
+      color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent);
+    }
+    .sev.zero { color: var(--muted); background: transparent; border-color: var(--border); font-weight: 500; opacity: 0.6; }
+    .sev-critical { --c: var(--critical); } .sev-high { --c: var(--high); }
+    .sev-medium { --c: var(--medium); } .sev-low { --c: var(--low); }
+    .num { font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+    .num small { display: block; font-size: 0.68rem; color: var(--muted); }
+    .chev { color: var(--muted); transition: transform 0.15s; text-align: right; }
+    details[open] .chev { transform: rotate(90deg); }
+    .ok { color: var(--green); font-size: 0.78rem; font-weight: 600; }
+
+    .row-body { border-top: 1px solid var(--border); padding: 0.9rem 1rem 1rem; }
+    .row-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.8rem; font-size: 0.78rem; }
+    .row-links a { color: var(--accent); text-decoration: none; }
+    .row-links a:hover { text-decoration: underline; }
+    .note { font-size: 0.8rem; color: var(--muted); padding: 0.4rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+    th { text-align: left; color: var(--muted); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0.5rem; border-bottom: 1px solid var(--border); }
+    td { padding: 0.45rem 0.5rem; border-bottom: 1px solid rgba(46,51,84,0.5); vertical-align: top; }
+    td.mono, .mono { font-family: var(--mono); font-size: 0.75rem; }
+    td a { color: var(--accent); text-decoration: none; }
+    .fixed { color: var(--green); }
+    .table-wrap { overflow-x: auto; }
+    .more { margin-top: 0.5rem; background: none; border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 0.35rem 0.8rem; font: inherit; font-size: 0.78rem; cursor: pointer; }
+    .more:hover { border-color: var(--accent); }
+
+    /* Librairies */
+    .libs td .vers { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .ver { font-family: var(--mono); font-size: 0.72rem; background: var(--surface2); border: 1px solid var(--border); border-radius: 5px; padding: 0.05rem 0.35rem; }
+    .drift { color: var(--medium); font-size: 0.7rem; font-weight: 600; }
+    .eco { font-size: 0.68rem; color: var(--muted); }
+    .libs-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.4rem 0.6rem; }
+
+    .empty { color: var(--muted); text-align: center; padding: 2rem; font-size: 0.9rem; }
+    footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem; text-align: center; font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 900px) {
+      .tiles { grid-template-columns: repeat(3, 1fr); }
+      summary.row-head { grid-template-columns: 1fr auto 24px; }
+      summary.row-head .num, .rows-head { display: none; }
+      .sevs { grid-column: 1 / -1; grid-row: 2; }
+    }
+    @media (max-width: 600px) {
+      .header-inner, main { padding-left: 1rem; padding-right: 1rem; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .count { margin-left: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <img src="logo-text.png" alt="Open-ENT" class="header-logo">
+      <div>
+        <h1 class="page-title"><span>Librairies</span> &amp; CVE</h1>
+        <div class="subtitle">Dépendances et vulnérabilités connues des modules, au commit réellement livré</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="./">← Artifacts Dashboard</a>
+      <a href="./updates.html">Nouveautés</a>
+      <a href="./changelog.html">Changelog des patchs</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="tiles" id="tiles"></div>
+  <p class="meta" id="meta">Chargement…</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="modules" aria-selected="true">Modules</button>
+    <button class="tab" role="tab" data-tab="libs" aria-selected="false">Librairies</button>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Rechercher un module, un paquet, une CVE…" aria-label="Rechercher">
+    <select id="section" aria-label="Section">
+      <option value="">Toutes les sections</option>
+      <option value="entcore">Socle entcore</option>
+      <option value="apps">Applications</option>
+      <option value="connectors">Connecteurs</option>
+      <option value="infra">Infrastructure</option>
+      <option value="other">Autres (libs, outils)</option>
+    </select>
+    <select id="sort" aria-label="Tri">
+      <option value="severity">Tri : sévérité</option>
+      <option value="name">Tri : nom</option>
+      <option value="deps">Tri : nombre de dépendances</option>
+      <option value="updates">Tri : mises à jour en attente</option>
+    </select>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div id="view"><div class="empty">Chargement des données…</div></div>
+</main>
+
+<footer>
+  Scan quotidien <a href="https://trivy.dev" target="_blank" rel="noopener">Trivy</a> des sous-modules d'open-ent-mods, au commit du gitlink ·
+  mises à jour proposées par <a href="https://docs.renovatebot.com" target="_blank" rel="noopener">Renovate</a> (le samedi).<br>
+  Dépôts privés : seuls les compteurs sont publiés. Les dépendances Maven sont lues sans résolution distante :
+  seules celles dont la version figure dans le pom sont analysées.
+</footer>
+
+<script>
+  const SEV = ['critical', 'high', 'medium', 'low'];
+  const SEV_LABEL = { critical: 'Critiques', high: 'Hautes', medium: 'Moyennes', low: 'Basses' };
+  const state = { tab: 'modules', q: '', section: '', sort: 'severity' };
+  let SEC = null, REN = null, SECTION_BY_REPO = {}, NAMES_BY_REPO = {};
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmt = n => (n || 0).toLocaleString('fr-FR');
+  const fmtDate = iso => iso ? new Date(iso).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }) : '—';
+  const sevScore = c => c.critical * 1e6 + c.high * 1e3 + c.medium;
+  const getJson = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+
+  // Mises à jour en attente d'un dépôt, d'après le rapport Renovate.
+  function pending(repo) {
+    const r = REN && REN.repositories && REN.repositories[repo];
+    if (!r) return null;
+    return r.deps.filter(d => d.updates && d.updates.length && !d.skip);
+  }
+
+  function renderTiles() {
+    const t = SEC.totals;
+    const deps = SEC.modules.reduce((s, m) => s + m.deps_total, 0);
+    const clean = SEC.modules.filter(m => m.scanned && !m.counts.critical && !m.counts.high).length;
+    document.getElementById('tiles').innerHTML =
+      SEV.map(s => `
+        <div class="tile" style="--sev: var(--${s})">
+          <div class="tile-label">${SEV_LABEL[s]}</div>
+          <div class="tile-value">${fmt(t[s])}</div>
+          <div class="tile-sub">${SEC.modules.filter(m => m.counts[s]).length} modules touchés</div>
+        </div>`).join('') + `
+        <div class="tile">
+          <div class="tile-label">Dépendances</div>
+          <div class="tile-value">${fmt(deps)}</div>
+          <div class="tile-sub">${SEC.modules.filter(m => m.scanned).length} modules scannés</div>
+        </div>
+        <div class="tile" style="--sev: var(--green)">
+          <div class="tile-label">Sans critique ni haute</div>
+          <div class="tile-value">${clean}</div>
+          <div class="tile-sub">sur ${SEC.modules.length} modules</div>
+        </div>`;
+    const src = SEC.source ? ` · <a href="${esc(SEC.source)}" target="_blank" rel="noopener">run du scan</a>` : '';
+    const ren = REN ? `Renovate : ${fmtDate(REN.generated_at)}` : 'Renovate : pas encore de rapport';
+    document.getElementById('meta').innerHTML = `Scan Trivy : ${fmtDate(SEC.generated_at)}${src} · ${ren}`;
+  }
+
+  function sectionOf(m) { return SECTION_BY_REPO[m.repo] || 'other'; }
+
+  function matches(m, q) {
+    if (!q) return true;
+    if ((m.name + ' ' + m.path + ' ' + m.repo + ' ' + (NAMES_BY_REPO[m.repo] || []).join(' ')).toLowerCase().includes(q)) return true;
+    return m.vulns.some(v => (v.id + ' ' + v.package).toLowerCase().includes(q));
+  }
+
+  function sevBadges(c) {
+    return SEV.map(s => `<span class="sev sev-${s}${c[s] ? '' : ' zero'}" title="${SEV_LABEL[s]}">${c[s]}</span>`).join('');
+  }
+
+  function vulnTable(m, limit) {
+    const rows = m.vulns.slice(0, limit).map(v => `
+      <tr>
+        <td><span class="sev sev-${v.severity}">${v.severity.slice(0, 4)}</span></td>
+        <td class="mono">${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.id)}</a>` : esc(v.id)}</td>
+        <td class="mono">${esc(v.package)} <span class="eco">${esc(v.ecosystem)}</span></td>
+        <td class="mono">${esc(v.version)}${v.fixed ? ` → <span class="fixed">${esc(v.fixed)}</span>` : ''}</td>
+        <td>${esc(v.title)}</td>
+      </tr>`).join('');
+    const more = m.vulns.length > limit
+      ? `<button class="more" data-more="${esc(m.path)}">Afficher les ${m.vulns.length - limit} autres</button>` : '';
+    return `<div class="table-wrap"><table>
+      <thead><tr><th>Sév.</th><th>Identifiant</th><th>Paquet</th><th>Version → corrigée</th><th>Titre</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>${more}`;
+  }
+
+  function pendingTable(list) {
+    if (!list || !list.length) return '';
+    return `<p class="note" style="margin-top:.8rem">Mises à jour proposées par Renovate :</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Paquet</th><th>Actuelle</th><th>Disponible</th><th>Fichier</th></tr></thead>
+        <tbody>${list.slice(0, 40).map(d => `
+          <tr><td class="mono">${esc(d.name)}</td><td class="mono">${esc(d.current)}</td>
+          <td class="mono">${d.updates.map(u => `${esc(u.version)} <span class="eco">${esc(u.type)}</span>`).join('<br>')}</td>
+          <td class="mono eco">${esc(d.file)}</td></tr>`).join('')}</tbody></table></div>`;
+  }
+
+  const expanded = new Set();
+
+  function renderModules() {
+    const q = state.q.toLowerCase();
+    let mods = SEC.modules.filter(m => matches(m, q) && (!state.section || sectionOf(m) === state.section));
+    const upd = m => (pending(m.repo) || []).length;
+    mods.sort({
+      severity: (a, b) => sevScore(b.counts) - sevScore(a.counts) || a.name.localeCompare(b.name),
+      name: (a, b) => a.name.localeCompare(b.name),
+      deps: (a, b) => b.deps_total - a.deps_total,
+      updates: (a, b) => upd(b) - upd(a) || sevScore(b.counts) - sevScore(a.counts),
+    }[state.sort]);
+    document.getElementById('count').textContent = `${mods.length} modules`;
+    if (!mods.length) { document.getElementById('view').innerHTML = '<div class="empty">Aucun module ne correspond.</div>'; return; }
+
+    document.getElementById('view').innerHTML = `<div class="rows">
+      <div class="rows-head" aria-hidden="true"><span>Module</span><span>Vulnérabilités : critiques · hautes · moyennes · basses</span><span>Dépendances</span><span>Renovate</span><span></span></div>
+      ${mods.map(m => {
+      const p = pending(m.repo);
+      const total = SEV.reduce((s, k) => s + m.counts[k], 0);
+      const aliases = (NAMES_BY_REPO[m.repo] || []).filter(n => n !== m.name);
+      const body = !m.scanned
+        ? '<p class="note">Scan indisponible pour ce module lors du dernier passage.</p>'
+        : m.private
+          ? `<p class="note">Dépôt privé : ${total} vulnérabilité(s), détail non publié. Consulter le scan dans le dépôt open-ent-mods.</p>`
+          : total ? vulnTable(m, expanded.has(m.path) ? 1e9 : 25) : '<p class="note ok">Aucune vulnérabilité connue dans les dépendances analysées.</p>';
+      return `
+        <details class="row" id="${esc(m.name)}"${expanded.has(m.path) ? ' open' : ''}>
+          <summary class="row-head">
+            <div>
+              <div class="mod-name">${esc(m.name)}${m.private ? '<span class="lock">privé</span>' : ''}</div>
+              <div class="mod-path">${esc(m.repo)}${aliases.length ? ' · ' + esc(aliases.slice(0, 4).join(', ')) + (aliases.length > 4 ? '…' : '') : ''}</div>
+            </div>
+            <div class="sevs">${m.scanned ? sevBadges(m.counts) : '<span class="note">non scanné</span>'}</div>
+            <div class="num">${fmt(m.deps_total)}<small>dépendances</small></div>
+            <div class="num">${p ? p.length : '—'}<small>mises à jour</small></div>
+            <div class="chev" aria-hidden="true">›</div>
+          </summary>
+          <div class="row-body">
+            <div class="row-links">
+              <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">Dépôt</a>
+              <a href="https://github.com/${esc(m.repo)}/issues?q=${encodeURIComponent('is:issue is:open in:title "Tableau de bord des dépendances"')}" target="_blank" rel="noopener">Tableau de bord Renovate</a>
+              <a href="https://github.com/${esc(m.repo)}/pulls?q=${encodeURIComponent('is:pr is:open label:renovate')}" target="_blank" rel="noopener">PR Renovate</a>
+              ${m.commit ? `<span class="mono eco">commit ${esc(m.commit.slice(0, 7))}</span>` : ''}
+            </div>
+            ${body}
+            ${pendingTable(p)}
+          </div>
+        </details>`;
+    }).join('')}</div>`;
+  }
+
+  // Inventaire inversé : paquet → versions → modules, depuis les dépendances
+  // directes du scan ; version disponible depuis le rapport Renovate.
+  function renderLibs() {
+    const q = state.q.toLowerCase();
+    const latest = {};
+    if (REN) for (const r of Object.values(REN.repositories || {}))
+      for (const d of r.deps) for (const u of d.updates || [])
+        if (u.version && (!latest[d.name] || u.version.localeCompare(latest[d.name], undefined, { numeric: true }) > 0)) latest[d.name] = u.version;
+
+    const libs = new Map();
+    for (const m of SEC.modules) {
+      if (state.section && sectionOf(m) !== state.section) continue;
+      for (const [eco, name, v] of m.direct || []) {
+        if (!name) continue;
+        const version = v || '?';
+        const key = eco + '|' + name;
+        if (!libs.has(key)) libs.set(key, { eco, name, versions: new Map() });
+        const vers = libs.get(key).versions;
+        if (!vers.has(version)) vers.set(version, new Set());
+        vers.get(version).add(m.name);
+      }
+    }
+    let list = [...libs.values()].filter(l => !q || l.name.toLowerCase().includes(q)
+      || [...l.versions.values()].some(s => [...s].some(n => n.toLowerCase().includes(q))));
+    const users = l => new Set([...l.versions.values()].flatMap(s => [...s])).size;
+    list.sort(state.sort === 'name'
+      ? (a, b) => a.name.localeCompare(b.name)
+      : (a, b) => (b.versions.size - a.versions.size) || (users(b) - users(a)) || a.name.localeCompare(b.name));
+    document.getElementById('count').textContent = `${list.length} librairies directes`;
+    if (!list.length) { document.getElementById('view').innerHTML = '<div class="empty">Aucune librairie ne correspond.</div>'; return; }
+
+    const shown = list.slice(0, 400);
+    document.getElementById('view').innerHTML = `<div class="libs-wrap table-wrap"><table class="libs">
+      <thead><tr><th>Librairie</th><th>Versions utilisées</th><th>Modules</th><th>Disponible</th></tr></thead>
+      <tbody>${shown.map(l => {
+        const vers = [...l.versions.entries()].sort((a, b) => b[0].localeCompare(a[0], undefined, { numeric: true }));
+        const mods = [...new Set(vers.flatMap(([, s]) => [...s]))].sort();
+        return `<tr>
+          <td class="mono">${esc(l.name)} <span class="eco">${esc(l.eco)}</span>${l.versions.size > 1 ? ` <span class="drift">${l.versions.size} versions</span>` : ''}</td>
+          <td><div class="vers">${vers.map(([v, s]) => `<span class="ver" title="${esc([...s].join(', '))}">${esc(v)} ×${s.size}</span>`).join('')}</div></td>
+          <td>${mods.length > 6 ? `${esc(mods.slice(0, 6).join(', '))} <span class="eco">+${mods.length - 6}</span>` : esc(mods.join(', '))}</td>
+          <td class="mono">${latest[l.name] ? esc(latest[l.name]) : '<span class="eco">—</span>'}</td>
+        </tr>`;
+      }).join('')}</tbody></table></div>
+      ${list.length > shown.length ? `<p class="note">${list.length - shown.length} autres : affiner la recherche.</p>` : ''}`;
+  }
+
+  function render() {
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.tab === state.tab));
+    document.querySelector('#sort option[value="updates"]').hidden = state.tab === 'libs';
+    document.querySelector('#sort option[value="deps"]').hidden = state.tab === 'libs';
+    document.querySelector('#sort option[value="severity"]').textContent =
+      state.tab === 'libs' ? 'Tri : nombre de versions' : 'Tri : sévérité';
+    if (state.tab === 'libs' && !['severity', 'name'].includes(state.sort)) { state.sort = 'severity'; document.getElementById('sort').value = 'severity'; }
+    (state.tab === 'modules' ? renderModules : renderLibs)();
+  }
+
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => { state.tab = t.dataset.tab; render(); }));
+  document.getElementById('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
+  document.getElementById('section').addEventListener('change', e => { state.section = e.target.value; render(); });
+  document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+  document.getElementById('view').addEventListener('click', e => {
+    const b = e.target.closest('[data-more]');
+    if (b) { expanded.add(b.dataset.more); renderModules(); }
+  });
+
+  Promise.all([getJson('./data/security.json'), getJson('./data/renovate-report.json'), getJson('./data.json')])
+    .then(([sec, ren, dash]) => {
+      if (!sec) { document.getElementById('view').innerHTML = '<div class="empty">Pas encore de scan publié (data/security.json).</div>'; document.getElementById('meta').textContent = ''; return; }
+      SEC = sec; REN = ren;
+      // Section et noms d'affichage repris de l'Artifacts Dashboard (par dépôt).
+      for (const m of (dash && dash.modules) || []) {
+        const repo = (m.repo_url || '').replace('https://github.com/', '');
+        if (!repo) continue;
+        SECTION_BY_REPO[repo] = SECTION_BY_REPO[repo] || m.section;
+        (NAMES_BY_REPO[repo] = NAMES_BY_REPO[repo] || []).push(m.name);
+      }
+      renderTiles();
+      render();
+      // Lien profond security.html#<module> depuis les badges du dashboard.
+      const id = decodeURIComponent(location.hash.slice(1));
+      const target = id && document.getElementById(id);
+      if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); }
+    });
+</script>
+</body>
+</html>

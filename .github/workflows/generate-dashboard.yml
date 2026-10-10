@@ -10,6 +10,8 @@ on:
     branches: [main]
     paths-ignore:
       - 'data.json'
+      # Publiés par security-scan.yml (open-ent-mods) et renovate.yml (open-ent/.github).
+      - 'data/**'
 
 permissions:
   contents: write

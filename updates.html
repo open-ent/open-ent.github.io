@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open-ENT — Nouveautés</title>
+  <meta name="description" content="Les dernières versions publiées des modules Open ENT, semaine après semaine." />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3354;
+      --accent: #4f8ef7;
+      --accent2: #7c5cfc;
+      --green: #22c55e;
+      --yellow: #f59e0b;
+      --rose: #f43f5e;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Fira Code', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1229 50%, #1a1020 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .header-inner { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+    .header-top { display: flex; align-items: center; gap: 1rem; }
+    .header-logo { height: 44px; object-fit: contain; }
+    h1.page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1.page-title span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.75rem; }
+    .nav a { font-size: 0.82rem; color: var(--accent); text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+
+    main { max-width: 1000px; margin: 0 auto; padding: 2.5rem 2rem 3rem; }
+
+    /* Carte « Nouveautés » (maquette learnhouse) */
+    .updates {
+      max-width: 640px; margin: 0 auto;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+      padding: 2rem 1.75rem 1.5rem;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0 1px, transparent 1px 6px);
+    }
+    .updates-icon {
+      width: 48px; height: 48px; margin: 0 auto 1rem;
+      display: grid; place-items: center;
+      border-radius: 12px; background: rgba(244,63,94,0.12); color: var(--rose);
+    }
+    .updates-icon svg { width: 22px; height: 22px; }
+    .updates h2 {
+      text-align: center; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em;
+      display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+    }
+    .updates h2 a { color: var(--muted); text-decoration: none; font-size: 1rem; }
+    .updates h2 a:hover { color: var(--text); }
+    .updates .lead {
+      text-align: center; color: var(--muted); font-size: 0.92rem; line-height: 1.6;
+      max-width: 420px; margin: 0.6rem auto 1.4rem;
+    }
+
+    /* Version courante */
+    .current {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 1rem;
+    }
+    .current-box {
+      background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.7rem 0.9rem; min-width: 0;
+    }
+    .current-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+    .current-value {
+      font-family: var(--mono); font-size: 0.95rem; font-weight: 700; margin-top: 0.25rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .current-sub { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; }
+
+    /* Filtres */
+    .filters { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; margin-bottom: 0.9rem; }
+    .chip {
+      background: transparent; border: 1px solid var(--border); color: var(--muted);
+      border-radius: 999px; padding: 0.28rem 0.7rem; font: inherit; font-size: 0.75rem; cursor: pointer;
+    }
+    .chip:hover { color: var(--text); border-color: var(--accent); }
+    .chip[aria-pressed="true"] { background: rgba(79,142,247,0.15); color: var(--text); border-color: var(--accent); }
+
+    /* Défilement de bas en haut */
+    .viewport {
+      position: relative; height: 420px; overflow: hidden; border-radius: 12px;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+              mask-image: linear-gradient(to bottom, transparent 0, #000 8%, #000 92%, transparent 100%);
+    }
+    .track { display: flex; flex-direction: column; gap: 0.6rem; }
+    .track.scrolling { animation: scroll-up var(--duration, 60s) linear infinite; }
+    .viewport:hover .track, .viewport:focus-within .track { animation-play-state: paused; }
+    @keyframes scroll-up {
+      from { transform: translateY(0); }
+      to   { transform: translateY(calc(-50% - 0.3rem)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .track.scrolling { animation: none; }
+      .viewport { overflow-y: auto; }
+    }
+    .viewport.static { overflow-y: auto; }
+
+    .item {
+      display: block; text-decoration: none; color: inherit;
+      background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.75rem 0.95rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .item:hover, .item:focus-visible { border-color: var(--accent); background: rgba(79,142,247,0.06); outline: none; }
+    .item-top { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); flex-shrink: 0; opacity: 0.6; }
+    .item.latest .dot { background: var(--green); opacity: 1; box-shadow: 0 0 0 3px rgba(34,197,94,0.15); }
+    .item-module { font-weight: 700; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+    .item-tag { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .badge {
+      font-size: 0.66rem; font-weight: 600; padding: 0.08rem 0.4rem; border-radius: 6px;
+      background: rgba(34,197,94,0.14); color: var(--green); flex-shrink: 0;
+    }
+    .item-date { margin-left: auto; font-size: 0.75rem; color: var(--muted); white-space: nowrap; padding-left: 0.5rem; }
+    .item-desc {
+      font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; padding-left: 1rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .tag-inline { display: none; font-family: var(--mono); color: var(--text); margin-right: 0.4rem; }
+    .week {
+      font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+      padding: 0.4rem 0.2rem 0; opacity: 0.8;
+    }
+    .empty { color: var(--muted); text-align: center; padding: 2rem; font-size: 0.9rem; }
+    .hint { text-align: center; font-size: 0.72rem; color: var(--muted); margin-top: 0.8rem; opacity: 0.8; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 1.5rem 2rem;
+      text-align: center; font-size: 0.78rem; color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .header-inner, main { padding-left: 1rem; padding-right: 1rem; }
+      .updates { padding: 1.5rem 1rem 1.25rem; }
+      .current { grid-template-columns: 1fr; }
+      .viewport { height: 380px; }
+      .item-tag { display: none; }
+      .item-desc .tag-inline { display: inline; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <img src="logo-text.png" alt="Open-ENT" class="header-logo">
+      <h1 class="page-title"><span>Nouveautés</span></h1>
+    </div>
+    <nav class="nav">
+      <a href="./">← Artifacts Dashboard</a>
+      <a href="./security.html">Librairies &amp; CVE</a>
+      <a href="./changelog.html">Changelog des patchs</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="updates" aria-labelledby="updates-title">
+    <div class="updates-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></svg>
+    </div>
+    <h2 id="updates-title">Nouveautés <a href="./changelog.html" title="Détail des patchs">↗</a></h2>
+    <p class="lead">Les modules Open ENT sont publiés chaque semaine : nouvelles fonctionnalités et correctifs. Voici les dernières versions.</p>
+
+    <div class="current" id="current"></div>
+
+    <div class="filters" role="group" aria-label="Filtrer par section" id="section-filters"></div>
+    <div class="filters" role="group" aria-label="Filtrer par période" id="period-filters"></div>
+
+    <div class="viewport" id="viewport">
+      <div class="track" id="track"><div class="empty">Chargement des versions…</div></div>
+    </div>
+    <p class="hint">Survolez la liste pour la mettre en pause · cliquez sur une version pour ses notes de release.</p>
+  </section>
+</main>
+
+<footer>
+  Généré à partir de <a href="./data.json">data.json</a> (workflow quotidien) ·
+  <a href="https://github.com/open-ent" target="_blank" rel="noopener">open-ent</a>
+</footer>
+
+<script>
+  const SECTIONS = [
+    { key: 'all', label: 'Tout' },
+    { key: 'entcore', label: 'Socle entcore' },
+    { key: 'apps', label: 'Applications' },
+    { key: 'connectors', label: 'Connecteurs' },
+    { key: 'infra', label: 'Infrastructure' },
+  ];
+  const PERIODS = [
+    { key: 0, label: 'Tout l’historique' },
+    { key: 7, label: 'Cette semaine' },
+    { key: 28, label: '4 dernières semaines' },
+  ];
+  const state = { section: 'all', period: 0 };
+  let RELEASES = [];
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmtDate = d => d ? new Date(d + 'T00:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+
+  // Les notes de release sont souvent réduites au lien « Full Changelog » :
+  // on en tire une ligne lisible (première puce, sinon « depuis X »).
+  function summary(body, mod) {
+    const lines = String(body || '').split('\n').map(l => l.trim()).filter(Boolean);
+    for (const l of lines) {
+      if (/^\*\*Full Changelog\*\*/i.test(l) || /^#+\s/.test(l) || /^<!--/.test(l)) continue;
+      return l.replace(/^[-*]\s+/, '').replace(/\s+by @\S+ in https?:\S+$/, '').replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+    }
+    const cmp = String(body || '').match(/compare\/([^.\s]+(?:\.[^.\s]+)*?)\.\.\.(\S+)/);
+    if (cmp) return `Évolutions depuis ${cmp[1]}`;
+    return `Nouvelle version de ${mod}`;
+  }
+
+  // Lundi de la semaine (pour les séparateurs « Semaine du … »).
+  function weekOf(d) {
+    const dt = new Date(d + 'T00:00:00');
+    const day = (dt.getDay() + 6) % 7;
+    dt.setDate(dt.getDate() - day);
+    return dt.toISOString().slice(0, 10);
+  }
+
+  function renderCurrent(modules) {
+    const dated = RELEASES.filter(r => r.date);
+    const newest = dated[0];
+    const auth = modules.find(m => m.name === 'auth');
+    const entcore = auth && auth.releases && auth.releases[0];
+    document.getElementById('current').innerHTML = `
+      <div class="current-box">
+        <div class="current-label">Dernière version publiée</div>
+        <div class="current-value">${newest ? esc(newest.label) + ' ' + esc(newest.tag) : '—'}</div>
+        <div class="current-sub">${newest ? fmtDate(newest.date) : ''}</div>
+      </div>
+      <div class="current-box">
+        <div class="current-label">Socle entcore</div>
+        <div class="current-value">${entcore ? esc(entcore.tag) : '—'}</div>
+        <div class="current-sub">${entcore && entcore.published_at ? fmtDate(entcore.published_at) : ''}</div>
+      </div>`;
+  }
+
+  function renderFilters() {
+    document.getElementById('section-filters').innerHTML = SECTIONS.map(s =>
+      `<button class="chip" data-section="${s.key}" aria-pressed="${state.section === s.key}">${s.label}</button>`).join('');
+    document.getElementById('period-filters').innerHTML = PERIODS.map(p =>
+      `<button class="chip" data-period="${p.key}" aria-pressed="${state.period === p.key}">${p.label}</button>`).join('');
+  }
+
+  function renderList() {
+    const track = document.getElementById('track');
+    const viewport = document.getElementById('viewport');
+    const since = state.period ? new Date(Date.now() - state.period * 864e5).toISOString().slice(0, 10) : null;
+    const items = RELEASES.filter(r =>
+      (state.section === 'all' || r.section === state.section) && (!since || (r.date && r.date >= since)));
+
+    if (!items.length) {
+      track.className = 'track';
+      viewport.classList.add('static');
+      track.innerHTML = '<div class="empty">Aucune version sur cette période.</div>';
+      return;
+    }
+
+    let lastWeek = null;
+    const html = items.map(r => {
+      const wk = r.date ? weekOf(r.date) : 'nd';
+      const sep = wk !== lastWeek
+        ? `<div class="week">${r.date ? 'Semaine du ' + fmtDate(wk) : 'Date non renseignée'}</div>` : '';
+      lastWeek = wk;
+      return `${sep}
+        <a class="item${r.latest ? ' latest' : ''}" href="./#module-${encodeURIComponent(r.module)}" title="${esc(r.title)}">
+          <div class="item-top">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="item-module">${esc(r.label)}</span>
+            <span class="item-tag">${esc(r.tag)}</span>
+            ${r.latest ? '<span class="badge">latest</span>' : ''}
+            <span class="item-date">${fmtDate(r.date)}</span>
+          </div>
+          <div class="item-desc"><span class="tag-inline">${esc(r.tag)}</span>${esc(r.summary)}</div>
+        </a>`;
+    }).join('');
+
+    // Liste dupliquée : l'animation remonte de la moitié de la piste puis
+    // reboucle sans à-coup. Pas de défilement si tout tient dans la zone.
+    track.className = 'track';
+    track.innerHTML = html;
+    viewport.classList.remove('static');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && track.scrollHeight > viewport.clientHeight) {
+      track.innerHTML = html + `<div aria-hidden="true" style="display:contents">${html}</div>`;
+      track.querySelectorAll('[aria-hidden="true"] a').forEach(a => a.tabIndex = -1);
+      track.style.setProperty('--duration', Math.max(20, items.length * 2.2) + 's');
+      track.className = 'track scrolling';
+    } else {
+      viewport.classList.add('static');
+    }
+  }
+
+  document.addEventListener('click', e => {
+    const s = e.target.closest('[data-section]');
+    const p = e.target.closest('[data-period]');
+    if (s) state.section = s.dataset.section;
+    else if (p) state.period = Number(p.dataset.period);
+    else return;
+    renderFilters();
+    renderList();
+  });
+
+  fetch('./data.json', { cache: 'no-cache' })
+    .then(r => r.json())
+    .then(data => {
+      const modules = data.modules || [];
+      // Une ligne par dépôt et par version : les 14 modules du socle publiés
+      // ensemble par entcore-v2 ne font qu'une entrée « entcore-v2 (14 modules) ».
+      const byKey = new Map();
+      for (const m of modules) (m.releases || []).forEach((r, i) => {
+        const repo = (m.repo_url || '').split('/').pop() || m.name;
+        const key = repo + '@' + r.tag;
+        if (!byKey.has(key)) byKey.set(key, {
+          repo, modules: [], section: m.section || 'apps', tag: r.tag,
+          date: r.published_at || '', latest: i === 0, body: r.body,
+        });
+        const e = byKey.get(key);
+        e.modules.push(m.name);
+        e.latest = e.latest || i === 0;
+        if (!e.body && r.body) e.body = r.body;
+      });
+      RELEASES = [...byKey.values()].map(e => {
+        const single = e.modules.length === 1;
+        return {
+          ...e,
+          module: e.modules[0],
+          label: single ? e.modules[0] : `${e.repo} (${e.modules.length} modules)`,
+          title: single ? `${e.modules[0]} ${e.tag}` : `${e.tag} : ${e.modules.join(', ')}`,
+          summary: summary(e.body, single ? e.modules[0] : e.repo),
+        };
+      });
+      // Plus récent d'abord ; à date égale, la release la plus récente du module
+      // passe devant ; les versions sans date en fin de liste.
+      RELEASES.sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.latest - a.latest) || a.module.localeCompare(b.module));
+      renderCurrent(modules);
+      renderFilters();
+      renderList();
+    })
+    .catch(() => {
+      document.getElementById('track').innerHTML = '<div class="empty">Impossible de charger data.json.</div>';
+    });
+</script>
+</body>
+</html>
