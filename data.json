@@ -724,7 +724,7 @@
       "name": "competences",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "",
       "ci_url": "https://github.com/open-ent/competences/actions",
       "releases_url": "https://github.com/open-ent/competences/releases",
       "repo_url": "https://github.com/open-ent/competences",
@@ -766,7 +766,7 @@
         {
           "tag": "4.4.7-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.4.7-patched/fr.openent.exercizer.4.4.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -2035,5 +2035,5 @@
       "releases": []
     }
   ],
-  "generated_at": "12/10/2026 à 10:36 UTC"
+  "generated_at": "12/10/2026 à 18:06 UTC"
 }
