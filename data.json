@@ -772,7 +772,7 @@
         {
           "tag": "4.4.7-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched\n\n**Full Changelog**: https://github.com/open-ent/exercizer/compare/4.3.6-patched...4.4.7-patched",
           "jar_url": "https://github.com/open-ent/exercizer/releases/download/4.4.7-patched/fr.openent.exercizer.4.4.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1560,10 +1560,10 @@
       "repo_url": "https://github.com/open-ent/video",
       "releases": [
         {
-          "tag": "0.3.0",
+          "tag": "0.3.1",
           "published_at": "2026-10-13",
-          "body": "**Full Changelog**: https://github.com/open-ent/video/compare/0.2.0...0.3.0",
-          "jar_url": "https://github.com/open-ent/video/releases/download/0.3.0/fr.tech.openent.video.0.3.0-fat.jar",
+          "body": "**Full Changelog**: https://github.com/open-ent/video/compare/0.3.0...0.3.1",
+          "jar_url": "https://github.com/open-ent/video/releases/download/0.3.1/fr.tech.openent.video.0.3.1-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
@@ -1575,6 +1575,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "0.3.0",
+          "published_at": "2026-10-13",
+          "body": "**Full Changelog**: https://github.com/open-ent/video/compare/0.2.0...0.3.0",
+          "jar_url": "https://github.com/open-ent/video/releases/download/0.3.0/fr.tech.openent.video.0.3.0-fat.jar"
         },
         {
           "tag": "0.2.0",
@@ -2047,5 +2053,5 @@
       "releases": []
     }
   ],
-  "generated_at": "13/10/2026 à 10:24 UTC"
+  "generated_at": "13/10/2026 à 15:00 UTC"
 }
