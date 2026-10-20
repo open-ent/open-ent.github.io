@@ -3573,5 +3573,12 @@
     "httpStatus": 200,
     "responseTimeMs": 713,
     "error": null
+  },
+  {
+    "timestamp": "2026-10-20T12:55:45.678Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 592,
+    "error": null
   }
 ]
