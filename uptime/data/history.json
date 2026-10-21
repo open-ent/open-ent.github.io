@@ -3652,5 +3652,12 @@
     "responseTimeMs": 1385,
     "error": null,
     "maintenance": "2026-10-21-1857-reboot"
+  },
+  {
+    "timestamp": "2026-10-21T18:59:34.326Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 855,
+    "error": null
   }
 ]
