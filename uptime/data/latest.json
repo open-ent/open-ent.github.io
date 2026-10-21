@@ -1,19 +1,18 @@
 {
-  "generatedAt": "2026-10-21T14:53:07.236Z",
+  "generatedAt": "2026-10-21T14:56:18.244Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-21T14:53:07.233Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 1414,
-    "error": null,
-    "maintenance": "2026-10-21-1452-other"
+    "timestamp": "2026-10-21T14:56:18.239Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 705,
+    "error": null
   },
   "totals": {
-    "checks": 518,
-    "up": 512,
+    "checks": 519,
+    "up": 513,
     "down": 1,
     "maintenance": 6
   },
@@ -24,7 +23,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 1414,
+    "latest": 705,
     "avg": 847,
     "p95": 1511,
     "p99": 1672
@@ -43,21 +42,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-10-21-1452-other",
-      "title": "Intervention technique en cours",
-      "description": "Un problème technique est en cours de résolution. Merci de votre patience.",
-      "reason": "",
-      "kind": "other",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-10-21T14:52:49.608Z",
-      "endsAt": "2026-10-21T15:52:49.608Z",
-      "status": "scheduled",
-      "createdAt": "2026-10-21T14:52:49.608Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-21-1452-other",
+        "title": "Intervention technique en cours",
+        "description": "Un problème technique est en cours de résolution. Merci de votre patience.",
+        "reason": "",
+        "kind": "other",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-21T14:52:49.608Z",
+        "endsAt": "2026-10-21T14:55:59.281Z",
+        "status": "completed",
+        "createdAt": "2026-10-21T14:52:49.608Z"
+      },
       {
         "id": "2026-09-11-2037-reboot",
         "title": "Ouverture de l'ENT Occitanie",
@@ -109,19 +109,6 @@
         "endsAt": "2026-09-09T17:58:28.703Z",
         "status": "completed",
         "createdAt": "2026-09-09T17:57:36.952Z"
-      },
-      {
-        "id": "2026-09-09-1100-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Montée de version des modules.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-09T11:00:27.718Z",
-        "endsAt": "2026-09-09T11:02:29.402Z",
-        "status": "completed",
-        "createdAt": "2026-09-09T11:00:27.718Z"
       }
     ]
   }

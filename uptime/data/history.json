@@ -3630,5 +3630,12 @@
     "responseTimeMs": 1414,
     "error": null,
     "maintenance": "2026-10-21-1452-other"
+  },
+  {
+    "timestamp": "2026-10-21T14:56:18.239Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 705,
+    "error": null
   }
 ]
