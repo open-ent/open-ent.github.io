@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T20:39:04.969Z",
+  "updatedAt": "2026-10-21T14:52:49.608Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -78,6 +78,19 @@
       "endsAt": "2026-09-11T20:39:04.968Z",
       "status": "completed",
       "createdAt": "2026-09-11T20:37:15.486Z"
+    },
+    {
+      "id": "2026-10-21-1452-other",
+      "title": "Intervention technique en cours",
+      "description": "Un problème technique est en cours de résolution. Merci de votre patience.",
+      "reason": "",
+      "kind": "other",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-21T14:52:49.608Z",
+      "endsAt": "2026-10-21T15:52:49.608Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-21T14:52:49.608Z"
     }
   ]
 }
