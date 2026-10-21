@@ -3659,5 +3659,13 @@
     "httpStatus": 200,
     "responseTimeMs": 855,
     "error": null
+  },
+  {
+    "timestamp": "2026-10-21T20:46:29.539Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1690,
+    "error": null,
+    "maintenance": "2026-10-21-2046-reboot"
   }
 ]

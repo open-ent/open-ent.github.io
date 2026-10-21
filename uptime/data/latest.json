@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-10-21T18:59:34.331Z",
+  "generatedAt": "2026-10-21T20:46:29.541Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-21T18:59:34.326Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 855,
-    "error": null
+    "timestamp": "2026-10-21T20:46:29.539Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1690,
+    "error": null,
+    "maintenance": "2026-10-21-2046-reboot"
   },
   "totals": {
-    "checks": 522,
+    "checks": 523,
     "up": 515,
     "down": 1,
-    "maintenance": 7
+    "maintenance": 8
   },
   "availability": {
     "all": 99.806,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 855,
+    "latest": 1690,
     "avg": 846,
     "p95": 1511,
     "p99": 1672
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-10-21-2046-reboot",
+      "title": "Mise à jour technique de l'ENT",
+      "description": "",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-21T20:46:11.680Z",
+      "endsAt": "2026-10-21T21:01:11.680Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-21T20:46:11.680Z"
+    },
     "upcoming": [],
     "recent": [
       {
