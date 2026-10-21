@@ -1,19 +1,18 @@
 {
-  "generatedAt": "2026-10-21T20:46:29.541Z",
+  "generatedAt": "2026-10-21T20:49:41.273Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-21T20:46:29.539Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 1690,
-    "error": null,
-    "maintenance": "2026-10-21-2046-reboot"
+    "timestamp": "2026-10-21T20:49:41.266Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 582,
+    "error": null
   },
   "totals": {
-    "checks": 523,
-    "up": 515,
+    "checks": 524,
+    "up": 516,
     "down": 1,
     "maintenance": 8
   },
@@ -24,7 +23,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 1690,
+    "latest": 582,
     "avg": 846,
     "p95": 1511,
     "p99": 1672
@@ -43,21 +42,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-10-21-2046-reboot",
-      "title": "Mise à jour technique de l'ENT",
-      "description": "",
-      "reason": "",
-      "kind": "reboot",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-10-21T20:46:11.680Z",
-      "endsAt": "2026-10-21T21:01:11.680Z",
-      "status": "scheduled",
-      "createdAt": "2026-10-21T20:46:11.680Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-21-2046-reboot",
+        "title": "Mise à jour technique de l'ENT",
+        "description": "",
+        "reason": "",
+        "kind": "reboot",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-21T20:46:11.680Z",
+        "endsAt": "2026-10-21T20:49:25.220Z",
+        "status": "completed",
+        "createdAt": "2026-10-21T20:46:11.680Z"
+      },
       {
         "id": "2026-10-21-1857-reboot",
         "title": "Mise à jour technique de l'ENT",
@@ -109,19 +109,6 @@
         "endsAt": "2026-09-11T16:26:51.477Z",
         "status": "scheduled",
         "createdAt": "2026-09-11T16:23:51.477Z"
-      },
-      {
-        "id": "2026-09-11-1459-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Gestion du thème dynamiquement.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-11T14:59:41.215Z",
-        "endsAt": "2026-09-11T15:02:41.215Z",
-        "status": "scheduled",
-        "createdAt": "2026-09-11T14:59:41.215Z"
       }
     ]
   }
