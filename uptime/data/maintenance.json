@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T14:55:59.282Z",
+  "updatedAt": "2026-10-21T18:57:04.908Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -91,6 +91,19 @@
       "endsAt": "2026-10-21T14:55:59.281Z",
       "status": "completed",
       "createdAt": "2026-10-21T14:52:49.608Z"
+    },
+    {
+      "id": "2026-10-21-1857-reboot",
+      "title": "Mise à jour technique de l'ENT",
+      "description": "Alignement de la configuration du portail ; redémarrage de la plateforme.",
+      "reason": "",
+      "kind": "reboot",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-21T18:57:04.907Z",
+      "endsAt": "2026-10-21T19:12:04.907Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-21T18:57:04.907Z"
     }
   ]
 }
