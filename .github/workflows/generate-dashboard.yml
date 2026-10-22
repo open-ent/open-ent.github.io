@@ -32,7 +32,9 @@ jobs:
         run: |
           set -euo pipefail
 
-          MODULES_ARR="[]"
+          # Modules accumulés en NDJSON dans un fichier : passés en argument à jq,
+          # ils dépassent la limite de 128 Ko par argument (« Argument list too long »).
+          MODULES_FILE=$(mktemp)
 
           # ── Helper: fetch CI status filtered on build-and-publish.yml ──────
           ci_status() {
@@ -135,8 +137,7 @@ jobs:
           add_module() {
             local NAME="$1" GROUP="$2" SECTION="$3" CI_STATUS="$4" \
                   CI_URL="$5" RELEASES_URL="$6" REPO_URL="$7" RELEASES="$8"
-            local OBJ
-            OBJ=$(jq -n \
+            echo "$RELEASES" | jq -c \
               --arg name         "$NAME" \
               --arg group_id     "$GROUP" \
               --arg section      "$SECTION" \
@@ -144,11 +145,9 @@ jobs:
               --arg ci_url       "$CI_URL" \
               --arg releases_url "$RELEASES_URL" \
               --arg repo_url     "$REPO_URL" \
-              --argjson releases "$RELEASES" \
               '{name:$name,group_id:$group_id,section:$section,ci_status:$ci_status,
                 ci_url:$ci_url,releases_url:$releases_url,repo_url:$repo_url,
-                releases:$releases}')
-            MODULES_ARR=$(echo "$MODULES_ARR" | jq --argjson mod "$OBJ" '. + [$mod]')
+                releases:.}' >> "$MODULES_FILE"
           }
 
           # ══════════════════════════════════════════════════════════════════
@@ -343,10 +342,9 @@ jobs:
 
           GENERATED_AT=$(date -u '+%d/%m/%Y à %H:%M UTC')
 
-          jq -n \
-            --argjson modules "$MODULES_ARR" \
+          jq -s \
             --arg generated_at "$GENERATED_AT" \
-            '{modules: $modules, generated_at: $generated_at}' > data.json
+            '{modules: ., generated_at: $generated_at}' "$MODULES_FILE" > data.json
 
           echo "data.json: $(jq '.modules | length' data.json) modules"
 
