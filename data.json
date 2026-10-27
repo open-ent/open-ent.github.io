@@ -4,17 +4,11 @@
       "name": "auth",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -27,17 +21,11 @@
       "name": "directory",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -50,17 +38,11 @@
       "name": "workspace",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -73,17 +55,11 @@
       "name": "conversation",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -96,17 +72,11 @@
       "name": "timeline",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -119,17 +89,11 @@
       "name": "portal",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -142,17 +106,11 @@
       "name": "communication",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -165,17 +123,11 @@
       "name": "feeder",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -188,17 +140,11 @@
       "name": "admin",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -211,17 +157,11 @@
       "name": "app-registry",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -234,17 +174,11 @@
       "name": "infra",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -257,17 +191,11 @@
       "name": "archive",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -280,17 +208,11 @@
       "name": "audience",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -303,17 +225,11 @@
       "name": "cas",
       "group_id": "org.entcore",
       "section": "entcore",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/entcore-v2/actions",
       "releases_url": "https://github.com/open-ent/entcore-v2/packages",
       "repo_url": "https://github.com/open-ent/entcore-v2",
       "releases": [
-        {
-          "tag": "6.16.14-patched",
-          "published_at": "2026-10-26",
-          "body": "",
-          "jar_url": "https://github.com/open-ent/entcore-v2/packages"
-        },
         {
           "tag": "6.14.9-patched",
           "published_at": "2026-10-26",
@@ -986,7 +902,7 @@
       "name": "pages",
       "group_id": "fr.wseduc",
       "section": "apps",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/pages/actions",
       "releases_url": "https://github.com/open-ent/pages/releases",
       "repo_url": "https://github.com/open-ent/pages",
@@ -994,7 +910,7 @@
         {
           "tag": "2.2.5-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched\n\n**Full Changelog**: https://github.com/open-ent/pages/compare/2.1.5...2.2.5-patched",
           "jar_url": "https://github.com/open-ent/pages/releases/download/2.2.5-patched/fr.wseduc.pages.2.2.5-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1065,7 +981,7 @@
         {
           "tag": "3.2.10-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/rack/compare/3.1.7-patched...3.2.10-patched",
           "jar_url": "https://github.com/open-ent/rack/releases/download/3.2.10-patched/fr.wseduc.rack.3.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1097,10 +1013,10 @@
       "repo_url": "https://github.com/open-ent/rbs",
       "releases": [
         {
-          "tag": "2.1.7-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched",
-          "jar_url": "https://github.com/open-ent/rbs/releases/download/2.1.7-patched/net.atos.rbs.2.1.7-patched-fat.jar",
+          "tag": "2.2.7-patched",
+          "published_at": "2026-10-27",
+          "body": "**Full Changelog**: https://github.com/open-ent/rbs/compare/2.1.7-patched...2.2.7-patched",
+          "jar_url": "https://github.com/open-ent/rbs/releases/download/2.2.7-patched/net.atos.rbs.2.2.7-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
@@ -1112,6 +1028,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "2.1.7-patched",
+          "published_at": "2026-08-12",
+          "body": "**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched\n\n**Full Changelog**: https://github.com/open-ent/rbs/commits/2.1.7-patched",
+          "jar_url": "https://github.com/open-ent/rbs/releases/download/2.1.7-patched/net.atos.rbs.2.1.7-patched-fat.jar"
         },
         {
           "tag": "2.1.4-patched",
@@ -1713,7 +1635,7 @@
         {
           "tag": "2.2.10-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched\n\n**Full Changelog**: https://github.com/open-ent/presences/commits/2.2.10-patched",
           "jar_url": "https://github.com/open-ent/presences/releases/download/2.2.10-patched/fr.openent.incidents.2.2.10-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -2071,5 +1993,6 @@
       "releases": []
     }
   ],
-  "generated_at": "27/10/2026 à 08:53 UTC"
+  "generated_at": "27/10/2026 à 21:42 UTC",
+  "generated_at_iso": "2026-10-27T21:42:38Z"
 }
