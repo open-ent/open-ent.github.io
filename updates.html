@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open-ENT — Nouveautés</title>
+  <title data-i18n="updates.title">Open-ENT — Nouveautés</title>
+  <script src="./i18n.js"></script>
   <meta name="description" content="Les dernières versions publiées des modules Open ENT, semaine après semaine." />
   <style>
     :root {
@@ -158,12 +159,13 @@
   <div class="header-inner">
     <div class="header-top">
       <img src="logo-text.png" alt="Open-ENT" class="header-logo">
-      <h1 class="page-title"><span>Nouveautés</span></h1>
+      <h1 class="page-title"><span data-i18n="updates.h1">Nouveautés</span></h1>
     </div>
     <nav class="nav">
-      <a href="./">← Artifacts Dashboard</a>
-      <a href="./security.html">Librairies &amp; CVE</a>
-      <a href="./changelog.html">Changelog des patchs</a>
+      <a href="./" data-i18n="nav.dashboard">← Artifacts Dashboard</a>
+      <a href="./security.html" data-i18n="nav.security">Librairies &amp; CVE</a>
+      <a href="./changelog.html" data-i18n="nav.changelog">Changelog des patchs</a>
+      <span data-lang-switch style="margin-left:auto;"></span>
     </nav>
   </div>
 </header>
@@ -173,44 +175,44 @@
     <div class="updates-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></svg>
     </div>
-    <h2 id="updates-title">Nouveautés <a href="./changelog.html" title="Détail des patchs">↗</a></h2>
-    <p class="lead">Les modules Open ENT sont publiés chaque semaine : nouvelles fonctionnalités et correctifs. Voici les dernières versions.</p>
+    <h2 id="updates-title"><span data-i18n="updates.h1">Nouveautés</span> <a href="./changelog.html" title="Détail des patchs" data-i18n-title="updates.patchTip">↗</a></h2>
+    <p class="lead" data-i18n="updates.lead">Les modules Open ENT sont publiés chaque semaine : nouvelles fonctionnalités et correctifs. Voici les dernières versions.</p>
 
     <div class="current" id="current"></div>
 
-    <div class="filters" role="group" aria-label="Filtrer par section" id="section-filters"></div>
-    <div class="filters" role="group" aria-label="Filtrer par période" id="period-filters"></div>
+    <div class="filters" role="group" aria-label="Filtrer par section" data-i18n-aria-label="updates.filterSection" id="section-filters"></div>
+    <div class="filters" role="group" aria-label="Filtrer par période" data-i18n-aria-label="updates.filterPeriod" id="period-filters"></div>
 
     <div class="viewport" id="viewport">
-      <div class="track" id="track"><div class="empty">Chargement des versions…</div></div>
+      <div class="track" id="track"><div class="empty" data-i18n="updates.loading">Chargement des versions…</div></div>
     </div>
-    <p class="hint">Survolez la liste pour la mettre en pause · cliquez sur une version pour ses notes de release.</p>
+    <p class="hint" data-i18n="updates.hint">Survolez la liste pour la mettre en pause · cliquez sur une version pour ses notes de release.</p>
   </section>
 </main>
 
 <footer>
-  Généré à partir de <a href="./data.json">data.json</a> (workflow quotidien) ·
+  <span data-i18n="updates.footer" data-i18n-html>Généré à partir de <a href="./data.json">data.json</a> (workflow quotidien) ·</span>
   <a href="https://github.com/open-ent" target="_blank" rel="noopener">open-ent</a>
 </footer>
 
 <script>
-  const SECTIONS = [
-    { key: 'all', label: 'Tout' },
-    { key: 'entcore', label: 'Socle entcore' },
-    { key: 'apps', label: 'Applications' },
-    { key: 'connectors', label: 'Connecteurs' },
-    { key: 'infra', label: 'Infrastructure' },
+  const sections = () => [
+    { key: 'all', label: t('updates.all') },
+    { key: 'entcore', label: t('updates.entcore') },
+    { key: 'apps', label: t('sec.apps') },
+    { key: 'connectors', label: t('sec.connectors') },
+    { key: 'infra', label: t('sec.infra') },
   ];
-  const PERIODS = [
-    { key: 0, label: 'Tout l’historique' },
-    { key: 7, label: 'Cette semaine' },
-    { key: 28, label: '4 dernières semaines' },
+  const periods = () => [
+    { key: 0, label: t('updates.allHistory') },
+    { key: 7, label: t('updates.thisWeek') },
+    { key: 28, label: t('updates.last4Weeks') },
   ];
   const state = { section: 'all', period: 0 };
-  let RELEASES = [];
+  let RELEASES = [], MODULES = [];
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const fmtDate = d => d ? new Date(d + 'T00:00:00').toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+  const fmtDate = d => d ? new Date(d + 'T00:00:00').toLocaleDateString(I18N.locale, { day: 'numeric', month: 'short', year: 'numeric' }) : '';
 
   // Les notes de release sont souvent réduites au lien « Full Changelog » :
   // on en tire une ligne lisible (première puce, sinon « depuis X »).
@@ -221,8 +223,8 @@
       return l.replace(/^[-*]\s+/, '').replace(/\s+by @\S+ in https?:\S+$/, '').replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
     }
     const cmp = String(body || '').match(/compare\/([^.\s]+(?:\.[^.\s]+)*?)\.\.\.(\S+)/);
-    if (cmp) return `Évolutions depuis ${cmp[1]}`;
-    return `Nouvelle version de ${mod}`;
+    if (cmp) return t('updates.since', { tag: cmp[1] });
+    return t('updates.newRelease', { module: mod });
   }
 
   // Lundi de la semaine (pour les séparateurs « Semaine du … »).
@@ -240,21 +242,21 @@
     const entcore = auth && auth.releases && auth.releases[0];
     document.getElementById('current').innerHTML = `
       <div class="current-box">
-        <div class="current-label">Dernière version publiée</div>
+        <div class="current-label">${t('updates.latest')}</div>
         <div class="current-value">${newest ? esc(newest.label) + ' ' + esc(newest.tag) : '—'}</div>
         <div class="current-sub">${newest ? fmtDate(newest.date) : ''}</div>
       </div>
       <div class="current-box">
-        <div class="current-label">Socle entcore</div>
+        <div class="current-label">${t('updates.entcore')}</div>
         <div class="current-value">${entcore ? esc(entcore.tag) : '—'}</div>
         <div class="current-sub">${entcore && entcore.published_at ? fmtDate(entcore.published_at) : ''}</div>
       </div>`;
   }
 
   function renderFilters() {
-    document.getElementById('section-filters').innerHTML = SECTIONS.map(s =>
+    document.getElementById('section-filters').innerHTML = sections().map(s =>
       `<button class="chip" data-section="${s.key}" aria-pressed="${state.section === s.key}">${s.label}</button>`).join('');
-    document.getElementById('period-filters').innerHTML = PERIODS.map(p =>
+    document.getElementById('period-filters').innerHTML = periods().map(p =>
       `<button class="chip" data-period="${p.key}" aria-pressed="${state.period === p.key}">${p.label}</button>`).join('');
   }
 
@@ -268,7 +270,7 @@
     if (!items.length) {
       track.className = 'track';
       viewport.classList.add('static');
-      track.innerHTML = '<div class="empty">Aucune version sur cette période.</div>';
+      track.innerHTML = `<div class="empty">${t('updates.none')}</div>`;
       return;
     }
 
@@ -276,7 +278,7 @@
     const html = items.map(r => {
       const wk = r.date ? weekOf(r.date) : 'nd';
       const sep = wk !== lastWeek
-        ? `<div class="week">${r.date ? 'Semaine du ' + fmtDate(wk) : 'Date non renseignée'}</div>` : '';
+        ? `<div class="week">${r.date ? t('updates.weekOf', { date: fmtDate(wk) }) : t('updates.noDate')}</div>` : '';
       lastWeek = wk;
       return `${sep}
         <a class="item${r.latest ? ' latest' : ''}" href="./#module-${encodeURIComponent(r.module)}" title="${esc(r.title)}">
@@ -317,10 +319,10 @@
     renderList();
   });
 
-  fetch('./data.json', { cache: 'no-cache' })
-    .then(r => r.json())
-    .then(data => {
-      const modules = data.modules || [];
+  // Les libellés dérivés (résumés, sections) sont reconstruits à chaque
+  // changement de langue, d'où le passage par buildAndRender().
+  function buildAndRender() {
+      const modules = MODULES;
       // Une ligne par dépôt et par version : les 14 modules du socle publiés
       // ensemble par entcore-v2 ne font qu'une entrée « entcore-v2 (14 modules) ».
       const byKey = new Map();
@@ -352,10 +354,19 @@
       renderCurrent(modules);
       renderFilters();
       renderList();
+  }
+
+  fetch('./data.json', { cache: 'no-cache' })
+    .then(r => r.json())
+    .then(data => {
+      MODULES = data.modules || [];
+      buildAndRender();
     })
     .catch(() => {
-      document.getElementById('track').innerHTML = '<div class="empty">Impossible de charger data.json.</div>';
+      document.getElementById('track').innerHTML = `<div class="empty">${t('updates.error')}</div>`;
     });
+
+  I18N.onChange(() => { if (MODULES.length) buildAndRender(); });
 </script>
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open-ENT — Changelog des patchs</title>
+  <title data-i18n="changelog.title">Open-ENT — Changelog des patchs</title>
+  <script src="./i18n.js"></script>
   <style>
     :root {
       --bg: #0f1117;
@@ -78,6 +79,9 @@
       text-align: center; font-size: 0.78rem; color: var(--muted);
     }
     footer a { color: var(--accent); text-decoration: none; }
+    .lang-note { margin-bottom: 1rem; font-size: 0.82rem; color: var(--muted); }
+    .lang-note:empty { display: none; }
+    .header-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
   </style>
 </head>
 <body>
@@ -86,18 +90,22 @@
   <div class="header-inner">
     <div class="header-top">
       <img src="logo-text.png" alt="Open-ENT" class="header-logo">
-      <h1 class="page-title"><span>Changelog</span> des patchs</h1>
+      <h1 class="page-title"><span data-i18n="changelog.h1a">Changelog</span> <span data-i18n="changelog.h1b">des patchs</span></h1>
     </div>
-    <a class="back" href="./index.html">← Retour au dashboard</a>
+    <div class="header-row">
+      <a class="back" href="./index.html" data-i18n="common.backToDashboard">← Retour au dashboard</a>
+      <span data-lang-switch style="margin-left:auto;"></span>
+    </div>
   </div>
 </header>
 
 <main>
-  <div id="content"><div class="empty">Chargement du changelog…</div></div>
+  <p class="lang-note" data-i18n="changelog.frNotice"></p>
+  <div id="content"><div class="empty" data-i18n="changelog.loading">Chargement du changelog…</div></div>
 </main>
 
 <footer>
-  Synthèse des commits ajoutés par les forks « -patched » par-dessus l'upstream ·
+  <span data-i18n="changelog.footer">Synthèse des commits ajoutés par les forks « -patched » par-dessus l'upstream ·</span>
   <a href="https://github.com/open-ent" target="_blank">open-ent</a>
 </footer>
 
@@ -143,7 +151,7 @@
     .then(md => { document.getElementById('content').innerHTML = renderMarkdown(md); })
     .catch(err => {
       document.getElementById('content').innerHTML =
-        '<div class="empty">Impossible de charger le changelog : ' + err.message + '</div>';
+        `<div class="empty">${t('changelog.error', { msg: err.message })}</div>`;
     });
 </script>
 </body>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open-ENT — Librairies &amp; CVE</title>
+  <title data-i18n="security.title">Open-ENT — Librairies &amp; CVE</title>
+  <script src="./i18n.js"></script>
   <meta name="description" content="Synthèse des dépendances et des vulnérabilités connues (CVE) des modules Open ENT." />
   <style>
     :root {
@@ -152,65 +153,65 @@
     <div class="header-top">
       <img src="logo-text.png" alt="Open-ENT" class="header-logo">
       <div>
-        <h1 class="page-title"><span>Librairies</span> &amp; CVE</h1>
-        <div class="subtitle">Dépendances et vulnérabilités connues des modules, au commit réellement livré</div>
+        <h1 class="page-title"><span data-i18n="security.h1a">Librairies</span> <span data-i18n="security.h1b">&amp; CVE</span></h1>
+        <div class="subtitle" data-i18n="security.subtitle">Dépendances et vulnérabilités connues des modules, au commit réellement livré</div>
       </div>
     </div>
     <nav class="nav">
-      <a href="./">← Artifacts Dashboard</a>
-      <a href="./updates.html">Nouveautés</a>
-      <a href="./changelog.html">Changelog des patchs</a>
+      <a href="./" data-i18n="nav.dashboard">← Artifacts Dashboard</a>
+      <a href="./updates.html" data-i18n="nav.updates">Nouveautés</a>
+      <a href="./changelog.html" data-i18n="nav.changelog">Changelog des patchs</a>
+      <span data-lang-switch style="margin-left:auto;"></span>
     </nav>
   </div>
 </header>
 
 <main>
   <div class="tiles" id="tiles"></div>
-  <p class="meta" id="meta">Chargement…</p>
+  <p class="meta" id="meta" data-i18n="common.loading">Chargement…</p>
 
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" data-tab="modules" aria-selected="true">Modules</button>
-    <button class="tab" role="tab" data-tab="libs" aria-selected="false">Librairies</button>
+    <button class="tab" role="tab" data-tab="modules" aria-selected="true" data-i18n="security.tabModules">Modules</button>
+    <button class="tab" role="tab" data-tab="libs" aria-selected="false" data-i18n="security.tabLibs">Librairies</button>
   </div>
 
   <div class="toolbar">
-    <input type="search" id="q" placeholder="Rechercher un module, un paquet, une CVE…" aria-label="Rechercher">
+    <input type="search" id="q" placeholder="Rechercher un module, un paquet, une CVE…" data-i18n-placeholder="security.search" aria-label="Rechercher" data-i18n-aria-label="security.searchAria">
     <select id="section" aria-label="Section">
-      <option value="">Toutes les sections</option>
-      <option value="entcore">Socle entcore</option>
-      <option value="apps">Applications</option>
-      <option value="connectors">Connecteurs</option>
-      <option value="infra">Infrastructure</option>
-      <option value="other">Autres (libs, outils)</option>
+      <option value="" data-i18n="security.allSections">Toutes les sections</option>
+      <option value="entcore" data-i18n="updates.entcore">Socle entcore</option>
+      <option value="apps" data-i18n="sec.apps">Applications</option>
+      <option value="connectors" data-i18n="sec.connectors">Connecteurs</option>
+      <option value="infra" data-i18n="sec.infra">Infrastructure</option>
+      <option value="other" data-i18n="security.other">Autres (libs, outils)</option>
     </select>
-    <select id="sort" aria-label="Tri">
-      <option value="severity">Tri : sévérité</option>
-      <option value="name">Tri : nom</option>
-      <option value="deps">Tri : nombre de dépendances</option>
-      <option value="updates">Tri : mises à jour en attente</option>
+    <select id="sort" aria-label="Tri" data-i18n-aria-label="security.sortAria">
+      <option value="severity" data-i18n="security.sortSeverity">Tri : sévérité</option>
+      <option value="name" data-i18n="security.sortName">Tri : nom</option>
+      <option value="deps" data-i18n="security.sortDeps">Tri : nombre de dépendances</option>
+      <option value="updates" data-i18n="security.sortUpdates">Tri : mises à jour en attente</option>
     </select>
     <span class="count" id="count"></span>
   </div>
 
-  <div id="view"><div class="empty">Chargement des données…</div></div>
+  <div id="view"><div class="empty" data-i18n="security.loadingData">Chargement des données…</div></div>
 </main>
 
 <footer>
-  Scan quotidien <a href="https://trivy.dev" target="_blank" rel="noopener">Trivy</a> des sous-modules d'open-ent-mods, au commit du gitlink ·
-  mises à jour proposées par <a href="https://docs.renovatebot.com" target="_blank" rel="noopener">Renovate</a> (le samedi).<br>
-  Dépôts privés : seuls les compteurs sont publiés. Les dépendances Maven sont lues sans résolution distante :
-  seules celles dont la version figure dans le pom sont analysées.
+  <span data-i18n="security.footer" data-i18n-html>Scan quotidien <a href="https://trivy.dev" target="_blank" rel="noopener">Trivy</a> des sous-modules d'open-ent-mods, au commit du gitlink · mises à jour proposées par <a href="https://docs.renovatebot.com" target="_blank" rel="noopener">Renovate</a> (le samedi).</span><br>
+  <span data-i18n="security.footer2">Dépôts privés : seuls les compteurs sont publiés. Les dépendances Maven sont lues sans résolution distante : seules celles dont la version figure dans le pom sont analysées.</span>
 </footer>
 
 <script>
   const SEV = ['critical', 'high', 'medium', 'low'];
-  const SEV_LABEL = { critical: 'Critiques', high: 'Hautes', medium: 'Moyennes', low: 'Basses' };
+  const SEV_LABEL = { critical: 'security.sevCritical', high: 'security.sevHigh', medium: 'security.sevMedium', low: 'security.sevLow' };
+  const sevLabel = sev => t(SEV_LABEL[sev]);
   const state = { tab: 'modules', q: '', section: '', sort: 'severity' };
   let SEC = null, REN = null, SECTION_BY_REPO = {}, NAMES_BY_REPO = {};
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const fmt = n => (n || 0).toLocaleString('fr-FR');
-  const fmtDate = iso => iso ? new Date(iso).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' }) : '—';
+  const fmt = n => (n || 0).toLocaleString(I18N.locale);
+  const fmtDate = iso => iso ? new Date(iso).toLocaleString(I18N.locale, { dateStyle: 'medium', timeStyle: 'short' }) : '—';
   const sevScore = c => c.critical * 1e6 + c.high * 1e3 + c.medium;
   const getJson = url => fetch(url, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
 
@@ -222,29 +223,30 @@
   }
 
   function renderTiles() {
-    const t = SEC.totals;
+    const tot = SEC.totals;
     const deps = SEC.modules.reduce((s, m) => s + m.deps_total, 0);
     const clean = SEC.modules.filter(m => m.scanned && !m.counts.critical && !m.counts.high).length;
     document.getElementById('tiles').innerHTML =
       SEV.map(s => `
         <div class="tile" style="--sev: var(--${s})">
-          <div class="tile-label">${SEV_LABEL[s]}</div>
-          <div class="tile-value">${fmt(t[s])}</div>
-          <div class="tile-sub">${SEC.modules.filter(m => m.counts[s]).length} modules touchés</div>
+          <div class="tile-label">${sevLabel(s)}</div>
+          <div class="tile-value">${fmt(tot[s])}</div>
+          <div class="tile-sub">${t('security.modulesHit', { n: SEC.modules.filter(m => m.counts[s]).length })}</div>
         </div>`).join('') + `
         <div class="tile">
-          <div class="tile-label">Dépendances</div>
+          <div class="tile-label">${t('security.deps')}</div>
           <div class="tile-value">${fmt(deps)}</div>
-          <div class="tile-sub">${SEC.modules.filter(m => m.scanned).length} modules scannés</div>
+          <div class="tile-sub">${t('security.modulesScanned', { n: SEC.modules.filter(m => m.scanned).length })}</div>
         </div>
         <div class="tile" style="--sev: var(--green)">
-          <div class="tile-label">Sans critique ni haute</div>
+          <div class="tile-label">${t('security.clean')}</div>
           <div class="tile-value">${clean}</div>
-          <div class="tile-sub">sur ${SEC.modules.length} modules</div>
+          <div class="tile-sub">${t('security.outOf', { n: SEC.modules.length })}</div>
         </div>`;
-    const src = SEC.source ? ` · <a href="${esc(SEC.source)}" target="_blank" rel="noopener">run du scan</a>` : '';
-    const ren = REN ? `Renovate : ${fmtDate(REN.generated_at)}` : 'Renovate : pas encore de rapport';
-    document.getElementById('meta').innerHTML = `Scan Trivy : ${fmtDate(SEC.generated_at)}${src} · ${ren}`;
+    const src = SEC.source ? ` · <a href="${esc(SEC.source)}" target="_blank" rel="noopener">${t('security.scanRun')}</a>` : '';
+    const ren = REN ? t('security.renovateAt', { date: fmtDate(REN.generated_at) }) : t('security.renovateNone');
+    document.getElementById('meta').innerHTML =
+      `${t('security.trivyScan', { date: fmtDate(SEC.generated_at) })}${src} · ${ren}`;
   }
 
   function sectionOf(m) { return SECTION_BY_REPO[m.repo] || 'other'; }
@@ -256,7 +258,7 @@
   }
 
   function sevBadges(c) {
-    return SEV.map(s => `<span class="sev sev-${s}${c[s] ? '' : ' zero'}" title="${SEV_LABEL[s]}">${c[s]}</span>`).join('');
+    return SEV.map(s => `<span class="sev sev-${s}${c[s] ? '' : ' zero'}" title="${sevLabel(s)}">${c[s]}</span>`).join('');
   }
 
   function vulnTable(m, limit) {
@@ -269,17 +271,17 @@
         <td>${esc(v.title)}</td>
       </tr>`).join('');
     const more = m.vulns.length > limit
-      ? `<button class="more" data-more="${esc(m.path)}">Afficher les ${m.vulns.length - limit} autres</button>` : '';
+      ? `<button class="more" data-more="${esc(m.path)}">${t('security.showMore', { n: m.vulns.length - limit })}</button>` : '';
     return `<div class="table-wrap"><table>
-      <thead><tr><th>Sév.</th><th>Identifiant</th><th>Paquet</th><th>Version → corrigée</th><th>Titre</th></tr></thead>
+      <thead><tr><th>${t('security.thSev')}</th><th>${t('security.thId')}</th><th>${t('security.thPackage')}</th><th>${t('security.thVersion')}</th><th>${t('security.thTitle')}</th></tr></thead>
       <tbody>${rows}</tbody></table></div>${more}`;
   }
 
   function pendingTable(list) {
     if (!list || !list.length) return '';
-    return `<p class="note" style="margin-top:.8rem">Mises à jour proposées par Renovate :</p>
+    return `<p class="note" style="margin-top:.8rem">${t('security.renovatePending')}</p>
       <div class="table-wrap"><table>
-        <thead><tr><th>Paquet</th><th>Actuelle</th><th>Disponible</th><th>Fichier</th></tr></thead>
+        <thead><tr><th>${t('security.thPackage')}</th><th>${t('security.thCurrent')}</th><th>${t('security.thAvailable')}</th><th>${t('security.thFile')}</th></tr></thead>
         <tbody>${list.slice(0, 40).map(d => `
           <tr><td class="mono">${esc(d.name)}</td><td class="mono">${esc(d.current)}</td>
           <td class="mono">${d.updates.map(u => `${esc(u.version)} <span class="eco">${esc(u.type)}</span>`).join('<br>')}</td>
@@ -298,37 +300,37 @@
       deps: (a, b) => b.deps_total - a.deps_total,
       updates: (a, b) => upd(b) - upd(a) || sevScore(b.counts) - sevScore(a.counts),
     }[state.sort]);
-    document.getElementById('count').textContent = `${mods.length} modules`;
-    if (!mods.length) { document.getElementById('view').innerHTML = '<div class="empty">Aucun module ne correspond.</div>'; return; }
+    document.getElementById('count').textContent = t('security.countModules', { n: mods.length });
+    if (!mods.length) { document.getElementById('view').innerHTML = `<div class="empty">${t('security.noModule')}</div>`; return; }
 
     document.getElementById('view').innerHTML = `<div class="rows">
-      <div class="rows-head" aria-hidden="true"><span>Module</span><span>Vulnérabilités : critiques · hautes · moyennes · basses</span><span>Dépendances</span><span>Renovate</span><span></span></div>
+      <div class="rows-head" aria-hidden="true"><span>${t('security.headModule')}</span><span>${t('security.headVulns')}</span><span>${t('security.headDeps')}</span><span>Renovate</span><span></span></div>
       ${mods.map(m => {
       const p = pending(m.repo);
       const total = SEV.reduce((s, k) => s + m.counts[k], 0);
       const aliases = (NAMES_BY_REPO[m.repo] || []).filter(n => n !== m.name);
       const body = !m.scanned
-        ? '<p class="note">Scan indisponible pour ce module lors du dernier passage.</p>'
+        ? `<p class="note">${t('security.scanUnavailable')}</p>`
         : m.private
-          ? `<p class="note">Dépôt privé : ${total} vulnérabilité(s), détail non publié. Consulter le scan dans le dépôt open-ent-mods.</p>`
-          : total ? vulnTable(m, expanded.has(m.path) ? 1e9 : 25) : '<p class="note ok">Aucune vulnérabilité connue dans les dépendances analysées.</p>';
+          ? `<p class="note">${t('security.privateRepo', { n: total })}</p>`
+          : total ? vulnTable(m, expanded.has(m.path) ? 1e9 : 25) : `<p class="note ok">${t('security.noVuln')}</p>`;
       return `
         <details class="row" id="${esc(m.name)}"${expanded.has(m.path) ? ' open' : ''}>
           <summary class="row-head">
             <div>
-              <div class="mod-name">${esc(m.name)}${m.private ? '<span class="lock">privé</span>' : ''}</div>
+              <div class="mod-name">${esc(m.name)}${m.private ? `<span class="lock">${t('security.private')}</span>` : ''}</div>
               <div class="mod-path">${esc(m.repo)}${aliases.length ? ' · ' + esc(aliases.slice(0, 4).join(', ')) + (aliases.length > 4 ? '…' : '') : ''}</div>
             </div>
-            <div class="sevs">${m.scanned ? sevBadges(m.counts) : '<span class="note">non scanné</span>'}</div>
-            <div class="num">${fmt(m.deps_total)}<small>dépendances</small></div>
-            <div class="num">${p ? p.length : '—'}<small>mises à jour</small></div>
+            <div class="sevs">${m.scanned ? sevBadges(m.counts) : `<span class="note">${t('security.notScanned')}</span>`}</div>
+            <div class="num">${fmt(m.deps_total)}<small>${t('security.depsSmall')}</small></div>
+            <div class="num">${p ? p.length : '—'}<small>${t('security.updatesSmall')}</small></div>
             <div class="chev" aria-hidden="true">›</div>
           </summary>
           <div class="row-body">
             <div class="row-links">
-              <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">Dépôt</a>
-              <a href="https://github.com/${esc(m.repo)}/issues?q=${encodeURIComponent('is:issue is:open in:title "Tableau de bord des dépendances"')}" target="_blank" rel="noopener">Tableau de bord Renovate</a>
-              <a href="https://github.com/${esc(m.repo)}/pulls?q=${encodeURIComponent('is:pr is:open label:renovate')}" target="_blank" rel="noopener">PR Renovate</a>
+              <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">${t('security.linkRepo')}</a>
+              <a href="https://github.com/${esc(m.repo)}/issues?q=${encodeURIComponent('is:issue is:open in:title "Tableau de bord des dépendances"')}" target="_blank" rel="noopener">${t('security.linkRenovateDash')}</a>
+              <a href="https://github.com/${esc(m.repo)}/pulls?q=${encodeURIComponent('is:pr is:open label:renovate')}" target="_blank" rel="noopener">${t('security.linkRenovatePr')}</a>
               ${m.commit ? `<span class="mono eco">commit ${esc(m.commit.slice(0, 7))}</span>` : ''}
             </div>
             ${body}
@@ -366,23 +368,23 @@
     list.sort(state.sort === 'name'
       ? (a, b) => a.name.localeCompare(b.name)
       : (a, b) => (b.versions.size - a.versions.size) || (users(b) - users(a)) || a.name.localeCompare(b.name));
-    document.getElementById('count').textContent = `${list.length} librairies directes`;
-    if (!list.length) { document.getElementById('view').innerHTML = '<div class="empty">Aucune librairie ne correspond.</div>'; return; }
+    document.getElementById('count').textContent = t('security.countLibs', { n: list.length });
+    if (!list.length) { document.getElementById('view').innerHTML = `<div class="empty">${t('security.noLib')}</div>`; return; }
 
     const shown = list.slice(0, 400);
     document.getElementById('view').innerHTML = `<div class="libs-wrap table-wrap"><table class="libs">
-      <thead><tr><th>Librairie</th><th>Versions utilisées</th><th>Modules</th><th>Disponible</th></tr></thead>
+      <thead><tr><th>${t('security.thLib')}</th><th>${t('security.thVersionsUsed')}</th><th>${t('security.thModules')}</th><th>${t('security.thAvailable')}</th></tr></thead>
       <tbody>${shown.map(l => {
         const vers = [...l.versions.entries()].sort((a, b) => b[0].localeCompare(a[0], undefined, { numeric: true }));
         const mods = [...new Set(vers.flatMap(([, s]) => [...s]))].sort();
         return `<tr>
-          <td class="mono">${esc(l.name)} <span class="eco">${esc(l.eco)}</span>${l.versions.size > 1 ? ` <span class="drift">${l.versions.size} versions</span>` : ''}</td>
+          <td class="mono">${esc(l.name)} <span class="eco">${esc(l.eco)}</span>${l.versions.size > 1 ? ` <span class="drift">${t('security.nVersions', { n: l.versions.size })}</span>` : ''}</td>
           <td><div class="vers">${vers.map(([v, s]) => `<span class="ver" title="${esc([...s].join(', '))}">${esc(v)} ×${s.size}</span>`).join('')}</div></td>
           <td>${mods.length > 6 ? `${esc(mods.slice(0, 6).join(', '))} <span class="eco">+${mods.length - 6}</span>` : esc(mods.join(', '))}</td>
           <td class="mono">${latest[l.name] ? esc(latest[l.name]) : '<span class="eco">—</span>'}</td>
         </tr>`;
       }).join('')}</tbody></table></div>
-      ${list.length > shown.length ? `<p class="note">${list.length - shown.length} autres : affiner la recherche.</p>` : ''}`;
+      ${list.length > shown.length ? `<p class="note">${t('security.moreLibs', { n: list.length - shown.length })}</p>` : ''}`;
   }
 
   function render() {
@@ -390,7 +392,7 @@
     document.querySelector('#sort option[value="updates"]').hidden = state.tab === 'libs';
     document.querySelector('#sort option[value="deps"]').hidden = state.tab === 'libs';
     document.querySelector('#sort option[value="severity"]').textContent =
-      state.tab === 'libs' ? 'Tri : nombre de versions' : 'Tri : sévérité';
+      state.tab === 'libs' ? t('security.sortVersions') : t('security.sortSeverity');
     if (state.tab === 'libs' && !['severity', 'name'].includes(state.sort)) { state.sort = 'severity'; document.getElementById('sort').value = 'severity'; }
     (state.tab === 'modules' ? renderModules : renderLibs)();
   }
@@ -406,7 +408,7 @@
 
   Promise.all([getJson('./data/security.json'), getJson('./data/renovate-report.json'), getJson('./data.json')])
     .then(([sec, ren, dash]) => {
-      if (!sec) { document.getElementById('view').innerHTML = '<div class="empty">Pas encore de scan publié (data/security.json).</div>'; document.getElementById('meta').textContent = ''; return; }
+      if (!sec) { document.getElementById('view').innerHTML = `<div class="empty">${t('security.noScanYet')}</div>`; document.getElementById('meta').textContent = ''; return; }
       SEC = sec; REN = ren;
       // Section et noms d'affichage repris de l'Artifacts Dashboard (par dépôt).
       for (const m of (dash && dash.modules) || []) {
@@ -422,6 +424,9 @@
       const target = id && document.getElementById(id);
       if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); }
     });
+
+  // Rejoue le rendu dynamique après I18N.apply() au changement de langue.
+  I18N.onChange(() => { if (SEC) { renderTiles(); render(); } });
 </script>
 </body>
 </html>

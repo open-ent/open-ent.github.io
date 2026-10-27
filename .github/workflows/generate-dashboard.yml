@@ -342,11 +342,14 @@ jobs:
           done
 
           GENERATED_AT=$(date -u '+%d/%m/%Y à %H:%M UTC')
+          # Horodatage brut : le dashboard le formate selon la langue affichée.
+          GENERATED_AT_ISO=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
 
           jq -n \
             --argjson modules "$MODULES_ARR" \
             --arg generated_at "$GENERATED_AT" \
-            '{modules: $modules, generated_at: $generated_at}' > data.json
+            --arg generated_at_iso "$GENERATED_AT_ISO" \
+            '{modules: $modules, generated_at: $generated_at, generated_at_iso: $generated_at_iso}' > data.json
 
           echo "data.json: $(jq '.modules | length' data.json) modules"
 

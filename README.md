@@ -50,6 +50,20 @@ Fichier JSON généré automatiquement contenant la liste des modules avec leur 
 
 Page statique pure (sans framework) qui charge `data.json` et rend le dashboard côté client. Aucune dépendance externe, aucun build nécessaire.
 
+### `i18n.js`
+
+Couche de traduction partagée par les quatre pages (`index`, `updates`, `security`, `changelog`). Un seul jeu de pages sert le français et l'anglais : pas de fichier dupliqué.
+
+- **Dictionnaire unique** en haut du fichier : `'clé': { fr: '…', en: '…' }`.
+- **Balisage** : `data-i18n="clé"` (texte), `data-i18n-html` (contenu HTML), `data-i18n-title`, `data-i18n-placeholder`, `data-i18n-aria-label`.
+- **Scripts de page** : `t('clé', { var: … })`, et `I18N.onChange(fn)` pour rejouer le rendu dynamique au changement de langue.
+- **Langue retenue**, dans l'ordre : `?lang=fr|en` → `localStorage` → langue du navigateur → français.
+- Le sélecteur `FR / EN` est injecté dans chaque élément `[data-lang-switch]` ; le changement se fait sans rechargement et met à jour `?lang=` dans l'URL.
+
+Les contenus **issus des données** restent dans leur langue d'origine : notes de release GitHub, messages de commit de `patched-changelog.md`, titres de CVE. Seule l'interface est traduite.
+
+L'horodatage est publié en ISO (`generated_at_iso`) et formaté côté client selon la langue ; `generated_at` (chaîne française pré-formatée) est conservé comme repli.
+
 ---
 
 ## Génération des données
@@ -68,10 +82,10 @@ Le workflow `generate-dashboard.yml` utilise le token `GH_PACKAGES_TOKEN` (secre
 [`open-ent/entcore-v2`](https://github.com/open-ent/entcore-v2) — modules : `auth`, `common`, `directory`, `workspace`, `conversation`, `timeline`, `portal`, `session`, `communication`, `feeder`, `admin`, `infra`, `archive`, `audience`, `cas`
 
 ### Applications
-`actualites` · `appointments` · `blog` · `cahier-de-textes` · `calendar` · `collaborative-editor` · `collaborative-wall` · `exercizer` · `explorer` · `forum` · `mindmap` · `pages` · `poll` · `rack` · `rss` · `search-engine` · `support` · `timeline-generator` · `wiki`
+`actualites` · `appointments` · `blog` · `cahier-de-textes` · `calendar` · `collaborative-editor` · `collaborative-wall` · `esign` · `exercizer` · `explorer` · `forum` · `mindmap` · `pages` · `poll` · `rack` · `rss` · `search-engine` · `support` · `timeline-generator` · `vote` · `wiki` · `workflowhub`
 
 ### Connecteurs
-`gar-connector` · `moodle-connector`
+`gar-connector` · `lool-connector` · `moodle-connector` · `nextcloud` · `wordpress-connector`
 
 ### Infrastructure
 `mod-zip` · `http-proxy` · `mod-image-resizer` · `mod-json-schema-validator` · `mod-mongo-persistor` · `mod-pdf-generator` · `mod-postgresql` · `mod-sftp`
