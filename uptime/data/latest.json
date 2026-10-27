@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-10-10T15:20:15.990Z",
+  "generatedAt": "2026-10-22T04:54:35.405Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-10T15:20:15.988Z",
+    "timestamp": "2026-10-22T04:54:35.399Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 1070,
+    "responseTimeMs": 572,
     "error": null
   },
   "totals": {
-    "checks": 454,
-    "up": 449,
+    "checks": 527,
+    "up": 519,
     "down": 1,
-    "maintenance": 5
+    "maintenance": 8
   },
   "availability": {
-    "all": 99.777,
+    "all": 99.807,
     "last24h": 100,
     "last7d": 100,
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 1070,
-    "avg": 846,
-    "p95": 1506,
-    "p99": 1758
+    "latest": 572,
+    "avg": 845,
+    "p95": 1511,
+    "p99": 1672
   },
   "incidents": [
     {
@@ -45,6 +45,45 @@
     "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-21-2046-reboot",
+        "title": "Mise à jour technique de l'ENT",
+        "description": "",
+        "reason": "",
+        "kind": "reboot",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-21T20:46:11.680Z",
+        "endsAt": "2026-10-21T20:49:25.220Z",
+        "status": "completed",
+        "createdAt": "2026-10-21T20:46:11.680Z"
+      },
+      {
+        "id": "2026-10-21-1857-reboot",
+        "title": "Mise à jour technique de l'ENT",
+        "description": "Alignement de la configuration du portail ; redémarrage de la plateforme.",
+        "reason": "",
+        "kind": "reboot",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-21T18:57:04.907Z",
+        "endsAt": "2026-10-21T18:59:17.181Z",
+        "status": "completed",
+        "createdAt": "2026-10-21T18:57:04.907Z"
+      },
+      {
+        "id": "2026-10-21-1452-other",
+        "title": "Intervention technique en cours",
+        "description": "Un problème technique est en cours de résolution. Merci de votre patience.",
+        "reason": "",
+        "kind": "other",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-21T14:52:49.608Z",
+        "endsAt": "2026-10-21T14:55:59.281Z",
+        "status": "completed",
+        "createdAt": "2026-10-21T14:52:49.608Z"
+      },
       {
         "id": "2026-09-11-2037-reboot",
         "title": "Ouverture de l'ENT Occitanie",
@@ -70,45 +109,6 @@
         "endsAt": "2026-09-11T16:26:51.477Z",
         "status": "scheduled",
         "createdAt": "2026-09-11T16:23:51.477Z"
-      },
-      {
-        "id": "2026-09-11-1459-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Gestion du thème dynamiquement.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-11T14:59:41.215Z",
-        "endsAt": "2026-09-11T15:02:41.215Z",
-        "status": "scheduled",
-        "createdAt": "2026-09-11T14:59:41.215Z"
-      },
-      {
-        "id": "2026-09-09-1757-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Mise à jour des outils video.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-09T17:57:36.951Z",
-        "endsAt": "2026-09-09T17:58:28.703Z",
-        "status": "completed",
-        "createdAt": "2026-09-09T17:57:36.952Z"
-      },
-      {
-        "id": "2026-09-09-1100-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Montée de version des modules.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-09T11:00:27.718Z",
-        "endsAt": "2026-09-09T11:02:29.402Z",
-        "status": "completed",
-        "createdAt": "2026-09-09T11:00:27.718Z"
       }
     ]
   }
