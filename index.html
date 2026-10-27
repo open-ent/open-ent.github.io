@@ -422,7 +422,7 @@
     document.getElementById('modules-count').textContent = t('index.modules', { n: MODULES.length });
   }
 
-  fetch('./data.json')
+  fetch('./data.json', { cache: 'no-cache' })
     .then(r => r.json())
     .then(data => {
       MODULES = data.modules || [];
