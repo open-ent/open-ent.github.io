@@ -1,0 +1,96 @@
+name: Uptime Status Page (planifiée)
+
+# Sonde de https://www.ent-scolaire.fr/ toutes les 5 minutes et publication de
+# https://open-ent.github.io/uptime/.
+#
+# Le cron vit ICI, dans le dépôt public, parce qu'un dépôt public ne consomme pas
+# le quota de minutes Actions de l'organisation : dans open-ent-mods (privé), ce
+# cron épuisait à lui seul une part du quota mensuel (2 000 min) qui bloquait
+# ensuite toute la CI privée.
+#
+# Le code de la sonde et la déclaration des maintenances restent versionnés dans
+# open-ent-mods (uptime/) : on n'en extrait que ce dossier, en lecture. Les
+# publications immédiates d'une maintenance (push de maintenance.json,
+# maintenance-announce.yml) passent toujours par uptime-status.yml, dans
+# open-ent-mods, qui pousse sur ce même dépôt.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uptime-open-ent-github-io
+  cancel-in-progress: false
+
+jobs:
+  monitor-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # L'état de la sonde (history/latest) est dans ce dépôt : check.mjs repart
+      # de l'historique réel et y réécrit directement.
+      - name: Checkout (état + publication)
+        uses: actions/checkout@v7
+        with:
+          path: pages
+
+      - name: Extraire la sonde depuis open-ent-mods (uptime/ seulement)
+        uses: actions/checkout@v7
+        with:
+          repository: open-ent/open-ent-mods
+          token: ${{ secrets.OPEN_ENT_MODS_READ_TOKEN || secrets.GH_PACKAGES_TOKEN }}
+          path: src
+          sparse-checkout: uptime
+          sparse-checkout-cone-mode: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "20"
+
+      - name: Probe target
+        working-directory: src
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/pages/uptime/data"
+          node uptime/scripts/check.mjs
+        env:
+          TARGET_URL: https://www.ent-scolaire.fr/
+          CHECK_TIMEOUT_MS: "12000"
+          MAX_POINTS: "30000"
+          STATE_DIR: ${{ github.workspace }}/pages/uptime/data
+          MAINTENANCE_FILE: ${{ github.workspace }}/src/uptime/data/maintenance.json
+
+      - name: Build static site
+        working-directory: src
+        run: node uptime/scripts/build-site.mjs
+        env:
+          STATE_DIR: ${{ github.workspace }}/pages/uptime/data
+          MAINTENANCE_FILE: ${{ github.workspace }}/src/uptime/data/maintenance.json
+
+      - name: Publier la status page
+        run: |
+          set -euo pipefail
+          rm -rf pages/uptime
+          mkdir -p pages/uptime
+          cp -R src/uptime/dist/uptime/. pages/uptime/
+          node src/uptime/scripts/patch-homepage-link.mjs pages
+
+          cd pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Rien à publier"
+            exit 0
+          fi
+
+          git add uptime index.html
+          git commit -m "chore(uptime): update status subpage and homepage link"
+          # Une publication de maintenance (open-ent-mods) peut avoir poussé entre-temps :
+          # on rejoue notre commit au-dessus, notre état de sonde étant le plus récent.
+          git push || { git pull --rebase -X theirs && git push; }
