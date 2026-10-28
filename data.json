@@ -369,7 +369,7 @@
       "name": "appointments",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/appointments/actions",
       "releases_url": "https://github.com/open-ent/appointments/releases",
       "repo_url": "https://github.com/open-ent/appointments",
@@ -409,7 +409,7 @@
       "name": "blog",
       "group_id": "org.entcore",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/blog/actions",
       "releases_url": "https://github.com/open-ent/blog/releases",
       "repo_url": "https://github.com/open-ent/blog",
@@ -794,7 +794,7 @@
       "name": "forum",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/forum/actions",
       "releases_url": "https://github.com/open-ent/forum/releases",
       "repo_url": "https://github.com/open-ent/forum",
@@ -1216,7 +1216,7 @@
         {
           "tag": "4.1.9-patched",
           "published_at": "2026-10-07",
-          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched",
+          "body": "**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched\n\n**Full Changelog**: https://github.com/open-ent/support/commits/4.1.9-patched",
           "jar_url": "https://github.com/open-ent/support/releases/download/4.1.9-patched/net.atos.support.4.1.9-patched-fat.jar",
           "entcore_version": "6.16.14-patched",
           "entcore_libs_version": "6.16.8-patched",
@@ -1322,7 +1322,7 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
@@ -1534,7 +1534,7 @@
       "name": "mediacentre",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/ressource-aggregator/actions",
       "releases_url": "https://github.com/open-ent/ressource-aggregator/releases",
       "repo_url": "https://github.com/open-ent/ressource-aggregator",
@@ -1993,6 +1993,6 @@
       "releases": []
     }
   ],
-  "generated_at": "27/10/2026 à 21:46 UTC",
-  "generated_at_iso": "2026-10-27T21:46:09Z"
+  "generated_at": "28/10/2026 à 09:32 UTC",
+  "generated_at_iso": "2026-10-28T09:32:52Z"
 }
