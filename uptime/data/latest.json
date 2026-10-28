@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-10-22T04:54:35.405Z",
+  "generatedAt": "2026-10-28T08:54:15.247Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-22T04:54:35.399Z",
+    "timestamp": "2026-10-28T08:54:15.244Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 572,
+    "responseTimeMs": 691,
     "error": null
   },
   "totals": {
-    "checks": 527,
-    "up": 519,
+    "checks": 528,
+    "up": 520,
     "down": 1,
     "maintenance": 8
   },
   "availability": {
-    "all": 99.807,
+    "all": 99.808,
     "last24h": 100,
     "last7d": 100,
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 572,
+    "latest": 691,
     "avg": 845,
-    "p95": 1511,
+    "p95": 1507,
     "p99": 1672
   },
   "incidents": [
@@ -45,6 +45,19 @@
     "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-26-1834-deploy",
+        "title": "Mise à jour de la plateforme",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-26T18:34:00.771Z",
+        "endsAt": "2026-10-26T18:35:27.818Z",
+        "status": "completed",
+        "createdAt": "2026-10-26T18:34:00.771Z"
+      },
       {
         "id": "2026-10-21-2046-reboot",
         "title": "Mise à jour technique de l'ENT",
@@ -96,19 +109,6 @@
         "endsAt": "2026-09-11T20:39:04.968Z",
         "status": "completed",
         "createdAt": "2026-09-11T20:37:15.486Z"
-      },
-      {
-        "id": "2026-09-11-1623-reboot",
-        "title": "Redémarrage pour maintenance",
-        "description": "Gestion du thème dynamiquement.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-11T16:23:51.477Z",
-        "endsAt": "2026-09-11T16:26:51.477Z",
-        "status": "scheduled",
-        "createdAt": "2026-09-11T16:23:51.477Z"
       }
     ]
   }
