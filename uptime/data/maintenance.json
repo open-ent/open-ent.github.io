@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T18:35:27.818Z",
+  "updatedAt": "2026-10-29T16:08:33.263Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -130,6 +130,19 @@
       "endsAt": "2026-10-26T18:35:27.818Z",
       "status": "completed",
       "createdAt": "2026-10-26T18:34:00.771Z"
+    },
+    {
+      "id": "2026-10-29-1608-migration",
+      "title": "Migration de la base de l'annuaire",
+      "description": "L'ENT est indisponible le temps de transférer l'annuaire (comptes, classes, groupes, droits) vers un nouveau moteur de base de données. Aucune donnée n'est perdue ; les modifications sont suspendues pendant l'opération.",
+      "reason": "",
+      "kind": "migration",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-29T16:08:33.263Z",
+      "endsAt": "2026-10-29T16:53:33.263Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-29T16:08:33.263Z"
     }
   ]
 }

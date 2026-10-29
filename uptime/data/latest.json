@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-10-29T12:49:45.153Z",
+  "generatedAt": "2026-10-29T16:08:45.933Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-29T12:49:45.149Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 595,
-    "error": null
+    "timestamp": "2026-10-29T16:08:45.930Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 105,
+    "error": null,
+    "maintenance": "2026-10-29-1608-migration"
   },
   "totals": {
-    "checks": 533,
+    "checks": 534,
     "up": 525,
     "down": 1,
-    "maintenance": 8
+    "maintenance": 9
   },
   "availability": {
     "all": 99.81,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 595,
+    "latest": 105,
     "avg": 844,
     "p95": 1507,
     "p99": 1672
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-10-29-1608-migration",
+      "title": "Migration de la base de l'annuaire",
+      "description": "L'ENT est indisponible le temps de transférer l'annuaire (comptes, classes, groupes, droits) vers un nouveau moteur de base de données. Aucune donnée n'est perdue ; les modifications sont suspendues pendant l'opération.",
+      "reason": "",
+      "kind": "migration",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-29T16:08:33.263Z",
+      "endsAt": "2026-10-29T16:53:33.263Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-29T16:08:33.263Z"
+    },
     "upcoming": [],
     "recent": [
       {
