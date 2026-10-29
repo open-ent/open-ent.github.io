@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-10-29T18:41:26.612Z",
+  "generatedAt": "2026-10-29T21:34:09.873Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-29T18:41:26.608Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 559,
-    "error": null
+    "timestamp": "2026-10-29T21:34:09.866Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 216,
+    "error": null,
+    "maintenance": "2026-10-29-2133-deploy"
   },
   "totals": {
-    "checks": 536,
+    "checks": 537,
     "up": 527,
     "down": 1,
-    "maintenance": 9
+    "maintenance": 10
   },
   "availability": {
     "all": 99.81,
@@ -23,7 +24,7 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 559,
+    "latest": 216,
     "avg": 842,
     "p95": 1507,
     "p99": 1672
@@ -42,7 +43,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-10-29-2133-deploy",
+      "title": "Mise à jour Next Cloud OIDC",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-29T21:33:57.708Z",
+      "endsAt": "2026-10-29T21:38:57.708Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-29T21:33:57.708Z"
+    },
     "upcoming": [],
     "recent": [
       {

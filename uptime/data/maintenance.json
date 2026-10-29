@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T16:24:07.075Z",
+  "updatedAt": "2026-10-29T21:33:57.708Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -143,6 +143,19 @@
       "endsAt": "2026-10-29T16:24:07.071Z",
       "status": "completed",
       "createdAt": "2026-10-29T16:08:33.263Z"
+    },
+    {
+      "id": "2026-10-29-2133-deploy",
+      "title": "Mise à jour Next Cloud OIDC",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-29T21:33:57.708Z",
+      "endsAt": "2026-10-29T21:38:57.708Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-29T21:33:57.708Z"
     }
   ]
 }
