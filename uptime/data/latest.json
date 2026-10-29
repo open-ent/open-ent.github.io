@@ -1,19 +1,18 @@
 {
-  "generatedAt": "2026-10-29T16:08:45.933Z",
+  "generatedAt": "2026-10-29T16:24:19.783Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-29T16:08:45.930Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 105,
-    "error": null,
-    "maintenance": "2026-10-29-1608-migration"
+    "timestamp": "2026-10-29T16:24:19.780Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 118,
+    "error": null
   },
   "totals": {
-    "checks": 534,
-    "up": 525,
+    "checks": 535,
+    "up": 526,
     "down": 1,
     "maintenance": 9
   },
@@ -24,8 +23,8 @@
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 105,
-    "avg": 844,
+    "latest": 118,
+    "avg": 842,
     "p95": 1507,
     "p99": 1672
   },
@@ -43,21 +42,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-10-29-1608-migration",
-      "title": "Migration de la base de l'annuaire",
-      "description": "L'ENT est indisponible le temps de transférer l'annuaire (comptes, classes, groupes, droits) vers un nouveau moteur de base de données. Aucune donnée n'est perdue ; les modifications sont suspendues pendant l'opération.",
-      "reason": "",
-      "kind": "migration",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-10-29T16:08:33.263Z",
-      "endsAt": "2026-10-29T16:53:33.263Z",
-      "status": "scheduled",
-      "createdAt": "2026-10-29T16:08:33.263Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-29-1608-migration",
+        "title": "Migration de la base de l'annuaire",
+        "description": "L'ENT est indisponible le temps de transférer l'annuaire (comptes, classes, groupes, droits) vers un nouveau moteur de base de données. Aucune donnée n'est perdue ; les modifications sont suspendues pendant l'opération.",
+        "reason": "",
+        "kind": "migration",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-29T16:08:33.263Z",
+        "endsAt": "2026-10-29T16:24:07.071Z",
+        "status": "completed",
+        "createdAt": "2026-10-29T16:08:33.263Z"
+      },
       {
         "id": "2026-10-26-1834-deploy",
         "title": "Mise à jour de la plateforme",
@@ -109,19 +109,6 @@
         "endsAt": "2026-10-21T14:55:59.281Z",
         "status": "completed",
         "createdAt": "2026-10-21T14:52:49.608Z"
-      },
-      {
-        "id": "2026-09-11-2037-reboot",
-        "title": "Ouverture de l'ENT Occitanie",
-        "description": "Ajout du nouvel ENT mon-ent-occitanie.ent-scolaire.fr et de son thème.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-09-11T20:37:15.484Z",
-        "endsAt": "2026-09-11T20:39:04.968Z",
-        "status": "completed",
-        "createdAt": "2026-09-11T20:37:15.486Z"
       }
     ]
   }

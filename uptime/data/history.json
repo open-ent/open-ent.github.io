@@ -3745,5 +3745,12 @@
     "responseTimeMs": 105,
     "error": null,
     "maintenance": "2026-10-29-1608-migration"
+  },
+  {
+    "timestamp": "2026-10-29T16:24:19.780Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 118,
+    "error": null
   }
 ]
