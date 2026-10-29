@@ -1,31 +1,30 @@
 {
-  "generatedAt": "2026-10-29T21:34:09.873Z",
+  "generatedAt": "2026-10-29T21:35:40.169Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-29T21:34:09.866Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 216,
-    "error": null,
-    "maintenance": "2026-10-29-2133-deploy"
+    "timestamp": "2026-10-29T21:35:40.166Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 123,
+    "error": null
   },
   "totals": {
-    "checks": 537,
-    "up": 527,
+    "checks": 538,
+    "up": 528,
     "down": 1,
     "maintenance": 10
   },
   "availability": {
-    "all": 99.81,
+    "all": 99.811,
     "last24h": 100,
     "last7d": 100,
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 216,
-    "avg": 842,
+    "latest": 123,
+    "avg": 840,
     "p95": 1507,
     "p99": 1672
   },
@@ -43,21 +42,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-10-29-2133-deploy",
-      "title": "Mise à jour Next Cloud OIDC",
-      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-      "reason": "",
-      "kind": "deploy",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-10-29T21:33:57.708Z",
-      "endsAt": "2026-10-29T21:38:57.708Z",
-      "status": "scheduled",
-      "createdAt": "2026-10-29T21:33:57.708Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-29-2133-deploy",
+        "title": "Mise à jour Next Cloud OIDC",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-29T21:33:57.708Z",
+        "endsAt": "2026-10-29T21:35:29.487Z",
+        "status": "completed",
+        "createdAt": "2026-10-29T21:33:57.708Z"
+      },
       {
         "id": "2026-10-29-1608-migration",
         "title": "Migration de la base de l'annuaire",
@@ -109,19 +109,6 @@
         "endsAt": "2026-10-21T18:59:17.181Z",
         "status": "completed",
         "createdAt": "2026-10-21T18:57:04.907Z"
-      },
-      {
-        "id": "2026-10-21-1452-other",
-        "title": "Intervention technique en cours",
-        "description": "Un problème technique est en cours de résolution. Merci de votre patience.",
-        "reason": "",
-        "kind": "other",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-10-21T14:52:49.608Z",
-        "endsAt": "2026-10-21T14:55:59.281Z",
-        "status": "completed",
-        "createdAt": "2026-10-21T14:52:49.608Z"
       }
     ]
   }
