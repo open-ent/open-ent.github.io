@@ -50,6 +50,21 @@ Fichier JSON généré automatiquement contenant la liste des modules avec leur 
 
 Page statique pure (sans framework) qui charge `data.json` et rend le dashboard côté client. Aucune dépendance externe, aucun build nécessaire.
 
+### Données de sécurité (`data/`)
+
+| Fichier | Produit par | Contenu |
+|---|---|---|
+| `security.json` | `security-scan.yml` (open-ent-mods, chaque nuit) | état courant : dépendances et CVE de chaque sous-module, au commit du gitlink |
+| `security-prs.json` | idem, `scripts/ops/security-prs.mjs` | PR de correction de dépendances de l'org (Renovate, alertes OSV) |
+| `security-history.json` | idem, `scripts/ops/security-snapshot.mjs` | une ligne par jour : totaux, compteurs par module, PR ouvertes |
+| `data/security-snapshots/<date>.json` | idem | CVE *critical* + *high* figées à cette date, base de comparaison |
+| `renovate-report.json` | workflow `renovate.yml` (open-ent/.github, le samedi) | mises à jour en attente par dépôt |
+
+`security.html` les lit tous : onglets **Modules** et **Librairies** pour l'état courant, onglet
+**Évolution** pour le suivi dans le temps (courbe, écarts, CVE corrigées / apparues, PR de correction).
+Les snapshots détaillés sont purgés par rétention (45 jours au quotidien, puis hebdomadaire, puis
+mensuel) ; l'historique agrégé est conservé sans limite.
+
 ### `i18n.js`
 
 Couche de traduction partagée par les quatre pages (`index`, `updates`, `security`, `changelog`). Un seul jeu de pages sert le français et l'anglais : pas de fichier dupliqué.

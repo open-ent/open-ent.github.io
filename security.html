@@ -25,6 +25,36 @@
       --mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Fira Code', monospace;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Onglet Évolution ─────────────────────────────────────────── */
+    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; margin-bottom: 1rem; }
+    .chart-card h2 { font-size: .95rem; font-weight: 600; margin-bottom: .2rem; }
+    .chart-card .win { color: var(--muted); font-size: .8rem; margin-bottom: .9rem; }
+    .chart svg { width: 100%; height: 230px; display: block; overflow: visible; }
+    .chart .grid { stroke: var(--border); stroke-width: 1; }
+    .chart .axis { fill: var(--muted); font-size: 10px; font-family: var(--mono); }
+    .chart .line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+    .chart .dot { stroke: var(--surface); stroke-width: 1.5; }
+    .legend { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .7rem; }
+    .legend button { background: var(--surface2); border: 1px solid var(--border); color: var(--muted); border-radius: 999px;
+      padding: .18rem .6rem; font: inherit; font-size: .76rem; cursor: pointer; display: inline-flex; align-items: center; gap: .35rem; }
+    .legend button[aria-pressed="true"] { color: var(--text); border-color: var(--sev); }
+    .legend .swatch { width: .6rem; height: .6rem; border-radius: 2px; background: var(--sev); opacity: .35; }
+    .legend button[aria-pressed="true"] .swatch { opacity: 1; }
+    .delta-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; margin-bottom: 1rem; }
+    .delta { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--sev, var(--border)); border-radius: 10px; padding: .7rem .9rem; }
+    .delta .k { color: var(--muted); font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; }
+    .delta .v { font-size: 1.4rem; font-weight: 700; margin-top: .15rem; }
+    .delta .s { color: var(--muted); font-size: .76rem; }
+    .up { color: var(--critical); }
+    .down { color: var(--green); }
+    .flat { color: var(--muted); }
+    .mover-sev { font-family: var(--mono); font-size: .78rem; white-space: nowrap; display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+    .trend-rows .rows-head,
+    .trend-rows summary.row-head { grid-template-columns: minmax(180px, 1.5fr) 1.7fr 90px 90px 80px 24px; }
+    @media (max-width: 860px) {
+      .trend-rows summary.row-head { grid-template-columns: 1fr auto 24px; }
+    }
     body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
     html { scroll-behavior: smooth; }
 
@@ -173,6 +203,7 @@
   <div class="tabs" role="tablist">
     <button class="tab" role="tab" data-tab="modules" aria-selected="true" data-i18n="security.tabModules">Modules</button>
     <button class="tab" role="tab" data-tab="libs" aria-selected="false" data-i18n="security.tabLibs">Librairies</button>
+    <button class="tab" role="tab" data-tab="trend" aria-selected="false" data-i18n="security.tabTrend">Évolution</button>
   </div>
 
   <div class="toolbar">
@@ -191,6 +222,12 @@
       <option value="deps" data-i18n="security.sortDeps">Tri : nombre de dépendances</option>
       <option value="updates" data-i18n="security.sortUpdates">Tri : mises à jour en attente</option>
     </select>
+    <select id="period" aria-label="Période" hidden>
+      <option value="7" data-i18n="trend.period7">7 derniers jours</option>
+      <option value="30" data-i18n="trend.period30">30 derniers jours</option>
+      <option value="90" data-i18n="trend.period90">90 derniers jours</option>
+      <option value="all" data-i18n="trend.periodAll">Tout l'historique</option>
+    </select>
     <span class="count" id="count"></span>
   </div>
 
@@ -206,8 +243,9 @@
   const SEV = ['critical', 'high', 'medium', 'low'];
   const SEV_LABEL = { critical: 'security.sevCritical', high: 'security.sevHigh', medium: 'security.sevMedium', low: 'security.sevLow' };
   const sevLabel = sev => t(SEV_LABEL[sev]);
-  const state = { tab: 'modules', q: '', section: '', sort: 'severity' };
-  let SEC = null, REN = null, SECTION_BY_REPO = {}, NAMES_BY_REPO = {};
+  const state = { tab: 'modules', q: '', section: '', sort: 'severity', period: '30', series: { critical: true, high: true, medium: false, low: false } };
+  let SEC = null, REN = null, HIST = null, PRS = null, SECTION_BY_REPO = {}, NAMES_BY_REPO = {};
+  const SNAPSHOTS = {};
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fmt = n => (n || 0).toLocaleString(I18N.locale);
@@ -387,6 +425,196 @@
       ${list.length > shown.length ? `<p class="note">${t('security.moreLibs', { n: list.length - shown.length })}</p>` : ''}`;
   }
 
+  // ── Évolution ───────────────────────────────────────────────────────
+  // L'historique (une ligne par jour) donne la courbe ; les deux snapshots
+  // datés des bornes de la fenêtre donnent le détail « corrigée / apparue ».
+
+  const snapshot = date => (SNAPSHOTS[date] = SNAPSHOTS[date] || getJson(`./data/security-snapshots/${date}.json`));
+
+  function windowPoints() {
+    const pts = (HIST && HIST.points) || [];
+    if (state.period === 'all' || pts.length < 3) return pts;
+    const limit = new Date(Date.now() - Number(state.period) * 864e5).toISOString().slice(0, 10);
+    const inWin = pts.filter(p => p.date >= limit);
+    return inWin.length >= 2 ? inWin : pts.slice(-2);
+  }
+
+  function chart(points) {
+    const series = SEV.filter(s => state.series[s]);
+    const W = 800, H = 200, PAD_L = 46, PAD_R = 10, PAD_T = 10, PAD_B = 22;
+    const max = Math.max(1, ...series.flatMap(s => points.map(p => p.totals[s] || 0)));
+    // Échelle de temps réelle : un jour sans scan se voit comme un trou.
+    const t0 = new Date(points[0].date).getTime();
+    const t1 = new Date(points[points.length - 1].date).getTime();
+    const x = p => PAD_L + (t1 === t0 ? (W - PAD_L - PAD_R) / 2 : ((new Date(p.date).getTime() - t0) / (t1 - t0)) * (W - PAD_L - PAD_R));
+    const y = v => PAD_T + (1 - v / max) * (H - PAD_T - PAD_B);
+    const ticks = [0, Math.round(max / 2), max];
+    const grid = ticks.map(v => `<line class="grid" x1="${PAD_L}" x2="${W - PAD_R}" y1="${y(v)}" y2="${y(v)}"/>
+      <text class="axis" x="${PAD_L - 6}" y="${y(v) + 3}" text-anchor="end">${fmt(v)}</text>`).join('');
+    const lines = series.map(s => {
+      const d = points.map(p => `${x(p).toFixed(1)},${y(p.totals[s] || 0).toFixed(1)}`).join(' ');
+      const dots = points.map(p => `<circle class="dot" cx="${x(p).toFixed(1)}" cy="${y(p.totals[s] || 0).toFixed(1)}" r="2.6" fill="var(--${s})"><title>${esc(p.date)} — ${sevLabel(s)} : ${fmt(p.totals[s] || 0)}</title></circle>`).join('');
+      return `<polyline class="line" points="${d}" stroke="var(--${s})"/>${dots}`;
+    }).join('');
+    const xlabels = [points[0], points[points.length - 1]].map((p, i) =>
+      `<text class="axis" x="${x(p).toFixed(1)}" y="${H - 4}" text-anchor="${i ? 'end' : 'start'}">${esc(p.date)}</text>`).join('');
+    const legend = SEV.map(s => `<button type="button" data-series="${s}" aria-pressed="${!!state.series[s]}" style="--sev: var(--${s})">
+      <span class="swatch"></span>${sevLabel(s)}</button>`).join('');
+    return `<div class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${t('trend.chartTitle')}">
+      ${grid}${lines}${xlabels}</svg></div><div class="legend">${legend}</div>`;
+  }
+
+  function deltaClass(n) { return n > 0 ? 'up' : n < 0 ? 'down' : 'flat'; }
+  const signed = n => (n > 0 ? '+' : '') + fmt(n);
+
+  /** Diff de deux snapshots : clé CVE|écosystème|paquet|version installée. */
+  function diffSnapshots(a, b) {
+    const key = v => `${v[0]}|${v[1]}|${v[2]}|${v[3]}`;
+    const paths = [...new Set([...Object.keys(a.modules), ...Object.keys(b.modules)])];
+    const rows = [];
+    let fixed = 0, appeared = 0;
+    for (const path of paths) {
+      const ma = a.modules[path], mb = b.modules[path];
+      const ia = new Map(((ma && ma.v) || []).map(v => [key(v), v]));
+      const ib = new Map(((mb && mb.v) || []).map(v => [key(v), v]));
+      const gone = [...ia.values()].filter(v => !ib.has(key(v)));
+      const added = [...ib.values()].filter(v => !ia.has(key(v)));
+      const counts = {};
+      let moved = false;
+      for (const sv of SEV) {
+        counts[sv] = ((mb && mb.counts[sv]) || 0) - ((ma && ma.counts[sv]) || 0);
+        if (counts[sv]) moved = true;
+      }
+      if (!gone.length && !added.length && !moved) continue;
+      fixed += gone.length; appeared += added.length;
+      rows.push({
+        path, counts, gone, added,
+        repo: (mb || ma || {}).repo,
+        private: !!(mb || ma || {}).private,
+        bumped: !!(ma && mb && ma.sha !== mb.sha),
+      });
+    }
+    rows.sort((x, z) => sevScore(z.counts) - sevScore(x.counts) || z.gone.length - x.gone.length || x.path.localeCompare(z.path));
+    return { rows, fixed, appeared };
+  }
+
+  function openPrs(repo) {
+    const l = (PRS && PRS.repos && PRS.repos[repo]) || [];
+    return l.filter(p => p.state === 'open');
+  }
+
+  function mergedPrs(from, to) {
+    return Object.entries((PRS && PRS.repos) || {})
+      .flatMap(([repo, l]) => l.filter(p => p.merged_at && p.merged_at.slice(0, 10) > from && p.merged_at.slice(0, 10) <= to).map(p => ({ repo, ...p })));
+  }
+
+  function renderTrend() {
+    const view = document.getElementById('view');
+    document.getElementById('count').textContent = '';
+    if (!HIST || !(HIST.points || []).length) { view.innerHTML = `<div class="empty">${t('trend.none')}</div>`; return; }
+    const points = windowPoints();
+    document.getElementById('count').textContent = t('trend.countPoints', { n: points.length });
+    if (points.length < 2) { view.innerHTML = `<div class="empty">${t('trend.needTwo')}</div>`; return; }
+
+    const first = points[0], last = points[points.length - 1];
+    const deltas = SEV.map(sv => {
+      const d = (last.totals[sv] || 0) - (first.totals[sv] || 0);
+      return `<div class="delta" style="--sev: var(--${sv})">
+        <div class="k">${sevLabel(sv)}</div>
+        <div class="v ${deltaClass(d)}">${signed(d)}</div>
+        <div class="s">${fmt(first.totals[sv] || 0)} → ${fmt(last.totals[sv] || 0)}</div>
+      </div>`;
+    }).join('');
+
+    const allOpen = Object.values((PRS && PRS.repos) || {}).flat().filter(p => p.state === 'open');
+    const sec = allOpen.filter(p => p.kind === 'security').length;
+    const merged = mergedPrs(first.date, last.date);
+    const prCards = PRS ? `<div class="delta" style="--sev: var(--accent)">
+        <div class="k">${t('trend.prsOpen')}</div>
+        <div class="v">${fmt(allOpen.length)}</div>
+        <div class="s">${t('trend.prsSecurity', { n: sec })}</div>
+      </div>
+      <div class="delta" style="--sev: var(--${merged.length ? 'green' : 'low'})">
+        <div class="k">${t('trend.prsMerged')}</div>
+        <div class="v">${fmt(merged.length)}</div>
+        <div class="s">${t('trend.window', { from: first.date, to: last.date })}</div>
+      </div>` : '';
+
+    view.innerHTML = `
+      <div class="chart-card">
+        <h2>${t('trend.chartTitle')}</h2>
+        <div class="win">${t('trend.window', { from: first.date, to: last.date })}</div>
+        ${chart(points)}
+      </div>
+      <div class="delta-tiles">${deltas}${prCards}</div>
+      <div id="movers"><div class="empty">${t('trend.loading')}</div></div>`;
+
+    view.querySelectorAll('.legend button').forEach(b => b.addEventListener('click', () => {
+      const k = b.dataset.series;
+      // Au moins une série visible, sinon le graphe n'a plus d'échelle.
+      if (state.series[k] && SEV.filter(x => state.series[x]).length === 1) return;
+      state.series[k] = !state.series[k];
+      renderTrend();
+    }));
+
+    renderMovers(first.date, last.date);
+  }
+
+  async function renderMovers(from, to) {
+    const box = document.getElementById('movers');
+    const snaps = (HIST && HIST.snapshots) || [];
+    // Le détail CVE n'existe que pour les snapshots encore sous rétention.
+    const a0 = snaps.includes(from) ? from : snaps.find(d => d >= from);
+    const b0 = snaps.includes(to) ? to : [...snaps].reverse().find(d => d <= to);
+    const [a, b] = await Promise.all([snapshot(a0), snapshot(b0)]);
+    if (!box.isConnected || state.tab !== 'trend') return;
+    if (!a || !b) { box.innerHTML = `<div class="empty">${t('trend.noMove')}</div>`; return; }
+    const { rows, fixed, appeared } = diffSnapshots(a, b);
+    const sevList = (b.severities || []).map(sevLabel).join(' + ');
+    if (!rows.length) { box.innerHTML = `<div class="empty">${t('trend.noMove')}</div>`; return; }
+
+    box.innerHTML = `
+      <div class="delta-tiles">
+        <div class="delta" style="--sev: var(--green)"><div class="k">${t('trend.fixed')}</div>
+          <div class="v down">${fmt(fixed)}</div><div class="s">${esc(sevList)}</div></div>
+        <div class="delta" style="--sev: var(--critical)"><div class="k">${t('trend.appeared')}</div>
+          <div class="v up">${fmt(appeared)}</div><div class="s">${esc(sevList)}</div></div>
+      </div>
+      <p class="note" style="margin:.2rem 0 .8rem">${t('trend.detailNote', { sev: esc(sevList) })}</p>
+      <div class="rows trend-rows">
+        <div class="rows-head" aria-hidden="true"><span>${t('trend.thModule')}</span><span>${t('trend.thDelta')}</span><span>${t('trend.thFixed')}</span><span>${t('trend.thNew')}</span><span>${t('trend.thPrs')}</span><span></span></div>
+        ${rows.map(r => {
+          const d = SEV.filter(sv => r.counts[sv]).map(sv => `<span class="${deltaClass(r.counts[sv])}">${sevLabel(sv).slice(0, 4)} ${signed(r.counts[sv])}</span>`).join(' ');
+          const prs = openPrs(r.repo);
+          const list = vs => vs.length ? `<div class="table-wrap"><table><tbody>${vs.slice(0, 60).map(v => `
+              <tr><td><span class="sev sev-${v[5]}">${esc(v[5].slice(0, 4))}</span></td>
+              <td class="mono">${esc(v[0])}</td><td class="mono">${esc(v[2])}@${esc(v[3])}</td>
+              <td class="mono">${v[4] ? `→ <span class="fixed">${esc(v[4])}</span>` : '<span class="eco">—</span>'}</td></tr>`).join('')}
+              </tbody></table></div>${vs.length > 60 ? `<p class="note">+${vs.length - 60}</p>` : ''}` : '';
+          return `<details class="row">
+            <summary class="row-head">
+              <div><div class="mod-name">${esc(r.path)}${r.private ? `<span class="lock">${t('security.private')}</span>` : ''}</div>
+                <div class="mod-path">${esc(r.repo || '')}${r.bumped ? '' : ' · ' + t('trend.gitlinkSame')}</div></div>
+              <div class="mover-sev">${d || '<span class="flat">—</span>'}</div>
+              <div class="num down">${r.gone.length}<small>${t('trend.thFixed')}</small></div>
+              <div class="num up">${r.added.length}<small>${t('trend.thNew')}</small></div>
+              <div class="num">${prs.length}<small>PR</small></div>
+              <div class="chev" aria-hidden="true">›</div>
+            </summary>
+            <div class="row-body">
+              <div class="row-links">
+                <a href="https://github.com/${esc(r.repo)}/pulls?q=${encodeURIComponent('is:pr is:open label:security')}" target="_blank" rel="noopener">${t('trend.prsOpen')} (${prs.length})</a>
+                <a href="#${esc(r.path.split('/').pop())}">${t('security.linkRepo')}</a>
+              </div>
+              ${r.gone.length ? `<p class="note ok">${t('trend.fixed')}</p>${list(r.gone)}` : ''}
+              ${r.added.length ? `<p class="note">${t('trend.appeared')}</p>${list(r.added)}` : ''}
+              ${r.private ? `<p class="note">${t('security.privateRepo', { n: 0 })}</p>` : ''}
+            </div>
+          </details>`;
+        }).join('')}
+      </div>`;
+  }
+
   function render() {
     document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.tab === state.tab));
     document.querySelector('#sort option[value="updates"]').hidden = state.tab === 'libs';
@@ -394,20 +622,30 @@
     document.querySelector('#sort option[value="severity"]').textContent =
       state.tab === 'libs' ? t('security.sortVersions') : t('security.sortSeverity');
     if (state.tab === 'libs' && !['severity', 'name'].includes(state.sort)) { state.sort = 'severity'; document.getElementById('sort').value = 'severity'; }
-    (state.tab === 'modules' ? renderModules : renderLibs)();
+    // La barre d'outils ne sert pas à l'évolution : seule la période reste.
+    const trend = state.tab === 'trend';
+    document.getElementById('q').hidden = trend;
+    document.getElementById('section').hidden = trend;
+    document.getElementById('sort').hidden = trend;
+    document.getElementById('period').hidden = !trend;
+    ({ modules: renderModules, libs: renderLibs, trend: renderTrend })[state.tab]();
   }
 
   document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => { state.tab = t.dataset.tab; render(); }));
   document.getElementById('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
   document.getElementById('section').addEventListener('change', e => { state.section = e.target.value; render(); });
   document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+  document.getElementById('period').value = state.period;
+  document.getElementById('period').addEventListener('change', e => { state.period = e.target.value; render(); });
   document.getElementById('view').addEventListener('click', e => {
     const b = e.target.closest('[data-more]');
     if (b) { expanded.add(b.dataset.more); renderModules(); }
   });
 
-  Promise.all([getJson('./data/security.json'), getJson('./data/renovate-report.json'), getJson('./data.json')])
-    .then(([sec, ren, dash]) => {
+  Promise.all([getJson('./data/security.json'), getJson('./data/renovate-report.json'), getJson('./data.json'),
+               getJson('./data/security-history.json'), getJson('./data/security-prs.json')])
+    .then(([sec, ren, dash, hist, prs]) => {
+      HIST = hist; PRS = prs;
       if (!sec) { document.getElementById('view').innerHTML = `<div class="empty">${t('security.noScanYet')}</div>`; document.getElementById('meta').textContent = ''; return; }
       SEC = sec; REN = ren;
       // Section et noms d'affichage repris de l'Artifacts Dashboard (par dépôt).
