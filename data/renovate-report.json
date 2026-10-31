@@ -1,8 +1,53 @@
 {
-  "generated_at": "2026-10-30T17:50:31Z",
+  "generated_at": "2026-10-31T12:23:43Z",
   "repositories": {
     "open-ent/actualites": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -337,12 +382,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -387,12 +427,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -401,12 +436,7 @@
           "datasource": "maven",
           "current": "2.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -460,12 +490,7 @@
           "datasource": "maven",
           "current": "3.4.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.8.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -474,12 +499,7 @@
           "datasource": "maven",
           "current": "3.1.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -1168,7 +1188,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -1185,7 +1205,64 @@
       ]
     },
     "open-ent/appointments": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -1460,12 +1537,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -1885,7 +1957,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -2570,7 +2642,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -2587,7 +2659,52 @@
       ]
     },
     "open-ent/blog": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -3567,7 +3684,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -3620,7 +3737,40 @@
       ]
     },
     "open-ent/cahier-de-textes": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -3917,12 +4067,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -3949,16 +4094,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -4522,7 +4658,44 @@
       ]
     },
     "open-ent/calendar": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -4765,16 +4938,7 @@
           "datasource": "maven",
           "current": "3.2.10",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.19",
-              "type": "patch"
-            },
-            {
-              "version": "4.4.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -4792,12 +4956,7 @@
           "datasource": "maven",
           "current": "4.10",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.13.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -4806,12 +4965,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -5575,7 +5729,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -5601,7 +5755,44 @@
       ]
     },
     "open-ent/chat-nats": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "github-actions",
@@ -6076,12 +6267,7 @@
           "datasource": "maven",
           "current": "2.16.14",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.26.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -6401,6 +6587,14 @@
         {
           "level": 40,
           "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
         }
       ],
       "deps": [
@@ -6603,12 +6797,7 @@
           "datasource": "maven",
           "current": "2.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -6617,12 +6806,7 @@
           "datasource": "maven",
           "current": "3.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -6852,7 +7036,56 @@
       ]
     },
     "open-ent/collaborative-wall": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -7100,12 +7333,7 @@
           "datasource": "maven",
           "current": "3.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.3",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7114,12 +7342,7 @@
           "datasource": "maven",
           "current": "3.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.3",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7128,12 +7351,7 @@
           "datasource": "maven",
           "current": "2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7142,12 +7360,7 @@
           "datasource": "maven",
           "current": "2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7165,12 +7378,7 @@
           "datasource": "maven",
           "current": "2.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7188,12 +7396,7 @@
           "datasource": "maven",
           "current": "4.10",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.13.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -7922,7 +8125,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -7975,7 +8178,48 @@
       ]
     },
     "open-ent/communities": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -8883,7 +9127,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -8936,7 +9180,40 @@
       ]
     },
     "open-ent/community": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -9129,12 +9406,7 @@
           "datasource": "maven",
           "current": "2.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -9667,6 +9939,38 @@
         {
           "level": 40,
           "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
         }
       ],
       "deps": [
@@ -9902,16 +10206,7 @@
           "datasource": "maven",
           "current": "4.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.6",
-              "type": "minor"
-            },
-            {
-              "version": "5.12.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -9920,16 +10215,7 @@
           "datasource": "maven",
           "current": "2.0.30",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.37",
-              "type": "patch"
-            },
-            {
-              "version": "3.0.8",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -9965,12 +10251,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -9979,12 +10260,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -10804,7 +11080,7 @@
           "file": "package.json",
           "name": "discord.js",
           "datasource": "npm",
-          "current": "14.27.0",
+          "current": "14.28.0",
           "skip": null,
           "updates": []
         },
@@ -10899,7 +11175,16 @@
       ]
     },
     "open-ent/edifice-entcore-libs": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -10973,12 +11258,7 @@
           "datasource": "maven",
           "current": "1.0.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -10987,16 +11267,7 @@
           "datasource": "maven",
           "current": "4.32.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.38.0",
-              "type": "minor"
-            },
-            {
-              "version": "5.0.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11005,12 +11276,7 @@
           "datasource": "maven",
           "current": "2.14.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11037,12 +11303,7 @@
           "datasource": "maven",
           "current": "1.0.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11096,12 +11357,7 @@
           "datasource": "maven",
           "current": "3.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11119,12 +11375,7 @@
           "datasource": "maven",
           "current": "2.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.2.3",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11133,12 +11384,7 @@
           "datasource": "maven",
           "current": "2.20.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.26.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11192,12 +11438,7 @@
           "datasource": "maven",
           "current": "1.16.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.23.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11233,16 +11474,7 @@
           "datasource": "maven",
           "current": "8.13.27",
           "skip": null,
-          "updates": [
-            {
-              "version": "8.13.55",
-              "type": "patch"
-            },
-            {
-              "version": "9.0.42",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11287,12 +11519,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.22.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11373,12 +11600,7 @@
           "datasource": "maven",
           "current": "1.11.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.17.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11423,12 +11645,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11464,16 +11681,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            },
-            {
-              "version": "2.0.5",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11482,12 +11690,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11496,12 +11699,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11510,12 +11708,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11524,12 +11717,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11547,12 +11735,7 @@
           "datasource": "maven",
           "current": "42.2.26",
           "skip": null,
-          "updates": [
-            {
-              "version": "42.7.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11561,16 +11744,7 @@
           "datasource": "maven",
           "current": "2.4.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.7.9",
-              "type": "minor"
-            },
-            {
-              "version": "7.1.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11597,12 +11771,7 @@
           "datasource": "maven",
           "current": "1.6.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.8.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -11680,6 +11849,38 @@
     },
     "open-ent/edt": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -11943,14 +12144,9 @@
           "file": "gradle/vertx.gradle",
           "name": "org.mockito:mockito-core",
           "datasource": "maven",
-          "current": "2.28.2",
+          "current": "2.+",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -12004,12 +12200,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -12036,12 +12227,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -12656,6 +12842,58 @@
     },
     "open-ent/entcore-v2": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -13318,12 +13556,7 @@
           "datasource": "maven",
           "current": "4.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.6.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13359,12 +13592,7 @@
           "datasource": "maven",
           "current": "0.4.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.0.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13384,12 +13612,8 @@
           "skip": null,
           "updates": [
             {
-              "version": "1.7.36",
+              "version": "1.7.30",
               "type": "patch"
-            },
-            {
-              "version": "2.0.20",
-              "type": "major"
             }
           ]
         },
@@ -13418,16 +13642,7 @@
           "datasource": "maven",
           "current": "1.0.87",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.5.9",
-              "type": "minor"
-            },
-            {
-              "version": "3.0.8",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13454,16 +13669,7 @@
           "datasource": "maven",
           "current": "2.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.4.3",
-              "type": "minor"
-            },
-            {
-              "version": "3.6.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13859,16 +14065,7 @@
           "datasource": "maven",
           "current": "3.9",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.10",
-              "type": "minor"
-            },
-            {
-              "version": "5.12.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13940,16 +14137,7 @@
           "datasource": "maven",
           "current": "3.9",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.10",
-              "type": "minor"
-            },
-            {
-              "version": "5.12.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -13967,12 +14155,7 @@
           "datasource": "maven",
           "current": "3.13.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.18.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14098,12 +14281,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14139,16 +14317,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            },
-            {
-              "version": "2.0.5",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14157,12 +14326,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14171,12 +14335,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14185,12 +14344,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14199,12 +14353,7 @@
           "datasource": "maven",
           "current": "1.19.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.21.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14222,12 +14371,7 @@
           "datasource": "maven",
           "current": "42.2.26",
           "skip": null,
-          "updates": [
-            {
-              "version": "42.7.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14236,16 +14380,7 @@
           "datasource": "maven",
           "current": "2.4.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.7.9",
-              "type": "minor"
-            },
-            {
-              "version": "7.1.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -14263,12 +14398,7 @@
           "datasource": "maven",
           "current": "1.6.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.8.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18105,7 +18235,36 @@
       ]
     },
     "open-ent/esign": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "github-actions",
@@ -18354,12 +18513,7 @@
           "datasource": "maven",
           "current": "1.81",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.85",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18368,12 +18522,7 @@
           "datasource": "maven",
           "current": "1.81",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.84",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18382,12 +18531,7 @@
           "datasource": "maven",
           "current": "1.81",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.86",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18414,12 +18558,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18428,12 +18567,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18442,12 +18576,7 @@
           "datasource": "maven",
           "current": "3.0.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.0.8",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18456,12 +18585,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18470,12 +18594,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18484,12 +18603,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18498,12 +18612,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18512,12 +18621,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18526,12 +18630,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18540,12 +18639,7 @@
           "datasource": "maven",
           "current": "6.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "6.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18572,12 +18666,7 @@
           "datasource": "maven",
           "current": "2.0.13",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.20",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -18811,7 +18900,44 @@
       ]
     },
     "open-ent/exercizer": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -19551,7 +19677,68 @@
       ]
     },
     "open-ent/explorer": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -19982,12 +20169,7 @@
           "datasource": "maven",
           "current": "1.15.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.23.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -20512,7 +20694,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -21219,7 +21401,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -21306,7 +21488,64 @@
       ]
     },
     "open-ent/form": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -21489,12 +21728,7 @@
           "datasource": "maven",
           "current": "3.2.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21503,12 +21737,7 @@
           "datasource": "maven",
           "current": "3.8.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21517,12 +21746,7 @@
           "datasource": "maven",
           "current": "3.2.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21531,12 +21755,7 @@
           "datasource": "maven",
           "current": "3.8.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21626,12 +21845,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21640,12 +21854,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21699,16 +21908,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21762,12 +21962,7 @@
           "datasource": "maven",
           "current": "1.2.7",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.8.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -21776,12 +21971,7 @@
           "datasource": "maven",
           "current": "2.8.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -22588,7 +22778,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -24006,7 +24196,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.1.1",
+              "version": "2.1.2",
               "type": "major"
             }
           ]
@@ -24160,7 +24350,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -25579,7 +25769,16 @@
       ]
     },
     "open-ent/gar-connector": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -25762,12 +25961,7 @@
           "datasource": "maven",
           "current": "4.12",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.13.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -25776,12 +25970,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -25835,12 +26024,7 @@
           "datasource": "maven",
           "current": "1.18",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.26.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -26208,7 +26392,44 @@
       ]
     },
     "open-ent/lool-connector": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -26391,12 +26612,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -26405,16 +26621,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -26423,12 +26630,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -26932,7 +27134,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "patch"
             }
           ]
@@ -27258,7 +27460,68 @@
       ]
     },
     "open-ent/magneto": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -27565,12 +27828,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27597,16 +27855,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27624,16 +27873,7 @@
           "datasource": "maven",
           "current": "5.2.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.5.1",
-              "type": "minor"
-            },
-            {
-              "version": "6.0.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27642,12 +27882,7 @@
           "datasource": "maven",
           "current": "5.2.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.4.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27656,16 +27891,7 @@
           "datasource": "maven",
           "current": "5.2.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.5.1",
-              "type": "minor"
-            },
-            {
-              "version": "6.0.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27674,12 +27900,7 @@
           "datasource": "maven",
           "current": "1.18.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.23.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27688,12 +27909,7 @@
           "datasource": "maven",
           "current": "0.4.20",
           "skip": null,
-          "updates": [
-            {
-              "version": "0.4.21",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27702,12 +27918,7 @@
           "datasource": "maven",
           "current": "1.10.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.14.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -27716,16 +27927,7 @@
           "datasource": "maven",
           "current": "2.0.27",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.37",
-              "type": "patch"
-            },
-            {
-              "version": "3.0.8",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -28433,7 +28635,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -29117,7 +29319,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -29134,7 +29336,52 @@
       ]
     },
     "open-ent/mindmap": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -29373,12 +29620,7 @@
           "datasource": "maven",
           "current": "1.7",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.20",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30042,7 +30284,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -30095,7 +30337,16 @@
       ]
     },
     "open-ent/mod-image-resizer": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30210,12 +30461,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30251,12 +30497,7 @@
           "datasource": "maven",
           "current": "2.19.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.22.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30270,7 +30511,16 @@
       ]
     },
     "open-ent/mod-json-schema-validator": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30389,16 +30639,7 @@
           "datasource": "maven",
           "current": "1.0.87",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.5.9",
-              "type": "minor"
-            },
-            {
-              "version": "3.0.8",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30416,17 +30657,21 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         }
       ]
     },
     "open-ent/mod-mongo-persistor": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30545,12 +30790,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30582,7 +30822,16 @@
       ]
     },
     "open-ent/mod-pdf-generator": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30701,12 +30950,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -30715,16 +30959,7 @@
           "datasource": "maven",
           "current": "9.0.7",
           "skip": null,
-          "updates": [
-            {
-              "version": "9.13.4",
-              "type": "minor"
-            },
-            {
-              "version": "10.7.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         }
       ]
     },
@@ -30733,7 +30968,16 @@
       "deps": []
     },
     "open-ent/mod-sftp": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30861,17 +31105,21 @@
           "datasource": "maven",
           "current": "0.40.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "0.41.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         }
       ]
     },
     "open-ent/mod-sms-sender": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -30990,12 +31238,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -31013,17 +31256,21 @@
           "datasource": "maven",
           "current": "1.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.17.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         }
       ]
     },
     "open-ent/mod-zip": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -31142,17 +31389,17 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         }
       ]
     },
     "open-ent/mongodb-helper": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -31211,16 +31458,7 @@
           "datasource": "maven",
           "current": "4.8.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.5",
-              "type": "minor"
-            },
-            {
-              "version": "5.13.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -31444,12 +31682,7 @@
           "datasource": "maven",
           "current": "3.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -31652,7 +31885,60 @@
       ]
     },
     "open-ent/nextcloud": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -31875,7 +32161,7 @@
           "name": "org.json:json",
           "datasource": "maven",
           "current": "20211205",
-          "skip": null,
+          "skip": "invalid-value",
           "updates": []
         },
         {
@@ -31894,12 +32180,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -31935,12 +32216,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -32684,7 +32960,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -33228,7 +33504,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -33259,7 +33535,36 @@
       ]
     },
     "open-ent/open-ent": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -33929,12 +34234,7 @@
           "datasource": "maven",
           "current": "2.17.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.22.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -33943,12 +34243,7 @@
           "datasource": "maven",
           "current": "3.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.3",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -33966,12 +34261,7 @@
           "datasource": "maven",
           "current": "2.3.9",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.0.9",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -33980,12 +34270,7 @@
           "datasource": "maven",
           "current": "1.26.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.28.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -33994,12 +34279,7 @@
           "datasource": "maven",
           "current": "9.7",
           "skip": null,
-          "updates": [
-            {
-              "version": "9.11.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34008,12 +34288,7 @@
           "datasource": "maven",
           "current": "1.5.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.6.6",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34022,16 +34297,7 @@
           "datasource": "maven",
           "current": "7.18.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "7.22.6",
-              "type": "minor"
-            },
-            {
-              "version": "8.62.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34040,16 +34306,7 @@
           "datasource": "maven",
           "current": "3.11.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.18.3",
-              "type": "minor"
-            },
-            {
-              "version": "4.1.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34058,12 +34315,7 @@
           "datasource": "maven",
           "current": "3.4.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34072,12 +34324,7 @@
           "datasource": "maven",
           "current": "3.4.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34095,12 +34342,7 @@
           "datasource": "maven",
           "current": "1.0.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.0.4",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34118,12 +34360,7 @@
           "datasource": "maven",
           "current": "1.7.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.7.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34132,12 +34369,7 @@
           "datasource": "maven",
           "current": "1.78.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.85",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34155,12 +34387,7 @@
           "datasource": "maven",
           "current": "2.3.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.5.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34196,12 +34423,7 @@
           "datasource": "maven",
           "current": "1.0.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.0.4",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34237,12 +34459,7 @@
           "datasource": "maven",
           "current": "5.3.8",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.7.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34260,12 +34477,7 @@
           "datasource": "maven",
           "current": "1.15",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.16",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34274,12 +34486,7 @@
           "datasource": "maven",
           "current": "2.10.14",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.15.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34306,12 +34513,7 @@
           "datasource": "maven",
           "current": "3.0.0-M1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34329,12 +34531,7 @@
           "datasource": "maven",
           "current": "3.0.0-M1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34352,12 +34549,7 @@
           "datasource": "maven",
           "current": "1.27.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.28.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34375,12 +34567,7 @@
           "datasource": "maven",
           "current": "1.5.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.6.6",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34389,16 +34576,7 @@
           "datasource": "maven",
           "current": "5.12.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            },
-            {
-              "version": "6.1.3",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34416,16 +34594,7 @@
           "datasource": "maven",
           "current": "1.6.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.13.2",
-              "type": "minor"
-            },
-            {
-              "version": null,
-              "type": "replacement"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34461,16 +34630,7 @@
           "datasource": "maven",
           "current": "5.2.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.7.1",
-              "type": "minor"
-            },
-            {
-              "version": "6.8.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34497,12 +34657,7 @@
           "datasource": "maven",
           "current": "1.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.17.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34511,12 +34666,7 @@
           "datasource": "maven",
           "current": "3.12.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34525,12 +34675,7 @@
           "datasource": "maven",
           "current": "3.2.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34584,12 +34729,7 @@
           "datasource": "maven",
           "current": "2.17.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34598,12 +34738,7 @@
           "datasource": "maven",
           "current": "2.17.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.22",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34612,12 +34747,7 @@
           "datasource": "maven",
           "current": "3.0.6.Final",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.2.Final",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34626,12 +34756,7 @@
           "datasource": "maven",
           "current": "3.12.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34640,12 +34765,7 @@
           "datasource": "maven",
           "current": "3.20.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.40.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34654,12 +34774,7 @@
           "datasource": "maven",
           "current": "1.16.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.20.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34668,12 +34783,7 @@
           "datasource": "maven",
           "current": "3.20.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.40.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34682,12 +34792,7 @@
           "datasource": "maven",
           "current": "3.20.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.40.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34705,12 +34810,7 @@
           "datasource": "maven",
           "current": "4.0.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.0.5",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34728,12 +34828,7 @@
           "datasource": "maven",
           "current": "4.0.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.0.9",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34742,12 +34837,7 @@
           "datasource": "maven",
           "current": "2.17.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34756,12 +34846,7 @@
           "datasource": "maven",
           "current": "2.17.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.22",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34770,12 +34855,7 @@
           "datasource": "maven",
           "current": "2.0.13",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.20",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34784,12 +34864,7 @@
           "datasource": "maven",
           "current": "3.0.6.Final",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.2.Final",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34798,12 +34873,7 @@
           "datasource": "maven",
           "current": "2.0.1.Final",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.1.0.Final",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34812,12 +34882,7 @@
           "datasource": "maven",
           "current": "4.11.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.13.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34826,12 +34891,7 @@
           "datasource": "maven",
           "current": "4.11.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.13.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34840,12 +34900,7 @@
           "datasource": "maven",
           "current": "4.11.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.13.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34863,16 +34918,7 @@
           "datasource": "maven",
           "current": "5.21.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.28.15",
-              "type": "minor"
-            },
-            {
-              "version": "6.3.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34881,16 +34927,7 @@
           "datasource": "maven",
           "current": "5.10.3",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            },
-            {
-              "version": "6.1.3",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34917,12 +34954,7 @@
           "datasource": "maven",
           "current": "1.21.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.5",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34967,12 +34999,7 @@
           "datasource": "maven",
           "current": "5.12.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.24.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34981,12 +35008,7 @@
           "datasource": "maven",
           "current": "1.42.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.67.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -34995,12 +35017,7 @@
           "datasource": "maven",
           "current": "1.42.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.67.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35009,12 +35026,7 @@
           "datasource": "maven",
           "current": "1.42.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.67.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35023,12 +35035,7 @@
           "datasource": "maven",
           "current": "1.42.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.67.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35046,12 +35053,7 @@
           "datasource": "maven",
           "current": "3.1.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.2.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35060,12 +35062,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35074,16 +35071,7 @@
           "datasource": "maven",
           "current": "9.0.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "9.2.0",
-              "type": "minor"
-            },
-            {
-              "version": "10.0.1",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35092,12 +35080,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35106,12 +35089,7 @@
           "datasource": "maven",
           "current": "3.7.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.11.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35120,12 +35098,7 @@
           "datasource": "maven",
           "current": "3.15.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35134,12 +35107,7 @@
           "datasource": "maven",
           "current": "3.12.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35148,12 +35116,7 @@
           "datasource": "maven",
           "current": "3.4.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35162,12 +35125,7 @@
           "datasource": "maven",
           "current": "3.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.3.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35176,12 +35134,7 @@
           "datasource": "maven",
           "current": "3.2.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35190,12 +35143,7 @@
           "datasource": "maven",
           "current": "3.0.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35204,12 +35152,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35218,16 +35161,7 @@
           "datasource": "maven",
           "current": "4.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.6",
-              "type": "minor"
-            },
-            {
-              "version": "5.1.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35245,12 +35179,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.4.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35259,12 +35188,7 @@
           "datasource": "maven",
           "current": "3.10.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.12.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35300,12 +35224,7 @@
           "datasource": "maven",
           "current": "3.20.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.40.1.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35314,12 +35233,7 @@
           "datasource": "maven",
           "current": "3.12.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.16.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35328,12 +35242,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35342,12 +35251,7 @@
           "datasource": "maven",
           "current": "3.3.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35374,12 +35278,7 @@
           "datasource": "maven",
           "current": "1.5.16",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.6.6",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35388,12 +35287,7 @@
           "datasource": "maven",
           "current": "1.5.16",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.5.34",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35402,12 +35296,7 @@
           "datasource": "maven",
           "current": "2.0.16",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.0.20",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35416,12 +35305,7 @@
           "datasource": "maven",
           "current": "3.3.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.4.2",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -35701,7 +35585,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "1.62.0",
+              "version": "1.63.0",
               "type": "major"
             }
           ]
@@ -36130,7 +36014,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.7.0",
+              "version": "2.8.0",
               "type": "minor"
             }
           ]
@@ -36144,7 +36028,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.14.0",
+              "version": "2.14.1",
               "type": "minor"
             }
           ]
@@ -36172,7 +36056,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.5.4",
+              "version": "2.5.5",
               "type": "minor"
             }
           ]
@@ -36620,7 +36504,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.7.0",
+              "version": "2.8.0",
               "type": "minor"
             }
           ]
@@ -36676,7 +36560,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "2.14.0",
+              "version": "2.14.1",
               "type": "minor"
             }
           ]
@@ -36718,7 +36602,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "patch"
             }
           ]
@@ -36815,6 +36699,222 @@
     },
     "open-ent/open-ent-frontend": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -37341,7 +37441,7 @@
           "file": ".github/workflows/mobile-ios-build.yml",
           "name": "ruby/setup-ruby",
           "datasource": "github-tags",
-          "current": "v1.335.0",
+          "current": "v1.336.0",
           "skip": null,
           "updates": []
         },
@@ -37433,7 +37533,7 @@
           "file": "apps/mobile/android/app/build.gradle",
           "name": "io.github.react-native-community:jsc-android",
           "datasource": "maven",
-          "current": "2026004.0.1",
+          "current": "2026004.+",
           "skip": null,
           "updates": []
         },
@@ -37467,16 +37567,7 @@
           "datasource": "maven",
           "current": "1.15.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.15.4",
-              "type": "patch"
-            },
-            {
-              "version": "2.0.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "npm",
@@ -37487,7 +37578,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "4.0.89",
+              "version": "4.0.90",
               "type": "major"
             }
           ]
@@ -37501,7 +37592,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "4.0.106",
+              "version": "4.0.107",
               "type": "major"
             }
           ]
@@ -37515,7 +37606,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "4.0.103",
+              "version": "4.0.104",
               "type": "major"
             }
           ]
@@ -37529,7 +37620,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "4.0.158",
+              "version": "4.0.159",
               "type": "major"
             }
           ]
@@ -37592,6 +37683,10 @@
           "current": "6.8.1",
           "skip": null,
           "updates": [
+            {
+              "version": "6.8.3",
+              "type": "patch"
+            },
             {
               "version": "7.0.2",
               "type": "major"
@@ -38242,7 +38337,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "7.0.154",
+              "version": "7.0.155",
               "type": "major"
             }
           ]
@@ -39284,7 +39379,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "5.10.1",
+              "version": "5.11.0",
               "type": "minor"
             }
           ]
@@ -48499,7 +48594,12 @@
           "datasource": "npm",
           "current": "2.8.1",
           "skip": null,
-          "updates": []
+          "updates": [
+            {
+              "version": "2.9.1",
+              "type": "minor"
+            }
+          ]
         },
         {
           "manager": "npm",
@@ -48533,7 +48633,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "0.2202.4",
+              "version": "0.2202.5",
               "type": "minor"
             }
           ]
@@ -48547,7 +48647,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -48561,7 +48661,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -48575,7 +48675,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -48631,7 +48731,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -48645,7 +48745,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -49063,7 +49163,7 @@
               "type": "patch"
             },
             {
-              "version": "22.2.4",
+              "version": "22.2.5",
               "type": "major"
             }
           ]
@@ -49193,7 +49293,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "0.8.1",
+              "version": "0.8.2",
               "type": "minor"
             }
           ]
@@ -50337,6 +50437,46 @@
     },
     "open-ent/open-ent-mods": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -52064,7 +52204,7 @@
               "type": "minor"
             },
             {
-              "version": "12.3",
+              "version": "13.0",
               "type": "major"
             }
           ]
@@ -52100,7 +52240,7 @@
               "type": "patch"
             },
             {
-              "version": "20.0.13",
+              "version": "20.0.14",
               "type": "major"
             }
           ]
@@ -52196,7 +52336,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "20.0.13",
+              "version": "20.0.14",
               "type": "major"
             }
           ]
@@ -53557,7 +53697,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -56137,8 +56277,8 @@
           "skip": null,
           "updates": [
             {
-              "version": "11.1.0",
-              "type": "minor"
+              "version": "14.0.2",
+              "type": "major"
             }
           ]
         },
@@ -58859,7 +58999,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -58877,6 +59017,62 @@
     },
     "open-ent/presences": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -59107,12 +59303,7 @@
           "datasource": "maven",
           "current": "3.6",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.18.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -59193,12 +59384,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -59207,12 +59393,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -59284,16 +59465,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -59356,12 +59528,7 @@
           "datasource": "maven",
           "current": "3.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "npm",
@@ -60756,7 +60923,12 @@
       ]
     },
     "open-ent/rack": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -61356,7 +61528,7 @@
               "type": "patch"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -62106,7 +62278,40 @@
       ]
     },
     "open-ent/rbs": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -62340,16 +62545,7 @@
           "datasource": "maven",
           "current": "2.0.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.2.7",
-              "type": "minor"
-            },
-            {
-              "version": "4.4.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -62367,12 +62563,7 @@
           "datasource": "maven",
           "current": "4.12",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.13.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -62408,12 +62599,7 @@
           "datasource": "maven",
           "current": "2.5.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.5.2",
-              "type": "patch"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -62932,7 +63118,60 @@
       ]
     },
     "open-ent/ressource-aggregator": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -63198,12 +63437,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -63221,12 +63455,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -63592,7 +63821,7 @@
               "type": "minor"
             },
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
@@ -64170,7 +64399,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -64320,7 +64549,44 @@
       ]
     },
     "open-ent/school-planner": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "dockerfile",
@@ -64563,12 +64829,7 @@
           "datasource": "maven",
           "current": "5.12.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64577,16 +64838,7 @@
           "datasource": "maven",
           "current": "1.16.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.35.0",
-              "type": "minor"
-            },
-            {
-              "version": "2.7.1",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64595,16 +64847,7 @@
           "datasource": "maven",
           "current": "1.16.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.35.0",
-              "type": "minor"
-            },
-            {
-              "version": "2.7.1",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64613,12 +64856,7 @@
           "datasource": "maven",
           "current": "2.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.6",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64627,16 +64865,7 @@
           "datasource": "maven",
           "current": "9.0.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "9.2.0",
-              "type": "minor"
-            },
-            {
-              "version": "10.0.1",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64645,16 +64874,7 @@
           "datasource": "maven",
           "current": "1.15.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.15.4",
-              "type": "patch"
-            },
-            {
-              "version": "2.0.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -64663,12 +64883,7 @@
           "datasource": "maven",
           "current": "3.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.6.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "npm",
@@ -64823,7 +65038,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "minor"
             }
           ]
@@ -65085,6 +65300,38 @@
         {
           "level": 40,
           "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
         }
       ],
       "deps": []
@@ -65227,12 +65474,7 @@
           "datasource": "maven",
           "current": "3.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.5.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -65563,6 +65805,18 @@
         {
           "level": 40,
           "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
         }
       ],
       "deps": [
@@ -65739,7 +65993,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "3.3.11",
+              "version": "3.3.12",
               "type": "patch"
             }
           ]
@@ -65926,7 +66180,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "3.3.11",
+              "version": "3.3.12",
               "type": "patch"
             }
           ]
@@ -66113,7 +66367,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "3.3.11",
+              "version": "3.3.12",
               "type": "patch"
             }
           ]
@@ -66159,7 +66413,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "12.3",
+              "version": "13.0",
               "type": "major"
             }
           ]
@@ -66397,7 +66651,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "3.3.11",
+              "version": "3.3.12",
               "type": "patch"
             }
           ]
@@ -66415,7 +66669,7 @@
               "type": "minor"
             },
             {
-              "version": "12.3",
+              "version": "13.0",
               "type": "major"
             }
           ]
@@ -66654,6 +66908,38 @@
     },
     "open-ent/statistics": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -67021,12 +67307,7 @@
           "datasource": "maven",
           "current": "2.9.4",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.15.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -67062,12 +67343,7 @@
           "datasource": "maven",
           "current": "42.2.26",
           "skip": null,
-          "updates": [
-            {
-              "version": "42.7.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -67532,7 +67808,64 @@
       ]
     },
     "open-ent/support": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -67798,12 +68131,7 @@
           "datasource": "maven",
           "current": "4.10",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.13.1",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -67812,12 +68140,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -67862,16 +68185,7 @@
           "datasource": "maven",
           "current": "2.2.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.3.1",
-              "type": "minor"
-            },
-            {
-              "version": "3.16.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -68568,7 +68882,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -69788,7 +70102,12 @@
       ]
     },
     "open-ent/vertx-cron-timer": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -69829,16 +70148,7 @@
           "datasource": "maven",
           "current": "3.8.1",
           "skip": null,
-          "updates": [
-            {
-              "version": "3.8.2",
-              "type": "patch"
-            },
-            {
-              "version": "4.13.2",
-              "type": "major"
-            }
-          ]
+          "updates": []
         }
       ]
     },
@@ -69847,12 +70157,61 @@
         {
           "level": 40,
           "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
         }
       ],
       "deps": []
     },
     "open-ent/vie-scolaire": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -70094,16 +70453,7 @@
           "datasource": "maven",
           "current": "4.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.6",
-              "type": "minor"
-            },
-            {
-              "version": "5.12.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -70130,12 +70480,7 @@
           "datasource": "maven",
           "current": "5.1.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "5.14.4",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -70144,12 +70489,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -70914,12 +71254,7 @@
           "datasource": "maven",
           "current": "2.28.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "4.11.0",
-              "type": "major"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71167,7 +71502,12 @@
       ]
     },
     "open-ent/web-utils-v2": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -71217,12 +71557,7 @@
           "datasource": "maven",
           "current": "1.15",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.16",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71231,12 +71566,7 @@
           "datasource": "maven",
           "current": "2.12.5",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.15.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71245,12 +71575,7 @@
           "datasource": "maven",
           "current": "1.11.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.15.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71295,12 +71620,7 @@
           "datasource": "maven",
           "current": "1.16.0",
           "skip": null,
-          "updates": [
-            {
-              "version": "1.23.0",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71318,12 +71638,7 @@
           "datasource": "maven",
           "current": "2.15.2",
           "skip": null,
-          "updates": [
-            {
-              "version": "2.18.11",
-              "type": "minor"
-            }
-          ]
+          "updates": []
         },
         {
           "manager": "maven",
@@ -71337,7 +71652,56 @@
       ]
     },
     "open-ent/wiki": {
-      "problems": [],
+      "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        }
+      ],
       "deps": [
         {
           "manager": "docker-compose",
@@ -72408,7 +72772,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "v24.22.2",
+              "version": "v26.13.0",
               "type": "major"
             }
           ]
@@ -72490,7 +72854,7 @@
               "type": "minor"
             },
             {
-              "version": "12.3",
+              "version": "13.0",
               "type": "major"
             }
           ]
@@ -72535,6 +72899,50 @@
     },
     "open-ent/workflowhub": {
       "problems": [
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
+        {
+          "level": 40,
+          "message": null
+        },
         {
           "level": 40,
           "message": null
@@ -73079,7 +73487,7 @@
           "skip": null,
           "updates": [
             {
-              "version": "7.18.4",
+              "version": "7.18.5",
               "type": "major"
             }
           ]
