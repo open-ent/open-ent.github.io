@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T21:35:29.488Z",
+  "updatedAt": "2026-10-31T14:39:13.904Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -156,6 +156,19 @@
       "endsAt": "2026-10-29T21:35:29.487Z",
       "status": "completed",
       "createdAt": "2026-10-29T21:33:57.708Z"
+    },
+    {
+      "id": "2026-10-31-1439-infrastructure",
+      "title": "Montée de version du moteur de recherche",
+      "description": "Le moteur de recherche de l'ENT est mis à jour. L'accès revient dans quelques minutes.",
+      "reason": "",
+      "kind": "infrastructure",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-10-31T14:39:13.904Z",
+      "endsAt": "2026-10-31T14:59:13.904Z",
+      "status": "scheduled",
+      "createdAt": "2026-10-31T14:39:13.904Z"
     }
   ]
 }

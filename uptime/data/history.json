@@ -3830,5 +3830,13 @@
     "httpStatus": 200,
     "responseTimeMs": 770,
     "error": null
+  },
+  {
+    "timestamp": "2026-10-31T14:39:25.070Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 131,
+    "error": null,
+    "maintenance": "2026-10-31-1439-infrastructure"
   }
 ]
