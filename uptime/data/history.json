@@ -3838,5 +3838,12 @@
     "responseTimeMs": 131,
     "error": null,
     "maintenance": "2026-10-31-1439-infrastructure"
+  },
+  {
+    "timestamp": "2026-10-31T14:41:15.700Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 138,
+    "error": null
   }
 ]

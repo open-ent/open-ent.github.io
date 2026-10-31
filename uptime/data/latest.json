@@ -1,31 +1,30 @@
 {
-  "generatedAt": "2026-10-31T14:39:25.076Z",
+  "generatedAt": "2026-10-31T14:41:15.706Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-10-31T14:39:25.070Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 131,
-    "error": null,
-    "maintenance": "2026-10-31-1439-infrastructure"
+    "timestamp": "2026-10-31T14:41:15.700Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 138,
+    "error": null
   },
   "totals": {
-    "checks": 547,
-    "up": 536,
+    "checks": 548,
+    "up": 537,
     "down": 1,
     "maintenance": 11
   },
   "availability": {
-    "all": 99.813,
+    "all": 99.814,
     "last24h": 100,
     "last7d": 100,
     "last30d": 100
   },
   "latencyMs": {
-    "latest": 131,
-    "avg": 838,
+    "latest": 138,
+    "avg": 837,
     "p95": 1507,
     "p99": 1672
   },
@@ -43,21 +42,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-10-31-1439-infrastructure",
-      "title": "Montée de version du moteur de recherche",
-      "description": "Le moteur de recherche de l'ENT est mis à jour. L'accès revient dans quelques minutes.",
-      "reason": "",
-      "kind": "infrastructure",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-10-31T14:39:13.904Z",
-      "endsAt": "2026-10-31T14:59:13.904Z",
-      "status": "scheduled",
-      "createdAt": "2026-10-31T14:39:13.904Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-10-31-1439-infrastructure",
+        "title": "Montée de version du moteur de recherche",
+        "description": "Le moteur de recherche de l'ENT est mis à jour. L'accès revient dans quelques minutes.",
+        "reason": "",
+        "kind": "infrastructure",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-10-31T14:39:13.904Z",
+        "endsAt": "2026-10-31T14:41:04.701Z",
+        "status": "completed",
+        "createdAt": "2026-10-31T14:39:13.904Z"
+      },
       {
         "id": "2026-10-29-2133-deploy",
         "title": "Mise à jour Next Cloud OIDC",
@@ -109,19 +109,6 @@
         "endsAt": "2026-10-21T20:49:25.220Z",
         "status": "completed",
         "createdAt": "2026-10-21T20:46:11.680Z"
-      },
-      {
-        "id": "2026-10-21-1857-reboot",
-        "title": "Mise à jour technique de l'ENT",
-        "description": "Alignement de la configuration du portail ; redémarrage de la plateforme.",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-10-21T18:57:04.907Z",
-        "endsAt": "2026-10-21T18:59:17.181Z",
-        "status": "completed",
-        "createdAt": "2026-10-21T18:57:04.907Z"
       }
     ]
   }
