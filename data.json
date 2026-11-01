@@ -413,7 +413,7 @@
       "name": "actualites",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/actualites/actions",
       "releases_url": "https://github.com/open-ent/actualites/releases",
       "repo_url": "https://github.com/open-ent/actualites",
@@ -493,7 +493,7 @@
       "name": "blog",
       "group_id": "org.entcore",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/blog/actions",
       "releases_url": "https://github.com/open-ent/blog/releases",
       "repo_url": "https://github.com/open-ent/blog",
@@ -533,7 +533,7 @@
       "name": "diary",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/cahier-de-textes/actions",
       "releases_url": "https://github.com/open-ent/cahier-de-textes/releases",
       "repo_url": "https://github.com/open-ent/cahier-de-textes",
@@ -585,11 +585,12 @@
       "repo_url": "https://github.com/open-ent/calendar",
       "releases": [
         {
-          "tag": "4.2.7-patched",
-          "published_at": "2026-08-12",
-          "body": "**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched",
-          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7-patched/net.atos.calendar.4.2.7-patched-fat.jar",
-          "entcore_version": "6.14.9-patched",
+          "tag": "4.3.6-patched",
+          "published_at": "2026-10-31",
+          "body": "**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched\n\n## What's Changed\n* chore(deps): update dependency underscore to v1.13.8 [security] by @passtech in https://github.com/open-ent/calendar/pull/3\n* chore(deps): update dependency axios to v0.34.0 [security] by @passtech in https://github.com/open-ent/calendar/pull/2\n\n## New Contributors\n* @passtech made their first contribution in https://github.com/open-ent/calendar/pull/3\n\n**Full Changelog**: https://github.com/open-ent/calendar/compare/4.2.7-patched...4.3.6-patched",
+          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.3.6-patched/net.atos.calendar.4.3.6-patched-fat.jar",
+          "entcore_version": "6.16.14-patched",
+          "entcore_libs_version": "6.16.8-patched",
           "openent_frontend": {
             "react": "2.5.30-patched",
             "bootstrap": "2.5.30-patched",
@@ -599,6 +600,12 @@
               "2.5.30-patched"
             ]
           }
+        },
+        {
+          "tag": "4.2.7-patched",
+          "published_at": "2026-08-12",
+          "body": "**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched\n\n**Full Changelog**: https://github.com/open-ent/calendar/commits/4.2.7-patched",
+          "jar_url": "https://github.com/open-ent/calendar/releases/download/4.2.7-patched/net.atos.calendar.4.2.7-patched-fat.jar"
         }
       ]
     },
@@ -763,7 +770,7 @@
       "name": "exercizer",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/exercizer/actions",
       "releases_url": "https://github.com/open-ent/exercizer/releases",
       "repo_url": "https://github.com/open-ent/exercizer",
@@ -797,7 +804,7 @@
       "name": "explorer",
       "group_id": "com.opendigitaleducation",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/explorer/actions",
       "releases_url": "https://github.com/open-ent/explorer/releases",
       "repo_url": "https://github.com/open-ent/explorer",
@@ -911,7 +918,7 @@
       "name": "magneto",
       "group_id": "fr.cgi",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/magneto/actions",
       "releases_url": "https://github.com/open-ent/magneto/releases",
       "repo_url": "https://github.com/open-ent/magneto",
@@ -945,7 +952,7 @@
       "name": "mindmap",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/mindmap/actions",
       "releases_url": "https://github.com/open-ent/mindmap/releases",
       "repo_url": "https://github.com/open-ent/mindmap",
@@ -1084,7 +1091,7 @@
       "name": "rbs",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/rbs/actions",
       "releases_url": "https://github.com/open-ent/rbs/releases",
       "repo_url": "https://github.com/open-ent/rbs",
@@ -1430,7 +1437,7 @@
       "name": "wiki",
       "group_id": "net.atos",
       "section": "apps",
-      "ci_status": "success",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/wiki/actions",
       "releases_url": "https://github.com/open-ent/wiki/releases",
       "repo_url": "https://github.com/open-ent/wiki",
@@ -1985,7 +1992,7 @@
       "name": "lool",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/lool-connector/actions",
       "releases_url": "https://github.com/open-ent/lool-connector/releases",
       "repo_url": "https://github.com/open-ent/lool-connector",
@@ -2107,6 +2114,6 @@
       "releases": []
     }
   ],
-  "generated_at": "31/10/2026 à 09:31 UTC",
-  "generated_at_iso": "2026-10-31T09:31:05Z"
+  "generated_at": "01/11/2026 à 10:20 UTC",
+  "generated_at_iso": "2026-11-01T10:20:14Z"
 }
