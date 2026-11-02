@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-11-02T01:50:13.920Z",
+  "generatedAt": "2026-11-02T08:25:51.562Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-02T01:50:13.915Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 440,
-    "error": null
+    "timestamp": "2026-11-02T08:25:51.558Z",
+    "isUp": false,
+    "httpStatus": null,
+    "responseTimeMs": 12001,
+    "error": "This operation was aborted"
   },
   "totals": {
-    "checks": 557,
+    "checks": 558,
     "up": 546,
-    "down": 1,
+    "down": 2,
     "maintenance": 11
   },
   "availability": {
-    "all": 99.817,
-    "last24h": 100,
-    "last7d": 100,
-    "last30d": 100
+    "all": 99.634,
+    "last24h": 80,
+    "last7d": 96.429,
+    "last30d": 99.242
   },
   "latencyMs": {
-    "latest": 440,
-    "avg": 835,
-    "p95": 1506,
-    "p99": 1672
+    "latest": 12001,
+    "avg": 855,
+    "p95": 1507,
+    "p99": 1758
   },
   "incidents": [
     {
@@ -39,6 +39,17 @@
       ],
       "durationMs": 0,
       "error": "fetch failed"
+    },
+    {
+      "startedAt": "2026-11-02T08:25:51.558Z",
+      "endedAt": "2026-11-02T08:25:51.558Z",
+      "checks": 1,
+      "worstStatus": null,
+      "errors": [
+        "This operation was aborted"
+      ],
+      "durationMs": 0,
+      "error": "This operation was aborted"
     }
   ],
   "maintenance": {

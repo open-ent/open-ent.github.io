@@ -3908,5 +3908,12 @@
     "httpStatus": 200,
     "responseTimeMs": 440,
     "error": null
+  },
+  {
+    "timestamp": "2026-11-02T08:25:51.558Z",
+    "isUp": false,
+    "httpStatus": null,
+    "responseTimeMs": 12001,
+    "error": "This operation was aborted"
   }
 ]
