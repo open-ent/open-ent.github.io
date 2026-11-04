@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T19:59:05.073Z",
+  "updatedAt": "2026-11-04T21:07:26.071Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -182,6 +182,19 @@
       "endsAt": "2026-11-04T19:59:05.073Z",
       "status": "completed",
       "createdAt": "2026-11-04T19:57:28.042Z"
+    },
+    {
+      "id": "2026-11-04-2107-deploy",
+      "title": "Mise à jour technique",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-04T21:07:26.070Z",
+      "endsAt": "2026-11-04T21:22:26.070Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-04T21:07:26.071Z"
     }
   ]
 }
