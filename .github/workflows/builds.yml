@@ -1,0 +1,41 @@
+name: Builds en cours (planifiée)
+
+# Alimente data/builds.json, lu par index.html pour faire clignoter les modules
+# dont un run GitHub Actions est en cours ou en file d'attente.
+#
+# Comme uptime.yml, le cron vit dans ce dépôt public pour ne pas consommer le
+# quota de 2 000 minutes des dépôts privés. Sans build en cours, une exécution
+# fait une passe (~5 s) et s'arrête ; sinon elle suit les runs toutes les 30 s
+# pendant ~4 min 30. Un build est donc repéré dans les 5 min (cron), puis suivi
+# à la demi-minute près, plus le déploiement Pages.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: builds-open-ent-github-io
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GH_PACKAGES_TOKEN }}
+
+      - name: Relever les runs en cours
+        env:
+          # Le jeton de l'org : GITHUB_TOKEN ne lit pas les runs des dépôts privés.
+          GH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 .github/scripts/poll-builds.py
