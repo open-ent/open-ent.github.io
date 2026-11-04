@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T14:41:04.702Z",
+  "updatedAt": "2026-11-04T19:57:28.042Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -169,6 +169,19 @@
       "endsAt": "2026-10-31T14:41:04.701Z",
       "status": "completed",
       "createdAt": "2026-10-31T14:39:13.904Z"
+    },
+    {
+      "id": "2026-11-04-1957-deploy",
+      "title": "Mise à jour du launcher",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-04T19:57:28.042Z",
+      "endsAt": "2026-11-04T20:12:28.042Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-04T19:57:28.042Z"
     }
   ]
 }
