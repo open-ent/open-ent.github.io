@@ -1,30 +1,29 @@
 {
-  "generatedAt": "2026-11-04T19:57:51.938Z",
+  "generatedAt": "2026-11-04T19:59:23.222Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-04T19:57:51.934Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 1470,
-    "error": null,
-    "maintenance": "2026-11-04-1957-deploy"
+    "timestamp": "2026-11-04T19:59:23.218Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 715,
+    "error": null
   },
   "totals": {
-    "checks": 567,
-    "up": 554,
+    "checks": 568,
+    "up": 555,
     "down": 2,
     "maintenance": 12
   },
   "availability": {
     "all": 99.64,
     "last24h": 100,
-    "last7d": 97.059,
-    "last30d": 99.219
+    "last7d": 97.143,
+    "last30d": 99.225
   },
   "latencyMs": {
-    "latest": 1470,
+    "latest": 715,
     "avg": 851,
     "p95": 1507,
     "p99": 1758
@@ -54,21 +53,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-11-04-1957-deploy",
-      "title": "Mise à jour du launcher",
-      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-      "reason": "",
-      "kind": "deploy",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-11-04T19:57:28.042Z",
-      "endsAt": "2026-11-04T20:12:28.042Z",
-      "status": "scheduled",
-      "createdAt": "2026-11-04T19:57:28.042Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-11-04-1957-deploy",
+        "title": "Mise à jour du launcher",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-11-04T19:57:28.042Z",
+        "endsAt": "2026-11-04T19:59:05.073Z",
+        "status": "completed",
+        "createdAt": "2026-11-04T19:57:28.042Z"
+      },
       {
         "id": "2026-10-31-1439-infrastructure",
         "title": "Montée de version du moteur de recherche",
@@ -120,19 +120,6 @@
         "endsAt": "2026-10-26T18:35:27.818Z",
         "status": "completed",
         "createdAt": "2026-10-26T18:34:00.771Z"
-      },
-      {
-        "id": "2026-10-21-2046-reboot",
-        "title": "Mise à jour technique de l'ENT",
-        "description": "",
-        "reason": "",
-        "kind": "reboot",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-10-21T20:46:11.680Z",
-        "endsAt": "2026-10-21T20:49:25.220Z",
-        "status": "completed",
-        "createdAt": "2026-10-21T20:46:11.680Z"
       }
     ]
   }
