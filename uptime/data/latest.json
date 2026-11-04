@@ -1,30 +1,29 @@
 {
-  "generatedAt": "2026-11-04T21:07:42.215Z",
+  "generatedAt": "2026-11-04T21:09:21.049Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-04T21:07:42.210Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 1007,
-    "error": null,
-    "maintenance": "2026-11-04-2107-deploy"
+    "timestamp": "2026-11-04T21:09:21.045Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 704,
+    "error": null
   },
   "totals": {
-    "checks": 569,
-    "up": 555,
+    "checks": 570,
+    "up": 556,
     "down": 2,
     "maintenance": 13
   },
   "availability": {
-    "all": 99.64,
+    "all": 99.641,
     "last24h": 100,
-    "last7d": 97.059,
-    "last30d": 99.219
+    "last7d": 97.143,
+    "last30d": 99.225
   },
   "latencyMs": {
-    "latest": 1007,
+    "latest": 704,
     "avg": 851,
     "p95": 1507,
     "p99": 1758
@@ -54,21 +53,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-11-04-2107-deploy",
-      "title": "Mise à jour technique",
-      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-      "reason": "",
-      "kind": "deploy",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-11-04T21:07:26.070Z",
-      "endsAt": "2026-11-04T21:22:26.070Z",
-      "status": "scheduled",
-      "createdAt": "2026-11-04T21:07:26.071Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-11-04-2107-deploy",
+        "title": "Mise à jour technique",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-11-04T21:07:26.070Z",
+        "endsAt": "2026-11-04T21:09:02.847Z",
+        "status": "completed",
+        "createdAt": "2026-11-04T21:07:26.071Z"
+      },
       {
         "id": "2026-11-04-1957-deploy",
         "title": "Mise à jour du launcher",
@@ -120,19 +120,6 @@
         "endsAt": "2026-10-29T16:24:07.071Z",
         "status": "completed",
         "createdAt": "2026-10-29T16:08:33.263Z"
-      },
-      {
-        "id": "2026-10-26-1834-deploy",
-        "title": "Mise à jour de la plateforme",
-        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-        "reason": "",
-        "kind": "deploy",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-10-26T18:34:00.771Z",
-        "endsAt": "2026-10-26T18:35:27.818Z",
-        "status": "completed",
-        "createdAt": "2026-10-26T18:34:00.771Z"
       }
     ]
   }
