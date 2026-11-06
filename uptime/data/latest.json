@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-06T09:53:03.359Z",
+  "generatedAt": "2026-11-06T15:22:29.181Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-06T09:53:03.354Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 655,
-    "error": null
+    "timestamp": "2026-11-06T15:22:29.177Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1225,
+    "error": null,
+    "maintenance": "2026-11-06-1522-deploy"
   },
   "totals": {
-    "checks": 577,
+    "checks": 578,
     "up": 563,
     "down": 2,
-    "maintenance": 13
+    "maintenance": 14
   },
   "availability": {
     "all": 99.645,
     "last24h": 100,
     "last7d": 96.97,
-    "last30d": 99.231
+    "last30d": 99.225
   },
   "latencyMs": {
-    "latest": 655,
+    "latest": 1225,
     "avg": 849,
     "p95": 1506,
     "p99": 1758
@@ -53,7 +54,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-11-06-1522-deploy",
+      "title": "Mise à jour : éditeur de schémas et moteur de l'ENT",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-06T15:22:11.227Z",
+      "endsAt": "2026-11-06T15:42:11.227Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-06T15:22:11.227Z"
+    },
     "upcoming": [],
     "recent": [
       {

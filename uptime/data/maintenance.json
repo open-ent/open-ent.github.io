@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T21:09:02.847Z",
+  "updatedAt": "2026-11-06T15:22:11.227Z",
   "windows": [
     {
       "id": "2026-09-09-1033-reboot",
@@ -195,6 +195,19 @@
       "endsAt": "2026-11-04T21:09:02.847Z",
       "status": "completed",
       "createdAt": "2026-11-04T21:07:26.071Z"
+    },
+    {
+      "id": "2026-11-06-1522-deploy",
+      "title": "Mise à jour : éditeur de schémas et moteur de l'ENT",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-06T15:22:11.227Z",
+      "endsAt": "2026-11-06T15:42:11.227Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-06T15:22:11.227Z"
     }
   ]
 }
