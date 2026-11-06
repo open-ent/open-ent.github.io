@@ -56,16 +56,15 @@
       "id": "quarkus",
       "name": "Quarkus",
       "group": "runtime",
-      "version": "3.20 LTS",
-      "since": "2025-03-26",
-      "eol": "2026-03-28",
+      "version": "3.40 LTS",
+      "since": "2026-09-30",
+      "eol": "2027-09-30",
       "link": "https://endoflife.date/quarkus-framework",
       "where": { "fr": "admin-dashboard et les libs du réacteur open-ent", "en": "admin-dashboard and the open-ent reactor libraries" },
       "note": {
-        "fr": "Hors support depuis mars 2026. C'est aussi ce qui empêche le réacteur de produire du bytecode 25 (Quarkus 3.20 ne lit pas la version de classe 69).",
-        "en": "Out of support since March 2026. It is also what keeps the reactor from emitting bytecode 25 (Quarkus 3.20 cannot read class file version 69)."
-      },
-      "target": { "fr": "Quarkus 3.40 LTS (support jusqu'au 30/09/2027)", "en": "Quarkus 3.40 LTS (supported until 30 Sep 2027)" }
+        "fr": "Monté le 6 novembre 2026 depuis la 3.20, hors support depuis mars 2026. Quarkus publie une LTS tous les six mois et la maintient un an : c'est la cadence la plus soutenue de toute la chaîne.",
+        "en": "Upgraded on 6 November 2026 from 3.20, out of support since March 2026. Quarkus ships an LTS every six months and maintains it for a year: the most demanding cadence in the whole chain."
+      }
     },
     {
       "id": "postgresql",
