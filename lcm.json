@@ -1,0 +1,266 @@
+{
+  "checkedAt": "2026-11-06",
+  "source": "https://endoflife.date",
+  "groups": [
+    { "id": "runtime",  "fr": "Socle d'exécution",      "en": "Runtime platform" },
+    { "id": "data",     "fr": "Données & recherche",    "en": "Data & search" },
+    { "id": "frontend", "fr": "Interfaces",             "en": "User interfaces" },
+    { "id": "infra",    "fr": "Hébergement",            "en": "Hosting" },
+    { "id": "services", "fr": "Services associés",      "en": "Bundled services" }
+  ],
+  "components": [
+    {
+      "id": "jdk",
+      "name": "Java — Eclipse Temurin",
+      "group": "runtime",
+      "version": "25 LTS",
+      "since": "2025-09-22",
+      "eol": "2031-09-30",
+      "link": "https://endoflife.date/eclipse-temurin",
+      "where": { "fr": "launcher-next et les 74 modules du socle", "en": "launcher-next and the 74 platform modules" },
+      "note": {
+        "fr": "Migration faite le 4 novembre 2026 : la production exécute du bytecode 25 (eclipse-temurin:25-jre-alpine). Le réacteur open-ent reste en bytecode 21 tant que Quarkus n'est pas monté.",
+        "en": "Migrated on 4 November 2026: production runs bytecode 25 (eclipse-temurin:25-jre-alpine). The open-ent reactor stays on bytecode 21 until Quarkus is upgraded."
+      }
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "group": "runtime",
+      "version": "26 LTS",
+      "since": "2026-10-28",
+      "activeUntil": "2027-10-27",
+      "eol": "2029-04-30",
+      "link": "https://endoflife.date/nodejs",
+      "where": { "fr": "builds frontend, dashboard Next.js, outillage de release", "en": "frontend builds, Next.js dashboard, release tooling" },
+      "note": {
+        "fr": "Passé en LTS le 28 octobre 2026, adopté par ~65 dépôts dans la foulée. Support actif jusqu'en octobre 2027, maintenance jusqu'en avril 2029.",
+        "en": "Promoted to LTS on 28 October 2026 and adopted across ~65 repositories right away. Active support until October 2027, maintenance until April 2029."
+      }
+    },
+    {
+      "id": "vertx",
+      "name": "Eclipse Vert.x",
+      "group": "runtime",
+      "version": "4.5.25",
+      "eol": "2027-04-30",
+      "link": "https://vertx.io/blog/eclipse-vert-x-4-5-25/",
+      "where": { "fr": "cœur asynchrone de tous les verticles", "en": "asynchronous core of every verticle" },
+      "note": {
+        "fr": "Vert.x applique une politique de 2 ans après une version majeure : la branche 4 est supportée jusqu'en avril 2027. Le passage à Vert.x 5 est le chantier structurant du socle.",
+        "en": "Vert.x supports a major line for 2 years after the next major: the 4.x branch is supported until April 2027. Moving to Vert.x 5 is the platform's structural project."
+      },
+      "target": { "fr": "Vert.x 5.x", "en": "Vert.x 5.x" }
+    },
+    {
+      "id": "quarkus",
+      "name": "Quarkus",
+      "group": "runtime",
+      "version": "3.20 LTS",
+      "since": "2025-03-26",
+      "eol": "2026-03-28",
+      "link": "https://endoflife.date/quarkus-framework",
+      "where": { "fr": "admin-dashboard et les libs du réacteur open-ent", "en": "admin-dashboard and the open-ent reactor libraries" },
+      "note": {
+        "fr": "Hors support depuis mars 2026. C'est aussi ce qui empêche le réacteur de produire du bytecode 25 (Quarkus 3.20 ne lit pas la version de classe 69).",
+        "en": "Out of support since March 2026. It is also what keeps the reactor from emitting bytecode 25 (Quarkus 3.20 cannot read class file version 69)."
+      },
+      "target": { "fr": "Quarkus 3.40 LTS (support jusqu'au 30/09/2027)", "en": "Quarkus 3.40 LTS (supported until 30 Sep 2027)" }
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "group": "data",
+      "version": "16.4",
+      "since": "2023-09-14",
+      "eol": "2028-11-09",
+      "link": "https://endoflife.date/postgresql",
+      "where": { "fr": "données métier de tous les modules", "en": "business data of every module" },
+      "note": {
+        "fr": "Branche supportée jusqu'en novembre 2028. Les correctifs mineurs (16.15 disponible) restent à appliquer au rythme trimestriel des releases PostgreSQL.",
+        "en": "Branch supported until November 2028. Minor fixes (16.15 is out) still need to follow PostgreSQL's quarterly release cadence."
+      }
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "group": "data",
+      "version": "7.0",
+      "since": "2023-08-31",
+      "eol": "2027-08-31",
+      "link": "https://endoflife.date/mongodb",
+      "where": { "fr": "contenus, sessions, évènements, agrégations statistiques", "en": "content, sessions, events, statistics aggregations" },
+      "note": {
+        "fr": "Moins de deux ans de support restant. MongoDB 8.0 est supporté jusqu'en octobre 2029 : la migration doit être planifiée avant l'été 2027.",
+        "en": "Less than two years of support left. MongoDB 8.0 is supported until October 2029: the migration has to be planned before summer 2027."
+      },
+      "target": { "fr": "MongoDB 8.0", "en": "MongoDB 8.0" }
+    },
+    {
+      "id": "arcadedb",
+      "name": "ArcadeDB",
+      "group": "data",
+      "version": "26.10.2",
+      "cadence": "rolling",
+      "where": { "fr": "graphe de l'annuaire (remplace Neo4j depuis le 29/10/2026)", "en": "directory graph (replaced Neo4j on 29 Oct 2026)" },
+      "note": {
+        "fr": "Versionnement calendaire (année.mois) sans branche LTS : seule la dernière version reçoit des correctifs. La veille consiste donc à rester proche du dernier train de release.",
+        "en": "Calendar versioning (year.month) with no LTS branch: only the latest release gets fixes, so the discipline is to stay close to the current release train."
+      }
+    },
+    {
+      "id": "opensearch",
+      "name": "OpenSearch",
+      "group": "data",
+      "version": "2.19.7",
+      "maintenanceSince": "2025-05-06",
+      "cadence": "rolling",
+      "link": "https://endoflife.date/opensearch",
+      "where": { "fr": "moteur de recherche transverse et explorateur de ressources", "en": "cross-platform search engine and resource explorer" },
+      "note": {
+        "fr": "La branche 2.x n'est plus la branche courante depuis la sortie d'OpenSearch 3.0 (mai 2025) ; elle ne reçoit plus que des correctifs. La montée vers la 3.x réécrit les index : elle demande un snapshot et une fenêtre d'indisponibilité.",
+        "en": "The 2.x branch stopped being the current branch when OpenSearch 3.0 shipped (May 2025); it only gets fixes now. Moving to 3.x rewrites the indices: it needs a snapshot and a maintenance window."
+      },
+      "target": { "fr": "OpenSearch 3.x", "en": "OpenSearch 3.x" }
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "group": "data",
+      "version": "8.6",
+      "since": "2026-02-11",
+      "supersededOn": "2026-05-25",
+      "cadence": "rolling",
+      "link": "https://endoflife.date/redis",
+      "where": { "fr": "cache, verrous, limitation de débit, bannissement anti-force brute", "en": "cache, locks, rate limiting, brute-force bans" },
+      "note": {
+        "fr": "Redis sort une version mineure par trimestre et ne corrige que les plus récentes. 8.6 a été remplacée par 8.8 puis 8.10 : la mise à jour est un geste de routine, pas une migration.",
+        "en": "Redis ships a minor release every quarter and only fixes the recent ones. 8.6 was superseded by 8.8 then 8.10: updating is routine, not a migration."
+      }
+    },
+    {
+      "id": "nats",
+      "name": "NATS",
+      "group": "data",
+      "version": "2.12",
+      "cadence": "rolling",
+      "where": { "fr": "bus de messages temps réel (messagerie instantanée, présence)", "en": "real-time message bus (instant messaging, presence)" },
+      "note": {
+        "fr": "Pas de branche LTS : les correctifs vont sur la dernière mineure publiée.",
+        "en": "No LTS branch: fixes land on the latest published minor."
+      }
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "group": "frontend",
+      "version": "16.1",
+      "since": "2025-10-22",
+      "cadence": "current",
+      "link": "https://endoflife.date/nextjs",
+      "where": { "fr": "dashboard d'administration et portail", "en": "administration dashboard and portal" },
+      "note": {
+        "fr": "Branche courante. Next.js ne maintient que la majeure courante et la précédente : la 15 s'arrête le 31 janvier 2027.",
+        "en": "Current branch. Next.js only maintains the current and previous majors: 15 ends on 31 January 2027."
+      }
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "group": "frontend",
+      "version": "19",
+      "since": "2024-12-05",
+      "cadence": "current",
+      "link": "https://endoflife.date/react",
+      "where": { "fr": "tous les modules migrés en React (agenda, exercices, compétences…)", "en": "every module migrated to React (calendar, exercises, skills…)" },
+      "note": {
+        "fr": "Branche courante, pas de date de fin annoncée. Le risque est ici dans l'écosystème de librairies, suivi par le scan de dépendances.",
+        "en": "Current branch, with no announced end date. The risk here sits in the library ecosystem, tracked by the dependency scan."
+      }
+    },
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu Server",
+      "group": "infra",
+      "version": "22.04 LTS",
+      "since": "2022-04-21",
+      "eol": "2027-06-01",
+      "extendedUntil": "2032-04-21",
+      "link": "https://endoflife.date/ubuntu",
+      "where": { "fr": "système hôte des nœuds du cluster", "en": "host system of the cluster nodes" },
+      "note": {
+        "fr": "Support standard jusqu'en juin 2027 ; au-delà, seul le programme ESM (payant) continue de livrer des correctifs de sécurité.",
+        "en": "Standard support until June 2027; after that only the paid ESM programme keeps delivering security fixes."
+      },
+      "target": { "fr": "Ubuntu 24.04 LTS", "en": "Ubuntu 24.04 LTS" }
+    },
+    {
+      "id": "debian",
+      "name": "Debian",
+      "group": "infra",
+      "version": "12 Bookworm",
+      "since": "2023-06-10",
+      "eol": "2028-06-30",
+      "link": "https://endoflife.date/debian",
+      "where": { "fr": "images conteneurisées de base (MongoDB, outillage)", "en": "base container images (MongoDB, tooling)" },
+      "note": {
+        "fr": "Les autres images s'appuient sur Alpine, dont chaque branche est supportée deux ans : elles suivent le rythme des reconstructions d'image.",
+        "en": "The other images are Alpine-based, where each branch is supported for two years: they follow the image rebuild cadence."
+      }
+    },
+    {
+      "id": "moodle",
+      "name": "Moodle",
+      "group": "services",
+      "version": "5.2",
+      "since": "2026-04-20",
+      "eol": "2027-10-04",
+      "link": "https://endoflife.date/moodle",
+      "where": { "fr": "connecteur Moodle (service satellite)", "en": "Moodle connector (satellite service)" },
+      "note": {
+        "fr": "Moodle 5.3 est la version LTS, supportée jusqu'en octobre 2029.",
+        "en": "Moodle 5.3 is the LTS release, supported until October 2029."
+      }
+    },
+    {
+      "id": "nextcloud",
+      "name": "Nextcloud",
+      "group": "services",
+      "version": "34",
+      "since": "2026-06-09",
+      "eol": "2027-06-30",
+      "link": "https://endoflife.date/nextcloud",
+      "where": { "fr": "espace documentaire et édition en ligne (avec Collabora)", "en": "document space and online editing (with Collabora)" },
+      "note": {
+        "fr": "Nextcloud publie une majeure par trimestre et supporte chaque branche environ un an : la montée est régulière par construction.",
+        "en": "Nextcloud ships a major every quarter and supports each branch for about a year: upgrading is regular by design."
+      }
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "group": "services",
+      "version": "11.4 LTS",
+      "since": "2024-05-29",
+      "eol": "2029-05-29",
+      "link": "https://endoflife.date/mariadb",
+      "where": { "fr": "bases des services satellites (Moodle, WordPress)", "en": "databases of the satellite services (Moodle, WordPress)" },
+      "note": {
+        "fr": "Branche LTS confortable. L'instance dédiée à Matomo est restée en 10.11, supportée jusqu'en février 2028.",
+        "en": "A comfortable LTS branch. The instance dedicated to Matomo is still on 10.11, supported until February 2028."
+      }
+    },
+    {
+      "id": "etherpad",
+      "name": "Etherpad",
+      "group": "services",
+      "version": "3.3",
+      "cadence": "rolling",
+      "where": { "fr": "édition collaborative de pads", "en": "collaborative pad editing" },
+      "note": {
+        "fr": "Projet communautaire sans politique de support : seule la dernière version est corrigée.",
+        "en": "Community project with no support policy: only the latest release is fixed."
+      }
+    }
+  ]
+}

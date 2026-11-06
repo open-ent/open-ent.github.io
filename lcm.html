@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="lcm.title">Open-ENT — Cycle de vie des composants</title>
+  <script src="./i18n.js"></script>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3354;
+      --accent: #4f8ef7;
+      --accent2: #7c5cfc;
+      --green: #22c55e;
+      --yellow: #eab308;
+      --orange: #f97316;
+      --red: #ef4444;
+      --text: #e2e8f0;
+      --muted: #8892aa;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, 'SF Mono', 'Fira Code', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+    html { scroll-behavior: smooth; }
+
+    header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1229 50%, #1a1020 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    .header-top { display: flex; align-items: center; gap: 1rem; }
+    .header-logo { height: 44px; object-fit: contain; }
+    h1.page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    h1.page-title span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
+    .nav { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; margin-top: 0.9rem; }
+    .nav a { font-size: 0.82rem; color: var(--accent); text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+    .intro { font-size: 0.92rem; line-height: 1.65; color: #c7d0e2; max-width: 78ch; }
+
+    h2.section-title {
+      font-size: 1rem; margin: 2.5rem 0 0.35rem; padding-top: 0.9rem;
+      border-top: 1px solid var(--border); color: var(--accent); font-family: var(--mono);
+    }
+    .hint { font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; max-width: 78ch; line-height: 1.55; }
+
+    /* ── Tuiles de synthèse ─────────────────────────────────────────── */
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin: 1.5rem 0 0; }
+    .tile {
+      background: var(--surface); border: 1px solid var(--border); border-left-width: 3px;
+      border-radius: 10px; padding: 0.85rem 1rem;
+    }
+    .tile .n { font-size: 1.6rem; font-weight: 700; line-height: 1.1; }
+    .tile .l { font-size: 0.74rem; color: var(--muted); margin-top: 0.15rem; }
+    .tile.expired { border-left-color: var(--red); }     .tile.expired .n { color: var(--red); }
+    .tile.urgent  { border-left-color: var(--orange); }  .tile.urgent .n  { color: var(--orange); }
+    .tile.watch   { border-left-color: var(--yellow); }  .tile.watch .n   { color: var(--yellow); }
+    .tile.ok      { border-left-color: var(--green); }   .tile.ok .n      { color: var(--green); }
+    .tile.rolling { border-left-color: var(--accent); }  .tile.rolling .n { color: var(--accent); }
+
+    /* ── Frise ──────────────────────────────────────────────────────── */
+    .chart-wrap {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.5rem 0.25rem 0.75rem; overflow-x: auto;
+    }
+    .chart-wrap svg { display: block; width: 100%; min-width: 780px; }
+    .legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.85rem; font-size: 0.75rem; color: var(--muted); }
+    .legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .legend i { width: 14px; height: 9px; border-radius: 3px; display: inline-block; }
+
+    /* ── Tableau ────────────────────────────────────────────────────── */
+    .grp { margin-top: 1.5rem; }
+    .grp h3 {
+      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); margin-bottom: 0.5rem; font-weight: 600;
+    }
+    .row {
+      background: var(--surface); border: 1px solid var(--border); border-left-width: 3px;
+      border-radius: 10px; padding: 0.85rem 1rem; margin-bottom: 0.6rem;
+    }
+    .row.expired { border-left-color: var(--red); }
+    .row.urgent  { border-left-color: var(--orange); }
+    .row.watch   { border-left-color: var(--yellow); }
+    .row.ok      { border-left-color: var(--green); }
+    .row.rolling { border-left-color: var(--accent); }
+    .row-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+    .row-name { font-weight: 600; font-size: 0.95rem; }
+    .row-ver {
+      font-family: var(--mono); font-size: 0.78rem; color: #c4cde0;
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 5px; padding: 0.08rem 0.4rem;
+    }
+    .row-badge {
+      margin-left: auto; font-size: 0.72rem; font-weight: 600;
+      border-radius: 999px; padding: 0.15rem 0.6rem; white-space: nowrap;
+    }
+    .row.expired .row-badge { background: rgba(239,68,68,0.15); color: #fca5a5; }
+    .row.urgent  .row-badge { background: rgba(249,115,22,0.15); color: #fdba74; }
+    .row.watch   .row-badge { background: rgba(234,179,8,0.15); color: #fde047; }
+    .row.ok      .row-badge { background: rgba(34,197,94,0.15); color: #86efac; }
+    .row.rolling .row-badge { background: rgba(79,142,247,0.15); color: #93c5fd; }
+    .row-where { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; }
+    .row-meta { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; margin-top: 0.5rem; font-size: 0.78rem; }
+    .row-meta b { color: var(--text); font-weight: 600; }
+    .row-meta span { color: var(--muted); }
+    .row-note { font-size: 0.82rem; line-height: 1.55; color: #b7c2d6; margin-top: 0.55rem; }
+    .row-target { font-size: 0.78rem; margin-top: 0.4rem; color: var(--muted); }
+    .row-target b { color: var(--accent); font-weight: 600; }
+    .row-target a { color: var(--accent); text-decoration: none; }
+
+    /* ── Explications ───────────────────────────────────────────────── */
+    .lead { font-size: 0.92rem; line-height: 1.65; color: #c7d0e2; max-width: 78ch; margin-bottom: 1.2rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.9rem; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; }
+    .card h4 { font-size: 0.9rem; margin-bottom: 0.45rem; color: var(--text); }
+    .card p { font-size: 0.83rem; line-height: 1.6; color: var(--muted); }
+    .card .ico { font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
+
+    .steps { list-style: none; counter-reset: s; display: grid; gap: 0.6rem; }
+    .steps li {
+      counter-increment: s; position: relative; padding: 0.8rem 1rem 0.8rem 3rem;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      font-size: 0.84rem; line-height: 1.6; color: var(--muted);
+    }
+    .steps li::before {
+      content: counter(s); position: absolute; left: 1rem; top: 0.85rem;
+      width: 1.3rem; height: 1.3rem; border-radius: 50%;
+      background: var(--surface2); border: 1px solid var(--border);
+      color: var(--accent); font-size: 0.72rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .steps b { color: var(--text); font-weight: 600; }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 1.5rem 2rem;
+      text-align: center; font-size: 0.78rem; color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    .empty { color: var(--muted); text-align: center; padding: 2rem; }
+
+    @media (max-width: 640px) {
+      main { padding: 1.25rem; }
+      .header-inner { padding: 0 1.25rem; }
+      .header-top { flex-wrap: wrap; gap: 0.6rem; }
+      .header-logo { height: 36px; }
+      h1.page-title { font-size: 1.25rem; }
+      .row-badge { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <img src="logo-text.png" alt="Open-ENT" class="header-logo">
+      <div>
+        <h1 class="page-title"><span data-i18n="lcm.h1a">Cycle de vie</span> <span data-i18n="lcm.h1b">des composants</span></h1>
+        <div class="subtitle" data-i18n="lcm.subtitle">Fin de support des briques techniques d’Open ENT v3, et ce qu’il reste de marge</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="./" data-i18n="nav.dashboard">← Artifacts Dashboard</a>
+      <a href="./security.html" data-i18n="nav.security">Librairies &amp; CVE</a>
+      <a href="./updates.html" data-i18n="nav.updates">Nouveautés</a>
+      <a href="./changelog.html" data-i18n="nav.changelog">Changelog des patchs</a>
+      <span data-lang-switch style="margin-left:auto;"></span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <p class="intro" data-i18n="lcm.intro"></p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <h2 class="section-title" data-i18n="lcm.timelineTitle">Marge de support restante</h2>
+  <p class="hint" data-i18n="lcm.timelineHint"></p>
+  <div class="chart-wrap"><div id="chart"><div class="empty" data-i18n="lcm.loading">Chargement…</div></div></div>
+  <div class="legend" id="legend"></div>
+
+  <h2 class="section-title" data-i18n="lcm.tableTitle">Détail par composant</h2>
+  <div id="table"></div>
+
+  <h2 class="section-title" data-i18n="lcm.whyTitle">Pourquoi Open ENT v3 suit les versions supportées</h2>
+  <p class="lead" data-i18n="lcm.whyLead"></p>
+  <div class="cards">
+    <div class="card"><span class="ico" aria-hidden="true">🛡️</span><h4 data-i18n="lcm.why1t"></h4><p data-i18n="lcm.why1b"></p></div>
+    <div class="card"><span class="ico" aria-hidden="true">🎓</span><h4 data-i18n="lcm.why2t"></h4><p data-i18n="lcm.why2b"></p></div>
+    <div class="card"><span class="ico" aria-hidden="true">📉</span><h4 data-i18n="lcm.why3t"></h4><p data-i18n="lcm.why3b"></p></div>
+    <div class="card"><span class="ico" aria-hidden="true">🚀</span><h4 data-i18n="lcm.why4t"></h4><p data-i18n="lcm.why4b"></p></div>
+  </div>
+
+  <h2 class="section-title" data-i18n="lcm.howTitle">Comment la mise à jour est tenue</h2>
+  <ol class="steps">
+    <li><b data-i18n="lcm.how1t"></b> — <span data-i18n="lcm.how1b"></span></li>
+    <li><b data-i18n="lcm.how2t"></b> — <span data-i18n="lcm.how2b"></span></li>
+    <li><b data-i18n="lcm.how3t"></b> — <span data-i18n="lcm.how3b"></span></li>
+    <li><b data-i18n="lcm.how4t"></b> — <span data-i18n="lcm.how4b"></span></li>
+  </ol>
+</main>
+
+<footer>
+  <span id="footer-note"></span>
+</footer>
+
+<script>
+  var DATA = null;
+  var TODAY = new Date();
+  var STATUS_ORDER = ['expired', 'urgent', 'watch', 'ok', 'rolling'];
+  var COLORS = { expired: '#ef4444', urgent: '#f97316', watch: '#eab308', ok: '#22c55e', rolling: '#4f8ef7' };
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function colon() { return I18N.lang === 'fr' ? ' : ' : ': '; }
+  function L(v) { return v && typeof v === 'object' ? (v[I18N.lang] || v.fr || '') : (v || ''); }
+  function d(s) { return s ? new Date(s + 'T00:00:00Z') : null; }
+  function monthsBetween(a, b) {
+    return (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()) +
+           (b.getDate() >= a.getDate() ? 0 : -1);
+  }
+  function fmtMonth(date) {
+    return date.toLocaleDateString(I18N.locale, { month: 'short', year: 'numeric', timeZone: 'UTC' });
+  }
+  function fmtDate(date) {
+    return date.toLocaleDateString(I18N.locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  }
+  function fmtDuration(months) {
+    var m = Math.abs(months);
+    if (m < 1) return t('lcm.lessMonth');
+    var y = Math.floor(m / 12), r = m % 12;
+    if (!y) return t('lcm.months', { n: r });
+    var ys = y === 1 ? t('lcm.year', { n: y }) : t('lcm.years', { n: y });
+    return r ? t('lcm.yearsMonths', { y: ys, m: t('lcm.months', { n: r }) }) : ys;
+  }
+
+  // Statut d'un composant : hors support, moins de 12/24 mois, au-delà, ou flux continu.
+  function statusOf(c) {
+    var eol = d(c.eol);
+    if (!eol) return 'rolling';
+    var m = monthsBetween(TODAY, eol);
+    if (m < 0) return 'expired';
+    if (m < 12) return 'urgent';
+    if (m < 24) return 'watch';
+    return 'ok';
+  }
+
+  function sorted(components) {
+    return components.slice().sort(function (a, b) {
+      var sa = STATUS_ORDER.indexOf(statusOf(a)), sb = STATUS_ORDER.indexOf(statusOf(b));
+      if (sa !== sb) return sa - sb;
+      var ea = d(a.eol), eb = d(b.eol);
+      if (ea && eb) return ea - eb;
+      return ea ? -1 : (eb ? 1 : 0);
+    });
+  }
+
+  // ── Tuiles ──────────────────────────────────────────────────────────
+  function renderTiles() {
+    var counts = { expired: 0, urgent: 0, watch: 0, ok: 0, rolling: 0 };
+    DATA.components.forEach(function (c) { counts[statusOf(c)]++; });
+    document.getElementById('tiles').innerHTML = STATUS_ORDER.map(function (s) {
+      return '<div class="tile ' + s + '"><div class="n">' + counts[s] + '</div>' +
+             '<div class="l">' + esc(t('lcm.st.' + s)) + '</div></div>';
+    }).join('');
+  }
+
+  function renderLegend() {
+    document.getElementById('legend').innerHTML = STATUS_ORDER.map(function (s) {
+      return '<span><i style="background:' + COLORS[s] + (s === 'rolling' ? ';opacity:.55' : '') + '"></i>' +
+             esc(t('lcm.st.' + s)) + '</span>';
+    }).join('');
+  }
+
+  // ── Frise : une barre par composant, de l'instant présent à la fin de support ──
+  function renderChart() {
+    var W = 1000, PAD_L = 212, PAD_R = 78, ROW = 26, GRP = 30, TOP = 46;
+    var items = [];
+    DATA.groups.forEach(function (g) {
+      var inGroup = sorted(DATA.components.filter(function (c) { return c.group === g.id; }));
+      if (!inGroup.length) return;
+      items.push({ group: L(g) });
+      inGroup.forEach(function (c) { items.push({ comp: c }); });
+    });
+
+    var H = TOP + items.reduce(function (acc, it) { return acc + (it.group ? GRP : ROW); }, 0) + 14;
+    var plotW = W - PAD_L - PAD_R;
+
+    // Axe : 18 mois de recul pour loger le retard déjà pris, puis jusqu'à la dernière fin de support.
+    var start = new Date(Date.UTC(TODAY.getUTCFullYear(), TODAY.getUTCMonth() - 18, 1));
+    var lastEol = DATA.components.reduce(function (acc, c) {
+      var e = d(c.eol); return e && e > acc ? e : acc;
+    }, new Date(Date.UTC(TODAY.getUTCFullYear() + 1, 0, 1)));
+    var end = new Date(Date.UTC(lastEol.getUTCFullYear() + 1, 0, 1));
+    var span = end - start;
+    function x(date) { return PAD_L + Math.max(0, Math.min(1, (date - start) / span)) * plotW; }
+    var xToday = x(TODAY);
+
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(t('lcm.timelineTitle')) + '">';
+    svg += '<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="' + COLORS.rolling +
+           '" stop-opacity=".5"/><stop offset="1" stop-color="' + COLORS.rolling + '" stop-opacity=".05"/></linearGradient></defs>';
+
+    // Graduation annuelle
+    for (var y = start.getUTCFullYear(); y <= end.getUTCFullYear(); y++) {
+      var tick = new Date(Date.UTC(y, 0, 1));
+      if (tick < start || tick > end) continue;
+      var tx = x(tick);
+      svg += '<line x1="' + tx + '" y1="' + (TOP - 14) + '" x2="' + tx + '" y2="' + (H - 10) +
+             '" stroke="#2e3354" stroke-width="1"/>';
+      svg += '<text x="' + (tx + 5) + '" y="' + (TOP - 18) + '" fill="#8892aa" font-size="11" font-family="var(--font)">' + y + '</text>';
+    }
+
+    // Repère « aujourd'hui »
+    svg += '<line x1="' + xToday + '" y1="' + (TOP - 14) + '" x2="' + xToday + '" y2="' + (H - 10) +
+           '" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="3 3" opacity=".7"/>';
+    svg += '<text x="' + xToday + '" y="' + (TOP - 33) + '" fill="#e2e8f0" font-size="10.5" text-anchor="middle" ' +
+           'font-family="var(--font)">' + esc(t('lcm.today')) + '</text>';
+
+    var yPos = TOP;
+    items.forEach(function (it) {
+      if (it.group) {
+        svg += '<text x="8" y="' + (yPos + 19) + '" fill="#8892aa" font-size="10.5" font-weight="600" ' +
+               'letter-spacing=".07em" font-family="var(--font)">' + esc(it.group.toUpperCase()) + '</text>';
+        yPos += GRP;
+        return;
+      }
+      var c = it.comp, st = statusOf(c), cy = yPos + ROW / 2, eol = d(c.eol);
+      var x1, x2, label, title;
+
+      if (st === 'rolling') {
+        x1 = xToday; x2 = PAD_L + plotW;
+        label = t('lcm.rolling');
+        title = L(c.name ? { fr: c.name, en: c.nameEn || c.name } : {}) + ' ' + (c.version || '') + ' — ' + t('lcm.rollingLong');
+      } else if (st === 'expired') {
+        x1 = x(eol); x2 = xToday;
+        label = fmtMonth(eol);
+        title = t('lcm.st.expired') + ' — ' + fmtDate(eol) + ' (' +
+                t('lcm.expiredSince', { dur: fmtDuration(monthsBetween(TODAY, eol)) }) + ')';
+      } else {
+        x1 = xToday; x2 = x(eol);
+        label = fmtMonth(eol);
+        title = fmtDate(eol) + ' — ' + fmtDuration(monthsBetween(TODAY, eol));
+      }
+
+      var name = c.nameEn && I18N.lang === 'en' ? c.nameEn : c.name;
+      svg += '<g><title>' + esc(name + ' ' + (c.version || '') + ' · ' + title) + '</title>';
+      svg += '<rect x="0" y="' + yPos + '" width="' + W + '" height="' + ROW + '" fill="transparent"/>';
+      svg += '<text x="20" y="' + (cy + 4) + '" fill="#e2e8f0" font-size="12" font-family="var(--font)">' + esc(name) + '</text>';
+      svg += '<text x="' + (PAD_L - 12) + '" y="' + (cy + 4) + '" fill="#8892aa" font-size="11" text-anchor="end" ' +
+             'font-family="var(--mono)">' + esc(c.version || '') + '</text>';
+      svg += '<line x1="' + PAD_L + '" y1="' + cy + '" x2="' + (PAD_L + plotW) + '" y2="' + cy +
+             '" stroke="#22263a" stroke-width="1"/>';
+      if (st === 'rolling') {
+        svg += '<rect x="' + x1 + '" y="' + (cy - 5) + '" width="' + Math.max(2, x2 - x1) + '" height="10" rx="5" fill="url(#fade)"/>';
+      } else {
+        svg += '<rect x="' + x1 + '" y="' + (cy - 6) + '" width="' + Math.max(3, x2 - x1) + '" height="12" rx="6" fill="' +
+               COLORS[st] + '" fill-opacity=".85"/>';
+      }
+      // Fin de support tronquée à gauche de l'axe : on marque la coupure.
+      if (st === 'expired' && eol < start) {
+        svg += '<text x="' + (PAD_L + 2) + '" y="' + (cy + 4) + '" fill="#0f1117" font-size="11" font-weight="700" ' +
+               'font-family="var(--font)">‹</text>';
+      }
+      var lx = st === 'expired' ? x1 - 6 : x2 + 6;
+      var anchor = st === 'expired' ? 'end' : 'start';
+      if (st === 'expired' && eol < start) { lx = x2 + 6; anchor = 'start'; }
+      if (st === 'rolling') { lx = x1 + 10; anchor = 'start'; label = t('lcm.st.rolling'); }
+      svg += '<text x="' + lx + '" y="' + (cy + 4) + '" fill="' + COLORS[st] + '" font-size="10.5" ' +
+             'text-anchor="' + anchor + '" font-family="var(--font)">' + esc(label) + '</text>';
+      svg += '</g>';
+      yPos += ROW;
+    });
+
+    svg += '</svg>';
+    document.getElementById('chart').innerHTML = svg;
+  }
+
+  // ── Tableau détaillé ────────────────────────────────────────────────
+  function renderTable() {
+    var html = DATA.groups.map(function (g) {
+      var inGroup = sorted(DATA.components.filter(function (c) { return c.group === g.id; }));
+      if (!inGroup.length) return '';
+      return '<div class="grp"><h3>' + esc(L(g)) + '</h3>' + inGroup.map(rowHtml).join('') + '</div>';
+    }).join('');
+    document.getElementById('table').innerHTML = html;
+  }
+
+  function rowHtml(c) {
+    var st = statusOf(c), eol = d(c.eol);
+    var name = c.nameEn && I18N.lang === 'en' ? c.nameEn : c.name;
+    var badge, left;
+
+    if (st === 'rolling') {
+      badge = t('lcm.st.rolling');
+      left = t('lcm.rolling');
+    } else if (st === 'expired') {
+      badge = t('lcm.st.expired');
+      left = t('lcm.expiredSince', { dur: fmtDuration(monthsBetween(TODAY, eol)) });
+    } else {
+      badge = t('lcm.st.' + st);
+      left = fmtDuration(monthsBetween(TODAY, eol));
+    }
+
+    var meta = [];
+    meta.push('<span><b>' + esc(t('lcm.thEol')) + '</b>' + colon() +
+      (eol ? esc(fmtDate(eol)) : esc(t('lcm.rolling'))) + '</span>');
+    if (st !== 'rolling') meta.push('<span><b>' + esc(t('lcm.thLeft')) + '</b>' + colon() + esc(left) + '</span>');
+    if (c.since) meta.push('<span>' + esc(t('lcm.since', { date: fmtMonth(d(c.since)) })) + '</span>');
+    if (c.activeUntil) meta.push('<span>' + esc(t('lcm.activeUntil', { date: fmtMonth(d(c.activeUntil)) })) + '</span>');
+    if (c.extendedUntil) meta.push('<span>' + esc(t('lcm.extended', { date: fmtMonth(d(c.extendedUntil)) })) + '</span>');
+
+    var h = '<div class="row ' + st + '">';
+    h += '<div class="row-head"><span class="row-name">' + esc(name) + '</span>' +
+         '<span class="row-ver">' + esc(c.version || '') + '</span>' +
+         '<span class="row-badge">' + esc(badge) + '</span></div>';
+    if (c.where) h += '<div class="row-where">' + esc(L(c.where)) + '</div>';
+    h += '<div class="row-meta">' + meta.join('') + '</div>';
+    if (c.note) h += '<div class="row-note">' + esc(L(c.note)) + '</div>';
+    if (c.target) h += '<div class="row-target">' + esc(t('lcm.target')) + colon() + '<b>' + esc(L(c.target)) + '</b></div>';
+    if (c.link) h += '<div class="row-target"><a href="' + esc(c.link) + '" target="_blank" rel="noopener">' +
+                     esc(c.link.replace(/^https?:\/\//, '')) + ' ↗</a></div>';
+    h += '</div>';
+    return h;
+  }
+
+  function renderFooter() {
+    document.getElementById('footer-note').innerHTML =
+      t('lcm.footer', { date: fmtDate(d(DATA.checkedAt)) });
+  }
+
+  function renderAll() {
+    if (!DATA) return;
+    renderTiles();
+    renderLegend();
+    renderChart();
+    renderTable();
+    renderFooter();
+  }
+
+  fetch('./lcm.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (json) { DATA = json; renderAll(); })
+    .catch(function (err) {
+      document.getElementById('chart').innerHTML =
+        '<div class="empty">' + esc(t('lcm.error', { msg: err.message })) + '</div>';
+    });
+
+  I18N.onChange(renderAll);
+</script>
+</body>
+</html>
