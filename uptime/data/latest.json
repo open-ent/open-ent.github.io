@@ -1,30 +1,29 @@
 {
-  "generatedAt": "2026-11-06T15:22:29.181Z",
+  "generatedAt": "2026-11-06T15:24:07.521Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-06T15:22:29.177Z",
-    "isUp": false,
-    "httpStatus": 503,
-    "responseTimeMs": 1225,
-    "error": null,
-    "maintenance": "2026-11-06-1522-deploy"
+    "timestamp": "2026-11-06T15:24:07.513Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 745,
+    "error": null
   },
   "totals": {
-    "checks": 578,
-    "up": 563,
+    "checks": 579,
+    "up": 564,
     "down": 2,
     "maintenance": 14
   },
   "availability": {
-    "all": 99.645,
+    "all": 99.646,
     "last24h": 100,
     "last7d": 96.97,
-    "last30d": 99.225
+    "last30d": 99.231
   },
   "latencyMs": {
-    "latest": 1225,
+    "latest": 745,
     "avg": 849,
     "p95": 1506,
     "p99": 1758
@@ -54,21 +53,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-11-06-1522-deploy",
-      "title": "Mise à jour : éditeur de schémas et moteur de l'ENT",
-      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-      "reason": "",
-      "kind": "deploy",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-11-06T15:22:11.227Z",
-      "endsAt": "2026-11-06T15:42:11.227Z",
-      "status": "scheduled",
-      "createdAt": "2026-11-06T15:22:11.227Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-11-06-1522-deploy",
+        "title": "Mise à jour : éditeur de schémas et moteur de l'ENT",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-11-06T15:22:11.227Z",
+        "endsAt": "2026-11-06T15:23:49.543Z",
+        "status": "completed",
+        "createdAt": "2026-11-06T15:22:11.227Z"
+      },
       {
         "id": "2026-11-04-2107-deploy",
         "title": "Mise à jour technique",
@@ -120,19 +120,6 @@
         "endsAt": "2026-10-29T21:35:29.487Z",
         "status": "completed",
         "createdAt": "2026-10-29T21:33:57.708Z"
-      },
-      {
-        "id": "2026-10-29-1608-migration",
-        "title": "Migration de la base de l'annuaire",
-        "description": "L'ENT est indisponible le temps de transférer l'annuaire (comptes, classes, groupes, droits) vers un nouveau moteur de base de données. Aucune donnée n'est perdue ; les modifications sont suspendues pendant l'opération.",
-        "reason": "",
-        "kind": "migration",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-10-29T16:08:33.263Z",
-        "endsAt": "2026-10-29T16:24:07.071Z",
-        "status": "completed",
-        "createdAt": "2026-10-29T16:08:33.263Z"
       }
     ]
   }
