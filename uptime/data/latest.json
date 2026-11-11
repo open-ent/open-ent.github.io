@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-10T23:32:30.837Z",
+  "generatedAt": "2026-11-11T02:57:42.868Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-10T23:32:30.829Z",
+    "timestamp": "2026-11-11T02:57:42.863Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 703,
+    "responseTimeMs": 562,
     "error": null
   },
   "totals": {
-    "checks": 598,
-    "up": 583,
+    "checks": 599,
+    "up": 584,
     "down": 2,
     "maintenance": 14
   },
@@ -23,8 +23,8 @@
     "last30d": 99.219
   },
   "latencyMs": {
-    "latest": 703,
-    "avg": 846,
+    "latest": 562,
+    "avg": 845,
     "p95": 1504,
     "p99": 1758
   },
