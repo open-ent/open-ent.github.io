@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-14T09:28:48.811Z",
+  "generatedAt": "2026-11-14T11:26:03.239Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-14T09:28:48.807Z",
-    "isUp": true,
-    "httpStatus": 200,
-    "responseTimeMs": 537,
-    "error": null
+    "timestamp": "2026-11-14T11:26:03.235Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 1249,
+    "error": null,
+    "maintenance": "2026-11-14-1125-deploy"
   },
   "totals": {
-    "checks": 611,
+    "checks": 612,
     "up": 596,
     "down": 2,
-    "maintenance": 14
+    "maintenance": 15
   },
   "availability": {
     "all": 99.665,
     "last24h": 100,
     "last7d": 100,
-    "last30d": 99.206
+    "last30d": 99.2
   },
   "latencyMs": {
-    "latest": 537,
+    "latest": 1249,
     "avg": 841,
     "p95": 1504,
     "p99": 1758
@@ -53,7 +54,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-11-14-1125-deploy",
+      "title": "Mise à jour de la plateforme",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-14T11:25:47.604Z",
+      "endsAt": "2026-11-14T11:45:47.604Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-14T11:25:47.604Z"
+    },
     "upcoming": [],
     "recent": [
       {
