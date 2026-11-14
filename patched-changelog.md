@@ -1,6 +1,6 @@
 # Changelog consolidé des forks "-patched"
 
-> Généré par `scripts/release/patched-changelog.sh` le 2026-10-08 05:03.
+> Généré par `scripts/release/patched-changelog.sh` le 2026-10-14 20:00.
 > Pour chaque dépôt : commits ajoutés par le fork **par-dessus la dernière release upstream**
 > (tag non `-patched` ancêtre du HEAD référencé). Ce sont les commits à re-baser lors d'une montée de version.
 
@@ -51,11 +51,13 @@ f145f7c chore: update build image
 
 ## `connectors/lool`
 
-- **branche référencée** : `(detached)` @ `4642f16`
-- **base upstream** : `2.2.5`  →  delta = `2.2.5..HEAD` (**21 commit(s)**)
+- **branche référencée** : `2.2.7-patched-dev` @ `49b46ef`
+- **base upstream** : `2.2.5`  →  delta = `2.2.5..HEAD` (**23 commit(s)**)
 - **tags patched** : 2.2.5-patched 2.2.7-patched 
 
 ```
+49b46ef ci: purger entcore du cache Maven et construire en JDK 21
+59e3d9b fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
 4642f16 feat: montée de version lool 2.2.5-patched -> 2.2.7-patched
 db36df6 feat: passer les libs entcore en 6.16.8-patched
 13fb236 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -81,7 +83,7 @@ fdc03eb release: 2.2.6
 
 ## `connectors/moodle-connector`
 
-- **branche référencée** : `(detached)` @ `647b23d`
+- **branche référencée** : `2.3.4-patched-dev` @ `647b23d`
 - **base upstream** : `2.2.4`  →  delta = `2.2.4..HEAD` (**31 commit(s)**)
 - **tags patched** : 2.2.4-patched 2.3.4-patched 
 
@@ -121,11 +123,13 @@ e0f4f28 ci: improve image build
 
 ## `connectors/nextcloud`
 
-- **branche référencée** : `(detached)` @ `8317aa9`
-- **base upstream** : `2.4.2`  →  delta = `2.4.2..HEAD` (**46 commit(s)**)
+- **branche référencée** : `2.4.3-patched-dev` @ `90a0dac`
+- **base upstream** : `2.4.2`  →  delta = `2.4.2..HEAD` (**48 commit(s)**)
 - **tags patched** : 2.4.2-patched 2.4.3-patched 
 
 ```
+90a0dac build: construire le backend en JDK 21 comme la CI
+149782a ci: purger entcore du cache Maven et construire en JDK 21
 8317aa9 feat: montée de version nextcloud 2.4.2-patched -> 2.4.3-patched
 d4d6fa4 feat: passer les libs entcore en 6.16.8-patched
 9ba67e5 fix(ci): isoler org.entcore:tests dans un profil gatling-it
@@ -176,11 +180,12 @@ a292bcc feat(preview): afficher les vignettes/aperçus d'images dans Documents s
 
 ## `connectors/pmb-connector`
 
-- **branche référencée** : `(detached)` @ `656140c`
-- **base upstream** : `2.2.2`  →  delta = `2.2.2..HEAD` (**22 commit(s)**)
+- **branche référencée** : `2.2.3-patched-dev` @ `654feb7`
+- **base upstream** : `2.2.2`  →  delta = `2.2.2..HEAD` (**23 commit(s)**)
 - **tags patched** : 2.2.2-patched 2.2.3-patched 
 
 ```
+654feb7 ci: purger entcore du cache Maven et construire en JDK 21
 656140c feat: montée de version pmb-connector 2.2.2-patched -> 2.2.3-patched
 23f2604 feat: passer les libs entcore en 6.16.8-patched
 a3e07f0 fix(ci): retirer une dépendance déclarée deux fois dans le pom
@@ -232,11 +237,16 @@ ae72457 feat(portail): portail des établissements par académie/ENT régional
 
 ## `libs/edifice-entcore-libs`
 
-- **branche référencée** : `(detached)` @ `b65c6245`
-- **base upstream** : `6.16.8`  →  delta = `6.16.8..HEAD` (**8 commit(s)**)
+- **branche référencée** : `6.16.8-patched-dev` @ `baf44f83`
+- **base upstream** : `6.16.8`  →  delta = `6.16.8..HEAD` (**13 commit(s)**)
 - **tags patched** : 6.16.3-patched 6.16.7-patched 6.16.8-patched 
 
 ```
+baf44f83 fix(search): rétablir l'interrogation des sources sans verrou distribué
+e228f635 build: construire en JDK 21 comme le fait la CI
+86e202a8 fix(search): interroger les sources de recherche sans verrou distribué
+cbfaef1d fix(search): rendre facultatif le verrou distribué des sources de recherche
+c5b04bc0 feat(mfa): exiger le second facteur dès la connexion pour les comptes obligatoires
 b65c6245 fix(events): ne pas déréférencer un utilisateur absent dans isDuplicateAccessModule
 9a098db4 fix(timeline): verrou local pour eventsI18n, comme en 6.14.9-patched
 cff835a6 feat(common): verrouillage des identifiants d'un compte
@@ -249,92 +259,92 @@ d489251c feat: fork patché 6.16.3-patched des libs extraites d'entcore
 
 ## `libs/entcore`
 
-- **branche référencée** : `(detached)` @ `ca7b94c1c`
-- **base upstream** : `6.16.14`  →  delta = `6.16.14..HEAD` (**6237 commit(s)**)
+- **branche référencée** : `6.16.14-patched-dev` @ `e87b7bb95c`
+- **base upstream** : `6.16.14`  →  delta = `6.16.14..HEAD` (**6246 commit(s)**)
 - **tags patched** : 6.14.9-patched 6.14.9-patched-SNAPSHOT 6.16.10-patched 6.16.14-patched 
 
 ```
-ca7b94c1c feat: passer les libs en 6.16.8-patched
-7c07e51bc fix(ci): purger org.entcore du cache Maven avant le build
-057560785 fix(workspace): le compteur de stockage ne descend plus sous zéro
-c5cae90d0 feat(workspace,conversation): lister et purger les fichiers d'un compte
-307bd571e feat(auth,directory): le verrou d'un compte protège aussi ses rattachements
-e919176f7 feat(auth): étendre la refonte à l'écran de nouveau mot de passe
-f50b8e1f1 feat(auth,directory): verrouillage des identifiants d'un compte
-e0de81027 fix(session,neo4j): adresse mongo « null… » et NPE sur transaction vide
-1deea7a4e feat(directory): ajoute structureId à GroupService.getInfos()/getBatchInfos()
-456aa155d feat: access to google drive and onedrive for workspace
-94d5688ec feat(session): porter l'appareil dans la session et lister ses sessions par utilisateur
-170401a90 feat: manage authentification per user agent for a user
-48c76da56 feat: manage authentification per user agent for a user
-9c60842f7 fix(infra): <multi-combo> affichait "[object Object]" au lieu du titre de chaque option
-72155cd02 perf(oeip): ne ramène que les identifiants pour repérer les orphelins
-fb6260305 fix(timeline): retablir beta() et renderTimeline2dOrBeta perdus a la fusion
-a99266822 fix(interoperability): versionner common avec entCoreLibsVersion
-6639465bd feat(auth): étendre la refonte aux écrans d'activation et de CGU
-891ef1431 feat: improve screen auth + PWA
-184ddfc2b fix(auth): restore the 16 missing French translations
-3673d2f22 fix(timeline): serialize eventsI18n appends without starving the worker pool
-1fa53717a add function admin collectivite
-8ae1cc80c fix: add admin collectivite for role
-a0612d21f feat: oeip purge
-027815b73 feat(oeip): signature détachée et scellement du manifeste
-9a1788701 feat(interoperability): produit la notice de traitement et la provenance
-c79283f1e feat(interoperability): rend la pseudonymisation effective
-fb4ee2d20 feat(interoperability): reprise sémantique de l'espace documentaire
-bd1ff6941 feat(interoperability): reprise sémantique du blog, sans charge utile d'origine
-602982583 feat(interoperability): projection Common Cartridge, et résolution globale des liens
-98f489636 feat(interoperability): import sémantique de l'annuaire — l'appariement d'identité
-b3ffd29cc feat(interoperability): l'espace documentaire en niveau Core, et l'écart avoué
-b65c65a0f feat(interoperability): le blog en niveau Core, avec réécriture des liens internes
-979c7d55a feat(interoperability): premier mapper sémantique — l'annuaire en niveau Core
-d541ee731 feat(interoperability): permet de désigner le compte destinataire d'un import
-6b544f9cf feat(interoperability): routes d'export et d'import, niveau Native opérationnel
-c54fd8517 feat(interoperability): niveau Native — archive vers paquet OEIP et retour
-fcd56981c feat(interoperability): squelette du module OEIP, découverte et validation
-f11605ab4 feat(interoperability): pose le socle normatif du format d'échange OEIP 1.0
-03b457fe9 feat: manage branding service per structure
-f98df9268 feat: personalisation possible avec un logo par établissement
-57f64f220 fix(communication): verrous morts Neo4j à la création d'un établissement
-4c5ce7c68 fix: email for reset password
-275a0606f fix(ci): exclure le module tests (Gatling/Scala 2.12) du job de publication
-540f168a0 chore: bump github node action version
-d21049e1a fix(security): 6 faux succès validUniqueResult dans conversation
-6dcd6c239 fix(auth): findByMail traitait un email inconnu comme un succès
-72634f61e Revert "feat(i18n): ajoute la clé calendar.mode.fortnight (vue "quinzaine")"
-00f47ba6a feat(i18n): ajoute la clé calendar.mode.fortnight (vue "quinzaine")
-0c2625480 fix(ci): delete-then-deploy pour rct-nexus (clobber systémique)
-8ca878d86 fix(archive): l'export ne bloque plus indéfiniment si le verrou échoue
-1dc181070 chore(ci): bump actions/checkout v4->v6 (conversation, portal) (OPENENT-57) [skip ci]
-3985942cb chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
-128841d91 fix(ci): évite le 409 Conflict lié à la course push -dev / workflow_dispatch -patched (OPENENT-56)
-35dbd389f feat(session): suivi des sessions courantes et déconnexion forcée
-1998a0221 feat(archive): restauration groupée d'un lot d'établissement
-c03a73ac3 feat(workspace): seuil d'alerte de quota réglable par établissement
-0f8658573 feat(horaires): horaires d'utilisation ouverts aux autres espaces d'échange
-ceb966877 feat(session): dispense et exigence de second facteur par compte
-31aac1c90 feat(auth): politique de mot de passe résolue par degré
-fd6ef6eb7 feat(storage): analyse antivirus bloquante des pièces jointes à l'upload
-7060c5aba fix: export archive per structure
-7f1f960a6 feat(archive): sauvegarde d'un établissement, groupe par groupe
-6821dc4f4 fix(events): ignore aussi les health-checks ELB dans le filtre de sonde
-69882a243 fix: translation for portal-mui for video features
-6c77b6e99 feat(auth): journaliser les tentatives de connexion refusées (LOGIN_FAILURE)
-83b1f05cc feat(auth): expose le périmètre ADMIN_LOCAL dans le userinfo OAuth2
-c9e24c1af feat(auth): expose superAdmin dans le userinfo OAuth2
-ee82c09e2 feat(infra): historique personnel self-service (event/mine)
-8970aab08 feat(workspace): liste anonyme des documents publiés sur le portail par établissement
-71facfbb7 feat: a document in workspace can be published in pages or wordpress
-6e4f0e9d7 feat(i18n): clés navbar.chat / navbar.chat.activeCall
-6a4cec0dd fix: revert webUtilsVersion à 3.3.2 (non patché)
-ce90f127d fix: garde IP null-safe pour requête event-bus synthétique + branding par structure + web-utils patché
-75c819b7b fix(events): ignorer les accès kube-probe/health-check dans l'audit ACCESS
-61eeb5d7f fix: remove video component for a complete new open ent module
-0a2370cdf fix: video as app
-e5ba6752d fix: add archive management + video support
-e5cd8047b fix(quota): quota par département fiable et restreint aux établissements
-5a62dbec2 fix(workspace): garder la barre d'action visible même dossier vide
-... (6157 commits supplémentaires tronqués)
+e87b7bb95c feat(conversation): message d'absence automatique
+346cff7016 build(interoperability): passer la bibliothèque en 1.2.0 (cmi5, xAPI)
+718a588ae1 fix(auth): refuser les redirections dont l'hôte contient « \ »
+e1be0b8a67 fix(workspace): ne servir en ligne que les types de fichier inoffensifs
+c88398ddd8 fix(directory): n'accepter que les colonnes connues pour le tri du publipostage
+ada87b517a chore(interoperability): bibliothèque 1.1.0, qui sait écrire les .mbz
+1d82f06086 feat(interoperability): lire les formats de cours du marché (SCORM, Moodle, LearnHouse)
+1ea7ea1017 build: construire en JDK 21 comme le fait la CI
+03dcbf2e09 feat(mfa): choix du second facteur par compte (e-mail ou application)
+ca7b94c1c0 feat: passer les libs en 6.16.8-patched
+7c07e51bc5 fix(ci): purger org.entcore du cache Maven avant le build
+0575607853 fix(workspace): le compteur de stockage ne descend plus sous zéro
+c5cae90d09 feat(workspace,conversation): lister et purger les fichiers d'un compte
+307bd571ec feat(auth,directory): le verrou d'un compte protège aussi ses rattachements
+e919176f74 feat(auth): étendre la refonte à l'écran de nouveau mot de passe
+f50b8e1f12 feat(auth,directory): verrouillage des identifiants d'un compte
+e0de81027d fix(session,neo4j): adresse mongo « null… » et NPE sur transaction vide
+1deea7a4e1 feat(directory): ajoute structureId à GroupService.getInfos()/getBatchInfos()
+456aa155df feat: access to google drive and onedrive for workspace
+94d5688ec4 feat(session): porter l'appareil dans la session et lister ses sessions par utilisateur
+170401a90c feat: manage authentification per user agent for a user
+48c76da560 feat: manage authentification per user agent for a user
+9c60842f78 fix(infra): <multi-combo> affichait "[object Object]" au lieu du titre de chaque option
+72155cd02b perf(oeip): ne ramène que les identifiants pour repérer les orphelins
+fb62603059 fix(timeline): retablir beta() et renderTimeline2dOrBeta perdus a la fusion
+a99266822c fix(interoperability): versionner common avec entCoreLibsVersion
+6639465bd7 feat(auth): étendre la refonte aux écrans d'activation et de CGU
+891ef14318 feat: improve screen auth + PWA
+184ddfc2b7 fix(auth): restore the 16 missing French translations
+3673d2f220 fix(timeline): serialize eventsI18n appends without starving the worker pool
+1fa53717aa add function admin collectivite
+8ae1cc80cb fix: add admin collectivite for role
+a0612d21f8 feat: oeip purge
+027815b737 feat(oeip): signature détachée et scellement du manifeste
+9a17887012 feat(interoperability): produit la notice de traitement et la provenance
+c79283f1ec feat(interoperability): rend la pseudonymisation effective
+fb4ee2d20d feat(interoperability): reprise sémantique de l'espace documentaire
+bd1ff6941d feat(interoperability): reprise sémantique du blog, sans charge utile d'origine
+6029825830 feat(interoperability): projection Common Cartridge, et résolution globale des liens
+98f4896365 feat(interoperability): import sémantique de l'annuaire — l'appariement d'identité
+b3ffd29cc7 feat(interoperability): l'espace documentaire en niveau Core, et l'écart avoué
+b65c65a0fd feat(interoperability): le blog en niveau Core, avec réécriture des liens internes
+979c7d55a8 feat(interoperability): premier mapper sémantique — l'annuaire en niveau Core
+d541ee731d feat(interoperability): permet de désigner le compte destinataire d'un import
+6b544f9cf2 feat(interoperability): routes d'export et d'import, niveau Native opérationnel
+c54fd8517c feat(interoperability): niveau Native — archive vers paquet OEIP et retour
+fcd56981cc feat(interoperability): squelette du module OEIP, découverte et validation
+f11605ab47 feat(interoperability): pose le socle normatif du format d'échange OEIP 1.0
+03b457fe93 feat: manage branding service per structure
+f98df92682 feat: personalisation possible avec un logo par établissement
+57f64f220f fix(communication): verrous morts Neo4j à la création d'un établissement
+4c5ce7c68f fix: email for reset password
+275a0606f9 fix(ci): exclure le module tests (Gatling/Scala 2.12) du job de publication
+540f168a02 chore: bump github node action version
+d21049e1a0 fix(security): 6 faux succès validUniqueResult dans conversation
+6dcd6c2395 fix(auth): findByMail traitait un email inconnu comme un succès
+72634f61ee Revert "feat(i18n): ajoute la clé calendar.mode.fortnight (vue "quinzaine")"
+00f47ba6aa feat(i18n): ajoute la clé calendar.mode.fortnight (vue "quinzaine")
+0c2625480d fix(ci): delete-then-deploy pour rct-nexus (clobber systémique)
+8ca878d86c fix(archive): l'export ne bloque plus indéfiniment si le verrou échoue
+1dc181070f chore(ci): bump actions/checkout v4->v6 (conversation, portal) (OPENENT-57) [skip ci]
+3985942cb3 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
+128841d912 fix(ci): évite le 409 Conflict lié à la course push -dev / workflow_dispatch -patched (OPENENT-56)
+35dbd389f7 feat(session): suivi des sessions courantes et déconnexion forcée
+1998a02215 feat(archive): restauration groupée d'un lot d'établissement
+c03a73ac36 feat(workspace): seuil d'alerte de quota réglable par établissement
+0f8658573d feat(horaires): horaires d'utilisation ouverts aux autres espaces d'échange
+ceb9668775 feat(session): dispense et exigence de second facteur par compte
+31aac1c90f feat(auth): politique de mot de passe résolue par degré
+fd6ef6eb7c feat(storage): analyse antivirus bloquante des pièces jointes à l'upload
+7060c5aba3 fix: export archive per structure
+7f1f960a6b feat(archive): sauvegarde d'un établissement, groupe par groupe
+6821dc4f47 fix(events): ignore aussi les health-checks ELB dans le filtre de sonde
+69882a2433 fix: translation for portal-mui for video features
+6c77b6e996 feat(auth): journaliser les tentatives de connexion refusées (LOGIN_FAILURE)
+83b1f05cce feat(auth): expose le périmètre ADMIN_LOCAL dans le userinfo OAuth2
+c9e24c1af2 feat(auth): expose superAdmin dans le userinfo OAuth2
+ee82c09e2e feat(infra): historique personnel self-service (event/mine)
+8970aab081 feat(workspace): liste anonyme des documents publiés sur le portail par établissement
+71facfbb7f feat: a document in workspace can be published in pages or wordpress
+... (6166 commits supplémentaires tronqués)
 ```
 
 ## `libs/entcore-css-lib`
@@ -347,7 +357,7 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `libs/infra-front`
 
-- **branche référencée** : `4.8.17-patched-dev` @ `d1dcb84`
+- **branche référencée** : `4.8.17-patched-dev` @ `9d6bea1`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 4.8.17-patched 
 
@@ -377,11 +387,15 @@ f6d2e8a chore(icon): Livret Sco, add app icon
 
 ## `libs/openent-frontend-framework`
 
-- **branche référencée** : `2.5.30-patched-dev` @ `1a6d117e`
-- **base upstream** : `v2.5.30`  →  delta = `v2.5.30..HEAD` (**34 commit(s)**)
+- **branche référencée** : `2.5.30-patched-dev` @ `4386590e`
+- **base upstream** : `v2.5.30`  →  delta = `v2.5.30..HEAD` (**38 commit(s)**)
 - **tags patched** : 2.5.30-patched v2.5.30-patched v2.5.31-patched 
 
 ```
+4386590e feat(editor): modifier une vidéo du contenu dans le studio du module vidéo
+eab2dd81 fix(header): flèches de la PWA sans fond blanc
+f55c4352 feat: add math editor feature in tiptap
+a4dfd254 fix(client): reconnaître le premier degré par bootstrapVersion, pas seulement le parent panda
 1a6d117e fix(client): ne plus rejeter la page HTML d'erreur du serveur
 b4e05b1c fix(bootstrap)!: sépare l'asset de thème du paquet npm (build Vite des modules)
 1782b162 feat(header): flèches précédent/suivant du bandeau en application installée
@@ -420,11 +434,13 @@ ecc63f3a test(55D): insertion d'images par lots (useMediaLibraryEditor)
 
 ## `libs/theme-open-ent`
 
-- **branche référencée** : `develop` @ `4a19be8`
-- **base upstream** : `theme-adm-3.4.10-20`  →  delta = `theme-adm-3.4.10-20..HEAD` (**0 commit(s)**)
+- **branche référencée** : `develop` @ `b5403fd`
+- **base upstream** : `theme-adm-3.4.10-20`  →  delta = `theme-adm-3.4.10-20..HEAD` (**1 commit(s)**)
 - **tags patched** : 3.4.10-patched 
 
-_Aucun commit au-dessus de la base (ou base introuvable)._
+```
+b5403fd feat(i18n): traduire les noms d'applications enregistrés sous un libellé
+```
 
 ## `libs/vertx-cron-timer`
 
@@ -448,11 +464,15 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/actualites`
 
-- **branche référencée** : `(detached)` @ `d44b4074`
-- **base upstream** : `0.17.1`  →  delta = `0.17.1..HEAD` (**882 commit(s)**)
+- **branche référencée** : `3.2.10-patched-dev` @ `03516117`
+- **base upstream** : `0.17.1`  →  delta = `0.17.1..HEAD` (**886 commit(s)**)
 - **tags patched** : 3.1.4-patched 3.1.5-patched 3.2.10-patched 
 
 ```
+03516117 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+713383c2 ci: purger entcore du cache Maven avant de construire
+a9d60ffe build: construire en JDK 21 comme le fait la CI
+6a242621 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
 d44b4074 feat: montée de version actualites 3.1.5-patched -> 3.2.10-patched
 3889580c feat: passer les libs entcore en 6.16.8-patched
 3c84cc1c fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -529,20 +549,18 @@ ec5439cc chore: prepare next development iteration
 81808b29 fix: IMPULS-5454, preview info contents
 b1c6a0d4 feat: #COCO-5572, add isHeadline flag to NewsLight DTO (#237)
 42ba6c13 chore: prepare next development iteration
-66d27f7d release: 3.2.0
-39a40cb6 chore(template): add new conf for superAdmlCleanupCron
-72a35851 chore: upgrade lib version
-69c1d0a0 chore: set snapshot version after merge
-... (802 commits supplémentaires tronqués)
+... (806 commits supplémentaires tronqués)
 ```
 
 ## `modules/appointments`
 
-- **branche référencée** : `(detached)` @ `4676f2e`
-- **base upstream** : `1.3.6`  →  delta = `1.3.6..HEAD` (**281 commit(s)**)
+- **branche référencée** : `1.6.7-patched-dev` @ `7fe3cbd`
+- **base upstream** : `1.3.6`  →  delta = `1.3.6..HEAD` (**283 commit(s)**)
 - **tags patched** : 1.3.6-patched 1.3.7-patched 1.6.7-patched 
 
 ```
+7fe3cbd ci: purger entcore du cache Maven avant de construire
+845046c build: construire en JDK 21 comme le fait la CI
 4676f2e feat: montée de version appointments 1.3.6-patched -> 1.6.7-patched
 10243a0 feat: passer les libs entcore en 6.16.8-patched
 a9ecd29 feat: passer sur entcore 6.16.14-patched
@@ -621,18 +639,18 @@ ece4009 fix: suppot PostgresSQL 16
 5f5851e MAnage PostgreSQ types
 72161f3 fix(slot): [#RDV-109] avoid overlap of dailyslots (#112)
 619c5d7 chore(): update hub-ui dependency version
-db7c123 fix(): fix various feedbacks (#111)
-7d4fe79 feat(link): [#RDV-111] acces to a specific grid by link (#110)
-... (201 commits supplémentaires tronqués)
+... (203 commits supplémentaires tronqués)
 ```
 
 ## `modules/blog`
 
-- **branche référencée** : `(detached)` @ `3c3e1c5`
-- **base upstream** : `1.24.1`  →  delta = `1.24.1..HEAD` (**1110 commit(s)**)
+- **branche référencée** : `5.5.12-patched-dev` @ `36f7bc3`
+- **base upstream** : `1.24.1`  →  delta = `1.24.1..HEAD` (**1112 commit(s)**)
 - **tags patched** : 5.4.10-patched 5.4.7-patched 5.5.12-patched 
 
 ```
+36f7bc3 build: construire en JDK 21 comme le fait la CI
+b0ca1a8 chore(blog): ne plus versionner les vues générées par le build
 3c3e1c5 feat: montée de version blog 5.4.7-patched -> 5.5.12-patched
 3138d3c feat: passer les libs entcore en 6.16.8-patched
 556f373 feat: passer sur entcore 6.16.14-patched
@@ -711,18 +729,22 @@ ee73736 release: 5.5.7
 e464791 chore: prepare next development iteration
 72688b1 release: 5.5.6
 5074e07 chore: prepare next development iteration
-100823b release: 5.5.5
-3798770 chore: prepare next development iteration
-... (1030 commits supplémentaires tronqués)
+... (1032 commits supplémentaires tronqués)
 ```
 
 ## `modules/cahier-de-textes`
 
-- **branche référencée** : `(detached)` @ `e2aa04a7`
-- **base upstream** : `4.1.6`  →  delta = `4.1.6..HEAD` (**112 commit(s)**)
+- **branche référencée** : `4.2.4-patched-dev` @ `f0e2d24a`
+- **base upstream** : `4.1.6`  →  delta = `4.1.6..HEAD` (**118 commit(s)**)
 - **tags patched** : 4.1.5-patched 4.1.6-patched 4.1.7-patched 4.2.4-patched 
 
 ```
+f0e2d24a fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+98d46840 feat(i18n): formater les dates selon la langue de la session
+f12e8289 feat(diary-react): socle D1 — droits, profils, établissement, données alignées sur l'AngularJS
+aa8f972b ci: purger entcore du cache Maven avant de construire
+d93f1379 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+6e0f90f0 build: construire en JDK 21 comme le fait la CI
 c11c4765 feat: passer les libs entcore en 6.16.8-patched
 a262bb0b fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
 91bff6fc fix(ci): réaligner le verrou pnpm sur les paquets @open-ent republiés
@@ -797,22 +819,25 @@ ec87bccc chore: prepare next development iteration
 5eab367b chore: update dependencies
 cf06ca3e chore: update dependencies
 c42dc65b ci: builder le bundle React (sous-projet frontend/ Vite) dans le fat-mod [B]
-e5c15a65 fix(51C comparatif): séances de la semaine dans la grille calendaire + btn-link lisible (thème)
-f5e69955 feat(diary/react): écran Progressions (séquences pédagogiques)
-564060ef feat(51C diary): ecran Seances React (liste + creation + publication)
-3cbb3f41 [51C-migration] feat(cahier-de-textes): vue calendrier hebdomadaire (parité)
-6a2d9cd8 [51C-migration] feat(cahier-de-textes): incrément 2 — gestion des types de devoir
-6f06d743 [51C-migration] feat(cahier-de-textes): migration React incrément 1 — devoirs
-... (32 commits supplémentaires tronqués)
+... (38 commits supplémentaires tronqués)
 ```
 
 ## `modules/calendar`
 
-- **branche référencée** : `react-migration-rappels` @ `e6f264d`
-- **base upstream** : `4.2.7`  →  delta = `4.2.7..HEAD` (**109 commit(s)**)
+- **branche référencée** : `4.3.6-patched-dev` @ `83eda73`
+- **base upstream** : `4.2.7`  →  delta = `4.2.7..HEAD` (**118 commit(s)**)
 - **tags patched** : 4.2.7-patched 4.3.6-patched 
 
 ```
+83eda73 feat(calendar): formater les dates dans la langue de la session
+92998fc feat(react): réservation RBS simple dans le formulaire d'événement (I1)
+b76eef1 ci: purger entcore du cache Maven avant de construire
+a13e420 build: construire en JDK 21 comme le fait la CI
+a18357e feat(react): vue quinzaine, panneau disponibilités EDT+RBS, sections établissement/groupe toujours visibles
+4414f79 build: construire en JDK 21 comme le fait la CI
+75f217d chore(calendar): ignorer les sorties du build React copiées dans public/
+4c917b0 feat(calendar): le bandeau de retour dit où la sortie demeure
+3c5c06e feat(calendar): l'usager choisit son interface, et les deux bandeaux de bascule
 e6f264d fix(calendar): un agenda apparu depuis la dernière visite reste visible
 eedd154 fix(calendar): le formulaire d'événement ne s'ouvrait plus (IHM React)
 be00b8f feat(calendar): éditeur riche pour la description de l'événement
@@ -884,25 +909,28 @@ a1ab042 chore: update dependencies
 5d69f36 chore: update dependencies
 166f5f8 fix:#ENABLING-546 watcher cache and hot reload
 f35b7ac ci(calendar): réactiver le publish rct-nexus (jar complet depuis [B])
-28d3859 ci(calendar): builder le bundle React (sous-projet frontend/ Vite) dans le fat-mod [B]
-de27d33 ci(calendar): ne plus publier sur rct-nexus depuis la CI (module dual React)
-56d7188 ci(calendar): tolérer le 409 Conflict au publish GitHub Packages
-49ceeb7 fix: #SRE-5674, avoid call to cluster wide event bus
-645ad03 chore: prepare next development iteration
-030327f release: 4.3.3
-16a3845 feat(51C): agendas externes ICS (section + ajout par URL autorisée, lecture seule exclue de l'écriture)
-be8fe31 feat(51C comparatif): vue Liste des événements
-871dd5d fix(51C comparatif): section Agendas partagés (sidebar scindée) + btn-link lisible (thème)
-... (29 commits supplémentaires tronqués)
+... (38 commits supplémentaires tronqués)
+```
+
+## `modules/chat-nats`
+
+- **branche référencée** : `develop` @ `53c13b1`
+- **base upstream** : `1.4.0`  →  delta = `1.4.0..HEAD` (**2 commit(s)**)
+
+```
+53c13b1 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+b07ab27 chore: develop en 1.5.0-SNAPSHOT
 ```
 
 ## `modules/collaborative-editor`
 
-- **branche référencée** : `(detached)` @ `7ffdde0`
-- **base upstream** : `0.9.0`  →  delta = `0.9.0..HEAD` (**276 commit(s)**)
+- **branche référencée** : `3.4.7-patched-dev` @ `89e53a1`
+- **base upstream** : `0.9.0`  →  delta = `0.9.0..HEAD` (**278 commit(s)**)
 - **tags patched** : 3.3.5-patched 3.3.6-patched 3.4.7-patched 
 
 ```
+89e53a1 ci: purger entcore du cache Maven avant de construire
+4ff44b4 build: construire en JDK 21 comme le fait la CI
 7ffdde0 feat: montée de version collaborative-editor 3.3.5-patched -> 3.4.7-patched
 afa6d70 feat: passer les libs entcore en 6.16.8-patched
 6c14f08 feat: passer sur entcore 6.16.14-patched
@@ -981,26 +1009,38 @@ d2bec6d chore: update edifice-parent in pom
 edebdb0 feat: #RBACK-155, #RBACK-117, kubernetes compatibility
 d0c77f0 feat(conf): #RBACK-188 add template.j2
 7027016 chore: update dependencies
-abcf986 chore: prepare next development iteration
-c176ce0 release: 3.2.0
-... (196 commits supplémentaires tronqués)
+... (198 commits supplémentaires tronqués)
 ```
 
 ## `modules/collaborative-wall`
 
-- **branche référencée** : `(detached)` @ `0d8eaf8`
+- **branche référencée** : `3.5.12-patched-dev` @ `f271f6e`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 3.4.7-patched 3.4.8-patched 3.4.9-patched 3.5.12-patched 
 
 _Aucun commit au-dessus de la base (ou base introuvable)._
 
+## `modules/communities`
+
+- **branche référencée** : `0.2.0-patched-dev` @ `209cdc3`
+- **base upstream** : `0.2.0`  →  delta = `0.2.0..HEAD` (**3 commit(s)**)
+
+```
+209cdc3 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+7d8a892 ci: purger entcore du cache Maven avant de construire
+a3b2be5 build: construire en JDK 21 comme le fait la CI
+```
+
 ## `modules/community`
 
-- **branche référencée** : `(detached)` @ `a28d667`
-- **base upstream** : `2.2.1`  →  delta = `2.2.1..HEAD` (**35 commit(s)**)
+- **branche référencée** : `2.2.5-patched-dev` @ `b82acc7`
+- **base upstream** : `2.2.1`  →  delta = `2.2.1..HEAD` (**38 commit(s)**)
 - **tags patched** : 2.2.1-patched 2.2.5-patched 
 
 ```
+b82acc7 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+996912e ci: purger entcore du cache Maven avant de construire
+9bca443 build: construire en JDK 21 comme le fait la CI
 a28d667 feat: montée de version community 2.2.1-patched -> 2.2.5-patched
 7c3b5f0 feat: passer les libs entcore en 6.16.8-patched
 a760d19 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -1040,11 +1080,45 @@ d1e7b39 chore: prepare next development iteration
 
 ## `modules/competences`
 
-- **branche référencée** : `(detached)` @ `50a077d3`
-- **base upstream** : `2.1.12`  →  delta = `2.1.12..HEAD` (**75 commit(s)**)
+- **branche référencée** : `2.2.4-patched-dev` @ `0f0d0bea`
+- **base upstream** : `2.1.12`  →  delta = `2.1.12..HEAD` (**109 commit(s)**)
 - **tags patched** : 2.1.12-patched 2.2.4-patched 
 
 ```
+0f0d0bea fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+27629c7b feat(i18n): formater les dates selon la langue de la session
+45bbc638 feat(competences): bilan périodique des familles ; plus aucun écran renvoyé vers l'AngularJS
+944eea7a feat(competences): modèles d'options, logo et signature des bulletins (IHM React)
+235a69f2 feat(competences): journal super-admin des exports d'archives dans l'IHM React
+bdb8243b feat(competences): bilan par domaine des bulletins (IHM React)
+f2481fd8 feat(competences): exports CSV du suivi de classe (IHM React)
+0b0be25c feat(competences): comparaison des graphiques du conseil entre périodes (IHM React)
+cc302bde feat(competences): onglets suivi des notes et bulletins du suivi élève, évaluation libre (IHM React)
+86f676de feat(competences): import des notes d'une évaluation depuis un CSV d'Exercices (IHM React)
+809bac6a feat(competences): export du relevé périodique en PDF et CSV (IHM React)
+307bd8db feat(competences): impressions et exports PDF dans l'IHM React
+32e917bd feat(competences): suivi des compétences par enseignement (IHM React, enseignant et familles)
+f2d34525 feat(competences): compétences numériques du conseil de classe (IHM React) ; fix de l'identifiant d'évaluation
+a7365374 feat(competences): enseignement de complément au bilan de fin de cycle (IHM React)
+6515e017 feat(competences): bilan de fin de cycle dans l'IHM React (conseil de classe et suivi élève)
+7bd43ffe feat(competences): graphiques du conseil de classe dans l'IHM React
+812d6751 feat(competences): conseil de classe, synthèse, avis, projets et vie scolaire dans l'IHM React
+3ae85891 feat(competences): relevé de notes et bulletins des familles ; élèves et parents servis par l'IHM React
+e0e0f89e feat(competences): espace des élèves et des parents dans l'IHM React (accueil, évaluations, bilan)
+62194271 feat(competences): exports LSU et archives dans l'IHM React
+5781ffdf feat(competences): génération des bulletins dans l'IHM React
+8640ff69 feat(competences): saisie des projets (EPI, AP, parcours) dans l'IHM React
+54040a25 feat(competences): conseil de classe, suivi des acquis, dans l'IHM React
+2be94a75 feat(competences): suivi des compétences d'une classe dans l'IHM React
+e5b3790f docs(competences): le suivi élève rejoint la nouvelle IHM (texte d'invitation)
+d3bafce9 feat(competences): suivi des compétences d'un élève dans l'IHM React
+1abc3ddd feat(competences): relevé périodique dans l'IHM React
+10f7b208 feat(competences): création et modification d'une évaluation dans l'IHM React
+5e96516e ci: purger entcore du cache Maven avant de construire
+465ddffe build: construire en JDK 21 comme le fait la CI
+7758a654 feat(competences): saisie d'une évaluation dans l'IHM React
+9c407a96 fix(competences): lire les sous-matières sous leur nom serveur (sous_matieres)
+31dcd877 feat(competences): accueil enseignant et liste des évaluations en React
 50a077d3 fix(competences): versionner la feuille de style compilée
 36f81542 feat: montée de version competences 2.1.12-patched -> 2.2.4-patched
 f8edccb0 feat: passer les libs entcore en 6.16.8-patched
@@ -1091,44 +1165,19 @@ ee73876c chore: prepare next development iteration
 1edf2c9c release: 2.2.0
 ec5f82ef ci: update workflows — fix triggers, Java 8, GitHub Packages resolver
 61aa800e i18n: translate en.json to English
-544cc420 i18n: sync en.json keys with fr.json
-5cde346d chore: upgrade lib version
-414d8cc7 chore: set snapshot version after merge
-63985e85 fix: class cast on event bus serialization
-f9d0929a fix: compatibility with vertx cluster serialization - 2
-f5b9ee1b fix: compatibility with vertx cluster serialization
-77954e6b Revert "fix: compatibility with vertx cluster serialization"
-adca9365 fix: compatibility with vertx cluster serialization
-0f991227 chore: add pdf generator as a runtime dependency
-5f1f0c72 fix: fetch neo4jConfig from the local server map
-68a12c6c chore: improve build
-983de8b7 chore: cleanup pom.xml
-16a0580d chore: add startup failure log
-e4f48b0e feat: add probes
-07a62a28 fix(ci): run Gulp via docker run to avoid Alpine musl issues with artifact actions
-c460fe1e fix(ci): add --ignore-engines to yarn install for Node 16 compatibility
-39644a92 fix(ci): use upload/download-artifact@v1 for Alpine musl compatibility
-9ac6ebae ci: re-trigger build after entcore-v2 published to GitHub Packages
-cce6b52b fix(ci): use Java 8 to fix javax.xml.bind compilation errors on JDK 11
-3ba06f2e ci: fix workflows — accès GitHub Packages pour entcore-v2 patched
-6da21b10 fix(competences): patch version 2.1.12-patched
-fe3a6c3f chore: prepare next development iteration
-ff566dcd release: 2.1.13
-4c572695 chore(common): bump entCoreVersion 6.14-SNAPSHOT → 6.14.9-patched
-6e53b90f ci: add build-and-publish workflow for GitHub Packages
-540ed2c7 fix(bulletin): [#EVAL-678] fix export inconsistencies
-b9003644 fix(competences): patch version 2.1.12-patched
-cde1b121 fix: BulletinWorker NPE when neo4jConfig is JSON null string
-d4f3f471 chore: prepare next development iteration
+... (29 commits supplémentaires tronqués)
 ```
 
 ## `modules/edt`
 
-- **branche référencée** : `3.1.4-patched-dev` @ `269d468`
-- **base upstream** : `3.1.4`  →  delta = `3.1.4..HEAD` (**62 commit(s)**)
-- **tags patched** : 3.1.4-patched 
+- **branche référencée** : `3.1.4-patched-dev` @ `3e3ec08`
+- **base upstream** : `3.1.4`  →  delta = `3.1.4..HEAD` (**65 commit(s)**)
+- **tags patched** : 3.1.4-patched 3.2.7-patched 
 
 ```
+3e3ec08 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+53ddf65 ci: purger entcore du cache Maven avant de construire
+b15a0e9 build: construire en JDK 21 comme le fait la CI
 269d468 fix(edt): l'avertissement de disponibilité ne se déclenchait pas en mode créneau nommé
 34948cf fix(edt): l'avertissement de disponibilité ne se déclenchait jamais
 4d60633 docs(edt): simplifie le commentaire de l'avertissement de disponibilité
@@ -1193,13 +1242,48 @@ d454cc2 ci: add build-and-publish workflow for GitHub Packages
 10b8339 feat: change version to patched
 ```
 
+## `modules/esign`
+
+- **branche référencée** : `1.1.0-patched-dev` @ `e926ba4`
+- **base upstream** : `1.1.0`  →  delta = `1.1.0..HEAD` (**2 commit(s)**)
+
+```
+e926ba4 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+480e171 ci: purger entcore du cache Maven avant de construire
+```
+
 ## `modules/exercizer`
 
-- **branche référencée** : `(detached)` @ `0b2d0347`
-- **base upstream** : `4.3.6`  →  delta = `4.3.6..HEAD` (**66 commit(s)**)
+- **branche référencée** : `4.4.7-patched-dev` @ `512915f9`
+- **base upstream** : `4.3.6`  →  delta = `4.3.6..HEAD` (**91 commit(s)**)
 - **tags patched** : 4.2.5-patched 4.3.6-patched 4.4.7-patched 
 
 ```
+512915f9 feat(exercizer): réordonner les parties d'un sujet par glisser-déposer
+d914cce7 feat(i18n): formater les dates selon la langue de la session
+8ce4ff16 pnpm lock
+425c2d2c feat(exercizer): grand format pour les jeunes élèves (cycles 1 et 2)
+6ddc5df1 fix(exercizer): retirer le bouton « ⋯ » sans menu des cartes du catalogue, des copies et des corrections
+8da2d306 feat(exercizer): importer la mise en ordre, le cloze, les marqueurs et la calculée simple de Moodle
+5fc9280a feat(exercizer): catalogue d'exercices partagé entre établissements, classé par niveau et matière
+983ca26e feat(interoperability): écarter les unités xAPI/cmi5 à l'import, bibliothèque 1.2.0
+f14f062c feat(exercizer): terminer le portage React — plus aucun écran ne renvoie vers l'ancienne IHM
+91df73f2 feat(exercizer): lecteur SCORM — dépôt, service cloisonné et suivi de l'apprenant
+b0505afa feat: export / import
+811e88ac fix(exercizer): recopier les corrigés depuis subject_document à la duplication
+40790855 feat(exercizer): éditer, passer et corriger un sujet par parties
+4f2b25d5 feat(exercizer): découper un sujet interactif en parties
+bee8e4bb ci: purger entcore du cache Maven avant de construire
+caf8de17 build: construire en JDK 21 comme le fait la CI
+b50851fd chore(exercizer): ignorer les sorties du build React copiées dans public/
+ffd6cf6d fix(ci): reprendre la propriété des fichiers laissés par le conteneur gulp
+4de804b6 fix(ci): lire la version de pnpm dans frontend/package.json
+836c3d9a fix(exercizer): exclure le sous-projet React de la compilation TypeScript legacy
+2aca0e30 feat(exercizer): distribution d'un sujet dans l'IHM React
+5ed6527a feat: l'enseignant corrige les copies dans la nouvelle interface
+aa61c9ee feat: l'élève répond à ses exercices et relit sa copie dans la nouvelle interface
+7f4f2360 feat: l'enseignant compose son sujet dans la nouvelle interface
+b532deef feat: l'usager peut choisir la nouvelle interface React des exercices
 0b2d0347 feat: montée de version exercizer 4.3.6-patched -> 4.4.7-patched
 80f9e445 feat: passer les libs entcore en 6.16.8-patched
 782a835c feat: passer sur entcore 6.16.14-patched
@@ -1255,22 +1339,12 @@ a403c96b chore: upgrade lib version
 237d87e5 chore: set snapshot version after merge
 e8da1e91 fix: default blank due date
 c9b355f0 chore(common): bump entCoreVersion 6.14.15 → 6.14.9-patched
-e98a3dee fix(exercizer): patch version 4.3.6-patched
-ab3a767b test: fix nominal script test name
-554e4ded chore: add testJs deployment ressource
-930fac4c chore: add missing workspace dep
-00555f68 chore: adding secured action
-fead764f chore: exposing cron tasks to be triggered by api call
-32b3d6d2 chore: imrove build
-4570d2a9 feat: add probes
-03ee33c0 chore: upgrade parent
-5b55798f feat: #SRE-5075, add session runtime dependency
-7e761278 chore: prepare next development iteration
+... (11 commits supplémentaires tronqués)
 ```
 
 ## `modules/explorer`
 
-- **branche référencée** : `(detached)` @ `995011f`
+- **branche référencée** : `2.6.13-patched-dev` @ `7d7994a`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 2.5.7-patched 2.5.8-patched 2.6.13-patched 
 
@@ -1278,11 +1352,13 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/form`
 
-- **branche référencée** : `(detached)` @ `b6ba6e80`
-- **base upstream** : `3.1.0`  →  delta = `3.1.0..HEAD` (**49 commit(s)**)
+- **branche référencée** : `3.1.9-patched-dev` @ `8389879c`
+- **base upstream** : `3.1.0`  →  delta = `3.1.0..HEAD` (**51 commit(s)**)
 - **tags patched** : 3.1.0-patched 3.1.9-patched 
 
 ```
+8389879c ci: purger entcore du cache Maven avant le build
+c22c805c build: construire en JDK 21 comme le fait la CI
 86951546 feat: passer les libs entcore en 6.16.8-patched
 7e654814 fix(ci): retirer une dépendance déclarée deux fois dans le pom
 bed8758f feat: passer sur entcore 6.16.14-patched
@@ -1336,11 +1412,16 @@ fb395b17 chore: fix cgi libs version
 
 ## `modules/forum`
 
-- **branche référencée** : `(detached)` @ `b9a1e41`
-- **base upstream** : `2.2.5`  →  delta = `2.2.5..HEAD` (**33 commit(s)**)
+- **branche référencée** : `2.2.5-patched-dev` @ `eefa9da`
+- **base upstream** : `2.2.5`  →  delta = `2.2.5..HEAD` (**38 commit(s)**)
 - **tags patched** : 2.1.3-patched 2.2.5-patched 
 
 ```
+eefa9da fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+48d2853 feat(i18n): formater les dates selon la langue de la session
+15be69e feat(i18n): dictionnaire anglais complet
+1e14b8c fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+be0ac77 build: construire en JDK 21 comme le fait la CI
 f086420 feat: passer les libs entcore en 6.16.8-patched
 94ef107 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
 e5c75e0 fix(ci): réaligner le verrou pnpm sur les paquets @open-ent republiés
@@ -1378,7 +1459,7 @@ d7e234a feat: change version to patched
 
 ## `modules/http-proxy`
 
-- **branche référencée** : `3.0.0-patched-dev` @ `ce0f9b4`
+- **branche référencée** : `3.0.0-patched-dev` @ `4e3817a`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 3.0.0-patched 
 
@@ -1386,11 +1467,16 @@ _Aucun commit au-dessus de la base (ou base introuvable)._
 
 ## `modules/magneto`
 
-- **branche référencée** : `(detached)` @ `3e04d34b`
-- **base upstream** : `2.10.0`  →  delta = `2.10.0..HEAD` (**47 commit(s)**)
+- **branche référencée** : `2.10.7-patched-dev` @ `bce0ce38`
+- **base upstream** : `2.10.0`  →  delta = `2.10.0..HEAD` (**52 commit(s)**)
 - **tags patched** : 2.10.0-patched 2.10.7-patched 
 
 ```
+bce0ce38 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+eeda3d55 ci: purger entcore du cache Maven avant de construire
+ddddd32a build: construire en JDK 21 comme le fait la CI
+e40f482c fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+ccb45ae3 build: construire en JDK 21 comme le fait la CI
 3e04d34b feat: montée de version magneto 2.10.0-patched -> 2.10.7-patched
 c46957cf feat: passer les libs entcore en 6.16.8-patched
 6cb8c57f fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -1442,11 +1528,16 @@ d940857c Version 6.14.9-patched
 
 ## `modules/mindmap`
 
-- **branche référencée** : `(detached)` @ `3b05fae`
-- **base upstream** : `0.10.0`  →  delta = `0.10.0..HEAD` (**616 commit(s)**)
+- **branche référencée** : `3.5.12-patched-dev` @ `39e41a1`
+- **base upstream** : `0.10.0`  →  delta = `0.10.0..HEAD` (**621 commit(s)**)
 - **tags patched** : 3.4.7-patched 3.4.9-patched 3.5.12-patched 
 
 ```
+39e41a1 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+a00e2bf ci: purger entcore du cache Maven avant de construire
+0a49516 build: construire en JDK 21 comme le fait la CI
+5c86c7f fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+8bbc572 chore(mindmap): ne plus versionner la vue générée mindmap.html
 3b05fae feat: montée de version mindmap 3.4.9-patched -> 3.5.12-patched
 f800ccc feat: passer les libs entcore en 6.16.8-patched
 4d6e700 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -1522,21 +1613,19 @@ fc7c844 fix: set right version number for org.entcore.test dependency
 4879428 chore: upgrade lib version
 bf652fd chore: set snapshot version after merge
 ddf1fd4 chore: improve build
-0e5f64c chore: improve build
-5471f2e feat: add probes
-33e6fbf chore: prepare next development iteration
-e9a6226 release: 3.4.11
-00dec01 chore: prepare next development iteration
-... (536 commits supplémentaires tronqués)
+... (541 commits supplémentaires tronqués)
 ```
 
 ## `modules/mod-image-resizer`
 
-- **branche référencée** : `(detached)` @ `70f7f23`
-- **base upstream** : `3.2.3`  →  delta = `3.2.3..HEAD` (**26 commit(s)**)
+- **branche référencée** : `3.3.1-patched-dev` @ `b538b70`
+- **base upstream** : `3.2.3`  →  delta = `3.2.3..HEAD` (**29 commit(s)**)
 - **tags patched** : 3.1.0-patched 3.2.3-patched 3.3.1-patched 
 
 ```
+b538b70 ci: purger entcore du cache Maven avant de construire
+5367494 ci: compiler en JDK 21 comme les autres modules
+f94b540 build: construire en JDK 21 comme le fait la CI
 70f7f23 feat: montée de version mod-image-resizer 3.2.3-patched -> 3.3.1-patched
 2321d5c feat: passer les libs entcore en 6.16.8-patched
 5b95509 feat: passer sur entcore 6.16.14-patched
@@ -1567,11 +1656,13 @@ c8d2970 chore: prepare next development iteration
 
 ## `modules/mod-json-schema-validator`
 
-- **branche référencée** : `3.0.0-patched-dev` @ `8bd38e8`
-- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**27 commit(s)**)
+- **branche référencée** : `3.0.0-patched-dev` @ `4750fe0`
+- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**29 commit(s)**)
 - **tags patched** : 3.0.0-patched 
 
 ```
+4750fe0 ci: purger entcore du cache Maven avant de construire
+2648f01 build: construire en JDK 21 comme le fait la CI
 8bd38e8 ci: bump softprops/action-gh-release en v3
 9d500ac chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 236f6e2 ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
@@ -1603,11 +1694,13 @@ bc00597 fix: support JDK 21 and pattern
 
 ## `modules/mod-mongo-persistor`
 
-- **branche référencée** : `4.1.1-patched-dev` @ `d77b550`
-- **base upstream** : `4.1.1`  →  delta = `4.1.1..HEAD` (**8 commit(s)**)
+- **branche référencée** : `4.1.1-patched-dev` @ `39ac56e`
+- **base upstream** : `4.1.1`  →  delta = `4.1.1..HEAD` (**10 commit(s)**)
 - **tags patched** : 3.1.0-patched 4.1.1-patched 
 
 ```
+39ac56e ci: purger entcore du cache Maven avant de construire
+bca37f2 build: construire en JDK 21 comme le fait la CI
 d77b550 ci: bump softprops/action-gh-release en v3
 90dd7ec chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 a680a0f ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
@@ -1620,11 +1713,13 @@ dcd42e8 ci: add build-and-publish workflow
 
 ## `modules/mod-pdf-generator`
 
-- **branche référencée** : `2.1.1-patched-dev` @ `3cfee5e`
-- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**8 commit(s)**)
+- **branche référencée** : `2.1.1-patched-dev` @ `ad1c51a`
+- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**10 commit(s)**)
 - **tags patched** : 2.1.1-patched 3.1.0-patched 
 
 ```
+ad1c51a ci: purger entcore du cache Maven avant de construire
+8a20885 build: construire en JDK 21 comme le fait la CI
 3cfee5e ci: bump softprops/action-gh-release en v3
 5c9a9ae chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 5b658e6 ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
@@ -1637,11 +1732,13 @@ ef0566e ci: settings.xml profil github-packages (entcore-v2) pour résoudre fr.o
 
 ## `modules/mod-postgresql`
 
-- **branche référencée** : `2.1.1-patched-dev` @ `0b5691c`
-- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**11 commit(s)**)
+- **branche référencée** : `2.1.1-patched-dev` @ `d66e6d3`
+- **base upstream** : `2.1.1`  →  delta = `2.1.1..HEAD` (**13 commit(s)**)
 - **tags patched** : 2.1.1-patched 2.1.1-patched-dev 
 
 ```
+d66e6d3 ci: purger entcore du cache Maven avant de construire
+980c131 build: construire en JDK 21 comme le fait la CI
 0b5691c ci: bump softprops/action-gh-release en v3
 6a4ed98 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 7afd40f ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
@@ -1657,11 +1754,14 @@ fd5a0db fix(sql): résilience démarrage + montée HikariCP 5.1.0 / JDK 21
 
 ## `modules/mod-sftp`
 
-- **branche référencée** : `2.1.3-patched-dev` @ `3595b75`
-- **base upstream** : `2.1.3`  →  delta = `2.1.3..HEAD` (**10 commit(s)**)
+- **branche référencée** : `2.1.3-patched-dev` @ `a87b6ec`
+- **base upstream** : `2.1.3`  →  delta = `2.1.3..HEAD` (**13 commit(s)**)
 - **tags patched** : 2.1.3-patched 
 
 ```
+a87b6ec ci: purger entcore du cache Maven avant de construire
+ad8d313 fix(ci): reconnaître le 409 « HTTP Status » des Maven récents à la publication
+aed29b2 build: construire en JDK 21 comme le fait la CI
 3595b75 ci: bump softprops/action-gh-release en v3
 ba7c267 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 6c4edab ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
@@ -1676,21 +1776,25 @@ ba7c267 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), do
 
 ## `modules/mod-sms-sender`
 
-- **branche référencée** : `master` @ `5f519b6`
-- **base upstream** : `2.2.0`  →  delta = `2.2.0..HEAD` (**2 commit(s)**)
+- **branche référencée** : `master` @ `37d3e27`
+- **base upstream** : `2.2.0`  →  delta = `2.2.0..HEAD` (**4 commit(s)**)
 
 ```
+37d3e27 ci: purger entcore du cache Maven avant de construire
+76c246f build: construire en JDK 21 comme le fait la CI
 5f519b6 ci: bump softprops/action-gh-release en v3
 d59e440 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 ```
 
 ## `modules/mod-zip`
 
-- **branche référencée** : `3.1.1-patched-dev` @ `7e385a2`
-- **base upstream** : `3.2.1`  →  delta = `3.2.1..HEAD` (**13 commit(s)**)
+- **branche référencée** : `3.1.1-patched-dev` @ `b3b92c4`
+- **base upstream** : `3.2.1`  →  delta = `3.2.1..HEAD` (**15 commit(s)**)
 - **tags patched** : 3.1.0-patched 3.1.1-patched 
 
 ```
+b3b92c4 ci: purger entcore du cache Maven avant de construire
+1d7f8e2 build: construire en JDK 21 comme le fait la CI
 7e385a2 ci: bump softprops/action-gh-release en v3
 90a2cf5 chore(ci): bump actions/checkout v4->v6, setup-java v4->v6 (java 21), docker/login-action v3->v4 (OPENENT-57) [skip ci]
 a22b798 ci: publier le fat-mod nexus avec classifier=fat (= ce que le launcher tire)
@@ -1722,11 +1826,17 @@ e12e6b4 chore: bump github action for node > 20
 
 ## `modules/pages`
 
-- **branche référencée** : `(detached)` @ `3f3cd0e`
-- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**44 commit(s)**)
+- **branche référencée** : `2.2.5-patched-dev` @ `3c93124`
+- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**50 commit(s)**)
 - **tags patched** : 2.1.5-patched 2.2.5-patched 
 
 ```
+3c93124 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+1bb86a7 feat(i18n): formater les dates selon la langue de la session
+4615a20 ci: purger entcore du cache Maven avant de construire
+4790cfb ci: compiler en JDK 21 comme les autres modules
+171d8cb fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+4034b02 build: construire en JDK 21 comme le fait la CI
 3f3cd0e feat: montée de version pages 2.1.5-patched -> 2.2.5-patched
 2a2615b feat: passer les libs entcore en 6.16.8-patched
 2c26099 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -1775,11 +1885,13 @@ d9dc443 chore: prepare next development iteration
 
 ## `modules/poll`
 
-- **branche référencée** : `(detached)` @ `c6e8d58`
-- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**31 commit(s)**)
+- **branche référencée** : `2.2.5-patched-dev` @ `0c67a13`
+- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**33 commit(s)**)
 - **tags patched** : 2.1.4-patched 2.2.5-patched 
 
 ```
+0c67a13 ci: purger entcore du cache Maven avant de construire
+bcdd938 build: construire en JDK 21 comme le fait la CI
 c6e8d58 feat: montée de version poll 2.1.4-patched -> 2.2.5-patched
 c0cb22a feat: passer les libs entcore en 6.16.8-patched
 f07fd25 feat: passer sur entcore 6.16.14-patched
@@ -1815,11 +1927,13 @@ c98be89 chore: update build image
 
 ## `modules/presences`
 
-- **branche référencée** : `(detached)` @ `8371cf3a`
-- **base upstream** : `0.20.8`  →  delta = `0.20.8..HEAD` (**692 commit(s)**)
+- **branche référencée** : `2.2.10-patched-dev` @ `59571b0b`
+- **base upstream** : `0.20.8`  →  delta = `0.20.8..HEAD` (**694 commit(s)**)
 - **tags patched** : 2.1.9-patched 2.2.10-patched 
 
 ```
+59571b0b ci: purger entcore du cache Maven avant le build
+1eb09fd0 build: construire en JDK 21 comme le fait la CI
 8371cf3a fix(presences): versionner la feuille de style compilée
 f70a3db8 feat: montée de version presences 2.1.9-patched -> 2.2.10-patched
 bd70d01c feat: passer les libs entcore en 6.16.8-patched
@@ -1898,18 +2012,18 @@ ba869b32 release: 2.2.9
 814b1143 chore: prepare next development iteration
 4b8b34ab release: 2.2.8
 ef8d9157 chore: set snapshot version after merge
-9f96797d fix(registry): #ORGA-370 disable export buttons when no class is selected (#388)
-b7e97cb1 feat:#ORGA-372 add screeb (#387)
-... (612 commits supplémentaires tronqués)
+... (614 commits supplémentaires tronqués)
 ```
 
 ## `modules/rack`
 
-- **branche référencée** : `(detached)` @ `bbf76f1`
-- **base upstream** : `3.1.7`  →  delta = `3.1.7..HEAD` (**143 commit(s)**)
+- **branche référencée** : `3.2.10-patched-dev` @ `7db585f`
+- **base upstream** : `3.1.7`  →  delta = `3.1.7..HEAD` (**145 commit(s)**)
 - **tags patched** : 3.1.6-patched 3.1.7-patched 3.2.10-patched 
 
 ```
+7db585f ci: purger entcore du cache Maven avant de construire
+98649d8 build: construire en JDK 21 comme le fait la CI
 bbf76f1 feat: montée de version rack 3.1.7-patched -> 3.2.10-patched
 ac4762b feat: passer les libs entcore en 6.16.8-patched
 a012d99 feat: passer sur entcore 6.16.14-patched
@@ -1988,18 +2102,33 @@ b8040b5 chore: use same version in all package.json
 0cfd85f chore: auto update eff
 8b8b6e1 chore: update pnpmlock
 6227388 chore: add collect into rack
-2de4cdf chore: prepare next development iteration
-621cd21 ci+deps: auth @open-ent à l'install pnpm + alignement @open-ent/* ^2.5.26
-... (63 commits supplémentaires tronqués)
+... (65 commits supplémentaires tronqués)
 ```
 
 ## `modules/rbs`
 
-- **branche référencée** : `2.1.7-patched-dev` @ `29c4169`
-- **base upstream** : `2.1.7`  →  delta = `2.1.7..HEAD` (**83 commit(s)**)
+- **branche référencée** : `2.1.7-patched-dev` @ `f95016b`
+- **base upstream** : `2.1.7`  →  delta = `2.1.7..HEAD` (**100 commit(s)**)
 - **tags patched** : 1.2.0-patched 2.1.4-patched 2.1.7-patched 
 
 ```
+f95016b fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+51ee27e feat(i18n): formater les dates selon la langue de la session
+ab5c44b feat(i18n): dictionnaire anglais complet
+16e8564 ci: résoudre common depuis rct-nexus dans la vérification
+095cbc9 ci: résoudre common depuis rct-nexus
+0d3ea7b ci: purger entcore du cache Maven avant de construire
+4e2c328 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+91bc8bd ci(rbs): résoudre les libs entcore patchées sur rct-nexus
+c7d64d4 fix(rbs): événement d'agenda créé depuis une réservation — titre = motif, lieu = ressource
+84be610 feat(rbs): disponibilité de plusieurs ressources en un appel, même règle de conflit partout
+b75ab4a fix(rbs): réservations demandées par l'emploi du temps — conflit sans blocage, disponibilité à la bonne heure
+31f52d5 build: construire en JDK 21 comme le fait la CI
+c9f0a76 feat(rbs): compiler contre les libs entcore 6.16.8-patched
+c51557e feat: passer les libs entcore en 6.16.8-patched
+1f5ec94 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+73d9582 fix(ci): réaligner le verrou pnpm sur les paquets @open-ent republiés
+83285a3 feat: passer sur entcore 6.16.14-patched
 29c4169 feat(rbs): endpoint de vérification de disponibilité sans droit RBS individuel (point b)
 b880718 fix(rbs): un super-admin voyait les types de ressources incomplets ou pas du tout
 bd4a85f feat(rbs): interface Accepter/Refuser pour les propositions de réservation Calendar (point B2)
@@ -2063,33 +2192,18 @@ a5cbb32 fix(51C-parité): rbs — planning hebdomadaire en vue par défaut (gril
 dd8c6a9 [51C-migration] fix(rbs): fuseau — parseBackendDate (backend renvoie de l'UTC sans 'Z')
 5712cd1 [51C-migration] fix(rbs): hash router (évite les 404 F5 sur sous-routes)
 d2c6854 [51C-migration] chore(rbs): défaut IHM -> react (parité atteinte)
-751c055 [51C-migration] feat(rbs): incrément 6 — vue agenda hebdomadaire
-cac772b [51C-migration] feat(rbs): incrément 5 — export des réservations (iCalendar / PDF)
-b368f7e [51C-migration] feat(rbs): incrément 4 — disponibilités + partage des types
-2e9ff4b [51C-migration] feat(rbs): incrément 3 — gestion des types et ressources (CRUD)
-46f7f5d [51C-migration] feat(rbs): incrément 2 — réservations périodiques + modération
-8b487af [51C-migration] feat(rbs): migration React incrément 1 — ressources + réservation simple
-dac4dd9 a11y(51H): rbs — <html lang="fr"> (RGAA html-has-lang)
-91baac7 fix(dates): corriger la signature dépréciée moment().add(unité, n)
-dca35ac ci: publication du fat-mod sur rct-nexus (classifier=fat) — chaîne CI→nexus→launcher
-485e5ba ci: continue-on-error sur publish GH Packages (immuabilité) → la release porte le fat-mod
-f3c8946 fix(i18n): ajouter les dernières clés anglaises manquantes (parité fr.json)
-ece91da build: parent io.edifice:app-parent -> fr.openent:app-parent (Implementation-Version au MANIFEST)
-f832298 ci: injecte buildNumber/scmBranch (commit + branche) dans le MANIFEST
-49d78fa ci: update workflows — fix triggers, Java 8, GitHub Packages resolver
-e648468 chore(common): bump entCoreVersion 6.14-SNAPSHOT → 6.14.9-patched
-475079e chore(rbs): gitignore package-lock.json
-cb060ca fix(rbs): patch version 2.1.7-patched
-... (3 commits supplémentaires tronqués)
+... (20 commits supplémentaires tronqués)
 ```
 
 ## `modules/ressource-aggregator`
 
-- **branche référencée** : `(detached)` @ `5a511fb`
-- **base upstream** : `2.3.1`  →  delta = `2.3.1..HEAD` (**520 commit(s)**)
+- **branche référencée** : `5.3.8-patched-dev` @ `b068903`
+- **base upstream** : `2.3.1`  →  delta = `2.3.1..HEAD` (**522 commit(s)**)
 - **tags patched** : 5.2.4-patched 5.3.8-patched 
 
 ```
+b068903 ci: purger entcore du cache Maven avant de construire
+6d6e504 build: construire en JDK 21 comme le fait la CI
 5a511fb feat: montée de version ressource-aggregator 5.2.4-patched -> 5.3.8-patched
 464476f feat: passer les libs entcore en 6.16.8-patched
 ba60556 feat: passer sur entcore 6.16.14-patched
@@ -2168,18 +2282,18 @@ b4f5672 chore: prepare next development iteration
 f4bca1d release: 5.3.0
 3aae98f chore: upgrade lib version
 86d0ae4 chore: set snapshot version after merge
-a464f12 ci: fix maven options
-540e800 chore: improve build
-... (440 commits supplémentaires tronqués)
+... (442 commits supplémentaires tronqués)
 ```
 
 ## `modules/rss`
 
-- **branche référencée** : `(detached)` @ `7841db8`
-- **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**22 commit(s)**)
+- **branche référencée** : `2.2.3-patched-dev` @ `6e43e0b`
+- **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**24 commit(s)**)
 - **tags patched** : 2.1.4-patched 2.2.3-patched 
 
 ```
+6e43e0b ci: purger entcore du cache Maven avant de construire
+5384800 build: construire en JDK 21 comme le fait la CI
 7841db8 feat: montée de version rss 2.1.4-patched -> 2.2.3-patched
 57294bf feat: passer les libs entcore en 6.16.8-patched
 fbaeefb feat: passer sur entcore 6.16.14-patched
@@ -2202,6 +2316,15 @@ fc4b072 release: 2.2.0
 cefd15c feat: add probes and runtime mods dependencies
 8f98db0 feat: add probes
 4056440 chore: prepare next development iteration
+```
+
+## `modules/schoolbook`
+
+- **branche référencée** : `develop` @ `d450b1a`
+- **base upstream** : `1.5.0`  →  delta = `1.5.0..HEAD` (**1 commit(s)**)
+
+```
+d450b1a chore: develop en 1.6.0-SNAPSHOT
 ```
 
 ## `modules/school-planner`
@@ -2255,11 +2378,18 @@ b9c776b ci: corrige la variable NEXUS_USER et ajoute le repo GitHub Packages en 
 
 ## `modules/search-engine`
 
-- **branche référencée** : `(detached)` @ `2cf217c`
-- **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**51 commit(s)**)
+- **branche référencée** : `2.2.5-patched-dev` @ `11f1428`
+- **base upstream** : `2.1.4`  →  delta = `2.1.4..HEAD` (**58 commit(s)**)
 - **tags patched** : 2.1.5-patched 2.2.5-patched 
 
 ```
+11f1428 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+9bd8285 feat(i18n): formater les dates selon la langue de la session
+66b5a51 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+5286b05 build: construire en JDK 21 comme le fait la CI
+0d68bd7 fix(searchengine): ignorer les réponses en double d'une même source
+da77a32 fix(searchengine): collecter les réponses des sources sans passer par le cluster
+78fde89 fix(searchengine): nommer les sources absentes quand la recherche expire
 2cf217c feat: montée de version search-engine 2.1.5-patched -> 2.2.5-patched
 f8219a7 feat: passer les libs entcore en 6.16.8-patched
 13e96cd fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -2315,11 +2445,16 @@ c31b0cf chore: prepare next development iteration
 
 ## `modules/statistics`
 
-- **branche référencée** : `(detached)` @ `cb6cba4`
-- **base upstream** : `2.6.0`  →  delta = `2.6.0..HEAD` (**47 commit(s)**)
+- **branche référencée** : `2.6.4-patched-dev` @ `33064bc`
+- **base upstream** : `2.6.0`  →  delta = `2.6.0..HEAD` (**52 commit(s)**)
 - **tags patched** : 2.6.0-patched 2.6.4-patched 
 
 ```
+33064bc fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+b0d8b81 feat(i18n): formater les dates selon la langue de la session
+20cc936 ci: purger entcore du cache Maven avant de construire
+017f2c4 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+2ab51e2 build: construire en JDK 21 comme le fait la CI
 cb6cba4 feat: montée de version statistics 2.6.0-patched -> 2.6.4-patched
 844f498 feat: passer les libs entcore en 6.16.8-patched
 ea8f3da fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -2371,11 +2506,17 @@ cb405a3 build: parent io.edifice:app-parent -> fr.openent:app-parent (Implementa
 
 ## `modules/support`
 
-- **branche référencée** : `(detached)` @ `97f9319`
-- **base upstream** : `0.18.0`  →  delta = `0.18.0..HEAD` (**634 commit(s)**)
+- **branche référencée** : `4.1.9-patched-dev` @ `0c92697`
+- **base upstream** : `0.18.0`  →  delta = `0.18.0..HEAD` (**640 commit(s)**)
 - **tags patched** : 3.1.5-patched 4.0.1-patched 4.1.9-patched 
 
 ```
+0c92697 fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+576a501 feat(support): catégorie « Signaler un contenu illicite » et lien direct
+23d5437 feat(i18n): formater les dates selon la langue de la session
+50a4d10 ci: purger entcore du cache Maven avant de construire
+70f690b build: construire en JDK 21 comme le fait la CI
+df935e7 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
 97f9319 feat: montée de version support 4.0.1-patched -> 4.1.9-patched
 82dfebc feat: passer les libs entcore en 6.16.8-patched
 67de44a fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -2450,22 +2591,23 @@ ea25354 release: 4.1.1
 7bf8f15 fix: INTEG-2099, replace newlines characters with <br> in comments
 4378be0 fix: INTEG-2093 apply progressive rendering to SearchableDropdown
 689d90f fix: INTEG-2084 deduplicate ticket categories by display name
-14785f4 chore: prepare next development iteration
-c9870a5 ci: call init before build
-0c88ddd release: 4.1.0
-171a8da chore: upgrade lib version
-1785613 chore: set snapshot version after merge
-e10551d ci: clean
-... (554 commits supplémentaires tronqués)
+... (560 commits supplémentaires tronqués)
 ```
 
 ## `modules/timeline-generator`
 
-- **branche référencée** : `(detached)` @ `bbb4ea5`
-- **base upstream** : `3.3.7`  →  delta = `3.3.7..HEAD` (**67 commit(s)**)
+- **branche référencée** : `3.4.8-patched-dev` @ `1fa4e8f`
+- **base upstream** : `3.3.7`  →  delta = `3.3.7..HEAD` (**74 commit(s)**)
 - **tags patched** : 3.3.6-patched 3.3.7-patched 3.4.8-patched 
 
 ```
+1fa4e8f fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+8da4177 feat(i18n): formater les dates selon la langue de la session
+5975536 feat(timelinegenerator-react): événements et propriétés — parité AngularJS
+f72ecba feat(timelinegenerator-react): bibliothèque — dossiers, déplacement, corbeille, duplication, impression, propriétés (parité AngularJS)
+c398d56 ci: purger entcore du cache Maven avant de construire
+6e871e5 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+88f806a build: construire en JDK 21 comme le fait la CI
 bbb4ea5 feat: montée de version timeline-generator 3.3.7-patched -> 3.4.8-patched
 6003cf8 feat: passer les libs entcore en 6.16.8-patched
 f8e3e50 fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -2535,13 +2677,25 @@ d56090a chore: prepare next development iteration
 9a13f6a chore: prepare next development iteration
 ```
 
+## `modules/video`
+
+- **branche référencée** : `develop` @ `5ba0566`
+- **base upstream** : `0.7.0`  →  delta = `0.7.0..HEAD` (**1 commit(s)**)
+
+```
+5ba0566 chore: ouvrir le développement de la 0.8.0
+```
+
 ## `modules/vie-scolaire`
 
-- **branche référencée** : `(detached)` @ `78d62700`
-- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**70 commit(s)**)
+- **branche référencée** : `2.2.4-patched-dev` @ `108c7ccb`
+- **base upstream** : `2.1.5`  →  delta = `2.1.5..HEAD` (**73 commit(s)**)
 - **tags patched** : 2.1.5-patched 2.2.4-patched 
 
 ```
+108c7ccb fix(periode): réserver la publication des bulletins aux administrateurs
+49d213b5 ci: purger entcore du cache Maven avant de construire
+edf7acfc build: construire en JDK 21 comme le fait la CI
 770d5644 feat: passer les libs entcore en 6.16.8-patched
 9ef0fbcd feat: passer sur entcore 6.16.14-patched
 ff94cc00 release: 2.2.4
@@ -2614,13 +2768,29 @@ d90bf85d feat: add probes
 dcbe6e84 chore: prepare next development iteration
 ```
 
+## `modules/vote`
+
+- **branche référencée** : `1.2.0-patched-dev` @ `6b4b89d`
+- **base upstream** : `1.2.0`  →  delta = `1.2.0..HEAD` (**3 commit(s)**)
+
+```
+6b4b89d fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+9d4a2c1 ci: purger entcore du cache Maven avant de construire
+7d478e0 build: construire en JDK 21 comme le fait la CI
+```
+
 ## `modules/wiki`
 
-- **branche référencée** : `(detached)` @ `dbd912e`
-- **base upstream** : `0.16.0`  →  delta = `0.16.0..HEAD` (**892 commit(s)**)
+- **branche référencée** : `3.6.16-patched-dev` @ `1b5e7ec`
+- **base upstream** : `0.16.0`  →  delta = `0.16.0..HEAD` (**897 commit(s)**)
 - **tags patched** : 3.5.12-patched 3.5.13-patched 3.6.16-patched 
 
 ```
+1b5e7ec fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+4cddc02 ci: purger entcore du cache Maven avant de construire
+ba6a1cd build: construire en JDK 21 comme le fait la CI
+ce7a38f fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
+05ad351 chore(wiki): ignorer la vue wiki.html générée par le build
 dbd912e feat: montée de version wiki 3.5.13-patched -> 3.6.16-patched
 fc0de93 feat: passer les libs entcore en 6.16.8-patched
 8c7fbfd fix(ci): réaligner le verrou pnpm sur @open-ent 2.5.30-patched republié
@@ -2696,17 +2866,23 @@ d43694a chore: prepare next development iteration
 6d30f3d fix: #PEDAGO-4059, fix rights to update courses in communities
 f4d1c2d release: 3.6.8
 c744746 fix: uset local "server" map to retrieve wiki's configuration
-07a269e release: 3.6.7
-61b69f3 chore: prepare next development iteration
-c017f76 release: 3.6.6
-ec0099c chore: prepare next development iteration
-b59ceae release: 3.6.5
-... (812 commits supplémentaires tronqués)
+... (817 commits supplémentaires tronqués)
+```
+
+## `modules/workflowhub`
+
+- **branche référencée** : `develop` @ `086fbfd`
+- **base upstream** : `1.5.0`  →  delta = `1.5.0..HEAD` (**3 commit(s)**)
+
+```
+086fbfd fix(deps): réaligner le verrou pnpm sur les paquets @open-ent republiés
+1bed453 docs(templates): section « Import depuis Google Photos » dans la charte de protection des données
+5dbea76 chore: develop en 1.6.0-SNAPSHOT
 ```
 
 ## `starter`
 
-- **branche référencée** : `6.16.14` @ `1c10435`
+- **branche référencée** : `6.16.14` @ `db7ede8`
 - **base upstream** : _aucun tag release ancêtre trouvé_ (fork à histoire disjointe ?)
 - **tags patched** : 6.14.9-patched 
 
@@ -2725,7 +2901,7 @@ cb3d749 docs(rbs): expliquer la modification des paramètres d'une ressource
 
 ---
 
-**Résumé** : 58 dépôt(s) forké(s)/patché(s) documenté(s) ; 14 dépôt(s) sans delta patched (suivent une branche upstream).
+**Résumé** : 65 dépôt(s) forké(s)/patché(s) documenté(s) ; 9 dépôt(s) sans delta patched (suivent une branche upstream).
 
 ### Comment relire / régénérer
 - Mettre à jour les tags upstream : `git submodule foreach 'git fetch --tags origin || true'`
