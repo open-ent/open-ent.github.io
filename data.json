@@ -770,7 +770,7 @@
       "name": "exercizer",
       "group_id": "fr.openent",
       "section": "apps",
-      "ci_status": "",
+      "ci_status": "failure",
       "ci_url": "https://github.com/open-ent/exercizer/actions",
       "releases_url": "https://github.com/open-ent/exercizer/releases",
       "repo_url": "https://github.com/open-ent/exercizer",
@@ -2150,6 +2150,6 @@
       "releases": []
     }
   ],
-  "generated_at": "14/11/2026 à 08:54 UTC",
-  "generated_at_iso": "2026-11-14T08:54:26Z"
+  "generated_at": "14/11/2026 à 10:04 UTC",
+  "generated_at_iso": "2026-11-14T10:04:26Z"
 }
