@@ -35,12 +35,12 @@ jobs:
       # L'état de la sonde (history/latest) est dans ce dépôt : check.mjs repart
       # de l'historique réel et y réécrit directement.
       - name: Checkout (état + publication)
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           path: pages
 
       - name: Extraire la sonde depuis open-ent-mods (uptime/ seulement)
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           repository: open-ent/open-ent-mods
           token: ${{ secrets.OPEN_ENT_MODS_READ_TOKEN || secrets.GH_PACKAGES_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
           sparse-checkout-cone-mode: true
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
           node-version: "20"
 
