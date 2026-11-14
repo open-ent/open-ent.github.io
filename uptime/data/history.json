@@ -4319,5 +4319,13 @@
     "httpStatus": 200,
     "responseTimeMs": 844,
     "error": null
+  },
+  {
+    "timestamp": "2026-11-14T15:07:58.957Z",
+    "isUp": false,
+    "httpStatus": 503,
+    "responseTimeMs": 947,
+    "error": null,
+    "maintenance": "2026-11-14-1507-deploy"
   }
 ]
