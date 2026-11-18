@@ -2009,7 +2009,7 @@
       "name": "gar-connector",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/gar-connector/actions",
       "releases_url": "https://github.com/open-ent/gar-connector/releases",
       "repo_url": "https://github.com/open-ent/gar-connector",
@@ -2062,7 +2062,7 @@
       "name": "moodle-connector",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/moodle-connector/actions",
       "releases_url": "https://github.com/open-ent/moodle-connector/releases",
       "repo_url": "https://github.com/open-ent/moodle-connector",
@@ -2093,7 +2093,7 @@
       "name": "nextcloud",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/nextcloud/actions",
       "releases_url": "https://github.com/open-ent/nextcloud/releases",
       "repo_url": "https://github.com/open-ent/nextcloud",
@@ -2118,7 +2118,7 @@
       "name": "pmb-connector",
       "group_id": "fr.openent",
       "section": "connectors",
-      "ci_status": "failure",
+      "ci_status": "success",
       "ci_url": "https://github.com/open-ent/pmb-connector/actions",
       "releases_url": "https://github.com/open-ent/pmb-connector/releases",
       "repo_url": "https://github.com/open-ent/pmb-connector",
@@ -2150,6 +2150,6 @@
       "releases": []
     }
   ],
-  "generated_at": "17/11/2026 à 11:40 UTC",
-  "generated_at_iso": "2026-11-17T11:40:54Z"
+  "generated_at": "18/11/2026 à 11:29 UTC",
+  "generated_at_iso": "2026-11-18T11:29:10Z"
 }
