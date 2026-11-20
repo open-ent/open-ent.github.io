@@ -4563,5 +4563,12 @@
     "responseTimeMs": 574,
     "error": null,
     "maintenance": "2026-11-20-2206-deploy"
+  },
+  {
+    "timestamp": "2026-11-20T22:09:00.850Z",
+    "isUp": true,
+    "httpStatus": 200,
+    "responseTimeMs": 602,
+    "error": null
   }
 ]

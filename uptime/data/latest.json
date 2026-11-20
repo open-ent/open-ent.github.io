@@ -1,30 +1,29 @@
 {
-  "generatedAt": "2026-11-20T22:06:38.687Z",
+  "generatedAt": "2026-11-20T22:09:00.861Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-20T22:06:38.678Z",
+    "timestamp": "2026-11-20T22:09:00.850Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 574,
-    "error": null,
-    "maintenance": "2026-11-20-2206-deploy"
+    "responseTimeMs": 602,
+    "error": null
   },
   "totals": {
-    "checks": 649,
-    "up": 631,
+    "checks": 650,
+    "up": 632,
     "down": 2,
     "maintenance": 22
   },
   "availability": {
-    "all": 99.681,
+    "all": 99.682,
     "last24h": 100,
     "last7d": 100,
-    "last30d": 99.091
+    "last30d": 99.099
   },
   "latencyMs": {
-    "latest": 574,
+    "latest": 602,
     "avg": 834,
     "p95": 1500,
     "p99": 1672
@@ -54,21 +53,22 @@
     }
   ],
   "maintenance": {
-    "active": {
-      "id": "2026-11-20-2206-deploy",
-      "title": "Mise en service du mode assistance",
-      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-      "reason": "",
-      "kind": "deploy",
-      "impact": "full",
-      "components": [],
-      "startsAt": "2026-11-20T22:06:20.616Z",
-      "endsAt": "2026-11-20T22:26:20.616Z",
-      "status": "scheduled",
-      "createdAt": "2026-11-20T22:06:20.617Z"
-    },
+    "active": null,
     "upcoming": [],
     "recent": [
+      {
+        "id": "2026-11-20-2206-deploy",
+        "title": "Mise en service du mode assistance",
+        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+        "reason": "",
+        "kind": "deploy",
+        "impact": "full",
+        "components": [],
+        "startsAt": "2026-11-20T22:06:20.616Z",
+        "endsAt": "2026-11-20T22:08:45.299Z",
+        "status": "completed",
+        "createdAt": "2026-11-20T22:06:20.617Z"
+      },
       {
         "id": "2026-11-17-0742-deploy",
         "title": "Mise à jour de la plateforme",
@@ -120,19 +120,6 @@
         "endsAt": "2026-11-15T15:23:23.243Z",
         "status": "completed",
         "createdAt": "2026-11-15T15:20:59.157Z"
-      },
-      {
-        "id": "2026-11-14-1507-deploy",
-        "title": "Mise à jour de la plateforme",
-        "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
-        "reason": "",
-        "kind": "deploy",
-        "impact": "full",
-        "components": [],
-        "startsAt": "2026-11-14T15:07:40.996Z",
-        "endsAt": "2026-11-14T15:09:13.462Z",
-        "status": "completed",
-        "createdAt": "2026-11-14T15:07:40.997Z"
       }
     ]
   }
