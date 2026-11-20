@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-20T21:18:34.536Z",
+  "generatedAt": "2026-11-20T22:06:38.687Z",
   "target": "https://www.ent-scolaire.fr/",
   "scheduleMinutes": 5,
   "checkTimeoutMs": 12000,
   "current": {
-    "timestamp": "2026-11-20T21:18:34.530Z",
+    "timestamp": "2026-11-20T22:06:38.678Z",
     "isUp": true,
     "httpStatus": 200,
-    "responseTimeMs": 466,
-    "error": null
+    "responseTimeMs": 574,
+    "error": null,
+    "maintenance": "2026-11-20-2206-deploy"
   },
   "totals": {
-    "checks": 648,
-    "up": 630,
+    "checks": 649,
+    "up": 631,
     "down": 2,
-    "maintenance": 21
+    "maintenance": 22
   },
   "availability": {
     "all": 99.681,
     "last24h": 100,
     "last7d": 100,
-    "last30d": 99.099
+    "last30d": 99.091
   },
   "latencyMs": {
-    "latest": 466,
+    "latest": 574,
     "avg": 834,
     "p95": 1500,
     "p99": 1672
@@ -53,7 +54,19 @@
     }
   ],
   "maintenance": {
-    "active": null,
+    "active": {
+      "id": "2026-11-20-2206-deploy",
+      "title": "Mise en service du mode assistance",
+      "description": "Redémarrage de l'ENT pour une mise à jour. Aucune donnée n'est affectée.",
+      "reason": "",
+      "kind": "deploy",
+      "impact": "full",
+      "components": [],
+      "startsAt": "2026-11-20T22:06:20.616Z",
+      "endsAt": "2026-11-20T22:26:20.616Z",
+      "status": "scheduled",
+      "createdAt": "2026-11-20T22:06:20.617Z"
+    },
     "upcoming": [],
     "recent": [
       {
