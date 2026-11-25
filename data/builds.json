@@ -1,15 +1,4 @@
 {
- "checked_at": "2026-11-25T14:32:36Z",
- "builds": [
-  {
-   "repo": "open-ent/entcore-v2",
-   "run_id": 45633310676,
-   "workflow": "Build & Publish to GitHub Packages",
-   "status": "in_progress",
-   "branch": "6.16.14-patched-dev",
-   "event": "push",
-   "started_at": "2026-11-25T14:22:18Z",
-   "url": "https://github.com/open-ent/entcore-v2/actions/runs/45633310676"
-  }
- ]
+ "checked_at": "2026-11-25T23:16:52Z",
+ "builds": []
 }
