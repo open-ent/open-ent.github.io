@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T07:59:27Z",
+ "checked_at": "2026-11-27T08:00:00Z",
  "builds": [
   {
    "repo": "open-ent/cahier-de-textes",
@@ -10,16 +10,6 @@
    "event": "push",
    "started_at": "2026-11-27T07:56:39Z",
    "url": "https://github.com/open-ent/cahier-de-textes/actions/runs/45961949679"
-  },
-  {
-   "repo": "open-ent/timeline-generator",
-   "run_id": 45962093226,
-   "workflow": "Build & Publish Fat Mod",
-   "status": "in_progress",
-   "branch": "3.4.8-patched",
-   "event": "push",
-   "started_at": "2026-11-27T07:57:56Z",
-   "url": "https://github.com/open-ent/timeline-generator/actions/runs/45962093226"
   }
  ]
 }
