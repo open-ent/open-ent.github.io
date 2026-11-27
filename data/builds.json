@@ -1,15 +1,4 @@
 {
- "checked_at": "2026-11-27T08:00:00Z",
- "builds": [
-  {
-   "repo": "open-ent/cahier-de-textes",
-   "run_id": 45961949679,
-   "workflow": "Build & Publish Fat Mod",
-   "status": "in_progress",
-   "branch": "4.2.4-patched",
-   "event": "push",
-   "started_at": "2026-11-27T07:56:39Z",
-   "url": "https://github.com/open-ent/cahier-de-textes/actions/runs/45961949679"
-  }
- ]
+ "checked_at": "2026-11-27T08:00:33Z",
+ "builds": []
 }
